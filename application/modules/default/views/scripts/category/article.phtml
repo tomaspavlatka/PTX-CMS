@@ -1,0 +1,23 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 24, 2010
+**/
+
+?>
+<div class="post">
+    <h1><?php echo $this->escape($this->categoryData['name_'.$this->locale]); ?></h1>
+    <div class="perex ti"><?php echo $this->escape($this->categoryData['perex_'.$this->locale]); ?></div>
+    
+    <?php 
+	// Articles.
+	$articles = array(
+        'articles' => $this->articles,
+	    'locale' => $this->locale,
+	);   
+	echo $this->partial('_elements/articles.phtml',array('options'=>$articles)); ?>
+	
+	<?php 	
+	// Paginator.
+	echo $this->paginationControl($this->paginator,'Sliding','_paginator/articles.phtml'); ?>
+</div>

@@ -1,0 +1,158 @@
+ /*** GB INPUT ***/
+.gb-input {margin-bottom: 10px;}
+.gb-name {font-weight: bold; font-size: 1.1em;}
+.gb-info {border: 1px solid #f0f0f0; padding: 2px;}
+
+
+/*** PAGINATOR ***/
+.paginationControl{margin: 5px;float: right;text-align: right;}
+.paginationControl a{background: #333;color: #fff;border: 1px solid #999;padding: 5px;margin-right: 5px;text-decoration: none;}
+.paginationControl a:hover{text-decoration: underline;color: #fff;}
+.page-selected{font-weight: bold;background: #f0f0f0;color: #000;border: 1px solid #000;padding: 5px;margin-right: 5px;}
+.pcount{background: #f0f0f0;color: #000;border: 1px solid #000;padding: 5px;margin-right: 5px;}
+
+#tray .warning{width: 300px; float: left; font-weight: bold; color: #fff;font-size: 1.3em;}
+/*** LIST CLASSES ***/
+.icon{width: 30px;}
+.status{cursor:pointer;}
+.arrows{width: 50px;text-align:center;}
+.arrows img{margin-right: 3px;}
+.cleaner{clear:both;}
+.buttons{float: right; margin: 10px 0 10px 0;}
+.displaynone{display:none;}
+.hand{cursor: pointer;}
+.margin5{margin:5px}
+.nounderline {text-decoration: none;}
+.noborder {border: 0px;}
+
+.b,.tb {font-wegiht: bold;}
+.s {font-size: 0.85em;}
+.grey {color: #999;}
+.italic {font-style: italic;}
+
+/*** FORM ***/
+fieldset{border: 1px solid #ccc !important; background: #f0f0f0 !important; padding: 5px;}
+legend {font-size: 1.1em;color: #fff !important; background: #333 !important; padding: 5px;margin-left: -6px;}
+form table {border: 1px solid #000; width: 100%}
+form table tr {border-bottom: 1px solid #369;}
+form table td {border: 0px !important;}
+form table td.form_label {width: 170px; vertical-align: top}
+.zendform input,.zendform select,.zendform textarea{padding: 3px;}
+.zendform select option{padding-left: 5px;}
+.zendform .full{width: 900px;}
+.zendform .long{width: 724px;}
+.zendform .medium{width: 450px;}
+.zendform .tiny {width: 100px;}
+.zendform .required{color: #369; font-weight: bold;}
+.zendform .big{font-size: 1.1em; font-weight: bold;}
+.zendform .forminput label input {margin-right: 5px;}
+
+.zendform #dd_no_csrf_foo{border: 0;}
+.zendform p.hint{padding: 0px 0px 0px 160px;color: #666;font-size: 0.95em; clear: both; margin: 0px;}
+.zendform .ptxbutton {background: #369; color: #fff; padding: 5px; font-weight: bold; font-size: 0.95em; cursor: pointer;}
+.zendform select.medium{width: 460px;}
+
+img.ui-datepicker-trigger {padding: 0px 0px 0px 5px; }
+.search select,.search input.long { width: 157px; padding: 2px; margin-right: 5px;}
+.search option {padding: 1px 2px 1px 2px; font-size: 0.9em;}
+.search fieldset {background: #EAEAEA !important; border-color: #999 !important; margin: 0px 0px 0px 5px; width: 200px;}
+.search legend {background: #EAEAEA !important; color: #333 !important; font-size: 0.9em;}
+
+#map_canvas {width: 635px; height: 300px;margin-left: 165px;border:1px solid #000;}
+p#hint_load {padding: 0px 0px 0px 105px; margin: 0px 0px 0px 165px;font-size: 0.9em; width: 200px; text-align: right; cursor: pointer;}
+
+.artcontent input,.artcontent select{padding: 3px;}
+.artcontent select option{padding-left: 5px;}
+.artcontent .full{width: 900px;}
+.artcontent .long{width: 650px;}
+.artcontent .medium{width: 450px;}
+.artcontent .required{color: #369; font-weight: bold;}
+.artcontent .big{font-size: 1.1em; font-weight: bold;}
+.artcontent .formlabel{margin:5px;padding: 5px; width: 150px;}
+.artcontent .forminput{margin:5px;padding: 5px; border-top: 1px solid #369;}
+.artcontent .forminput label {padding: 5px; margin-bottom: 5px;}
+.artcontent .forminput label input{margin-right: 10px;}
+.artcontent .forminput label.error{color: #c00; font-weight: bold; margin-left: 5px; width: 600px;}
+.artcontent #dd_no_csrf_foo{border: 0;}
+.artcontent #submit-label,.artcontent #no_csrf_foo-label{display: none;}
+.artcontent #submit-element{margin-left: 170px;}
+.artcontent p.hint{margin: 5px 0 0 170px;color: #666;font-size: 0.95em;}
+
+.artcontent .forminput ul.errors{margin: 0;padding: 0;}
+.artcontent .forminput ul.errors li{margin-left: 170px;}
+.artcontent select.medium{width: 460px;}
+
+.ptxcorrector .forminput ul.errors {margin: 0;padding: 0; font-size: 0.9em;}
+.ptxcorrector .forminput ul.errors li{margin-left: 20px !important;} 
+
+#serverform {width: 250px; float: left;margin: 0 30px 0 30px; padding: 0;}
+#serverform select{padding: 3px;}
+
+/*** DETAIL TABLE ***/
+.detail{margin: 10px 0 10px 0;}
+.detail .black{width: 200px; background: #333; color: #fff}
+
+.overview .number {font-size: 1.3em;font-weight: bold;}
+
+ul.ptx {list-style-type: none; margin:15px 0 15px 20px; }
+
+/*** FILE TREE ***/
+#ftleft {width: 400px; float: left;}
+#ftright {width: 400px; float: right; margin-right: 10px;}
+#ftright p {margin: 0px; padding: 3px;}
+#ftright p img {cursor: pointer; }
+#filetree {width: 390px; border: 1px inset #999; padding: 5px;}
+.ftheader {font-size: 1.1em; background: #333; padding: 5px; color: #fff; margin-bottom: 5px;}
+
+.ajax {position: relative;}
+.ajax #imeifinder {position: absolute; top: 100px; left: 312px; display: none;}
+.ajax #fistnamefinder {position: absolute; top: 760px; left: 815px; display: none;}
+.ajax #contact-label, .ajax #dd_contact,.ajax #model-label, .ajax #dd_model {display: none;}
+
+/*** PRODUCT PHOTOS ***/
+.ptxtbl td{vertical-align: top;}
+.ptxsubmit {float: right; margin-top: 5px;}
+
+/*** INVOICE FORM ***/
+#invoicedata {border: 1px solid #f00;}
+.formrow{ margin: 3px 0px 3px 0px;}
+.rowid { float: left; width: 40px; margin-right: 5px; }
+.rowid input {width: 35px; background: #f2f2f2; border: 1px solid #999;}
+.rowname {float: left; width: 350px; margin-right: 5px;}
+.rowname input {width: 340px;}
+.rowprice {float: left; width: 80px;margin-right: 10px;}
+.rowprice input {width: 75px;}
+.rowpiece {float: left; width: 80px;margin-right: 10px;}
+.rowpiece input {width: 75px;}
+
+.rownotice {float: left; width: 150px;margin-right: 10px;}
+.rownotice input {width: 140px;}
+
+/*** CONTAINER ***/
+.container {width: 970px; margin: 5px auto; padding: 0px;}
+.container .halfbg { width: 479px; float: left; margin: 2px; border: 1px solid #f0f0f0;}
+.container .halfbg .header {font-weight: bold; background: #f0f0f0; padding: 5px; }
+.container .halfbg .text {padding: 5px;}
+
+ul.ulnormal {margin-left: 20px;}
+.fix {clear: both; }
+
+/** BASKET ORDER TABLE ***/
+.basketordertbl {margin: 10px 0px 10px 0px; background: #f2f2f2; border: 1px solid #f0f0f0; padding: 5px; width: 483px; float: right;}
+.basketordertbl td, .basketordertbl th { padding: 2px 3px 2px 3px; vertical-align: top;}
+.basketordertbl td.ident {width: 200px; color: #666;}
+.basketordertbl td.bobutton {padding: 10px 0px 10px 5px;}
+.basketordertbl td.bobutton a {font-size: 1.1em; background: #2278C3; color: #fff; padding: 5px; font-weight: bold;}
+.basketordertbl td.bobutton a:hover {background: #333; text-decoration: none;}
+
+#translate ul {margin: 0px; padding: 0px;}
+
+.menu-flags img {float: left; padding: 10px 0px 5px 5px;}
+.box-02 .f-right {padding-top: 7px !important;}
+
+.sortable.photos {list-style-type: none;}
+.sortable.photos li {width: 210px; height: 170px; float: left; text-align: center; margin: 3px;}
+.sortable.photos li img {margin: 5px;}
+
+.category_list {width: 724px; padding: 5px; height: 20px; border: 2px solid #ccc; margin-top: 5px;}
+.category_list span {padding-right: 15px;}

@@ -1,0 +1,15 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas@pavlatka.cz]
+ * Created: Nov 9, 2011
+ */
+ 
+
+if(is_array($this->msgs) && count($this->msgs) > 0) {
+    echo $this->viewMsgs($this->msgs);
+} 
+?>
+
+<div class="post">
+    <?php echo $this->form; ?>
+</div>

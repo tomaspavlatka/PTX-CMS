@@ -1,0 +1,109 @@
+<?php 
+$projectConfig = PTX_Session::getSessionValue('settings', 'project');
+$locale = Zend_Registry::get('PTX_Locale');
+
+$projectName = (isset($projectConfig['name'.$locale])) ? $this->escape($projectConfig['name'.$locale]) : null;
+$projectSlogan = (isset($projectConfig['slogan'.$locale])) ? $this->escape($projectConfig['slogan'.$locale]) : null;
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <?php 
+    echo $this->headMeta();
+    echo $this->headTitle();
+    
+    $this->headLink()
+            ->appendStylesheet($this->baseUrl().'/project/'.PROJECT_FOLDER.'/templates/960/css/style.css','all')
+            ->appendStylesheet($this->baseUrl().'/project/'.PROJECT_FOLDER.'/templates/960/css/ptx.css','all');
+                        
+    echo $this->headLink();
+    
+    echo $this->headScript();
+    if($this->jQuery()->isEnabled()){
+        $this->jQuery()->setLocalPath($this->baseUrl().'/js/jquery/js/jquery-1.6.2.min.js')
+            ->setUiLocalPath($this->baseUrl().'/js/jquery/js/jquery-ui-1.8.16.custom.min.js')
+            ->addStylesheet($this->baseUrl().'/js/jquery/css/cupertino/jquery-ui-1.8.16.custom.css');
+        echo $this->jQuery();
+    } ?>
+    <link rel="shortcut icon" href="http://<?php echo $_SERVER['HTTP_HOST']?>/project/<?php echo PROJECT_FOLDER; ?>/images/favicon.ico" />
+</head>
+<body id="top">
+<a name="pagetop"></a>
+<?php echo $this->layout()->widgetTop; ?>
+
+<div id="header-wrapper">
+    <div id="header-wrapper-2">
+        <div class="center-wrapper">
+            <div id="header">
+                <div id="logo">
+                    <h1 id="site-title"><a href="/" title="<?php echo $this->escape($projectSlogan); ?>"><?php echo $this->escape($projectName); ?></a></h1>
+                    <h2 id="site-slogan"><?php echo $this->escape($projectSlogan); ?></h2>
+                </div>
+
+                <div id="help-wrapper">
+                    <?php echo $this->layout()->menuHeader; ?>
+                </div>
+                
+                <div id="lang-switcher"><?php echo $this->partial('_inc/lang-switcher.phtml'); ?></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="navigation-wrapper">
+    <div id="navigation-wrapper-2">
+        <div class="center-wrapper">
+            <div id="navigation">
+                <?php echo $this->layout()->menuMain; ?>
+                <div class="clearer">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content-wrapper">
+    <div class="center-wrapper">
+        <div class="content" id="content-two-columns">
+            <div id="main-wrapper">
+                <div id="main">
+                    <?php echo $this->layout()->content; ?>
+                </div>
+            </div>
+
+            <div id="sidebar-wrapper">
+                <div id="sidebar">
+                    <?php echo $this->layout()->widgetSidebar; ?>
+                </div>
+            </div>
+
+            <div class="clearer">&nbsp;</div>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="footer-wrapper">
+    <div class="center-wrapper">
+        <div id="footer">
+            <div class="left">
+                <?php echo $this->layout()->menuBottom; ?>
+            </div>
+            <div class="right">
+                <a href="#pagetop"><?php echo $this->trans('Top')?></a>
+            </div>
+            <div class="clearer">&nbsp;</div>
+        </div>
+    </div>
+</div>
+
+<div id="bottom">
+    <div class="center-wrapper">
+        <?php echo $this->layout()->widgetFooter; ?>
+        <div class="clearer">&nbsp;</div>
+    </div>
+</div>
+
+<?php echo $this->layout()->widgetUnder; ?>
+</body>
+</html>

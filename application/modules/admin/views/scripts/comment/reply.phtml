@@ -1,0 +1,35 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 10.11.2010
+**/
+
+?>
+
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('comment','list','admin'),'class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+ 
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+// Form.
+echo $this->form;
+?>
+
+<h3><?php echo $this->trans('Comment you are replying to'); ?></h3>
+<div class="comments">
+    <div class="comment even">
+        <div class="author"><?php echo $this->escape($this->commentData->personname); ?></div>
+        <div class="message"><?php echo strip_tags($this->commentData->message,'<br>'); ?></div>
+    </div>
+</div>    

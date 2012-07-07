@@ -1,0 +1,39 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 7, 2010
+**/
+
+//Zend_Debug::dump($this->options['navigation']);
+
+$locale = Zend_Registry::get('PTX_Locale');
+
+if(isset($this->options['header'])): ?>
+    <h2><?php echo $this->options['header']; ?></h2>
+<?php endif; ?>
+
+<?php 
+if(isset($this->options['navigation'][$this->options['resource']])) {
+   $idParent = $this->options['navigation'][$this->options['resource']]['id'];
+   
+   // Foreach.
+   foreach($this->options['navigation'] as $item) {
+       if($item['parent_id'] == $idParent) {
+            $parseParams = PTX_Parser::parseWidgetParam($item['parameters']);
+            $append = (isset($parseParams['type'])) ? '/type/'.$parseParams['type'] : null;
+            echo '<div class="btn-box">';
+            echo '<div class="btn-top"></div>';
+            echo '<div class="btn">';
+            echo '<dl><dt>';
+               echo '<a href="'.$this->baseUrl().$this->url(array('module'=>$item['module'],'controller'=>$item['controller'],'action'=>$item['action'])).$append.'" 
+                           title="'.$this->escape($item['name_'.$locale]).'">'.$this->escape($item['name_'.$locale]).'</a></dt>';
+               if(!empty($item ['description_'.$locale])) {  
+                   echo '<dd>'.$this->escape($item['description_'.$locale]).'</dd>';
+               } else {                
+                   echo '<dd>'.$this->trans('missing description').'</dd>';
+               }
+            echo '</dl></div><div class="btn-bottom"></div></div>';
+       }
+   }
+}
+?>

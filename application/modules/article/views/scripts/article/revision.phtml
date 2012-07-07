@@ -1,0 +1,45 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 27.11.2010
+**/
+
+?>
+<div class="revision"><?php echo $this->transParam('Revision: <b>~0~</b> [~1~]',array('~0~'=>$this->revisionData->id,'~1~'=>$this->viewDate($this->revisionData->created)),false); ?></div>
+
+<h1><?php echo $this->escape($this->articleData->name); ?></h1>
+<p class="by-line">
+    <span class="date full-date"><abbr class="published" title="<?php echo $this->viewDate($this->articleData->published,Zend_Date::ISO_8601); ?>"><?php echo $this->viewDate($this->articleData->published,Zend_Date::DATE_FULL); ?></abbr></span>
+</p><!--/by-line-->
+
+
+<div class="aic"><?php echo $this->highlighter($this->revisionData->content); ?></div>
+
+<p class="filed categories alt-font tight">
+<?php 
+$categoryLink = '<a href="'.$this->baseUrl().$this->url(array('url'=>$this->catData->url),'article-category',true).'" 
+        title="'.$this->escape($this->catData->perex).'">'.$this->escape($this->catData->name).'</a>';
+echo $this->transParam('Posted in ~0~',array('~0~'=>$categoryLink),'article-category',false); ?>.</p> 
+<div class="clear"></div>
+
+<div class="rule-major">&nbsp;</div>
+
+  
+
+<div class="revision"><?php echo $this->trans('Actual content'); ?></div>
+<h1><?php echo $this->escape($this->articleData->name); ?></h1>
+<p class="by-line">
+    <span class="date full-date"><abbr class="published" title="<?php echo $this->viewDate($this->articleData->published,Zend_Date::ISO_8601); ?>"><?php echo $this->viewDate($this->articleData->published,Zend_Date::DATE_FULL); ?></abbr></span>
+</p><!--/by-line-->
+
+
+<div class="aic"><?php echo $this->highlighter($this->revisionData->content); ?></div>
+
+<p class="filed categories alt-font tight">
+<?php 
+$categoryLink = '<a href="'.$this->baseUrl().$this->url(array('url'=>$this->catData->url),'article-category',true).'" 
+        title="'.$this->escape($this->catData->perex).'">'.$this->escape($this->catData->name).'</a>';
+echo $this->transParam('Posted in ~0~',array('~0~'=>$categoryLink),'article-category',false); ?>.</p> 
+<div class="clear"></div>
+
+<div class="rule-major">&nbsp;</div>

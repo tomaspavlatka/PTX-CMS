@@ -1,0 +1,20 @@
+<?php
+/**
+ * Author: Tomas Pavlatka
+ * Email: tomas.pavlatka@gmail.com
+ * Created: 26.1.2010 22:11:22
+ */
+
+$session = new Zend_Session_Namespace('admindata');
+$nav = $session->navigation;
+
+$ptxLocale = Zend_Registry::get('PTX_Locale');
+$langIdent = 'name_'.$ptxLocale;
+?>
+<ul class="box">
+<?php foreach($nav as $ident => $data): ?>
+    <?php if($data['level'] == 0): ?>
+        <li><a href="/<?php echo str_replace(':','/',$ident); ?>"><span><?php echo $this->escape($data[$langIdent]); ?></span></a>
+    <?php endif; ?>        
+<?php endforeach; ?>
+</ul>

@@ -1,0 +1,23 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 7, 2010
+**/
+
+// Special settings.
+$specials = array('class','title','target');
+?>
+<div class="buttons">
+    <?php foreach($this->options['links'] as $link) {
+        echo '<a href="'.$link['link'].'"';
+        
+        foreach($specials as $special) {
+            if(isset($link[$special])) {
+                echo ' '.$special.'="'.$link[$special].'" ';
+            }
+        }
+        
+        echo '><span>'.$link['text'].'</span></a>';
+    } ?>        
+</div>
+<div class="cleaner"></div>

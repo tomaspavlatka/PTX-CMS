@@ -1,0 +1,46 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 24, 2010
+**/
+
+if($this->pageCount): ?>
+    <div class="paginator box">
+       <p class="pagiright">
+          <!-- Previous page link -->
+            <?php if (isset($this->previous)): ?>
+                <a href="<?php echo $this->url(array('page'=>$this->first)); ?>" 
+                    title="<?php echo $this->transParam('Go to page: ~0~',array('~0~'=>$this->first)); ?>"><?php echo $this->trans('First'); ?></a>
+                <a href="<?php echo $this->url(array('page'=>$this->previous)); ?>"
+                    title="<?php echo $this->transParam('Go to page: ~0~',array('~0~'=>$this->previus)); ?>"><?php echo $this->trans('Previous'); ?></a>
+            <?php endif; ?>
+            
+            <!-- Numbered page links -->
+            <?php foreach ($this->pagesInRange as $page): ?>
+                <?php if ($page != $this->current): ?>
+                    <a href="<?php echo $this->url(array('page'=>$page)); ?>"
+                        title="<?php echo $this->transParam('Go to page: ~0~',array('~0~'=>$page)); ?>"><?php echo $page; ?></a>
+                <?php else: ?>
+                    <a href="#" class="pageactive"
+                        title="<?php echo $this->transParam('Go to page: ~0~',array('~0~'=>$page)); ?>"><?php echo $page; ?></a>
+                <?php endif; ?>
+            <?php endforeach; ?>
+            
+            <!-- Next page link -->
+            <?php if (isset($this->next)): ?>
+                <a href="<?php echo $this->url(array('page'=>$this->next)); ?>"
+                    title="<?php echo $this->transParam('Go to page: ~0~',array('~0~'=>$this->next)); ?>"><?php echo $this->trans('Next'); ?></a>
+                <a href="<?php echo $this->url(array('page'=>$this->last)); ?>"
+                    title="<?php echo $this->transParam('Go to page: ~0~',array('~0~'=>$this->last)); ?>"><?php echo $this->trans('Last'); ?></a>
+            <?php endif; ?>
+        </p>
+        <p class="pagileft">
+            <?php echo $this->trans('Showing').': '; ?>
+            <?php echo '<b>'.$this->firstItemNumber.' - '.$this->lastItemNumber.'</b> '.$this->trans('from').' <b>'.$this->totalItemCount.'</b> '.$this->transPlural($this->trans('from category'),$this->trans('from categories'),$this->trans('from categories2'),$this->totalItemCount, true, 'en_UK'); ?>
+        </p>
+        <div class="fix"></div>
+    </div>
+    <div class="fix"></div>
+<?php endif; ?>
+
+                        

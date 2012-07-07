@@ -1,0 +1,53 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 10.8.2010
+**/
+
+$this->jQuery()->enable(); 
+?>
+
+<script type="text/javascript">
+function openKCFinder(field) {
+    window.KCFinder = {
+        callBack: function(url) {
+            window.KCFinder = null;
+            field.value = url;
+        }
+    };
+    
+    window.open('/js/fckeditor/editor/filemanager/kcfinder/browse.php?type=images', 'kcfinder_textbox',
+   	    'status=0, toolbar=0, location=0, menubar=0, directories=0, resizable=1, scrollbars=0, width=800, height=600'
+    );
+}
+</script>
+        
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('static-page','list','admin'),'class'=>'btn'),
+        array('text'=>$this->trans('Reset form'),'link'=>'/admin/static-page/add','class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+$languages = Admin_Model_DbSelect_Languages::getActive();
+// Load WYSIWYG editors.
+$options = array(
+    'ids' => array(),
+);
+foreach($languages as $langKey => $langValues) {
+    $options['ids'][] = 'pcontent'.$langValues['code'];
+}
+echo $this->partial('_elements/wysiwyg-setting.phtml',array('options'=>$options));
+
+// Form.
+echo $this->form;

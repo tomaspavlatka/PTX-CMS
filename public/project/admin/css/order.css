@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+.producti .text {background: #333; color: #fff;}
+.producti .forminput {border: 0px; }
+.producti .productin {width: 700px; float: left;margin: 0px; padding: 0px; margin-right: 2px;}
+.producti .productin input {width: 670px;}
+.producti .productiq {width: 100px; float: left;margin: 0px; padding: 0px;}
+.producti .productiq input {width: 75px; text-align: right;}
+.producti .productip {width: 100px; float: left; margin: 0px; padding: 0px;}
+.producti .productip input {width: 75px; text-align: right;}
+
+.producti .productipt {width: 90px; font-weight: bold; padding: 3px 5px 3px 5px; margin-right: 3px; float: left; background: #333; color: #fff; font-size: 0.9em;}
+.producti .productint {width: 690px; font-weight: bold; padding: 3px 5px 3px 5px; margin-right: 3px; float: left; background: #333; color: #fff; font-size: 0.9em;} 

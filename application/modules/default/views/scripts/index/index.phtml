@@ -1,0 +1,16 @@
+<?php 
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 24.8.2010
+**/
+
+// Articles.
+$articles = array(
+    'articles' => $this->articles,
+    'locale'   => $this->locale,
+    'text_column' => 'content',
+    'image_width' => 150,
+);
+echo $this->partial('_elements/articles.phtml',array('options'=>$articles));
+
+//Zend_Debug::dump($this->articles);

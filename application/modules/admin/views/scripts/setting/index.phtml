@@ -1,0 +1,22 @@
+<?php 
+// Fast Jump form.
+$formOptions = array('action'=>'logo', 'controller'=>'setting', 'select_options'=>$this->fast_jumps);
+echo $this->partial('_elements/fastjump-form.phtml',$formOptions);
+?>
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('Reset form'),'link'=>'/admin/setting','class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+// Form.
+echo $this->form;

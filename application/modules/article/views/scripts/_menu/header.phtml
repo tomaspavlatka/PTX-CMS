@@ -1,0 +1,15 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 28.10.2010
+**/
+
+$params = array(
+    'block_before'  => '<div id="help">',
+    'block_after'   => '</div>',
+    'item_before'   => ' ',
+    'item_after'    => ' <span class="text-separator">|</span> ',
+    'item_selected_before'   => '',
+    'item_selected_after'    => ' <span class="text-separator">|</span> ',
+    'parent_id'     => 0);
+echo $this->getMenu4Print(2,$params);

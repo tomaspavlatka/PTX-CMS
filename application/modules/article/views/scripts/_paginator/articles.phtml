@@ -1,0 +1,33 @@
+<?php
+/**
+ * Author: Tomas Pavlatka
+ * Email: tomas.pavlatka@gmail.com
+ * Created: 20.1.2010 20:03:26
+ */
+
+if($this->pageCount): ?>
+	<div class="paginator box">
+	   <p class="pagiright">
+		  <!-- Previous page link -->
+			<?php if (isset($this->previous)): ?>
+			    <a href="<?php echo $this->url(array('page'=>$this->previous)); ?>"
+			        title="<?php echo $this->trans('Newer articles'); ?>">&#171;&nbsp;<?php echo $this->trans('Newer articles'); ?></a>
+			<?php endif; ?>
+			
+			
+			<!-- Next page link -->
+			<?php if (isset($this->next)): ?>
+			    <a href="<?php echo $this->url(array('page'=>$this->next)); ?>"
+			        title="<?php echo $this->trans('Older articles'); ?>"><?php echo $this->trans('Older articles'); ?>&nbsp;&#187;</a>
+			<?php endif; ?>
+        </p>
+		<p class="pagileft">
+            <?php echo $this->trans('Showing').': '; ?>
+            <?php echo '<b>'.$this->firstItemNumber.' - '.$this->lastItemNumber.'</b> '.$this->trans('from').' <b>'.$this->totalItemCount.'</b> '.$this->transPlural($this->trans('from article'),$this->trans('from articles'),$this->trans('from articles2'),$this->totalItemCount, true, 'en_UK'); ?>
+        </p>
+        <div class="fix"></div>
+	</div>
+	<div class="fix"></div>
+<?php endif; ?>
+
+                        

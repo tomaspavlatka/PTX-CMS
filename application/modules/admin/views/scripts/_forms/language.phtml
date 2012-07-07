@@ -1,0 +1,130 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas@pavlatka.cz]
+ * Created: Oct 13, 2011
+ */
+
+$languages = Admin_Model_DbSelect_Languages::getActive();
+$elements = $this->form->getElements();
+$done = array('submit');
+
+$this->jQuery()->enable()->uiEnable();
+
+$validation = array();
+foreach($elements as $key => $values) {
+    $validation[$key] = array();
+    if($values->isRequired()) {
+        $validation[$key]['NotEmpty'] = array(
+            'settings' => array(),
+            'messages' => array('isEmpty' => $this->trans('Value is required and can\'t be empty')),
+        );
+        
+        $validators = $values->getValidators();
+        if(!empty($validators)) {
+            foreach($validators as $inKey => $inValues) {
+                $ident = str_replace('Zend_Validate_','',$inKey);
+                $validation[$key][$ident] = array(
+                    'messages' => $inValues->getMessageTemplates()
+                );
+                
+                if(strstr($inKey,'StringLength')) {
+                    $validation[$key][$ident]['settings'] = array('min'=>$inValues->getMin(),'max'=>$inValues->getMax());
+                } else if(strstr($inKey,'Regex')) {
+                    $validation[$key][$ident]['settings'] = array('pattern'=>$inValues->getPattern());
+                }
+            }
+        }
+    }
+}
+?>
+ 
+<script type="text/javascript">
+$(function() {
+    $("#translate").tabs();
+
+    $("#zendform").submit(function() {
+        var result = true;
+        $(".js-errors").hide();
+        
+        <?php foreach($validation as $key => $values): ?>
+            <?php if(!empty($values)): ?>
+            var value = $("#<?php echo $key; ?>").val();
+            var valueResult = true;
+            var errorMsg = null;
+                <?php foreach($values as $inKey => $inValues): ?>
+                    <?php if($inKey == 'NotEmpty'): ?>
+                        if(valueResult && value == '') {
+                            errorMsg = "<?php echo $inValues['messages']['isEmpty']; ?>";
+                            valueResult = false;
+                        }
+                    <?php elseif($inKey == 'StringLength'): ?>
+                        if(valueResult && value.length < <?php echo $inValues['settings']['min']; ?>) {
+                        	errorMsg = '<?php echo $this->transParam($inValues['messages']['stringLengthTooShort'],array("'%value%'"=>$this->trans('Value'),'%min%'=>$inValues['settings']['min'])); ?>';
+                        	valueResult = false;
+                        } else if(valueResult && value.length > <?php echo $inValues['settings']['max']; ?>) {
+                        	errorMsg = '<?php echo $this->transParam($inValues['messages']['stringLengthTooShort'],array("'%value%'"=>$this->trans('Value'),'%min%'=>$inValues['settings']['min'])); ?>';
+                        	valueResult = false;
+                        }
+                    <?php elseif($inKey == 'Regex'): ?>
+                        if(valueResult) {
+                            var pattern = <?php echo $inValues['settings']['pattern']; ?>;
+                            if(pattern.test(value) == false) {
+                                errorMsg = '<?php echo $this->transParam($inValues['messages']['regexNotMatch'],array("'%value%'"=>$this->trans('Value'),"'%pattern%'"=>$inValues['settings']['pattern'])); ?>';
+                                valueResult = false;
+                            } 
+                        }
+                    <?php endif; ?>
+                <?php endforeach; ?>
+                
+                if(valueResult == false) {
+                    $("#<?php echo $key; ?>").css({'background': '#fcc','border':'1px solid #f00'}); 
+                    $("#<?php echo $key; ?>").after('<br /><span class="js-errors" style="color: #f00; font-size: 0.9em;">'+errorMsg+'</span>'); 
+                    result = valueResult;
+                }
+            <?php endif; ?>
+        <?php endforeach; ?>
+
+        return result;
+    });
+});
+</script>
+    
+<div id="translate">
+    
+    <!-- Tabs Header. -->
+    <ul class="menu-flags">
+    <?php foreach($languages as $key => $values): ?>
+        <li><img src="/images/icons/flag/png/<?php echo $this->escape($values['code']); ?>.png" width="16" height="11" /> <a href="#translate_<?php echo $values['code']; ?>"><?php echo $this->escape($values['name']); ?></a></li>
+    <?php endforeach; ?>
+    </ul>
+
+<form action="<?php $this->escape($this->form->getAction()); ?>" method="post" id="zendform" enctype="<?php echo $this->form->getEnctype(); ?>">
+    <div class="zendform">
+        <?php 
+        foreach($languages as $key => $values) {
+            echo '<div id="translate_'.$values['code'].'">';
+            echo '<table><tbody>';
+            foreach($this->columns as $columnKey => $columnName) {
+                $ident = $columnName.$values['code'];
+                if(array_key_exists($ident,$elements)) {
+                    echo '<tr>'.$this->form->$ident.'</tr>';
+                    $done[] = $ident;
+                }                
+            }
+            echo '</tbody></table>';
+            echo '</div>';
+        }
+        
+        echo '<table><tbody>';
+        foreach($elements as $key => $values) {
+            if(!in_array($key,$done)) {
+                echo '<tr>'.$this->form->$key.'</tr>';
+            }
+        }
+        echo '<tr class="noborder"><td class="form_label">&nbsp;</td>'.$this->form->submit.'</tr>';
+        echo '</tbody></table>'; 
+
+        ?>
+    </div>
+</form>
+</div>

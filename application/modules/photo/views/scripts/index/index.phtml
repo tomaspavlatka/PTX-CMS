@@ -1,0 +1,22 @@
+<?php 
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 24.8.2010
+**/
+?>
+
+<div class="grid_12">
+    <div class="box content">
+        <h1><?php echo $this->trans('Photogallery'); ?></h1>
+        <div class="categories">
+            <?php foreach($this->data4View as $key => $values): ?>
+                <div class="photocategory">
+                    <div class="t-center image">
+	                    <a href="<?php echo $this->baseUrl().$this->ptxUrl(array('url'=>$values['url']),'photo-category',true); ?>" title="<?php echo $this->escape($values['name']); ?>"><?php echo $values['thumbnail']; ?></a>
+                    </div>
+                    <h2 class="t-center"><a href="<?php echo $this->baseUrl().$this->ptxUrl(array('url'=>$values['url']),'photo-category',true); ?>" title="<?php echo $this->escape($values['name']); ?>"><?php echo $this->escape($values['name']); ?> <span>(<?php echo $values['count_photos']; ?>)</span></a></h2>
+                </div>
+            <?php endforeach;?>
+        </div>
+    </div>
+</div>

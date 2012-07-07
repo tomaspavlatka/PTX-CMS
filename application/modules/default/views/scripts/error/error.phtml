@@ -1,0 +1,15 @@
+<div class="post">
+        <h1><?php echo $this->h1; ?></h1>
+        
+        <p class="t-justify">S politováním musíme konstatovat, že stránka, kterou se pokoušíte otevřít (<strong>http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?></strong>), se na našich stránkách nenachází.</p> 
+
+        <blockquote class="t-justify ti tb">Možná tu byla a Vy jste tu nebyli. Pravdou je, že teď tu jste a ona tu není.</blockquote>
+
+        <p><strong>Nemějte strach, stále je tu pár věcí, které můžete vyzkoušet:</strong></p>
+        <ul class="ulnormal">
+            <li>Přejděte na <a href="<?php echo $this->baseUrl().$this->ptxUrl(array(),'homepage',true); ?>" title="<?php echo $this->trans('Homepage'); ?>">Úvod</a> a začněte od tamtud</li>
+            <li>Pakliže jste www adresu zadávali ručně, ujistěte se, že jste v ní neudělali chybu.</li>
+        </ul>
+
+        <p class="t-justify">Stále si myslíte, že jste našli chybu na stránkách? Budu jedině rád, když <a href="/kontakt.html" title="Informovat o chybě">mne o tom informujete.</a></p>
+</div>

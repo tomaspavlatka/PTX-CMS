@@ -1,0 +1,33 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 24.7.2010
+**/
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <?php 
+    echo $this->headMeta();
+    echo $this->headTitle();
+    
+    $this->headLink()
+            ->appendStylesheet($this->baseUrl().'/project/admin/css/reset.css','screen')
+            ->appendStylesheet($this->baseUrl().'/project/admin/css/main.css','screen')
+            ->appendStylesheet($this->baseUrl().'/project/admin/css/style.css','screen')
+            ->appendStylesheet($this->baseUrl().'/project/admin/css/admin.css','screen');
+                        
+    echo $this->headLink();
+    
+    if($this->jQuery()->isEnabled()){
+            $this->jQuery()->setLocalPath($this->baseUrl().'/js/jquery/js/jquery-1.4.2.min.js')
+                       ->setUiLocalPath($this->baseUrl().'/js/jquery/js/jquery-ui-1.8.1.custom.min.js')
+                       ->addStylesheet($this->baseUrl().'/js/jquery/css/ui-lightness/jquery-ui-1.8.custom.css');
+            echo $this->jQuery();
+        }?>
+</head>
+<body>
+    <?php echo $this->layout()->incTop; ?>
+    <?php echo $this->layout()->content;?>
+</body>
+</html>

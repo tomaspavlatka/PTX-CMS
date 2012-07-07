@@ -1,0 +1,2648 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CORE admin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-17 06:40+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tomas Pavlatka <tomas.pavlatka@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: trans;transParam\n"
+"X-Poedit-Basepath: c:/xampp/htdocs/pavlatka/stylehouse/www/\n"
+"X-Poedit-SearchPath-0: application\n"
+
+#: application/helpers/Twitter.php:78
+msgid "Tomas Pavlatka's Twitter RSS"
+msgstr ""
+
+#: application/helpers/Twitter.php:79
+msgid "Tomas Pavlatka's Twitter"
+msgstr ""
+
+#: application/helpers/Twitter.php:79
+#, fuzzy
+msgid "Profile"
+msgstr "User"
+
+#: application/helpers/Twitter.php:82
+msgid "<span class=\"alt-font\">More tweets:</span> ~0~ - ~1~"
+msgstr ""
+
+#: application/modules/admin/controllers/AdminMenuController.php:9
+msgid "Admin menus"
+msgstr "Admin menu"
+
+#: application/modules/admin/controllers/AdminMenuController.php:34
+msgid "New input"
+msgstr ""
+
+#: application/modules/admin/controllers/AdminMenuController.php:57
+#: application/modules/admin/controllers/MenuInputController.php:80
+msgid "Menu input <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/AdminMenuController.php:59
+#: application/modules/admin/controllers/MenuInputController.php:82
+msgid "Menu input <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/AdminMenuController.php:87
+#: application/modules/admin/controllers/ArticleController.php:138
+#: application/modules/admin/controllers/BannerController.php:107
+#: application/modules/admin/controllers/CategoryController.php:110
+#: application/modules/admin/controllers/CommentController.php:77
+#: application/modules/admin/controllers/LanguageController.php:93
+#: application/modules/admin/controllers/LocationController.php:109
+#: application/modules/admin/controllers/MenuInputController.php:117
+#: application/modules/admin/controllers/MenuPlaceController.php:91
+msgid "Edit_2"
+msgstr "Edit"
+
+#: application/modules/admin/controllers/AdminMenuController.php:113
+#: application/modules/admin/controllers/ArticleController.php:181
+#: application/modules/admin/controllers/BannerController.php:168
+#: application/modules/admin/controllers/CategoryController.php:151
+#: application/modules/admin/controllers/CommentController.php:122
+#: application/modules/admin/controllers/LanguageController.php:120
+#: application/modules/admin/controllers/LocationController.php:133
+#: application/modules/admin/controllers/LogController.php:85
+#: application/modules/admin/controllers/MenuInputController.php:158
+#: application/modules/admin/controllers/MenuPlaceController.php:123
+msgid "List"
+msgstr ""
+
+#: application/modules/admin/controllers/AdminMenuController.php:150
+#: application/modules/admin/controllers/MenuInputController.php:223
+msgid "Menu input <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/AdminMenuController.php:176
+#: application/modules/admin/controllers/MenuInputController.php:275
+msgid "Menu input <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/AjaxController.php:389
+#: application/modules/admin/controllers/AjaxController.php:391
+msgid "Missing data"
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:10
+msgid "Articles"
+msgstr "Articles"
+
+#: application/modules/admin/controllers/ArticleController.php:39
+#, fuzzy
+msgid "New Article"
+msgstr "records"
+
+#: application/modules/admin/controllers/ArticleController.php:62
+msgid "Article <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:64
+msgid "Article <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:209
+#: application/modules/admin/controllers/LogController.php:107
+#: application/modules/admin/controllers/MenuInputController.php:198
+msgid "Search"
+msgstr "Search"
+
+#: application/modules/admin/controllers/ArticleController.php:234
+msgid "Article <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:307
+msgid "Article <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:362
+msgid "Name A-Z"
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:363
+msgid "Name Z-A"
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:364
+msgid "Shown 0-9"
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:365
+msgid "Shown 9-0"
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:366
+msgid "Published 0-9"
+msgstr ""
+
+#: application/modules/admin/controllers/ArticleController.php:367
+msgid "Published 9-0"
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:14
+msgid "Banners"
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:33
+msgid "You must select section first."
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:49
+#, fuzzy
+msgid "New Banner"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/BannerController.php:72
+msgid "Banner <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:74
+msgid "Banner <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:121
+msgid "Sections are missing"
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:154
+msgid "code"
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:199
+msgid "Logo"
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:257
+#: application/modules/admin/controllers/BannerController.php:396
+#: application/modules/admin/controllers/LocationController.php:176
+msgid "Problem during uploading category logo."
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:273
+msgid "Banner <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:303
+msgid "Banner <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/BannerController.php:406
+msgid "Logo for category <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/CategoryController.php:14
+#, fuzzy
+msgid "Categories"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/CategoryController.php:36
+#, fuzzy
+msgid "You must select category type first."
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/CategoryController.php:51
+#, fuzzy
+msgid "New category"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/CategoryController.php:74
+msgid "Category <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/CategoryController.php:76
+msgid "Category <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/CategoryController.php:123
+msgid "Select type"
+msgstr ""
+
+#: application/modules/admin/controllers/CategoryController.php:210
+msgid "Category <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/CategoryController.php:237
+msgid "Category <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/CategoryController.php:262
+#, fuzzy
+msgid "Article categories"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/CategoryController.php:263
+#, fuzzy
+msgid "Photos categories"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/CategoryController.php:264
+#, fuzzy
+msgid "Advert categories"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/CommentController.php:14
+msgid "Comments"
+msgstr ""
+
+#: application/modules/admin/controllers/CommentController.php:43
+msgid "Comment has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/CommentController.php:45
+msgid "Comment could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/CommentController.php:156
+msgid "Reply"
+msgstr ""
+
+#: application/modules/admin/controllers/CommentController.php:178
+msgid "Comment has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/CommentController.php:227
+msgid "Your reply has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/IndexController.php:15
+msgid "Admin"
+msgstr ""
+
+#: application/modules/admin/controllers/IndexController.php:30
+msgid "Dashboard"
+msgstr ""
+
+#: application/modules/admin/controllers/LanguageController.php:14
+msgid "Languages"
+msgstr ""
+
+#: application/modules/admin/controllers/LanguageController.php:39
+msgid "New Language"
+msgstr ""
+
+#: application/modules/admin/controllers/LanguageController.php:62
+msgid "Language <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/LanguageController.php:64
+msgid "Language <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/LanguageController.php:176
+#: application/modules/admin/controllers/LanguageController.php:211
+msgid "Code <b>~0~</b> already exists in database."
+msgstr ""
+
+#: application/modules/admin/controllers/LanguageController.php:180
+msgid "Language <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/LanguageController.php:215
+msgid "Language <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/LocationController.php:14
+msgid "Locations"
+msgstr ""
+
+#: application/modules/admin/controllers/LocationController.php:47
+#, fuzzy
+msgid "New Location"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/LocationController.php:70
+msgid "Location <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/LocationController.php:72
+msgid "Location <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/LocationController.php:192
+msgid "Location <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/LocationController.php:222
+msgid "Location <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/LogController.php:14
+msgid "Logs"
+msgstr ""
+
+#: application/modules/admin/controllers/LogController.php:33
+msgid "<b>~0~ log(s)</b> have been archived."
+msgstr ""
+
+#: application/modules/admin/controllers/LogController.php:170
+msgid "Created 0-9"
+msgstr ""
+
+#: application/modules/admin/controllers/LogController.php:171
+msgid "Created 9-0"
+msgstr ""
+
+#: application/modules/admin/controllers/ManageController.php:8
+msgid "Management"
+msgstr ""
+
+#: application/modules/admin/controllers/ManageController.php:21
+msgid "Administration"
+msgstr ""
+
+#: application/modules/admin/controllers/ManageController.php:30
+msgid "Advert"
+msgstr ""
+
+#: application/modules/admin/controllers/ManageController.php:39
+msgid "Content"
+msgstr ""
+
+#: application/modules/admin/controllers/ManageController.php:48
+msgid "Page management"
+msgstr ""
+
+#: application/modules/admin/controllers/ManageController.php:57
+#: application/modules/admin/controllers/MenuInputController.php:327
+msgid "Photogallery"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:14
+msgid "Menu inputs"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:37
+msgid "You must select menu place first."
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:60
+msgid "New menu input"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:131
+msgid "Places are missing"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:323
+msgid "Homepage Link"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:323
+msgid "Create menu input for homepage"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:324
+msgid "Static page"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:324
+msgid "Create menu input for static page"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:325
+msgid "Article"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:325
+msgid "Create menu input for article"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:326
+#, fuzzy
+msgid "Article category"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/MenuInputController.php:326
+msgid "Create menu input for article category"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:327
+msgid "Create menu input for homepage of photogallery"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:328
+#, fuzzy
+msgid "Photo category"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/MenuInputController.php:328
+msgid "Create menu input for photo category"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:329
+msgid "External link"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuInputController.php:329
+msgid "Create menu input for external link"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuPlaceController.php:14
+msgid "Menu places"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuPlaceController.php:38
+msgid "New Place"
+msgstr ""
+
+#: application/modules/admin/controllers/MenuPlaceController.php:61
+msgid "Menu place <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/MenuPlaceController.php:63
+msgid "Menu place <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/MenuPlaceController.php:143
+msgid "Menu place <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/MenuPlaceController.php:170
+msgid "Menu place <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:14
+msgid "Messages"
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:39
+msgid "New message"
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:66
+#: application/modules/admin/controllers/MessageController.php:70
+#: application/modules/admin/controllers/MessageController.php:171
+#: application/modules/admin/controllers/MessageController.php:229
+msgid "System"
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:81
+msgid "Control"
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:118
+#: application/modules/admin/controllers/UserController.php:95
+msgid "Detail"
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:310
+msgid "Message to <b>~0~</b> has been sent."
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:413
+msgid "Date 01.01.-31.12."
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:414
+msgid "Date 31.12.-01.01."
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:415
+msgid "Subject A-Z"
+msgstr ""
+
+#: application/modules/admin/controllers/MessageController.php:416
+msgid "Subject Z-A"
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:14
+msgid "Photos"
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:37
+msgid "You must select parent type and id first."
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:52
+msgid "New photo"
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:75
+msgid "Photo <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:77
+msgid "Photo <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:261
+msgid "Organize photos"
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:319
+msgid "Problem during uploading photo."
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:342
+msgid "Photo <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/PhotoController.php:404
+msgid "Photo <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:14
+msgid "Replacers"
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:39
+msgid "New Replacer"
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:62
+msgid "Replacer <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:64
+msgid "Replacer <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:182
+#: application/modules/admin/controllers/ReplacerController.php:243
+msgid "Replacer <b>~0~</b> already exists."
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:185
+msgid "Replacer <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:246
+msgid "Replacer <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:278
+msgid "Code A-Z"
+msgstr ""
+
+#: application/modules/admin/controllers/ReplacerController.php:279
+msgid "Code Z-A"
+msgstr ""
+
+#: application/modules/admin/controllers/SectionController.php:14
+msgid "Sections"
+msgstr ""
+
+#: application/modules/admin/controllers/SectionController.php:33
+msgid "You must select section type first."
+msgstr ""
+
+#: application/modules/admin/controllers/SectionController.php:48
+#, fuzzy
+msgid "New Section"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/SectionController.php:71
+msgid "Section <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/SectionController.php:73
+msgid "Section <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/SectionController.php:198
+msgid "Section <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/SectionController.php:254
+msgid "Section <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/SettingController.php:14
+msgid "Settings"
+msgstr ""
+
+#: application/modules/admin/controllers/SettingController.php:31
+msgid "Page cache has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/SettingController.php:48
+#: application/modules/admin/controllers/SettingController.php:126
+msgid "Email Settings"
+msgstr ""
+
+#: application/modules/admin/controllers/SettingController.php:66
+#: application/modules/admin/controllers/SettingController.php:125
+msgid "Global Settings"
+msgstr ""
+
+#: application/modules/admin/controllers/SettingController.php:83
+#: application/modules/admin/controllers/SettingController.php:127
+msgid "Seo Settings"
+msgstr ""
+
+#: application/modules/admin/controllers/SettingController.php:105
+msgid "New setting has been set."
+msgstr ""
+
+#: application/modules/admin/controllers/SitemapController.php:21
+msgid "Sitemaps"
+msgstr ""
+
+#: application/modules/admin/controllers/SitemapController.php:42
+msgid "Default module"
+msgstr ""
+
+#: application/modules/admin/controllers/SitemapController.php:42
+#: application/modules/admin/controllers/SitemapController.php:46
+msgid "Sitemap for <b>~0~</b> has been (re)generated."
+msgstr ""
+
+#: application/modules/admin/controllers/SitemapController.php:46
+msgid "Article module"
+msgstr ""
+
+#: application/modules/admin/controllers/SitemapController.php:76
+msgid "Review"
+msgstr ""
+
+#: application/modules/admin/controllers/StaticPageController.php:16
+msgid "Static pages"
+msgstr ""
+
+#: application/modules/admin/controllers/StaticPageController.php:40
+msgid "New Static page"
+msgstr ""
+
+#: application/modules/admin/controllers/StaticPageController.php:63
+msgid "Static page <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/StaticPageController.php:65
+msgid "Static page <b>~0~</b> could not deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/StaticPageController.php:182
+msgid "Static page <b>~0~</b> has been added."
+msgstr ""
+
+#: application/modules/admin/controllers/StaticPageController.php:258
+msgid "Static page <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/TagController.php:14
+msgid "Tags"
+msgstr ""
+
+#: application/modules/admin/controllers/TagController.php:38
+#, fuzzy
+msgid "New Tag"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/TagController.php:61
+msgid "Tag <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/TagController.php:63
+msgid "Tag <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/TagController.php:141
+msgid "Tag <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/TagController.php:168
+msgid "Tag <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:17
+#, fuzzy
+msgid "Admin users"
+msgstr "Admin menu"
+
+#: application/modules/admin/controllers/UserController.php:44
+msgid "New user"
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:67
+msgid "User <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:69
+msgid "User <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:202
+msgid "Password"
+msgstr "Password"
+
+#: application/modules/admin/controllers/UserController.php:253
+msgid "Email <b>~0~</b> is already registered in our database."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:264
+msgid "User <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:336
+msgid "Email is allready in our database."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:349
+msgid "User <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:379
+msgid "Role A-Z"
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:380
+msgid "Role Z-A"
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:394
+#, fuzzy
+msgid "Users"
+msgstr "User"
+
+#: application/modules/admin/controllers/UserController.php:395
+msgid "Super Admins"
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:396
+msgid "Admins"
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:420
+msgid "Passwords must be same."
+msgstr ""
+
+#: application/modules/admin/controllers/UserController.php:427
+msgid "Password has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:17
+msgid "Widgets"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:42
+#: application/modules/admin/controllers/WidgetController.php:76
+msgid "You must select widget place first."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:63
+msgid "New Widget"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:98
+msgid "Select widget type"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:131
+msgid "Widget <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:133
+msgid "Widget <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:291
+msgid "Widget <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:338
+msgid "Widget <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:424
+#, fuzzy
+msgid "Article - Last"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/WidgetController.php:424
+msgid "Last articles"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:425
+#, fuzzy
+msgid "Article - Random"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/WidgetController.php:425
+msgid "Random articles"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:426
+#, fuzzy
+msgid "Article - Shown"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/WidgetController.php:426
+msgid "Articles according to their popularity"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:427
+msgid "Shortcut"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:427
+msgid "Create shortcut for easier work"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:428
+msgid "Separator"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:428
+msgid "Separate your links with simple separator"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:429
+msgid "Text"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:429
+msgid "Add text / code widget"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:430
+msgid "Twitter"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:430
+msgid "Add user time line from twitter"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetController.php:431
+#, fuzzy
+msgid "Add banner section"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:14
+msgid "Widget places"
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:61
+msgid "Widget place <b>~0~</b> has been deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:63
+msgid "Widget place <b>~0~</b> could not be deleted."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:143
+msgid "Widget place <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:170
+msgid "Widget place <b>~0~</b> has been updated."
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:27
+#: application/modules/admin/forms/Article.php:26
+#: application/modules/admin/forms/Banner.php:26
+msgid "Name"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:34
+msgid "Description"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:49
+msgid "Parent menu"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:51
+msgid "- top menu -"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:73
+msgid "Controller"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:82
+msgid "Module"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:93
+msgid "Action"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:103
+msgid "Params"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:111
+#: application/modules/admin/forms/Article.php:97
+#: application/modules/admin/forms/Banner.php:91
+msgid "Status"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:112
+#: application/modules/admin/forms/Article.php:98
+#: application/modules/admin/forms/Banner.php:92
+msgid "Active"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:113
+#: application/modules/admin/forms/Article.php:99
+#: application/modules/admin/forms/Banner.php:93
+msgid "Non-active"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:119
+#: application/modules/admin/forms/Banner.php:99
+msgid "Continue"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:120
+msgid "Add another menu input"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:121
+msgid "Menu input detail"
+msgstr ""
+
+#: application/modules/admin/forms/AdminMenu.php:128
+#: application/modules/admin/forms/Article.php:106
+#: application/modules/admin/forms/Banner.php:108
+#: application/modules/admin/forms/BannerLogo.php:33
+msgid "Submit"
+msgstr ""
+
+#: application/modules/admin/forms/Article.php:34
+msgid "Short Name"
+msgstr ""
+
+#: application/modules/admin/forms/Article.php:42
+msgid "Description [SEO]"
+msgstr ""
+
+#: application/modules/admin/forms/Article.php:50
+msgid "Keywords [SEO]"
+msgstr ""
+
+#: application/modules/admin/forms/Article.php:65
+msgid "Perex"
+msgstr ""
+
+#: application/modules/admin/forms/Article.php:72
+msgid "Revision notice"
+msgstr ""
+
+#: application/modules/admin/forms/Article.php:87
+msgid "Published"
+msgstr ""
+
+#: application/modules/admin/forms/Article.php:91
+msgid "Publihed must meet dd/mm/yyyy hh:ii:ss"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:38
+msgid "Title"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:46
+msgid "Link"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:59
+msgid "Section"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:61
+#, fuzzy
+msgid "- select section -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Banner.php:69
+msgid "Banner Code"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:83
+msgid "Link goes to"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:84
+msgid "Same window / tab"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:85
+msgid "New window / tab"
+msgstr ""
+
+#: application/modules/admin/forms/Banner.php:100
+#, fuzzy
+msgid "Add another banner"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Banner.php:101
+msgid "Banner list"
+msgstr ""
+
+#: application/modules/admin/forms/Category.php:63
+#: application/modules/admin/forms/Comment.php:42
+#: application/modules/admin/forms/Location.php:41
+#: application/modules/admin/forms/MenuArticle.php:48
+#: application/modules/admin/forms/MenuCategory.php:48
+#: application/modules/admin/forms/MenuHomepage.php:48
+#: application/modules/admin/forms/MenuLink.php:57
+#: application/modules/admin/forms/MenuPhotogallery.php:48
+#: application/modules/admin/forms/MenuStaticPage.php:49
+msgid "Parent"
+msgstr ""
+
+#: application/modules/admin/forms/Category.php:65
+#, fuzzy
+msgid "- top category -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Category.php:81
+#, fuzzy
+msgid "Add another category"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Category.php:82
+#, fuzzy
+msgid "Category detail"
+msgstr "User"
+
+#: application/modules/admin/forms/Comment.php:25
+msgid "Person name"
+msgstr ""
+
+#: application/modules/admin/forms/Comment.php:34
+msgid "Leave a Reply"
+msgstr ""
+
+#: application/modules/admin/forms/Comment.php:43
+#, fuzzy
+msgid "- top comment -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Language.php:38
+#: application/modules/admin/forms/Replacer.php:39
+msgid "Code"
+msgstr ""
+
+#: application/modules/admin/forms/Language.php:47
+#, fuzzy
+msgid "Locale"
+msgstr "User"
+
+#: application/modules/admin/forms/Language.php:56
+msgid "Charset"
+msgstr ""
+
+#: application/modules/admin/forms/Location.php:43
+#, fuzzy
+msgid "- top level -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Location.php:59
+#, fuzzy
+msgid "Add another location"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Location.php:60
+msgid "Locations list"
+msgstr ""
+
+#: application/modules/admin/forms/MenuArticle.php:33
+#: application/modules/admin/forms/MenuCategory.php:33
+#: application/modules/admin/forms/MenuHomepage.php:33
+#: application/modules/admin/forms/MenuLink.php:33
+#: application/modules/admin/forms/MenuPhotogallery.php:33
+#: application/modules/admin/forms/MenuStaticPage.php:34
+msgid "Href title"
+msgstr ""
+
+#: application/modules/admin/forms/MenuArticle.php:50
+#: application/modules/admin/forms/MenuCategory.php:50
+#: application/modules/admin/forms/MenuHomepage.php:50
+#: application/modules/admin/forms/MenuLink.php:59
+#: application/modules/admin/forms/MenuPhotogallery.php:50
+#: application/modules/admin/forms/MenuStaticPage.php:51
+#, fuzzy
+msgid "- top input -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/MenuArticle.php:61
+msgid "- select article -"
+msgstr ""
+
+#: application/modules/admin/forms/MenuCategory.php:60
+#: application/modules/admin/forms/Photo.php:72
+msgid "Category"
+msgstr ""
+
+#: application/modules/admin/forms/MenuCategory.php:62
+#: application/modules/admin/forms/Photo.php:75
+#, fuzzy
+msgid "- select category -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/MenuPlace.php:41
+msgid "Add another menu place"
+msgstr ""
+
+#: application/modules/admin/forms/MenuPlace.php:42
+msgid "List with menu places"
+msgstr ""
+
+#: application/modules/admin/forms/MenuStaticPage.php:63
+#, fuzzy
+msgid "- select static page -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Message.php:24
+msgid "To"
+msgstr ""
+
+#: application/modules/admin/forms/Message.php:25
+msgid "- select user -"
+msgstr ""
+
+#: application/modules/admin/forms/Message.php:39
+msgid "Subject"
+msgstr ""
+
+#: application/modules/admin/forms/Message.php:48
+msgid "Message"
+msgstr ""
+
+#: application/modules/admin/forms/Message.php:57
+msgid "Send another message"
+msgstr ""
+
+#: application/modules/admin/forms/Message.php:58
+msgid "Message detail"
+msgstr ""
+
+#: application/modules/admin/forms/Photo.php:63
+msgid "Photo"
+msgstr ""
+
+#: application/modules/admin/forms/Photo.php:103
+#, fuzzy
+msgid "Add another photo"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Photo.php:104
+msgid "Photo list"
+msgstr ""
+
+#: application/modules/admin/forms/Relative.php:26
+msgid "Relative"
+msgstr ""
+
+#: application/modules/admin/forms/Relative.php:28
+#, fuzzy
+msgid "- select relative -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Relative.php:42
+msgid "Reverse relation"
+msgstr ""
+
+#: application/modules/admin/forms/Relative.php:43
+msgid "Yes"
+msgstr ""
+
+#: application/modules/admin/forms/Relative.php:44
+msgid "No"
+msgstr ""
+
+#: application/modules/admin/forms/Replacer.php:48
+msgid "Script"
+msgstr ""
+
+#: application/modules/admin/forms/Replacer.php:64
+#, fuzzy
+msgid "Add another replacer"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Replacer.php:65
+msgid "Replacers list"
+msgstr ""
+
+#: application/modules/admin/forms/Section.php:49
+#, fuzzy
+msgid "Add another section"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Section.php:50
+#, fuzzy
+msgid "Sections list"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Setting.php:20
+msgid "Project"
+msgstr ""
+
+#: application/modules/admin/forms/Setting.php:28
+msgid "Page slogan"
+msgstr ""
+
+#: application/modules/admin/forms/Setting.php:43
+msgid "Google verification key"
+msgstr ""
+
+#: application/modules/admin/forms/Setting.php:51
+msgid "Picasa Id"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:25
+msgid "Subject starts"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:35
+msgid "SMTP Host"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:43
+msgid "SMTP Auth"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:52
+msgid "SMTP Email"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:61
+#, fuzzy
+msgid "SMTP Password"
+msgstr "Password"
+
+#: application/modules/admin/forms/SettingEmail.php:68
+msgid "SMTP SSL"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:77
+msgid "SMTP Port"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:86
+msgid "Sent email via SMTP"
+msgstr ""
+
+#: application/modules/admin/forms/SettingEmail.php:94
+msgid "E-mail address"
+msgstr ""
+
+#: application/modules/admin/forms/SettingSeo.php:24
+msgid "General Title"
+msgstr ""
+
+#: application/modules/admin/forms/SettingSeo.php:32
+msgid "General Description"
+msgstr ""
+
+#: application/modules/admin/forms/SettingSeo.php:40
+msgid "General Keywords"
+msgstr ""
+
+#: application/modules/admin/forms/SettingSeo.php:48
+msgid "Photogallery Title"
+msgstr ""
+
+#: application/modules/admin/forms/SettingSeo.php:56
+msgid "Photogallery Description"
+msgstr ""
+
+#: application/modules/admin/forms/SettingSeo.php:64
+msgid "Photogallery Keywords"
+msgstr ""
+
+#: application/modules/admin/forms/StaticPage.php:73
+msgid "Publihed must meet dd/mm/yyyy hh:ii:ss patern"
+msgstr ""
+
+#: application/modules/admin/forms/Tag.php:41
+#, fuzzy
+msgid "Add another tag"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/Tag.php:42
+msgid "List with tag"
+msgstr ""
+
+#: application/modules/admin/forms/User.php:37
+msgid "E-mail"
+msgstr ""
+
+#: application/modules/admin/forms/User.php:55
+#: application/modules/admin/forms/UserPasswd.php:35
+msgid "Retype password"
+msgstr ""
+
+#: application/modules/admin/forms/User.php:58
+#: application/modules/admin/forms/UserPasswd.php:38
+msgid "Password and Retype password must be exactly same."
+msgstr ""
+
+#: application/modules/admin/forms/User.php:64
+#, fuzzy
+msgid "User role"
+msgstr "User"
+
+#: application/modules/admin/forms/User.php:66
+msgid "- select user role -"
+msgstr ""
+
+#: application/modules/admin/forms/User.php:75
+msgid "Language"
+msgstr ""
+
+#: application/modules/admin/forms/User.php:77
+msgid "- select language -"
+msgstr ""
+
+#: application/modules/admin/forms/User.php:95
+msgid "Add another user"
+msgstr ""
+
+#: application/modules/admin/forms/User.php:96
+#, fuzzy
+msgid "User detail"
+msgstr "User"
+
+#: application/modules/admin/forms/WidgetArticle.php:40
+msgid "Number of articles"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetArticle.php:54
+msgid "- all categories -"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetArticle.php:64
+#: application/modules/admin/forms/WidgetBanner.php:64
+#: application/modules/admin/forms/WidgetText.php:48
+#: application/modules/admin/forms/WidgetTwitter.php:51
+msgid "Show name"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetBanner.php:41
+msgid "Number of banners"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetBanner.php:73
+msgid "Shuffle first"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetPlace.php:40
+msgid "Type"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetPlace.php:43
+#, fuzzy
+msgid "- select type -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/forms/WidgetPlace.php:44
+msgid "Frontend"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetPlace.php:45
+msgid "Backend"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetPlace.php:51
+msgid "Add another widget place"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetPlace.php:52
+msgid "List with widget places"
+msgstr ""
+
+#: application/modules/admin/forms/WidgetTwitter.php:40
+msgid "Number of tweets"
+msgstr ""
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:30
+#, fuzzy
+msgid "Article Link"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:33
+#, fuzzy
+msgid "Article Category Link"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:35
+#, fuzzy
+msgid "Photo Category Link"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:43
+msgid "Photogallery Link"
+msgstr ""
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:45
+msgid "Static page Link"
+msgstr ""
+
+#: application/modules/admin/views/helpers/RoleName.php:30
+msgid "Guest"
+msgstr ""
+
+#: application/modules/admin/views/helpers/RoleName.php:32
+msgid "User"
+msgstr "User"
+
+#: application/modules/admin/views/helpers/RoleName.php:36
+msgid "Super Admin"
+msgstr ""
+
+#: application/modules/admin/views/helpers/WidgetTypeName.php:34
+#, fuzzy
+msgid "Top shown articles"
+msgstr "records"
+
+#: application/modules/admin/views/helpers/WidgetTypeName.php:36
+msgid "Banner section"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:29
+msgid "For free"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:30
+msgid "Deal"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:31
+msgid "What ever you give"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:32
+msgid "Waiting for your offer"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:35
+msgid "OFFER - I would like to sell, I offer"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:36
+msgid "DEMAND - I would like to buy, I am looking for"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:88
+msgid "You must insert price or choose one of predefined options for price."
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:100
+msgid "Classified Ad <b>~0~</b> has been stored."
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:27
+msgid "Input name of your classified ad. Clear and understable name can increase success of your classified ad."
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:35
+#, fuzzy
+msgid "Ad Content"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/advert/forms/Ad.php:37
+msgid "Do not put phone numbers, e-mails or other kind of contact. There're separated fields for contant"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:46
+msgid "Select best suitable category for your classified ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:55
+msgid "Location"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:57
+msgid "Select best suitable location for your classified ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:59
+#, fuzzy
+msgid "- select location -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/advert/forms/Ad.php:66
+msgid "Price"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:70
+msgid "Input numbers only - can be decimal"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:76
+#, fuzzy
+msgid "Price Text"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/advert/forms/Ad.php:78
+msgid "Select one of the predefined options"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:79
+#, fuzzy
+msgid "- select price option -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/advert/forms/Ad.php:86
+msgid "Advert Type"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:88
+msgid "Select type of your classified ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:90
+msgid "- select type of classified ad -"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:97
+msgid "Phone"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:100
+msgid "Enter landline / mobile number"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:110
+msgid "You might need it to edit / delete your ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:121
+msgid "Must be valid e-mail address. Will not be visible on page."
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:128
+msgid "Add Classified Ad"
+msgstr ""
+
+#: application/modules/article/controllers/ArticleController.php:228
+msgid "IS SPAM"
+msgstr ""
+
+#: application/modules/article/controllers/ArticleController.php:228
+msgid "Not Spam"
+msgstr ""
+
+#: application/modules/article/controllers/ArticleController.php:232
+msgid "Thank you for your comment. According to rules of page - all comments must be approved by administrator."
+msgstr ""
+
+#: application/modules/default/controllers/AuthenticationController.php:7
+msgid "Authorization"
+msgstr ""
+
+#: application/modules/default/controllers/AuthenticationController.php:25
+msgid "Forgot login data"
+msgstr ""
+
+#: application/modules/default/controllers/AuthenticationController.php:44
+msgid "Login"
+msgstr ""
+
+#: application/modules/default/controllers/AuthenticationController.php:93
+msgid "Your password has been reseted and sent to your inbox."
+msgstr ""
+
+#: application/modules/default/controllers/AuthenticationController.php:95
+msgid "No user found."
+msgstr ""
+
+#: application/modules/default/controllers/AuthenticationController.php:161
+msgid "E-mail address or password is wrong."
+msgstr ""
+
+#: application/modules/default/controllers/CommentController.php:35
+#: application/modules/default/controllers/CommentController.php:77
+msgid "There is no comment as you requested."
+msgstr ""
+
+#: application/modules/default/controllers/CommentController.php:38
+msgid "This comment is already approved."
+msgstr ""
+
+#: application/modules/default/controllers/CommentController.php:43
+msgid "Comment has been approved."
+msgstr ""
+
+#: application/modules/default/controllers/CommentController.php:59
+#: application/modules/default/controllers/CommentController.php:83
+msgid "Comment cannot be approved because of wrong code. Try to copy it again or approve comment from administration."
+msgstr ""
+
+#: application/modules/default/controllers/ErrorController.php:48
+msgid "Oops, what are you looking for is not there"
+msgstr ""
+
+#: application/modules/default/controllers/FormController.php:24
+#: application/modules/default/controllers/FormController.php:28
+msgid "All mandatory fields must be filled"
+msgstr ""
+
+#: application/modules/default/controllers/FormController.php:32
+msgid "Email must be valid email address"
+msgstr ""
+
+#: application/modules/default/controllers/FormController.php:38
+msgid "You cannot send a message from different domain"
+msgstr ""
+
+#: application/modules/default/controllers/FormController.php:49
+msgid "Your message has been sent. Thank you."
+msgstr ""
+
+#: application/modules/default/controllers/TagController.php:156
+#, fuzzy
+msgid "Articles focus on ~0~"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/default/controllers/TagController.php:158
+msgid "Articles focus on ~0~ - Today I would like to speak about ~0~"
+msgstr ""
+
+#: application/modules/default/controllers/TagController.php:159
+msgid "article ~0~, articles about ~0~, ~0~ discussion, ~0~ review"
+msgstr ""
+
+#: application/modules/default/forms/Comment.php:38
+msgid "Required, but never shared."
+msgstr ""
+
+#: application/modules/default/forms/Comment.php:45
+msgid "Website"
+msgstr ""
+
+#: application/modules/default/forms/Comment.php:48
+msgid "Start with http:// or https://"
+msgstr ""
+
+#: application/modules/default/forms/Comment.php:66
+msgid "Submit comment"
+msgstr ""
+
+#: application/modules/default/forms/UserForgotLogin.php:28
+#, fuzzy
+msgid "Remind me"
+msgstr "Admin menu"
+
+#: application/modules/default/forms/UserLogin.php:26
+msgid "Sign In"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:75
+msgid "New comment"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:103
+#: application/modules/default/models/Mailer.php:286
+#: application/modules/default/models/Mailer.php:343
+msgid "Your comment has been approved"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:128
+msgid "Contact form"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:157
+msgid "New password for ~0~"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:184
+#: application/modules/default/models/Mailer.php:252
+msgid "New comment has been added."
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:186
+#: application/modules/default/models/Mailer.php:288
+msgid "Comment"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:193
+#: application/modules/default/models/Mailer.php:259
+#: application/modules/default/models/Mailer.php:295
+#: application/modules/default/models/Mailer.php:350
+#: application/modules/default/models/Mailer.php:381
+#: application/modules/default/models/Mailer.php:413
+msgid "Name and Surname"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:205
+#: application/modules/default/models/Mailer.php:262
+msgid "Akismet"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:209
+#: application/modules/default/models/Mailer.php:263
+msgid "IP"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:219
+#: application/modules/default/models/Mailer.php:313
+#, fuzzy
+msgid "Article Name"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/default/models/Mailer.php:227
+msgid "Approve"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:228
+#: application/modules/default/models/Mailer.php:267
+#, fuzzy
+msgid "Approve comment"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/default/models/Mailer.php:231
+msgid "Delete"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:232
+#: application/modules/default/models/Mailer.php:268
+#, fuzzy
+msgid "Delete comment"
+msgstr "WARNING: Do you really want to delete this menu?"
+
+#: application/modules/default/models/Mailer.php:258
+#: application/modules/default/models/Mailer.php:349
+msgid "Data about comment"
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:266
+#: application/modules/default/models/Mailer.php:321
+#: application/modules/default/models/Mailer.php:355
+#, fuzzy
+msgid "Article Url"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/default/models/Mailer.php:322
+#, fuzzy
+msgid "Go to article"
+msgstr "records"
+
+#: application/modules/default/models/Mailer.php:372
+#: application/modules/default/models/Mailer.php:410
+msgid "New message has been sent from contact form."
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:436
+msgid "Your password for <strong>~0~</strong> has been reseted."
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:468
+msgid "Your password for *** ~0~ *** has been reseted."
+msgstr ""
+
+#: application/modules/default/models/Mailer.php:474
+#: application/modules/default/models/Mailer.php:516
+msgid "We wish you good day, Team of ~0~"
+msgstr ""
+
+#: application/layouts/admin/layout.phtml:32
+msgid "Logout"
+msgstr ""
+
+#: application/layouts/advert/layout.phtml:93
+#: application/layouts/article/layout.phtml:93
+#: application/layouts/photo/layout.phtml:93
+msgid "Top"
+msgstr ""
+
+#: application/layouts/default/layout.phtml:36
+msgid "Back to Homepage"
+msgstr ""
+
+#: application/layouts/default/layout.phtml:53
+#: application/layouts/default/layout.phtml:74
+#, fuzzy
+msgid "All Articles"
+msgstr "records"
+
+#: application/layouts/default/layout.phtml:54
+#: application/layouts/default/layout.phtml:75
+msgid "Previous"
+msgstr ""
+
+#: application/layouts/default/layout.phtml:55
+#: application/layouts/default/layout.phtml:76
+msgid "Next"
+msgstr ""
+
+#: application/modules/admin/views/scripts/admin-menu/add.phtml:15
+#: application/modules/admin/views/scripts/admin-menu/edit.phtml:16
+msgid "Reset form"
+msgstr ""
+
+#: application/modules/admin/views/scripts/admin-menu/list.phtml:6
+msgid "New Menu"
+msgstr ""
+
+#: application/modules/admin/views/scripts/admin-menu/list.phtml:20
+msgid "name"
+msgstr ""
+
+#: application/modules/admin/views/scripts/article/edit.phtml:42
+#: application/modules/admin/views/scripts/article/edit.phtml:152
+#, fuzzy
+msgid "Remove from category"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/views/scripts/article/edit.phtml:71
+#: application/modules/admin/views/scripts/article/edit.phtml:169
+msgid "Remove from tag"
+msgstr ""
+
+#: application/modules/admin/views/scripts/article/edit.phtml:133
+#: application/modules/admin/views/scripts/category/edit.phtml:62
+msgid "Additional data"
+msgstr ""
+
+#: application/modules/admin/views/scripts/article/edit.phtml:161
+#, fuzzy
+msgid "- select tag -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/views/scripts/article/edit.phtml:175
+#: application/modules/admin/views/scripts/category/edit.phtml:70
+msgid "Featured Picture"
+msgstr ""
+
+#: application/modules/admin/views/scripts/article/list.phtml:34
+msgid "- sort by -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/article/list.phtml:45
+msgid "shown"
+msgstr ""
+
+#: application/modules/admin/views/scripts/article/list.phtml:46
+msgid "published"
+msgstr ""
+
+#: application/modules/admin/views/scripts/banner/edit.phtml:31
+msgid "To update image of banner, press <b>Image button</b> above."
+msgstr ""
+
+#: application/modules/admin/views/scripts/banner/index.phtml:10
+msgid "You <b>must first create section</b> for banners!"
+msgstr ""
+
+#: application/modules/admin/views/scripts/banner/list.phtml:23
+msgid "- banner section -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/banner/logo.phtml:19
+msgid "Edit"
+msgstr ""
+
+#: application/modules/admin/views/scripts/banner/logo.phtml:36
+msgid "There is no picture yet."
+msgstr ""
+
+#: application/modules/admin/views/scripts/banner/logo.phtml:45
+msgid "Hint: If you want to delete banner logo - submit empty form below."
+msgstr ""
+
+#: application/modules/admin/views/scripts/category/index.phtml:22
+#, fuzzy
+msgid "- category type -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/views/scripts/comment/list.phtml:15
+msgid "Reload page"
+msgstr ""
+
+#: application/modules/admin/views/scripts/comment/list.phtml:21
+msgid "Comments for: ~0~"
+msgstr ""
+
+#: application/modules/admin/views/scripts/comment/list.phtml:31
+msgid "person name"
+msgstr ""
+
+#: application/modules/admin/views/scripts/comment/list.phtml:32
+msgid "message"
+msgstr ""
+
+#: application/modules/admin/views/scripts/comment/reply.phtml:29
+msgid "Comment you are replying to"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:9
+msgid "Clear cache"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:10
+msgid "My profile"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:23
+msgid "author"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:24
+msgid "subject"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:25
+msgid "date"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:26
+msgid "reply"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:27
+msgid "forward"
+msgstr ""
+
+#: application/modules/admin/views/scripts/index/index.phtml:57
+msgid "No records"
+msgstr ""
+
+#: application/modules/admin/views/scripts/language/list.phtml:23
+#, fuzzy
+msgid "locale"
+msgstr "User"
+
+#: application/modules/admin/views/scripts/log/detail.phtml:4
+msgid "Back to list"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/detail.phtml:17
+msgid "Basic data"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/detail.phtml:21
+msgid "Table"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/detail.phtml:25
+msgid "Where"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/list.phtml:6
+msgid "Archive"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/list.phtml:27
+msgid "- all tables -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/list.phtml:28
+msgid "- all users -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/list.phtml:39
+#, fuzzy
+msgid "user"
+msgstr "User"
+
+#: application/modules/admin/views/scripts/log/list.phtml:40
+msgid "table"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/list.phtml:41
+msgid "where"
+msgstr ""
+
+#: application/modules/admin/views/scripts/log/list.phtml:42
+msgid "content"
+msgstr ""
+
+#: application/modules/admin/views/scripts/manage/admin.phtml:12
+#: application/modules/admin/views/scripts/manage/advert.phtml:17
+#: application/modules/admin/views/scripts/manage/content.phtml:12
+#: application/modules/admin/views/scripts/manage/page.phtml:12
+#: application/modules/admin/views/scripts/manage/photogallery.phtml:12
+msgid "Quick links"
+msgstr ""
+
+#: application/modules/admin/views/scripts/menu-input/index.phtml:10
+msgid "You <b>must first create places</b> for menu!"
+msgstr ""
+
+#: application/modules/admin/views/scripts/menu-input/list.phtml:7
+msgid "New Menu input"
+msgstr ""
+
+#: application/modules/admin/views/scripts/menu-input/list.phtml:24
+msgid "- menu place -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/control.phtml:8
+#: application/modules/admin/views/scripts/message/detail.phtml:7
+#: application/modules/admin/views/scripts/message/sent.phtml:8
+msgid "Inbox"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/control.phtml:9
+#: application/modules/admin/views/scripts/message/detail.phtml:35
+#: application/modules/admin/views/scripts/message/list.phtml:8
+msgid "Sent"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/control.phtml:10
+#: application/modules/admin/views/scripts/message/list.phtml:9
+#: application/modules/admin/views/scripts/message/sent.phtml:9
+msgid "New Message"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/control.phtml:31
+#, fuzzy
+msgid "- author -"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/admin/views/scripts/message/control.phtml:32
+msgid "- sent to -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/control.phtml:45
+#: application/modules/admin/views/scripts/message/sent.phtml:46
+msgid "sent to"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/control.phtml:46
+#: application/modules/admin/views/scripts/message/list.phtml:47
+#: application/modules/admin/views/scripts/message/sent.phtml:48
+msgid "created"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/control.phtml:47
+#: application/modules/admin/views/scripts/message/list.phtml:48
+#: application/modules/admin/views/scripts/message/sent.phtml:49
+msgid "read"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/detail.phtml:36
+msgid "Read"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/detail.phtml:37
+msgid "Author"
+msgstr ""
+
+#: application/modules/admin/views/scripts/message/list.phtml:15
+#: application/modules/admin/views/scripts/message/sent.phtml:15
+msgid "Control panel"
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/list.phtml:6
+msgid "New Photo"
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/list.phtml:15
+msgid "Import from Picasa"
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/list.phtml:32
+msgid "- all parents -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/list.phtml:45
+msgid "thumbnail"
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/list.phtml:47
+msgid "perex"
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/organize.phtml:51
+msgid "Save order"
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/organize.phtml:54
+msgid "Storing positions. Please wait ..."
+msgstr ""
+
+#: application/modules/admin/views/scripts/photo/organize.phtml:55
+msgid "New position has been stored."
+msgstr ""
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:25
+#: application/modules/admin/views/scripts/sitemap/index.phtml:39
+#, fuzzy
+msgid "(re)generate"
+msgstr "You must (re)generate menu after every change done here. But first make all changes you would like to do and after press this button."
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:29
+#: application/modules/admin/views/scripts/sitemap/index.phtml:43
+msgid "File path"
+msgstr ""
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:30
+#: application/modules/admin/views/scripts/sitemap/index.phtml:44
+msgid "Url"
+msgstr ""
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:31
+#: application/modules/admin/views/scripts/sitemap/index.phtml:45
+msgid "Last change"
+msgstr ""
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:32
+#: application/modules/admin/views/scripts/sitemap/index.phtml:46
+msgid "File size"
+msgstr ""
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:33
+#: application/modules/admin/views/scripts/sitemap/index.phtml:47
+msgid "(Re)generate sitemap"
+msgstr ""
+
+#: application/modules/admin/views/scripts/user/detail.phtml:26
+msgid "Role"
+msgstr ""
+
+#: application/modules/admin/views/scripts/user/detail.phtml:28
+#, fuzzy
+msgid "Username"
+msgstr "User"
+
+#: application/modules/admin/views/scripts/user/detail.phtml:36
+msgid "Time data"
+msgstr ""
+
+#: application/modules/admin/views/scripts/user/detail.phtml:38
+msgid "Created"
+msgstr ""
+
+#: application/modules/admin/views/scripts/user/detail.phtml:39
+msgid "Last updated"
+msgstr ""
+
+#: application/modules/admin/views/scripts/user/list.phtml:6
+#, fuzzy
+msgid "New User"
+msgstr "User"
+
+#: application/modules/admin/views/scripts/user/list.phtml:28
+msgid "- all roles -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/user/list.phtml:38
+#, fuzzy
+msgid "role"
+msgstr "User"
+
+#: application/modules/admin/views/scripts/user/list.phtml:40
+msgid "email"
+msgstr ""
+
+#: application/modules/admin/views/scripts/widget/add.phtml:18
+msgid "Change Type"
+msgstr ""
+
+#: application/modules/admin/views/scripts/widget/index.phtml:10
+msgid "You <b>must first create places</b> for widgets!"
+msgstr ""
+
+#: application/modules/admin/views/scripts/widget/list.phtml:12
+msgid "INFO: Select widget place to see widgets belong to it."
+msgstr ""
+
+#: application/modules/admin/views/scripts/widget/list.phtml:32
+msgid "- widget place -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/widget/list.phtml:44
+#: application/modules/admin/views/scripts/widget-place/list.phtml:23
+msgid "type"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/content-buttons.phtml:19
+#: application/modules/admin/views/scripts/_elements/quick-buttons.phtml:33
+msgid "missing description"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/fastjump-form.phtml:14
+msgid "- fast change -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/photo-gallery.phtml:20
+msgid "Date"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/photo-gallery.phtml:22
+msgid "WARNING: Are you sure?"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:33
+msgid "- per page -"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:36
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:38
+msgid "~0~ inputs"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:63
+msgid "OK"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:13
+msgid "Do you really want to activate this revision? It will rewrite actual content!"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:26
+msgid "id"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:29
+msgid "notice"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:30
+msgid "preview"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:31
+msgid "activate"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:41
+msgid "Show revision"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:35
+#: application/modules/admin/views/scripts/_elements/table.phtml:32
+msgid "text"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:36
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:64
+#: application/modules/admin/views/scripts/_elements/table.phtml:33
+msgid "logo"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:37
+#: application/modules/admin/views/scripts/_elements/table.phtml:34
+#, fuzzy
+msgid "password"
+msgstr "Password"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:40
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:68
+#: application/modules/admin/views/scripts/_elements/table.phtml:37
+msgid "edit"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:41
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:72
+#: application/modules/admin/views/scripts/_elements/table.phtml:38
+#: application/modules/admin/views/scripts/_elements/table.phtml:39
+msgid "delete"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:60
+#: application/modules/admin/views/scripts/_elements/table.phtml:58
+msgid "status"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:111
+#: application/modules/admin/views/scripts/_elements/table.phtml:85
+msgid "detail"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/wysiwyg-setting.phtml:45
+#, fuzzy
+msgid "Editor"
+msgstr "Edit"
+
+#: application/modules/admin/views/scripts/_elements/wysiwyg-setting.phtml:46
+msgid "HMTL"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_elements/wysiwyg-setting.phtml:47
+msgid "New Image"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_forms/language.phtml:19
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:18
+msgid "Value is required and can't be empty"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_forms/language.phtml:62
+#: application/modules/admin/views/scripts/_forms/language.phtml:65
+#: application/modules/admin/views/scripts/_forms/language.phtml:72
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:60
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:63
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:70
+msgid "Value"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_inc/left.phtml:13
+msgid "customize this"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_inc/top-row.phtml:14
+msgid "PROJECT"
+msgstr "PROJECT"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:13
+msgid "First"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:29
+msgid "Last"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:33
+msgid "Showing"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+msgid "from"
+msgstr ""
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+#, fuzzy
+msgid "from record"
+msgstr "records"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+#, fuzzy
+msgid "from records"
+msgstr "records"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+#, fuzzy
+msgid "from records2"
+msgstr "records"
+
+#: application/modules/advert/views/scripts/index/index.phtml:8
+msgid "New Classified Ad"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_elements/ads.phtml:21
+#: application/modules/advert/views/scripts/_elements/articles.phtml:27
+msgid "Posted on ~0~"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_elements/ads.phtml:37
+#: application/modules/advert/views/scripts/_elements/articles.phtml:43
+#, fuzzy
+msgid "Categories:"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/advert/views/scripts/_elements/ads.phtml:42
+#: application/modules/advert/views/scripts/_elements/articles.phtml:48
+msgid "Tagged:"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_elements/categories.phtml:31
+msgid "Posted in ~0~"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:20
+msgid "Your Name"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:24
+msgid "Your E-mail"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:28
+msgid "Your Phone"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:32
+msgid "Your Message"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:35
+msgid "Send"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_inc/statistics.phtml:16
+msgid "Statistics"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:14
+#, fuzzy
+msgid "Newer articles"
+msgstr "records"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:21
+#, fuzzy
+msgid "Older articles"
+msgstr "records"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+#, fuzzy
+msgid "from article"
+msgstr "records"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+#, fuzzy
+msgid "from articles"
+msgstr "records"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+#, fuzzy
+msgid "from articles2"
+msgstr "records"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+#: application/modules/advert/views/scripts/_paginator/param.phtml:50
+msgid "Showing <b>~0~ - ~1~</b> from <b>~2~</b>"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:13
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:15
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:22
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:25
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:32
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:34
+msgid "Go to page: ~0~"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:39
+#, fuzzy
+msgid "from category"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:39
+#, fuzzy
+msgid "from categories"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:39
+#, fuzzy
+msgid "from categories2"
+msgstr "records"
+
+#: application/modules/article/views/scripts/article/detail.phtml:70
+msgid "Leave a reply &#187;"
+msgstr ""
+
+#: application/modules/article/views/scripts/article/detail.phtml:91
+msgid "Reply &#187;"
+msgstr ""
+
+#: application/modules/article/views/scripts/article/revision.phtml:8
+msgid "Revision: <b>~0~</b> [~1~]"
+msgstr ""
+
+#: application/modules/article/views/scripts/article/revision.phtml:29
+#, fuzzy
+msgid "Actual content"
+msgstr "WARNING: Do you really want to delete this article category?"
+
+#: application/modules/article/views/scripts/_elements/articles.phtml:25
+msgid "Posted in: ~0~"
+msgstr ""
+
+#: application/modules/article/views/scripts/_elements/articles.phtml:29
+msgid "Tagged by"
+msgstr ""
+
+#: application/modules/article/views/scripts/_elements/articles.phtml:39
+msgid "Shown: ~0~x"
+msgstr ""
+
+#: application/modules/article/views/scripts/_elements/photos.phtml:26
+#: application/modules/article/views/scripts/_elements/photos.phtml:29
+msgid "All Photos from category: ~0~"
+msgstr ""
+
+#: application/modules/article/views/scripts/_elements/photos.phtml:38
+msgid "All Photos tagged: ~0~"
+msgstr ""
+
+#: application/modules/article/views/scripts/_elements/relatives.phtml:9
+#, fuzzy
+msgid "Relative articles"
+msgstr "records"
+
+#: application/modules/article/views/scripts/_paginator/photos.phtml:40
+msgid "from photo"
+msgstr ""
+
+#: application/modules/article/views/scripts/_paginator/photos.phtml:40
+#, fuzzy
+msgid "from photos"
+msgstr "records"
+
+#: application/modules/article/views/scripts/_paginator/photos.phtml:40
+#, fuzzy
+msgid "from photos2"
+msgstr "records"
+
+#: application/modules/default/views/scripts/authentication/forgot.phtml:14
+msgid "Enter your email address."
+msgstr ""
+
+#: application/modules/default/views/scripts/authentication/forgot.phtml:21
+msgid "Sing In"
+msgstr ""
+
+#: application/modules/default/views/scripts/authentication/login.phtml:15
+msgid "Enter your <b>e-mail address</b> and <b>password</b>."
+msgstr ""
+
+#: application/modules/default/views/scripts/error/error.phtml:10
+msgid "Homepage"
+msgstr ""
+
+#, fuzzy
+#~ msgid "User groups"
+#~ msgstr "User"
+
+#, fuzzy
+#~ msgid "Set detail"
+#~ msgstr "User"
+
+#, fuzzy
+#~ msgid "Country detail"
+#~ msgstr "User"
+
+#, fuzzy
+#~ msgid "Current password"
+#~ msgstr "Passwrods must be exactly same."
+
+#, fuzzy
+#~ msgid "Back detail"
+#~ msgstr "User"
+
+#, fuzzy
+#~ msgid "Method detail"
+#~ msgstr "User"
+
+#, fuzzy
+#~ msgid "id_user"
+#~ msgstr "User"
+
+#, fuzzy
+#~ msgid "Admin role"
+#~ msgstr "Admin menu"
+
+#, fuzzy
+#~ msgid "Article detail"
+#~ msgstr "WARNING: Do you really want to delete this article category?"
+
+#, fuzzy
+#~ msgid "from advert"
+#~ msgstr "records"
+
+#, fuzzy
+#~ msgid "from adverts"
+#~ msgstr "records"
+
+#, fuzzy
+#~ msgid "from adverts2"
+#~ msgstr "records"
+
+#, fuzzy
+#~ msgid "Text page detail"
+#~ msgstr "User"
+
+#~ msgid "Error_email_exists"
+#~ msgstr "This email already exists in database."
+
+#~ msgid "days2"
+#~ msgstr "days"
+
+#~ msgid "hours2"
+#~ msgstr "hours"
+
+#~ msgid "minutes2"
+#~ msgstr "minutes"
+
+#~ msgid "Mandator_field_explain"
+#~ msgstr "Mandatory fields are bold."
+
+#~ msgid "confirm_delete_menu"
+#~ msgstr "WARNING: Do you really want to delete this menu?"
+
+#~ msgid "confirm_delete_article"
+#~ msgstr "WARNING: Do you really want to delete this article?"
+
+#~ msgid "confirm_delete_article_category"
+#~ msgstr "WARNING: Do you really want to delete this article category?"
+
+#, fuzzy
+#~ msgid "confirm_delete_category"
+#~ msgstr "WARNING: Do you really want to delete this advert category?"
+
+#, fuzzy
+#~ msgid "confirm_delete_gallery_input"
+#~ msgstr "WARNING: Do you really want to delete this menu?"
+
+#~ msgid "confirm_delete_menu_item"
+#~ msgstr "WARNING: Do you really want to delete this menu item?"
+
+#~ msgid "confirm_delete_server"
+#~ msgstr "WARNING: Do you really want to delete this server?"
+
+#~ msgid "confirm_delete_text_page"
+#~ msgstr "WARNING: Do you really want to delete this text page?"
+
+#~ msgid "confirm_delete_admin_user"
+#~ msgstr "WARNING: Do you really want to delete this user?"
+
+#~ msgid "confirm_delete_advert_form"
+#~ msgstr "WARNING: Do you really want to delete advert form?"
+
+#~ msgid "confirm_delete_advert_param"
+#~ msgstr "WARNING: Do you really want to delete this advert param?"
+
+#~ msgid "Visit site"
+#~ msgstr "Visit site"

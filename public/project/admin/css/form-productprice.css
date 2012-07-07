@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+#productpriceform {width: 960px;}
+#productpriceform input,#productpriceform select{padding: 3px;}
+#productpriceform select option{padding-left: 5px;}
+#productpriceform .small{width: 200px;}
+#productpriceform select.small{width: 210px;}
+#productpriceform .long{width: 650px;}
+#productpriceform .medium{width: 450px;}
+#productpriceform .required{color: #369; font-weight: bold;}
+#productpriceform .big{font-size: 1.1em; font-weight: bold;}
+#productpriceform .formlabel{margin:5px;padding: 5px; width: 155px; float: left;}
+#productpriceform .forminput{margin:5px;padding: 5px; border-top: 1px solid #369;}
+#productpriceform .forminput label {padding: 5px; margin-bottom: 5px;}
+#productpriceform .forminput label input{margin-right: 10px;}
+#productpriceform .forminput label.error{color: #c00; font-weight: bold; margin-left: 5px; width: 600px;}
+
+#productpriceform .ppf-half {width: 460px; float: left;}

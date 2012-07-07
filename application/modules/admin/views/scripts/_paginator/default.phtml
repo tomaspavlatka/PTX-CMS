@@ -1,0 +1,40 @@
+<?php
+/**
+ * Author: Tomas Pavlatka
+ * Email: tomas.pavlatka@gmail.com
+ * Created: 20.1.2010 20:03:26
+ */
+?>
+<?php if ($this->pageCount): ?>
+	<div class="pagination box">
+	   <p class="f-right">
+		  <!-- Previous page link -->
+			<?php if (isset($this->previous)): ?>
+			    <a href="<?php echo $this->url(array('page' => $this->first)); ?>"><?php echo $this->trans('First'); ?></a>
+			    <a href="<?php echo $this->url(array('page' => $this->previous)); ?>"><?php echo $this->trans('Previous'); ?></a>
+			<?php endif; ?>
+			
+			<!-- Numbered page links -->
+			<?php foreach ($this->pagesInRange as $page): ?>
+			    <?php if ($page != $this->current): ?>
+			        <a href="<?php echo $this->url(array('page' => $page)); ?>"><?php echo $page; ?></a>
+			    <?php else: ?>
+			        <a href="#" class="pagination-active"><?php echo $page; ?></a>
+			    <?php endif; ?>
+			<?php endforeach; ?>
+			
+			<!-- Next page link -->
+			<?php if (isset($this->next)): ?>
+			    <a href="<?php echo $this->url(array('page' => $this->next)); ?>"><?php echo $this->trans('Next'); ?></a>
+			    <a href="<?php echo $this->url(array('page' => $this->next)); ?>"><?php echo $this->trans('Last'); ?></a>
+			<?php endif; ?>
+        </p>
+		<p class="f-left">
+            <?php echo $this->trans('Showing').': '; ?>
+            <?php echo '<b>'.$this->firstItemNumber.' - '.$this->lastItemNumber.'</b> '.$this->trans('from').' <b>'.$this->totalItemCount.'</b> '.$this->transPlural($this->trans('from record'),$this->trans('from records'),$this->trans('from records2'),$this->totalItemCount, true, 'en_UK'); ?>
+        </p>
+	</div>
+	<div class="cleaner"></div>
+<?php endif; ?>
+
+                        

@@ -1,0 +1,86 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('New Menu input'),'link'=>"/admin/menu-input/add/place/".(int)$this->params['place'].'/type/homepage','class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/menu-input/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'place' => array('name' => 'place', 'id' => 'place', 'class'=>'input-text', 'values' => $this->menuPlaces,'type' => 'select','empty_value' => $this->trans('- menu place -')),
+    ),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => '&nbsp;','width'=>'50','column'=>'arrows'),
+        array('name' => $this->trans('name'),'column'=>'name'),
+        ),
+    
+    'actions' => array('status','edit','delete'),
+    'controller' => 'menu-input',
+    'status_action' => 'menu-input-status',              
+    'records' => $this->data,
+);
+echo $this->partial('_elements/table-tree.phtml',array('options'=>$tableOptions));
+
+
+/*
+<table class="detail" width="100%">
+    <thead>
+        <tr>
+            <th class="arrows t-center">&nbsp;</th>
+            <th><?php echo $this->trans('name'); ?></th>
+            <th width="150"><?php echo $this->trans('type'); ?></th>
+            <th class="icon t-center"><?php echo $this->trans('status'); ?></th>
+            <th class="icon t-center"><?php echo $this->trans('edit'); ?></th>
+            <th class="icon t-center"><?php echo $this->trans('delete'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach($this->paginator as $row): ?>
+        <tr class="<?php echo $this->cycle(array("even","odd"))->next();?>">
+            <td class="t-center"><?php echo $this->sortArrowsNoTree($row['id_menu'],'menu_input','id_menu','position','status','/admin/menu-input/position/'); ?></td>
+            <td><?php echo $this->escape($row['name']); ?></td>
+            <td><?php echo $this->menuTypeName($row['type']); ?></td>
+            
+            <td class="t-center status" id="status-<?php echo $this->escape($row['id_menu']); ?>">
+                <?php echo $this->statusIcon($row['status']); ?>
+            </td>
+            
+            <td class="t-center">
+                <a href="/admin/menu-input/edit/input/<?php echo $this->escape($row['id_menu']); ?>">
+                    <img src="<?php echo $this->baseUrl(); ?>/images/icons/blue/18/cycle.png" alt="edit" width="18" height="18" />
+                </a>
+            </td>
+            
+            <td class="t-center">
+                <a href="/admin/menu-input/delete/input/<?php echo $this->escape($row['id_menu']); ?>" class="confirmdelete">
+                    <img src="<?php echo $this->baseUrl(); ?>/images/icons/yellow/18/recycle.png" alt="delete" width="18" height="18" />
+                </a>
+            </td>
+        </tr>
+    <?php endforeach;?>
+    <?php if($this->paginator->count() == 0): ?>
+        <tr><td colspan="8"><?php echo $this->viewMsg($this->trans('No records'),'info');?></td></tr>
+    <?php endif;?>
+    </tbody>
+</table>
+*/

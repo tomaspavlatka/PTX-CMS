@@ -1,0 +1,33 @@
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<div class="buttons">
+    <a href="<?php echo PTX_Anchor::get('log','list','admin'); ?>" class="btn"><span><?php echo $this->trans('Back to list'); ?></span></a>
+</div>
+<div class="cleaner"></div>
+<?php 
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} ?>
+
+<h2><?php echo $this->viewDate($this->data->created); ?></h2>
+
+<?php echo $this->data->log_content;?>
+<div class="cleaner"></div>
+
+<h3><?php echo $this->trans('Basic data'); ?></h3>
+<table width="100%" class="detail">
+    <tbody>
+        <tr>
+            <td class="black"><?php echo $this->trans('Table'); ?></td>
+            <td><?php echo $this->escape($this->data->log_table); ?></td>
+        </tr>
+        <tr>
+            <td class="black"><?php echo $this->trans('Where'); ?></td>
+            <td><?php echo $this->escape($this->data->log_where); ?></td>
+        </tr>
+        <tr>
+            <td class="black"><?php echo $this->trans('User'); ?></td>
+            <td><?php echo $this->escape($this->userData->name); ?></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,38 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+ * Created: Oct 6, 2011
+ */
+
+
+require_once APPLICATION_PATH.'/helpers/Trans.php';
+require_once APPLICATION_PATH.'/helpers/ViewMsgs.php';
+
+$msgs = PTX_Message::getMessage4User('contact-form');
+if(!empty($msgs)) {
+	echo $this->viewMsgs($msgs);
+}
+$formData = PTX_Session::getSessionValue('contact-form', 'form-data');
+?>
+<form action="/form/contact-form" method="post" class="contact-form">
+    <fieldset>
+        <?php $value = (isset($formData['name'])) ? $formData['name'] : null; ?>
+        <label for="contact-name" class="required"><?php echo $this->trans('Your Name'); ?> *</label>
+        <input type="text" name="name" id="contact-name" value="<?php echo $this->escape($value); ?>" class="long" />
+        
+        <?php $value = (isset($formData['email'])) ? $formData['email'] : null; ?>
+        <label for="contact-email" class="required"><?php echo $this->trans('Your E-mail'); ?> *</label>
+        <input type="text" name="email" id="contact-email" value="<?php echo $this->escape($value); ?>" class="long" />
+        
+        <?php $value = (isset($formData['phone'])) ? $formData['phone'] : null; ?>
+        <label for="contact-phone"><?php echo $this->trans('Your Phone'); ?></label>
+        <input type="text" name="phone" id="contact-phone" value="<?php echo $this->escape($value); ?>" class="long" />
+        
+        <?php $value = (isset($formData['message'])) ? $formData['message'] : null; ?>
+        <label for="contact-message" class="required"><?php echo $this->trans('Your Message'); ?> *</label>
+        <textarea name="message" id="contact-message" rows="10" cols="10"><?php echo $this->escape($value); ?></textarea>
+        
+        <input type="submit" name="submit" id="contact-submit" value="<?php echo $this->trans('Send'); ?>" class="f-right"/>
+    </fieldset>
+</form>
+<div class="cleaner"></div>

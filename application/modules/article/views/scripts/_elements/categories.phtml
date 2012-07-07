@@ -1,0 +1,38 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 24, 2010
+**/
+
+foreach($this->options['data'] as $row): ?>   
+
+<div id="post-content-<?php echo $this->escape($row['id']); ?>" class="<?php echo $this->escape($row['id']); ?> post type-post hentry category-general full">
+    <h2 class="entry-title full-title"><a href="<?php echo $this->baseUrl().$this->url(array('url'=>$row['url']),'photo-category',true); ?>" 
+        title="<?php echo $this->escape(strip_tags($row['perex'])); ?>"><?php echo $this->escape($row['name']); ?></a></h2>
+    
+    <p class="by-line">
+        <span class="date full-date"><abbr class="published" title="<?php echo $this->viewDate($row['published'],Zend_Date::ISO_8601); ?>"><?php echo $this->viewDate($row['published'],Zend_Date::DATE_FULL); ?></abbr></span>
+    </p><!--/by-line-->
+
+    <!-- google_ad_section_start -->
+    <div class="entry-content full-content">
+        <p><?php echo $this->escape($row['perex']); ?></p>
+        <?php foreach($row['photos'] as $photo): ?>
+            <a href="<?php echo $this->baseUrl().$this->url(array('url'=>$row['url']),'photo-category',true); ?>" title="<?php echo $this->escape(strip_tags($row['perex'])); ?>">  
+                <?php echo $photo['thumbnail']; ?>
+            </a>
+        <?php endforeach; ?>
+    </div><!-- .entry-content-->
+    <!-- google_ad_section_end -->
+    
+    <p class="filed categories alt-font tight">
+    <?php 
+    $categoryLink = '<a href="'.$this->baseUrl().$this->url(array('url'=>$row['url']),'photo-category',true).'" title="'.$this->escape(strip_tags($row['perex'])).'">'.$this->escape($row['name']).'</a>';
+    echo $this->transParam('Posted in ~0~',array('~0~'=>$categoryLink),'photo-category',false); ?>.</p> 
+    <div class="clear"></div>
+
+    
+    </div><!-- .post -->
+<div class="rule"><hr /></div>
+
+<?php endforeach; ?>   

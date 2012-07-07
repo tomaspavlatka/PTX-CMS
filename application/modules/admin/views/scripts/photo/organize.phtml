@@ -1,0 +1,64 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas@pavlatka.cz]
+ * Created: Oct 16, 2011
+ */
+
+$this->jQuery()->enable()->uiEnable();
+
+// Fast Jump form.
+$formOptions = array('action'=>'organize', 'controller'=>'photo', 'select_options'=>$this->parents);
+echo $this->partial('_elements/fastjump-form.phtml',$formOptions);
+?>
+<script type="text/javascript">
+$(function() {
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
+    $("#sortable_done").click(function(){
+        $(".info").show('slow');
+        $.ajax({
+            url: '/admin/ajax/save-order/type/<?php echo $this->params['parent_type']; ?>/parent/<?php echo $this->params['parent_id']; ?>/?'+$("#sortable").sortable("serialize"),
+        	success: function(data){
+            	$(".info").hide('slow');
+            	$(".done").show('slow').delay(2000).hide('slow');
+        	}
+        });
+    });
+});
+</script>
+    
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        'add' => array('text'=>$this->trans('List'),'link'=>"/admin/photo/list/type/".$this->params['parent_type'].'/parent/'.$this->params['parent_id'],'class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+?>
+
+<h2><?php echo $this->escape($this->parent_data['name']); ?></h2>
+
+<?php 
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} ?>
+
+<div class="t-left">
+    <span class="label label-02 hand" id="sortable_done"><?php echo $this->trans('Save order'); ?></span>
+</div>
+
+<p class="msg info displaynone"><?php echo $this->trans('Storing positions. Please wait ...'); ?></p>
+<p class="msg done displaynone"><?php echo $this->trans('New position has been stored.'); ?></p>
+
+
+<ul id="sortable" class="sortable photos">
+    <?php foreach($this->data4View as $key => $values): ?>
+    <li class="ui-state-default" id="photo_<?php echo $this->escape($values['id']); ?>"><?php echo $values['thumbnail']; ?></li>
+    <?php endforeach; ?>
+</ul>
+<div class="fix"></div>
+ 

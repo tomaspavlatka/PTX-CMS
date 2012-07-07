@@ -1,0 +1,53 @@
+<?php 
+$session = new Zend_Session_Namespace('admindata');
+$user = Zend_Auth::getInstance()->getStorage()->read();
+
+$projectConfig = PTX_Session::getSessionValue('settings', 'project');
+$locale = Zend_Registry::get('PTX_Locale');
+?>
+<div id="tray" class="box">
+    <p class="f-left box">
+        <span class="f-left" id="switcher">
+            <a href="#" rel="1col" class="styleswitch ico-col1"><img src="<?php echo $this->baseUrl(); ?>/project/admin/css/design/switcher-1col.gif" alt="" /></a>
+        </span>
+         <?php 
+        echo $this->trans('PROJECT').': ';
+        if(isset($projectConfig['name'.$locale])) {
+            echo '<a href="#">'.$projectConfig['name'.$locale].'</a>'; 
+        }
+        ?>
+    </p>
+    <div class="f-right t-right">
+        
+        <div class="box">
+            <?php echo $this->trans('User'); ?>: <a href="/admin/user/detail/id/<?php echo (int)$user->id; ?>"><strong><?php echo $this->escape($user->name); ?></strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <?php echo $this->trans('Role'); ?>: <strong><?php echo $this->roleName($user->role)?></strong>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+            <?php 
+            echo $this->trans('Messages').': ';
+            
+                $select = Admin_Model_DbSelect_Messages::pureSelect();
+                $select->columns(array('id','read'))->where('user_id_to = ?',(int)$user->id);
+                $stmt = $select->query();
+                $data = $stmt->fetchAll();
+            
+                $forRead = 0;
+                foreach($data as $row) {
+                    if(empty($row['read'])) {
+                        $forRead++;
+                    }
+                }
+                $count = (is_array($data)) ? count($data) : 0;
+            
+                echo '<a href="/admin/message/list">';
+                if($forRead > 0) {
+                    echo '<strong>'.$count.' / '.$forRead.'</strong>';    
+                } else {
+                    echo $count . ' / '.$forRead;
+                }
+                echo '</a>';
+            ?>
+        </div>            
+    </div>
+</div> <!--  /tray -->

@@ -1,0 +1,6333 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Core admin cs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-15 06:43+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tomas Pavlatka <tomas.pavlatka@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: translate;trans;transParam\n"
+"X-Poedit-Basepath: c:/xampp/htdocs/pavlatka/stylehouse/www/\n"
+"X-Poedit-SearchPath-0: application\n"
+
+#: application/helpers/Twitter.php:78
+msgid "Tomas Pavlatka's Twitter RSS"
+msgstr "Twitter RSS"
+
+#: application/helpers/Twitter.php:79
+msgid "Tomas Pavlatka's Twitter"
+msgstr "Twitter"
+
+#: application/helpers/Twitter.php:79
+msgid "Profile"
+msgstr "Profil"
+
+#: application/helpers/Twitter.php:82
+msgid "<span class=\"alt-font\">More tweets:</span> ~0~ - ~1~"
+msgstr "<span class=\"alt-font\">Více tweet:</span> ~0~ - ~1~"
+
+#: application/modules/admin/controllers/AdminMenuController.php:9
+msgid "Admin menus"
+msgstr "Admin menu"
+
+#: application/modules/admin/controllers/AdminMenuController.php:34
+msgid "New input"
+msgstr "Nová položka"
+
+#: application/modules/admin/controllers/AdminMenuController.php:57
+#: application/modules/admin/controllers/MenuInputController.php:80
+msgid "Menu input <b>~0~</b> has been deleted."
+msgstr "Položka menu <b>~0~</b> byla smazána."
+
+#: application/modules/admin/controllers/AdminMenuController.php:59
+#: application/modules/admin/controllers/MenuInputController.php:82
+msgid "Menu input <b>~0~</b> could not be deleted."
+msgstr "Položka menu <b>~0~</b> nemohla být smazána."
+
+#: application/modules/admin/controllers/AdminMenuController.php:87
+#: application/modules/admin/controllers/ArticleController.php:138
+#: application/modules/admin/controllers/BannerController.php:107
+#: application/modules/admin/controllers/CategoryController.php:110
+#: application/modules/admin/controllers/CommentController.php:77
+#: application/modules/admin/controllers/LanguageController.php:93
+#: application/modules/admin/controllers/LocationController.php:109
+#: application/modules/admin/controllers/MenuInputController.php:117
+#: application/modules/admin/controllers/MenuPlaceController.php:91
+msgid "Edit_2"
+msgstr "Editace"
+
+#: application/modules/admin/controllers/AdminMenuController.php:113
+#: application/modules/admin/controllers/ArticleController.php:181
+#: application/modules/admin/controllers/BannerController.php:168
+#: application/modules/admin/controllers/CategoryController.php:151
+#: application/modules/admin/controllers/CommentController.php:122
+#: application/modules/admin/controllers/LanguageController.php:120
+#: application/modules/admin/controllers/LocationController.php:133
+#: application/modules/admin/controllers/LogController.php:85
+#: application/modules/admin/controllers/MenuInputController.php:158
+#: application/modules/admin/controllers/MenuPlaceController.php:123
+msgid "List"
+msgstr "Seznam"
+
+#: application/modules/admin/controllers/AdminMenuController.php:150
+#: application/modules/admin/controllers/MenuInputController.php:223
+msgid "Menu input <b>~0~</b> has been stored."
+msgstr "Položka menu <b>~0~</b> byla uložena."
+
+#: application/modules/admin/controllers/AdminMenuController.php:176
+#: application/modules/admin/controllers/MenuInputController.php:275
+msgid "Menu input <b>~0~</b> has been updated."
+msgstr "Položka menu <b>~0~</b> byla aktualizována."
+
+#: application/modules/admin/controllers/AjaxController.php:389
+#: application/modules/admin/controllers/AjaxController.php:391
+msgid "Missing data"
+msgstr "Chybějící data"
+
+#: application/modules/admin/controllers/ArticleController.php:10
+msgid "Articles"
+msgstr "Články"
+
+#: application/modules/admin/controllers/ArticleController.php:39
+msgid "New Article"
+msgstr "Nový článek"
+
+#: application/modules/admin/controllers/ArticleController.php:62
+msgid "Article <b>~0~</b> has been deleted."
+msgstr "Článek <b>~0~</b> byl smazán."
+
+#: application/modules/admin/controllers/ArticleController.php:64
+msgid "Article <b>~0~</b> could not be deleted."
+msgstr "Článek <b>~0~</b> nemohl být smazán."
+
+#: application/modules/admin/controllers/ArticleController.php:209
+#: application/modules/admin/controllers/LogController.php:107
+#: application/modules/admin/controllers/MenuInputController.php:198
+msgid "Search"
+msgstr "Hledat"
+
+#: application/modules/admin/controllers/ArticleController.php:234
+msgid "Article <b>~0~</b> has been stored."
+msgstr "Článek <b>~0~</b> byl uložen."
+
+#: application/modules/admin/controllers/ArticleController.php:307
+msgid "Article <b>~0~</b> has been updated."
+msgstr "Článek <b>~0~</b> byl aktualizován."
+
+#: application/modules/admin/controllers/ArticleController.php:362
+msgid "Name A-Z"
+msgstr "Název A-Z"
+
+#: application/modules/admin/controllers/ArticleController.php:363
+msgid "Name Z-A"
+msgstr "Název Z-A"
+
+#: application/modules/admin/controllers/ArticleController.php:364
+msgid "Shown 0-9"
+msgstr "Zobrazeno 0-9"
+
+#: application/modules/admin/controllers/ArticleController.php:365
+msgid "Shown 9-0"
+msgstr "Zobrazeno 9-0"
+
+#: application/modules/admin/controllers/ArticleController.php:366
+msgid "Published 0-9"
+msgstr "Publikováno 01.01. - 31.12."
+
+#: application/modules/admin/controllers/ArticleController.php:367
+msgid "Published 9-0"
+msgstr "Publikováno 31.12. - 01.01."
+
+#: application/modules/admin/controllers/BannerController.php:14
+msgid "Banners"
+msgstr "Bannery"
+
+#: application/modules/admin/controllers/BannerController.php:33
+msgid "You must select section first."
+msgstr "Nejdříve musíte vybrat sekci."
+
+#: application/modules/admin/controllers/BannerController.php:49
+msgid "New Banner"
+msgstr "Nový Banner"
+
+#: application/modules/admin/controllers/BannerController.php:72
+msgid "Banner <b>~0~</b> has been deleted."
+msgstr "Banner <b>~0~</b> byl smazán."
+
+#: application/modules/admin/controllers/BannerController.php:74
+msgid "Banner <b>~0~</b> could not be deleted."
+msgstr "Banner <b>~0~</b> nemohl být smazán."
+
+#: application/modules/admin/controllers/BannerController.php:121
+msgid "Sections are missing"
+msgstr "Chybějící sekce"
+
+#: application/modules/admin/controllers/BannerController.php:154
+msgid "code"
+msgstr "kód"
+
+#: application/modules/admin/controllers/BannerController.php:199
+msgid "Logo"
+msgstr "Logo"
+
+#: application/modules/admin/controllers/BannerController.php:257
+#: application/modules/admin/controllers/BannerController.php:396
+#: application/modules/admin/controllers/LocationController.php:176
+msgid "Problem during uploading category logo."
+msgstr "Nastal problém během nahrávání loga pro kategorii."
+
+#: application/modules/admin/controllers/BannerController.php:273
+msgid "Banner <b>~0~</b> has been stored."
+msgstr "Banner <b>~0~</b> byl uložen."
+
+#: application/modules/admin/controllers/BannerController.php:303
+msgid "Banner <b>~0~</b> has been updated."
+msgstr "Banner <b>~0~</b> byl aktualizován."
+
+#: application/modules/admin/controllers/BannerController.php:406
+msgid "Logo for category <b>~0~</b> has been updated."
+msgstr "Logo pro kategorii <b>~0~</b> bylo aktualizováno."
+
+#: application/modules/admin/controllers/CategoryController.php:14
+msgid "Categories"
+msgstr "Kategorie"
+
+#: application/modules/admin/controllers/CategoryController.php:36
+msgid "You must select category type first."
+msgstr "Musíte nejdříve zvolit kategorii."
+
+#: application/modules/admin/controllers/CategoryController.php:51
+msgid "New category"
+msgstr "Nová kategorie"
+
+#: application/modules/admin/controllers/CategoryController.php:74
+msgid "Category <b>~0~</b> has been deleted."
+msgstr "Kategorie <b>~0~</b> byla smazána."
+
+#: application/modules/admin/controllers/CategoryController.php:76
+msgid "Category <b>~0~</b> could not be deleted."
+msgstr "Kategorie <b>~0~</b> nemohla být smazána."
+
+#: application/modules/admin/controllers/CategoryController.php:123
+msgid "Select type"
+msgstr "Výběr typu"
+
+#: application/modules/admin/controllers/CategoryController.php:210
+msgid "Category <b>~0~</b> has been stored."
+msgstr "Kategorie <b>~0~</b> byla uložena."
+
+#: application/modules/admin/controllers/CategoryController.php:237
+msgid "Category <b>~0~</b> has been updated."
+msgstr "Kategorie <b>~0~</b> byla aktualizována."
+
+#: application/modules/admin/controllers/CategoryController.php:262
+msgid "Article categories"
+msgstr "Kategorie pro články"
+
+#: application/modules/admin/controllers/CategoryController.php:263
+msgid "Photos categories"
+msgstr "Foto kategorie"
+
+#: application/modules/admin/controllers/CategoryController.php:264
+msgid "Advert categories"
+msgstr "Kategorie pro inzerci"
+
+#: application/modules/admin/controllers/CommentController.php:14
+msgid "Comments"
+msgstr "Komentáře"
+
+#: application/modules/admin/controllers/CommentController.php:43
+msgid "Comment has been deleted."
+msgstr "Komentář byl smazán."
+
+#: application/modules/admin/controllers/CommentController.php:45
+msgid "Comment could not be deleted."
+msgstr "Komentář nemohl být smazán."
+
+#: application/modules/admin/controllers/CommentController.php:156
+msgid "Reply"
+msgstr "Odpověd"
+
+#: application/modules/admin/controllers/CommentController.php:178
+msgid "Comment has been updated."
+msgstr "Komentář byl aktualizován."
+
+#: application/modules/admin/controllers/CommentController.php:227
+msgid "Your reply has been stored."
+msgstr "Vaše odpověď byla uložena."
+
+#: application/modules/admin/controllers/IndexController.php:15
+msgid "Admin"
+msgstr "Administrátor"
+
+#: application/modules/admin/controllers/IndexController.php:30
+msgid "Dashboard"
+msgstr "Kontrolní panel"
+
+#: application/modules/admin/controllers/LanguageController.php:14
+msgid "Languages"
+msgstr "Jazyky"
+
+#: application/modules/admin/controllers/LanguageController.php:39
+msgid "New Language"
+msgstr "Nový jazyk"
+
+#: application/modules/admin/controllers/LanguageController.php:62
+msgid "Language <b>~0~</b> has been deleted."
+msgstr "Jazyk <b>~0~</b> byl smazán."
+
+#: application/modules/admin/controllers/LanguageController.php:64
+msgid "Language <b>~0~</b> could not be deleted."
+msgstr "Jazyk <b>~0~</b> nemohl být smazán."
+
+#: application/modules/admin/controllers/LanguageController.php:176
+#: application/modules/admin/controllers/LanguageController.php:211
+msgid "Code <b>~0~</b> already exists in database."
+msgstr "Kód <b>~0~</b> již v databázi existuje."
+
+#: application/modules/admin/controllers/LanguageController.php:180
+msgid "Language <b>~0~</b> has been stored."
+msgstr "Jazyk <b>~0~</b> byl uložen."
+
+#: application/modules/admin/controllers/LanguageController.php:215
+msgid "Language <b>~0~</b> has been updated."
+msgstr "Jazyk <b>~0~</b> byl aktualizován."
+
+#: application/modules/admin/controllers/LocationController.php:14
+msgid "Locations"
+msgstr "Lokality"
+
+#: application/modules/admin/controllers/LocationController.php:47
+msgid "New Location"
+msgstr "Nová Lokalita"
+
+#: application/modules/admin/controllers/LocationController.php:70
+msgid "Location <b>~0~</b> has been deleted."
+msgstr "Lokalita <b>~0~</b> byla smazána."
+
+#: application/modules/admin/controllers/LocationController.php:72
+msgid "Location <b>~0~</b> could not be deleted."
+msgstr "Lokalita <b>~0~</b> nemohla být smazána."
+
+#: application/modules/admin/controllers/LocationController.php:192
+msgid "Location <b>~0~</b> has been stored."
+msgstr "Lokalita <b>~0~</b> byla uložena."
+
+#: application/modules/admin/controllers/LocationController.php:222
+msgid "Location <b>~0~</b> has been updated."
+msgstr "Lokalit <b>~0~</b> byla aktualizována."
+
+#: application/modules/admin/controllers/LogController.php:14
+msgid "Logs"
+msgstr "Logy"
+
+#: application/modules/admin/controllers/LogController.php:33
+msgid "<b>~0~ log(s)</b> have been archived."
+msgstr "<b>~0~ logů</b> bylo archivováno."
+
+#: application/modules/admin/controllers/LogController.php:170
+msgid "Created 0-9"
+msgstr "Vytvořeno 0-9"
+
+#: application/modules/admin/controllers/LogController.php:171
+msgid "Created 9-0"
+msgstr "Vytvořeno 9-0"
+
+#: application/modules/admin/controllers/ManageController.php:8
+msgid "Management"
+msgstr "Správa"
+
+#: application/modules/admin/controllers/ManageController.php:21
+msgid "Administration"
+msgstr "Administrace"
+
+#: application/modules/admin/controllers/ManageController.php:30
+msgid "Advert"
+msgstr "Inzerce"
+
+#: application/modules/admin/controllers/ManageController.php:39
+msgid "Content"
+msgstr "Obsah"
+
+#: application/modules/admin/controllers/ManageController.php:48
+msgid "Page management"
+msgstr "Správa stránek"
+
+#: application/modules/admin/controllers/ManageController.php:57
+#: application/modules/admin/controllers/MenuInputController.php:327
+msgid "Photogallery"
+msgstr "Fotogalerie"
+
+#: application/modules/admin/controllers/MenuInputController.php:14
+msgid "Menu inputs"
+msgstr "Položky v menu"
+
+#: application/modules/admin/controllers/MenuInputController.php:37
+msgid "You must select menu place first."
+msgstr "Musíte nejdříve vybrat umístění."
+
+#: application/modules/admin/controllers/MenuInputController.php:60
+msgid "New menu input"
+msgstr "Nová položka menu"
+
+#: application/modules/admin/controllers/MenuInputController.php:131
+msgid "Places are missing"
+msgstr "Chybějící umístění"
+
+#: application/modules/admin/controllers/MenuInputController.php:323
+msgid "Homepage Link"
+msgstr "Odkaz na úvodní stránku"
+
+#: application/modules/admin/controllers/MenuInputController.php:323
+msgid "Create menu input for homepage"
+msgstr "Vytvořit odkaz na úvodní stránku"
+
+#: application/modules/admin/controllers/MenuInputController.php:324
+msgid "Static page"
+msgstr "Statická stránka"
+
+#: application/modules/admin/controllers/MenuInputController.php:324
+msgid "Create menu input for static page"
+msgstr "Vytvořit odkaz na statickou stránku"
+
+#: application/modules/admin/controllers/MenuInputController.php:325
+msgid "Article"
+msgstr "Článek"
+
+#: application/modules/admin/controllers/MenuInputController.php:325
+msgid "Create menu input for article"
+msgstr "Vytvořit odkaz na článek"
+
+#: application/modules/admin/controllers/MenuInputController.php:326
+msgid "Article category"
+msgstr "Kategorie článků"
+
+#: application/modules/admin/controllers/MenuInputController.php:326
+msgid "Create menu input for article category"
+msgstr "Vytvořit odkaz na kategorii článků"
+
+#: application/modules/admin/controllers/MenuInputController.php:327
+msgid "Create menu input for homepage of photogallery"
+msgstr "Vytvořit odkaz na úvodní stránku fotogalerie"
+
+#: application/modules/admin/controllers/MenuInputController.php:328
+msgid "Photo category"
+msgstr "Foto kategorie"
+
+#: application/modules/admin/controllers/MenuInputController.php:328
+msgid "Create menu input for photo category"
+msgstr "Vytvořit odkaz na foto kategorii"
+
+#: application/modules/admin/controllers/MenuInputController.php:329
+msgid "External link"
+msgstr "Externí odkaz"
+
+#: application/modules/admin/controllers/MenuInputController.php:329
+msgid "Create menu input for external link"
+msgstr "Vytvořit odkaz na externí zdroj"
+
+#: application/modules/admin/controllers/MenuPlaceController.php:14
+msgid "Menu places"
+msgstr "Umístění pro menu"
+
+#: application/modules/admin/controllers/MenuPlaceController.php:38
+msgid "New Place"
+msgstr "Nové umístění"
+
+#: application/modules/admin/controllers/MenuPlaceController.php:61
+msgid "Menu place <b>~0~</b> has been deleted."
+msgstr "Umístění pro menu <b>~0~</b> bylo smazáno."
+
+#: application/modules/admin/controllers/MenuPlaceController.php:63
+msgid "Menu place <b>~0~</b> could not be deleted."
+msgstr "Umístění pro menu <b>~0~</b> nemohlo být smazáno."
+
+#: application/modules/admin/controllers/MenuPlaceController.php:143
+msgid "Menu place <b>~0~</b> has been stored."
+msgstr "Umístění pro menu <b>~0~</b> bylo uloženo."
+
+#: application/modules/admin/controllers/MenuPlaceController.php:170
+msgid "Menu place <b>~0~</b> has been updated."
+msgstr "Umístění pro menu <b>~0~</b> bylo aktualizováno."
+
+#: application/modules/admin/controllers/MessageController.php:14
+msgid "Messages"
+msgstr "Zprávy"
+
+#: application/modules/admin/controllers/MessageController.php:39
+msgid "New message"
+msgstr "Nová zpráva"
+
+#: application/modules/admin/controllers/MessageController.php:66
+#: application/modules/admin/controllers/MessageController.php:70
+#: application/modules/admin/controllers/MessageController.php:171
+#: application/modules/admin/controllers/MessageController.php:229
+msgid "System"
+msgstr "System"
+
+#: application/modules/admin/controllers/MessageController.php:81
+msgid "Control"
+msgstr "Kontrolní panel"
+
+#: application/modules/admin/controllers/MessageController.php:118
+#: application/modules/admin/controllers/UserController.php:95
+msgid "Detail"
+msgstr "Detail"
+
+#: application/modules/admin/controllers/MessageController.php:310
+msgid "Message to <b>~0~</b> has been sent."
+msgstr "Zpráva pro uživatele <b>~0~</b> byla poslána."
+
+#: application/modules/admin/controllers/MessageController.php:413
+msgid "Date 01.01.-31.12."
+msgstr "Datum 01.01.-31.12."
+
+#: application/modules/admin/controllers/MessageController.php:414
+msgid "Date 31.12.-01.01."
+msgstr "Datum 31.12.-01.01."
+
+#: application/modules/admin/controllers/MessageController.php:415
+msgid "Subject A-Z"
+msgstr "Předmět A-Z"
+
+#: application/modules/admin/controllers/MessageController.php:416
+msgid "Subject Z-A"
+msgstr "Předmět Z-A"
+
+#: application/modules/admin/controllers/PhotoController.php:14
+msgid "Photos"
+msgstr "Fotky"
+
+#: application/modules/admin/controllers/PhotoController.php:37
+msgid "You must select parent type and id first."
+msgstr "Musíte nejdříve zvolit rodiče."
+
+#: application/modules/admin/controllers/PhotoController.php:52
+msgid "New photo"
+msgstr "Nové Foto"
+
+#: application/modules/admin/controllers/PhotoController.php:75
+msgid "Photo <b>~0~</b> has been deleted."
+msgstr "Foto <b>~0~</b> bylo smazáno."
+
+#: application/modules/admin/controllers/PhotoController.php:77
+msgid "Photo <b>~0~</b> could not be deleted."
+msgstr "Foto <b>~0~</b> nemohlo být smazáno."
+
+#: application/modules/admin/controllers/PhotoController.php:261
+msgid "Organize photos"
+msgstr "Upravit pořadí fotek"
+
+#: application/modules/admin/controllers/PhotoController.php:319
+msgid "Problem during uploading photo."
+msgstr "Nastal problem během nahrávání obrázku na server."
+
+#: application/modules/admin/controllers/PhotoController.php:342
+msgid "Photo <b>~0~</b> has been stored."
+msgstr "Foto <b>~0~</b> bylo uloženo."
+
+#: application/modules/admin/controllers/PhotoController.php:404
+msgid "Photo <b>~0~</b> has been updated."
+msgstr "Foto <b>~0~</b> bylo aktualizováno."
+
+#: application/modules/admin/controllers/ReplacerController.php:14
+msgid "Replacers"
+msgstr "Zástupné kódy"
+
+#: application/modules/admin/controllers/ReplacerController.php:39
+msgid "New Replacer"
+msgstr "Nový kód"
+
+#: application/modules/admin/controllers/ReplacerController.php:62
+msgid "Replacer <b>~0~</b> has been deleted."
+msgstr "Kód <b>~0~</b> byl smazán."
+
+#: application/modules/admin/controllers/ReplacerController.php:64
+msgid "Replacer <b>~0~</b> could not be deleted."
+msgstr "Kód <b>~0~</b> nemohl být smazán."
+
+#: application/modules/admin/controllers/ReplacerController.php:182
+#: application/modules/admin/controllers/ReplacerController.php:243
+msgid "Replacer <b>~0~</b> already exists."
+msgstr "Kód <b>~0~</b> již v databázi existuje."
+
+#: application/modules/admin/controllers/ReplacerController.php:185
+msgid "Replacer <b>~0~</b> has been stored."
+msgstr "Kód <b>~0~</b> byl uložen."
+
+#: application/modules/admin/controllers/ReplacerController.php:246
+msgid "Replacer <b>~0~</b> has been updated."
+msgstr "Kód<b>~0~</b> byl aktualizován."
+
+#: application/modules/admin/controllers/ReplacerController.php:278
+msgid "Code A-Z"
+msgstr "Kód A-Z"
+
+#: application/modules/admin/controllers/ReplacerController.php:279
+msgid "Code Z-A"
+msgstr "Kód Z-A"
+
+#: application/modules/admin/controllers/SectionController.php:14
+msgid "Sections"
+msgstr "Sekce"
+
+#: application/modules/admin/controllers/SectionController.php:33
+msgid "You must select section type first."
+msgstr "Musíte nejdříve zvolit sekci."
+
+#: application/modules/admin/controllers/SectionController.php:48
+msgid "New Section"
+msgstr "Nová Sekce"
+
+#: application/modules/admin/controllers/SectionController.php:71
+msgid "Section <b>~0~</b> has been deleted."
+msgstr "Sekce <b>~0~</b> byla smazána."
+
+#: application/modules/admin/controllers/SectionController.php:73
+msgid "Section <b>~0~</b> could not be deleted."
+msgstr "Sekce <b>~0~</b> nemohla být smazána."
+
+#: application/modules/admin/controllers/SectionController.php:198
+msgid "Section <b>~0~</b> has been stored."
+msgstr "Sekce <b>~0~</b> byla uložena."
+
+#: application/modules/admin/controllers/SectionController.php:254
+msgid "Section <b>~0~</b> has been updated."
+msgstr "Sekce <b>~0~</b> byla aktualizována."
+
+#: application/modules/admin/controllers/SettingController.php:14
+msgid "Settings"
+msgstr "Nastavení"
+
+#: application/modules/admin/controllers/SettingController.php:31
+msgid "Page cache has been deleted."
+msgstr "Cache stránky byla vyčištěna."
+
+#: application/modules/admin/controllers/SettingController.php:48
+#: application/modules/admin/controllers/SettingController.php:126
+msgid "Email Settings"
+msgstr "Nastavení E-mailu"
+
+#: application/modules/admin/controllers/SettingController.php:66
+#: application/modules/admin/controllers/SettingController.php:125
+msgid "Global Settings"
+msgstr "Základní Nastavení"
+
+#: application/modules/admin/controllers/SettingController.php:83
+#: application/modules/admin/controllers/SettingController.php:127
+msgid "Seo Settings"
+msgstr "Nastavení SEO"
+
+#: application/modules/admin/controllers/SettingController.php:105
+msgid "New setting has been set."
+msgstr "Nové nastavení bylo uloženo."
+
+#: application/modules/admin/controllers/SitemapController.php:21
+msgid "Sitemaps"
+msgstr "Sitemaps"
+
+#: application/modules/admin/controllers/SitemapController.php:42
+msgid "Default module"
+msgstr "Default [modul]"
+
+#: application/modules/admin/controllers/SitemapController.php:42
+#: application/modules/admin/controllers/SitemapController.php:46
+msgid "Sitemap for <b>~0~</b> has been (re)generated."
+msgstr "Sitemap pro <b>~0~</b> byla (pře)generována."
+
+#: application/modules/admin/controllers/SitemapController.php:46
+msgid "Article module"
+msgstr "Články [modul]"
+
+#: application/modules/admin/controllers/SitemapController.php:76
+msgid "Review"
+msgstr "Přehled"
+
+#: application/modules/admin/controllers/StaticPageController.php:16
+msgid "Static pages"
+msgstr "Statické stránky"
+
+#: application/modules/admin/controllers/StaticPageController.php:40
+msgid "New Static page"
+msgstr "Nová Statická stránka"
+
+#: application/modules/admin/controllers/StaticPageController.php:63
+msgid "Static page <b>~0~</b> has been deleted."
+msgstr "Statická stránka <b>~0~</b> byla smazána."
+
+#: application/modules/admin/controllers/StaticPageController.php:65
+msgid "Static page <b>~0~</b> could not deleted."
+msgstr "Statická stránka <b>~0~</b> nemohla být smazána."
+
+#: application/modules/admin/controllers/StaticPageController.php:182
+msgid "Static page <b>~0~</b> has been added."
+msgstr "Statická stránka <b>~0~</b> byla uložena."
+
+#: application/modules/admin/controllers/StaticPageController.php:258
+msgid "Static page <b>~0~</b> has been updated."
+msgstr "Statická stránka <b>~0~</b> byla aktualizována."
+
+#: application/modules/admin/controllers/TagController.php:14
+msgid "Tags"
+msgstr "Štítky"
+
+#: application/modules/admin/controllers/TagController.php:38
+msgid "New Tag"
+msgstr "Nový štítek"
+
+#: application/modules/admin/controllers/TagController.php:61
+msgid "Tag <b>~0~</b> has been deleted."
+msgstr "Štítek <b>~0~</b> byl smazán."
+
+#: application/modules/admin/controllers/TagController.php:63
+msgid "Tag <b>~0~</b> could not be deleted."
+msgstr "Štítek <b>~0~</b> nemohl být smazán."
+
+#: application/modules/admin/controllers/TagController.php:141
+msgid "Tag <b>~0~</b> has been stored."
+msgstr "Štítek <b>~0~</b> byl uložen."
+
+#: application/modules/admin/controllers/TagController.php:168
+msgid "Tag <b>~0~</b> has been updated."
+msgstr "Štítek <b>~0~</b> byl aktualizován."
+
+#: application/modules/admin/controllers/UserController.php:17
+msgid "Admin users"
+msgstr "Uživatelé"
+
+#: application/modules/admin/controllers/UserController.php:44
+msgid "New user"
+msgstr "Nový uživatel"
+
+#: application/modules/admin/controllers/UserController.php:67
+msgid "User <b>~0~</b> has been deleted."
+msgstr "Uživatel <b>~0~</b> byl smazán."
+
+#: application/modules/admin/controllers/UserController.php:69
+msgid "User <b>~0~</b> could not be deleted."
+msgstr "Uživatel <b>~0~</b> nemohl být smazán."
+
+#: application/modules/admin/controllers/UserController.php:202
+msgid "Password"
+msgstr "Heslo"
+
+#: application/modules/admin/controllers/UserController.php:253
+msgid "Email <b>~0~</b> is already registered in our database."
+msgstr "Tento e-mail je již v databázi registrován."
+
+#: application/modules/admin/controllers/UserController.php:264
+msgid "User <b>~0~</b> has been stored."
+msgstr "Uživatel <b>~0~</b> byl uložen."
+
+#: application/modules/admin/controllers/UserController.php:336
+msgid "Email is allready in our database."
+msgstr "Email již v databázi existuje."
+
+#: application/modules/admin/controllers/UserController.php:349
+msgid "User <b>~0~</b> has been updated."
+msgstr "Uživatel <b>~0~</b> byl aktualizován."
+
+#: application/modules/admin/controllers/UserController.php:379
+msgid "Role A-Z"
+msgstr "Role A-Z"
+
+#: application/modules/admin/controllers/UserController.php:380
+msgid "Role Z-A"
+msgstr "Role Z-A"
+
+#: application/modules/admin/controllers/UserController.php:394
+msgid "Users"
+msgstr "Uživatelé"
+
+#: application/modules/admin/controllers/UserController.php:395
+msgid "Super Admins"
+msgstr "Super Admininistrátoři"
+
+#: application/modules/admin/controllers/UserController.php:396
+msgid "Admins"
+msgstr "Administrátoři"
+
+#: application/modules/admin/controllers/UserController.php:420
+msgid "Passwords must be same."
+msgstr "Nové heslo a nové heslo k potvrzení musí být stejné."
+
+#: application/modules/admin/controllers/UserController.php:427
+msgid "Password has been updated."
+msgstr "Heslo bylo aktualizováno."
+
+#: application/modules/admin/controllers/WidgetController.php:17
+msgid "Widgets"
+msgstr "Widgety"
+
+#: application/modules/admin/controllers/WidgetController.php:42
+#: application/modules/admin/controllers/WidgetController.php:76
+msgid "You must select widget place first."
+msgstr "Musíte nejdříve zvolit umístění pro widgety."
+
+#: application/modules/admin/controllers/WidgetController.php:63
+msgid "New Widget"
+msgstr "Nový Widget"
+
+#: application/modules/admin/controllers/WidgetController.php:98
+msgid "Select widget type"
+msgstr "Výběr typu widgetu"
+
+#: application/modules/admin/controllers/WidgetController.php:131
+msgid "Widget <b>~0~</b> has been deleted."
+msgstr "Widget <b>~0~</b> byl smazán."
+
+#: application/modules/admin/controllers/WidgetController.php:133
+msgid "Widget <b>~0~</b> could not be deleted."
+msgstr "Widget <b>~0~</b> nemohl být smazán."
+
+#: application/modules/admin/controllers/WidgetController.php:291
+msgid "Widget <b>~0~</b> has been stored."
+msgstr "Widget <b>~0~</b> byl uložen."
+
+#: application/modules/admin/controllers/WidgetController.php:338
+msgid "Widget <b>~0~</b> has been updated."
+msgstr "Widget <b>~0~</b> byl aktualizován."
+
+#: application/modules/admin/controllers/WidgetController.php:424
+msgid "Article - Last"
+msgstr "Články - Nejnovější"
+
+#: application/modules/admin/controllers/WidgetController.php:424
+msgid "Last articles"
+msgstr "Poslední články"
+
+#: application/modules/admin/controllers/WidgetController.php:425
+msgid "Article - Random"
+msgstr "Články - Náhodné"
+
+#: application/modules/admin/controllers/WidgetController.php:425
+msgid "Random articles"
+msgstr "Náhodné články"
+
+#: application/modules/admin/controllers/WidgetController.php:426
+msgid "Article - Shown"
+msgstr "Články - Podle čtenosti"
+
+#: application/modules/admin/controllers/WidgetController.php:426
+msgid "Articles according to their popularity"
+msgstr "Články podle jejich oblíbenosti - čtenosti"
+
+#: application/modules/admin/controllers/WidgetController.php:427
+msgid "Shortcut"
+msgstr "Odkaz"
+
+#: application/modules/admin/controllers/WidgetController.php:427
+msgid "Create shortcut for easier work"
+msgstr "Vytvořte si odkazy pro jednodušší práci"
+
+#: application/modules/admin/controllers/WidgetController.php:428
+msgid "Separator"
+msgstr "Oddělovač"
+
+#: application/modules/admin/controllers/WidgetController.php:428
+msgid "Separate your links with simple separator"
+msgstr "Oddělte si odkazy jednoduchým oddělovačem"
+
+#: application/modules/admin/controllers/WidgetController.php:429
+msgid "Text"
+msgstr "Text"
+
+#: application/modules/admin/controllers/WidgetController.php:429
+msgid "Add text / code widget"
+msgstr "Přidat textový - kódový widget"
+
+#: application/modules/admin/controllers/WidgetController.php:430
+msgid "Twitter"
+msgstr "Twitter"
+
+#: application/modules/admin/controllers/WidgetController.php:430
+msgid "Add user time line from twitter"
+msgstr "Přidat Twitter widget"
+
+#: application/modules/admin/controllers/WidgetController.php:431
+msgid "Add banner section"
+msgstr "Přidat sekci pro bannery"
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:14
+msgid "Widget places"
+msgstr "Umístění pro widgety"
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:61
+msgid "Widget place <b>~0~</b> has been deleted."
+msgstr "Umístění pro widgety <b>~0~</b> bylo smazáno."
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:63
+msgid "Widget place <b>~0~</b> could not be deleted."
+msgstr "Umístění pro widgety <b>~0~</b> nemohlo být smazáno."
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:143
+msgid "Widget place <b>~0~</b> has been stored."
+msgstr "Umístění pro widgety <b>~0~</b> bylo uloženo."
+
+#: application/modules/admin/controllers/WidgetPlaceController.php:170
+msgid "Widget place <b>~0~</b> has been updated."
+msgstr "Umístění pro widgety <b>~0~</b> bylo aktualizováno."
+
+#: application/modules/admin/forms/AdminMenu.php:27
+#: application/modules/admin/forms/Article.php:26
+#: application/modules/admin/forms/Banner.php:26
+msgid "Name"
+msgstr "Název"
+
+#: application/modules/admin/forms/AdminMenu.php:34
+msgid "Description"
+msgstr "Popis "
+
+#: application/modules/admin/forms/AdminMenu.php:49
+msgid "Parent menu"
+msgstr "Rodič"
+
+#: application/modules/admin/forms/AdminMenu.php:51
+msgid "- top menu -"
+msgstr "- top menu-"
+
+#: application/modules/admin/forms/AdminMenu.php:73
+msgid "Controller"
+msgstr "Kontroler"
+
+#: application/modules/admin/forms/AdminMenu.php:82
+msgid "Module"
+msgstr "Modul"
+
+#: application/modules/admin/forms/AdminMenu.php:93
+msgid "Action"
+msgstr "Akce"
+
+#: application/modules/admin/forms/AdminMenu.php:103
+msgid "Params"
+msgstr "Parametry"
+
+#: application/modules/admin/forms/AdminMenu.php:111
+#: application/modules/admin/forms/Article.php:97
+#: application/modules/admin/forms/Banner.php:91
+msgid "Status"
+msgstr "Status"
+
+#: application/modules/admin/forms/AdminMenu.php:112
+#: application/modules/admin/forms/Article.php:98
+#: application/modules/admin/forms/Banner.php:92
+msgid "Active"
+msgstr "Aktivní"
+
+#: application/modules/admin/forms/AdminMenu.php:113
+#: application/modules/admin/forms/Article.php:99
+#: application/modules/admin/forms/Banner.php:93
+msgid "Non-active"
+msgstr "Neaktivní"
+
+#: application/modules/admin/forms/AdminMenu.php:119
+#: application/modules/admin/forms/Banner.php:99
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: application/modules/admin/forms/AdminMenu.php:120
+msgid "Add another menu input"
+msgstr "Přidat další položku menu"
+
+#: application/modules/admin/forms/AdminMenu.php:121
+msgid "Menu input detail"
+msgstr "Detail položky menu"
+
+#: application/modules/admin/forms/AdminMenu.php:128
+#: application/modules/admin/forms/Article.php:106
+#: application/modules/admin/forms/Banner.php:108
+#: application/modules/admin/forms/BannerLogo.php:33
+msgid "Submit"
+msgstr "Odeslat"
+
+#: application/modules/admin/forms/Article.php:34
+msgid "Short Name"
+msgstr "Krátký název"
+
+#: application/modules/admin/forms/Article.php:42
+msgid "Description [SEO]"
+msgstr "Popis [SEO]"
+
+#: application/modules/admin/forms/Article.php:50
+msgid "Keywords [SEO]"
+msgstr "Klíčová slova [SEO]"
+
+#: application/modules/admin/forms/Article.php:65
+msgid "Perex"
+msgstr "Perex"
+
+#: application/modules/admin/forms/Article.php:72
+msgid "Revision notice"
+msgstr "Poznámka k revizi"
+
+#: application/modules/admin/forms/Article.php:87
+msgid "Published"
+msgstr "Publikováno"
+
+#: application/modules/admin/forms/Article.php:91
+msgid "Publihed must meet dd/mm/yyyy hh:ii:ss"
+msgstr "Tato položka musí odpovídat vzorci dd/mm/yyyy hh:ii:ss, tzn. např. 22/08/2010 18:09:57 a samozřejmě musí být platná."
+
+#: application/modules/admin/forms/Banner.php:38
+msgid "Title"
+msgstr "Popis"
+
+#: application/modules/admin/forms/Banner.php:46
+msgid "Link"
+msgstr "Odkaz"
+
+#: application/modules/admin/forms/Banner.php:59
+msgid "Section"
+msgstr "Sekce"
+
+#: application/modules/admin/forms/Banner.php:61
+msgid "- select section -"
+msgstr "- vyberte sekci -"
+
+#: application/modules/admin/forms/Banner.php:69
+msgid "Banner Code"
+msgstr "Kód pro banner"
+
+#: application/modules/admin/forms/Banner.php:83
+msgid "Link goes to"
+msgstr "Odkaz vede"
+
+#: application/modules/admin/forms/Banner.php:84
+msgid "Same window / tab"
+msgstr "Stejné okno / záložka"
+
+#: application/modules/admin/forms/Banner.php:85
+msgid "New window / tab"
+msgstr "Nové okno / záložka"
+
+#: application/modules/admin/forms/Banner.php:100
+msgid "Add another banner"
+msgstr "Přidat další banner"
+
+#: application/modules/admin/forms/Banner.php:101
+msgid "Banner list"
+msgstr "Seznam bannerů"
+
+#: application/modules/admin/forms/Category.php:63
+#: application/modules/admin/forms/Comment.php:42
+#: application/modules/admin/forms/Location.php:41
+#: application/modules/admin/forms/MenuArticle.php:48
+#: application/modules/admin/forms/MenuCategory.php:48
+#: application/modules/admin/forms/MenuHomepage.php:48
+#: application/modules/admin/forms/MenuLink.php:57
+#: application/modules/admin/forms/MenuPhotogallery.php:48
+#: application/modules/admin/forms/MenuStaticPage.php:49
+msgid "Parent"
+msgstr "Rodič"
+
+#: application/modules/admin/forms/Category.php:65
+msgid "- top category -"
+msgstr "- hlavní kategorie -"
+
+#: application/modules/admin/forms/Category.php:81
+msgid "Add another category"
+msgstr "Přidat další kategorii"
+
+#: application/modules/admin/forms/Category.php:82
+msgid "Category detail"
+msgstr "Detail kategorie"
+
+#: application/modules/admin/forms/Comment.php:25
+msgid "Person name"
+msgstr "Jméno uživatele"
+
+#: application/modules/admin/forms/Comment.php:34
+msgid "Leave a Reply"
+msgstr "Komentář"
+
+#: application/modules/admin/forms/Comment.php:43
+msgid "- top comment -"
+msgstr "- top komentář -"
+
+#: application/modules/admin/forms/Language.php:38
+#: application/modules/admin/forms/Replacer.php:39
+msgid "Code"
+msgstr "Kód"
+
+#: application/modules/admin/forms/Language.php:47
+msgid "Locale"
+msgstr "Locale"
+
+#: application/modules/admin/forms/Language.php:56
+msgid "Charset"
+msgstr "Charset"
+
+#: application/modules/admin/forms/Location.php:43
+msgid "- top level -"
+msgstr "- top level -"
+
+#: application/modules/admin/forms/Location.php:59
+msgid "Add another location"
+msgstr "Přidat další lokalitu"
+
+#: application/modules/admin/forms/Location.php:60
+msgid "Locations list"
+msgstr "Seznam lokalit"
+
+#: application/modules/admin/forms/MenuArticle.php:33
+#: application/modules/admin/forms/MenuCategory.php:33
+#: application/modules/admin/forms/MenuHomepage.php:33
+#: application/modules/admin/forms/MenuLink.php:33
+#: application/modules/admin/forms/MenuPhotogallery.php:33
+#: application/modules/admin/forms/MenuStaticPage.php:34
+msgid "Href title"
+msgstr "Href title"
+
+#: application/modules/admin/forms/MenuArticle.php:50
+#: application/modules/admin/forms/MenuCategory.php:50
+#: application/modules/admin/forms/MenuHomepage.php:50
+#: application/modules/admin/forms/MenuLink.php:59
+#: application/modules/admin/forms/MenuPhotogallery.php:50
+#: application/modules/admin/forms/MenuStaticPage.php:51
+msgid "- top input -"
+msgstr "- hlavní položka -"
+
+#: application/modules/admin/forms/MenuArticle.php:61
+msgid "- select article -"
+msgstr "- vyberte článek -"
+
+#: application/modules/admin/forms/MenuCategory.php:60
+#: application/modules/admin/forms/Photo.php:72
+msgid "Category"
+msgstr "Kategorie"
+
+#: application/modules/admin/forms/MenuCategory.php:62
+#: application/modules/admin/forms/Photo.php:75
+msgid "- select category -"
+msgstr "- vyberte kategorii -"
+
+#: application/modules/admin/forms/MenuPlace.php:41
+msgid "Add another menu place"
+msgstr "Přidat další umístění pro menu"
+
+#: application/modules/admin/forms/MenuPlace.php:42
+msgid "List with menu places"
+msgstr "Seznam umístění pro menu"
+
+#: application/modules/admin/forms/MenuStaticPage.php:63
+msgid "- select static page -"
+msgstr "- vyberte statickou stránku -"
+
+#: application/modules/admin/forms/Message.php:24
+msgid "To"
+msgstr "Poslat"
+
+#: application/modules/admin/forms/Message.php:25
+msgid "- select user -"
+msgstr "- vyberte uživatele -"
+
+#: application/modules/admin/forms/Message.php:39
+msgid "Subject"
+msgstr "Předmět"
+
+#: application/modules/admin/forms/Message.php:48
+msgid "Message"
+msgstr "Zpráva"
+
+#: application/modules/admin/forms/Message.php:57
+msgid "Send another message"
+msgstr "Poslat další zprávu"
+
+#: application/modules/admin/forms/Message.php:58
+msgid "Message detail"
+msgstr "Detail zprávy"
+
+#: application/modules/admin/forms/Photo.php:63
+msgid "Photo"
+msgstr "Foto"
+
+#: application/modules/admin/forms/Photo.php:103
+msgid "Add another photo"
+msgstr "Přidat další set foto"
+
+#: application/modules/admin/forms/Photo.php:104
+msgid "Photo list"
+msgstr "Foto"
+
+#: application/modules/admin/forms/Relative.php:26
+msgid "Relative"
+msgstr "Příbuzní"
+
+#: application/modules/admin/forms/Relative.php:28
+msgid "- select relative -"
+msgstr "- vyberte příbuzného -"
+
+#: application/modules/admin/forms/Relative.php:42
+msgid "Reverse relation"
+msgstr "Vzájemná vazba"
+
+#: application/modules/admin/forms/Relative.php:43
+msgid "Yes"
+msgstr "Ano"
+
+#: application/modules/admin/forms/Relative.php:44
+msgid "No"
+msgstr "Ne"
+
+#: application/modules/admin/forms/Replacer.php:48
+msgid "Script"
+msgstr "Script"
+
+#: application/modules/admin/forms/Replacer.php:64
+msgid "Add another replacer"
+msgstr "Přidat další zástupný kód"
+
+#: application/modules/admin/forms/Replacer.php:65
+msgid "Replacers list"
+msgstr "Seznam kódů"
+
+#: application/modules/admin/forms/Section.php:49
+msgid "Add another section"
+msgstr "Přidat další sekci"
+
+#: application/modules/admin/forms/Section.php:50
+msgid "Sections list"
+msgstr "Seznam sekcí"
+
+#: application/modules/admin/forms/Setting.php:20
+msgid "Project"
+msgstr "Projekt"
+
+#: application/modules/admin/forms/Setting.php:28
+msgid "Page slogan"
+msgstr "Slogan stránek"
+
+#: application/modules/admin/forms/Setting.php:43
+msgid "Google verification key"
+msgstr "Google verification key"
+
+#: application/modules/admin/forms/Setting.php:51
+msgid "Picasa Id"
+msgstr "ID pro Picasa"
+
+#: application/modules/admin/forms/SettingEmail.php:25
+msgid "Subject starts"
+msgstr "Začátek předmětu"
+
+#: application/modules/admin/forms/SettingEmail.php:35
+msgid "SMTP Host"
+msgstr "SMTP Host"
+
+#: application/modules/admin/forms/SettingEmail.php:43
+msgid "SMTP Auth"
+msgstr "SMTP Auth"
+
+#: application/modules/admin/forms/SettingEmail.php:52
+msgid "SMTP Email"
+msgstr "SMTP Email"
+
+#: application/modules/admin/forms/SettingEmail.php:61
+msgid "SMTP Password"
+msgstr "SMTP Password"
+
+#: application/modules/admin/forms/SettingEmail.php:68
+msgid "SMTP SSL"
+msgstr "SMTP SSL"
+
+#: application/modules/admin/forms/SettingEmail.php:77
+msgid "SMTP Port"
+msgstr "SMTP Port"
+
+#: application/modules/admin/forms/SettingEmail.php:86
+msgid "Sent email via SMTP"
+msgstr "Používat SMTP"
+
+#: application/modules/admin/forms/SettingEmail.php:94
+msgid "E-mail address"
+msgstr "E-mail"
+
+#: application/modules/admin/forms/SettingSeo.php:24
+msgid "General Title"
+msgstr "Základní Titulek"
+
+#: application/modules/admin/forms/SettingSeo.php:32
+msgid "General Description"
+msgstr "Základní Popis"
+
+#: application/modules/admin/forms/SettingSeo.php:40
+msgid "General Keywords"
+msgstr "Základní Klíčová slova"
+
+#: application/modules/admin/forms/SettingSeo.php:48
+msgid "Photogallery Title"
+msgstr "Fotogalerie Titulek"
+
+#: application/modules/admin/forms/SettingSeo.php:56
+msgid "Photogallery Description"
+msgstr "Fotogalerie Popis"
+
+#: application/modules/admin/forms/SettingSeo.php:64
+msgid "Photogallery Keywords"
+msgstr "Fotogalerie Kličová slova"
+
+#: application/modules/admin/forms/StaticPage.php:73
+msgid "Publihed must meet dd/mm/yyyy hh:ii:ss patern"
+msgstr "Tato položka musí odpovídat vzorci dd/mm/yyyy hh:ii:ss, tzn. např. 22/08/2010 18:09:57 a samozřejmě musí být platná."
+
+#: application/modules/admin/forms/Tag.php:41
+msgid "Add another tag"
+msgstr "Přidat další tag"
+
+#: application/modules/admin/forms/Tag.php:42
+msgid "List with tag"
+msgstr "Tagy"
+
+#: application/modules/admin/forms/User.php:37
+msgid "E-mail"
+msgstr "E-mail"
+
+#: application/modules/admin/forms/User.php:55
+#: application/modules/admin/forms/UserPasswd.php:35
+msgid "Retype password"
+msgstr "Přepište nové heslo"
+
+#: application/modules/admin/forms/User.php:58
+#: application/modules/admin/forms/UserPasswd.php:38
+msgid "Password and Retype password must be exactly same."
+msgstr "Heslo a přepsat nové heslo musí být naprosto stejné."
+
+#: application/modules/admin/forms/User.php:64
+msgid "User role"
+msgstr "Role"
+
+#: application/modules/admin/forms/User.php:66
+msgid "- select user role -"
+msgstr "- vyberte roli -"
+
+#: application/modules/admin/forms/User.php:75
+msgid "Language"
+msgstr "Jazyk"
+
+#: application/modules/admin/forms/User.php:77
+msgid "- select language -"
+msgstr "- vyberte jazyk -"
+
+#: application/modules/admin/forms/User.php:95
+msgid "Add another user"
+msgstr "Přidat dalšího uživatele"
+
+#: application/modules/admin/forms/User.php:96
+msgid "User detail"
+msgstr "Detail uživatele"
+
+#: application/modules/admin/forms/WidgetArticle.php:40
+msgid "Number of articles"
+msgstr "Počet článků"
+
+#: application/modules/admin/forms/WidgetArticle.php:54
+msgid "- all categories -"
+msgstr "- všechny kategorie -"
+
+#: application/modules/admin/forms/WidgetArticle.php:64
+#: application/modules/admin/forms/WidgetBanner.php:64
+#: application/modules/admin/forms/WidgetText.php:48
+#: application/modules/admin/forms/WidgetTwitter.php:51
+msgid "Show name"
+msgstr "Zobrazit název"
+
+#: application/modules/admin/forms/WidgetBanner.php:41
+msgid "Number of banners"
+msgstr "Počet bannerů"
+
+#: application/modules/admin/forms/WidgetBanner.php:73
+msgid "Shuffle first"
+msgstr "Zamíchat"
+
+#: application/modules/admin/forms/WidgetPlace.php:40
+msgid "Type"
+msgstr "Typ"
+
+#: application/modules/admin/forms/WidgetPlace.php:43
+msgid "- select type -"
+msgstr "- vyberte typ -"
+
+#: application/modules/admin/forms/WidgetPlace.php:44
+msgid "Frontend"
+msgstr "Frontent"
+
+#: application/modules/admin/forms/WidgetPlace.php:45
+msgid "Backend"
+msgstr "Backend"
+
+#: application/modules/admin/forms/WidgetPlace.php:51
+msgid "Add another widget place"
+msgstr "Přidat další umístění pro widgety"
+
+#: application/modules/admin/forms/WidgetPlace.php:52
+msgid "List with widget places"
+msgstr "Seznam umístění pro widgety"
+
+#: application/modules/admin/forms/WidgetTwitter.php:40
+msgid "Number of tweets"
+msgstr "Počet příspěvků"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:30
+msgid "Article Link"
+msgstr "Odkaz na Článek"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:33
+msgid "Article Category Link"
+msgstr "Odkaz na Kategorie článků"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:35
+msgid "Photo Category Link"
+msgstr "Odkaz na Kategorii fotek"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:43
+msgid "Photogallery Link"
+msgstr "Odkaz na Fotogalerii"
+
+#: application/modules/admin/views/helpers/MenuTypeName.php:45
+msgid "Static page Link"
+msgstr "Odkaz na Statickou stránku"
+
+#: application/modules/admin/views/helpers/RoleName.php:30
+msgid "Guest"
+msgstr "Návštěvník"
+
+#: application/modules/admin/views/helpers/RoleName.php:32
+msgid "User"
+msgstr "Uživatel"
+
+#: application/modules/admin/views/helpers/RoleName.php:36
+msgid "Super Admin"
+msgstr "Super Admin"
+
+#: application/modules/admin/views/helpers/WidgetTypeName.php:34
+msgid "Top shown articles"
+msgstr "Nejčtenější články"
+
+#: application/modules/admin/views/helpers/WidgetTypeName.php:36
+msgid "Banner section"
+msgstr "Sekce pro bannery"
+
+#: application/modules/advert/controllers/AdController.php:29
+msgid "For free"
+msgstr "Zdarma"
+
+#: application/modules/advert/controllers/AdController.php:30
+msgid "Deal"
+msgstr "Dohoda"
+
+#: application/modules/advert/controllers/AdController.php:31
+msgid "What ever you give"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:32
+msgid "Waiting for your offer"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:35
+msgid "OFFER - I would like to sell, I offer"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:36
+msgid "DEMAND - I would like to buy, I am looking for"
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:88
+msgid "You must insert price or choose one of predefined options for price."
+msgstr ""
+
+#: application/modules/advert/controllers/AdController.php:100
+#, fuzzy
+msgid "Classified Ad <b>~0~</b> has been stored."
+msgstr "Uživatel <b>~0~</b> byl uložen."
+
+#: application/modules/advert/forms/Ad.php:27
+msgid "Input name of your classified ad. Clear and understable name can increase success of your classified ad."
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:35
+#, fuzzy
+msgid "Ad Content"
+msgstr "Obsah"
+
+#: application/modules/advert/forms/Ad.php:37
+msgid "Do not put phone numbers, e-mails or other kind of contact. There're separated fields for contant"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:46
+msgid "Select best suitable category for your classified ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:55
+#, fuzzy
+msgid "Location"
+msgstr "Lokality"
+
+#: application/modules/advert/forms/Ad.php:57
+msgid "Select best suitable location for your classified ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:59
+#, fuzzy
+msgid "- select location -"
+msgstr "- vyberte sekci -"
+
+#: application/modules/advert/forms/Ad.php:66
+msgid "Price"
+msgstr "Cena"
+
+#: application/modules/advert/forms/Ad.php:70
+msgid "Input numbers only - can be decimal"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:76
+#, fuzzy
+msgid "Price Text"
+msgstr "Informace o cenách"
+
+#: application/modules/advert/forms/Ad.php:78
+msgid "Select one of the predefined options"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:79
+#, fuzzy
+msgid "- select price option -"
+msgstr "- vyberte sekci -"
+
+#: application/modules/advert/forms/Ad.php:86
+#, fuzzy
+msgid "Advert Type"
+msgstr "Typ inzerátu"
+
+#: application/modules/advert/forms/Ad.php:88
+msgid "Select type of your classified ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:90
+#, fuzzy
+msgid "- select type of classified ad -"
+msgstr "- vyberte dph -"
+
+#: application/modules/advert/forms/Ad.php:97
+msgid "Phone"
+msgstr "Telefon"
+
+#: application/modules/advert/forms/Ad.php:100
+msgid "Enter landline / mobile number"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:110
+msgid "You might need it to edit / delete your ad"
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:121
+msgid "Must be valid e-mail address. Will not be visible on page."
+msgstr ""
+
+#: application/modules/advert/forms/Ad.php:128
+msgid "Add Classified Ad"
+msgstr ""
+
+#: application/modules/article/controllers/ArticleController.php:228
+msgid "IS SPAM"
+msgstr "JE SPAM"
+
+#: application/modules/article/controllers/ArticleController.php:228
+msgid "Not Spam"
+msgstr "Není spam"
+
+#: application/modules/article/controllers/ArticleController.php:232
+msgid "Thank you for your comment. According to rules of page - all comments must be approved by administrator."
+msgstr "Váš komentář byl uložen. Podle pravidle stránek, všechny komentáře podléhají kontrole administrátora. Váš komentář se zde objeví v nejbližší době."
+
+#: application/modules/default/controllers/AuthenticationController.php:7
+msgid "Authorization"
+msgstr "Autorizace"
+
+#: application/modules/default/controllers/AuthenticationController.php:25
+msgid "Forgot login data"
+msgstr "Zapomenuté přihlašovací údaje"
+
+#: application/modules/default/controllers/AuthenticationController.php:44
+msgid "Login"
+msgstr "Přihlášení"
+
+#: application/modules/default/controllers/AuthenticationController.php:93
+msgid "Your password has been reseted and sent to your inbox."
+msgstr "Vaše heslo bylo změněno a zasláno do Vaši emailové schránky."
+
+#: application/modules/default/controllers/AuthenticationController.php:95
+msgid "No user found."
+msgstr "Se zadanými údaji není možno se přihlásit. Zkontrolujte je prosím ještě jednou."
+
+#: application/modules/default/controllers/AuthenticationController.php:161
+msgid "E-mail address or password is wrong."
+msgstr "E-mailová adresa nebo heslo jsou špatně zadané."
+
+#: application/modules/default/controllers/CommentController.php:35
+#: application/modules/default/controllers/CommentController.php:77
+msgid "There is no comment as you requested."
+msgstr "Komentář, jehož schválení požadujete, se v databázi nenachází."
+
+#: application/modules/default/controllers/CommentController.php:38
+msgid "This comment is already approved."
+msgstr "Komentář je již aktivní."
+
+#: application/modules/default/controllers/CommentController.php:43
+msgid "Comment has been approved."
+msgstr "Komentář byl schválen."
+
+#: application/modules/default/controllers/CommentController.php:59
+#: application/modules/default/controllers/CommentController.php:83
+msgid "Comment cannot be approved because of wrong code. Try to copy it again or approve comment from administration."
+msgstr "Komentář nemůže být schválen neboť nesouhlasí kód k jeho schválení. Zkuste akci opakovat nebo schvalte komentář jednoduše v administraci."
+
+#: application/modules/default/controllers/ErrorController.php:48
+msgid "Oops, what are you looking for is not there"
+msgstr "Jejda, to co hledáte tu pravděpodobně není ..."
+
+#: application/modules/default/controllers/FormController.php:24
+#: application/modules/default/controllers/FormController.php:28
+msgid "All mandatory fields must be filled"
+msgstr "Všechny položky označeny *  musí být vyplněny."
+
+#: application/modules/default/controllers/FormController.php:32
+msgid "Email must be valid email address"
+msgstr "Email musí být validní emailová adresa."
+
+#: application/modules/default/controllers/FormController.php:38
+msgid "You cannot send a message from different domain"
+msgstr "Nelze zasílat zprávy z jiné domény."
+
+#: application/modules/default/controllers/FormController.php:49
+msgid "Your message has been sent. Thank you."
+msgstr "Vaše zpráva byla odeslána. Děkujeme."
+
+#: application/modules/default/controllers/TagController.php:156
+msgid "Articles focus on ~0~"
+msgstr "Články zaměřené na ~0~"
+
+#: application/modules/default/controllers/TagController.php:158
+msgid "Articles focus on ~0~ - Today I would like to speak about ~0~"
+msgstr "Články zaměřené na ~0~ - Všechny mé články, ve kterých jsem se zmínil o ~0~"
+
+#: application/modules/default/controllers/TagController.php:159
+msgid "article ~0~, articles about ~0~, ~0~ discussion, ~0~ review"
+msgstr "článek o ~0~, článek zaměřený na ~0~, ~0~ diskuze, ~0~ recenze"
+
+#: application/modules/default/forms/Comment.php:38
+msgid "Required, but never shared."
+msgstr "Vyžadováno, ale nikdy nesdíleno."
+
+#: application/modules/default/forms/Comment.php:45
+msgid "Website"
+msgstr "Website"
+
+#: application/modules/default/forms/Comment.php:48
+msgid "Start with http:// or https://"
+msgstr "Na začátku musí být http:// nebo https://"
+
+#: application/modules/default/forms/Comment.php:66
+msgid "Submit comment"
+msgstr "Odeslat komentář"
+
+#: application/modules/default/forms/UserForgotLogin.php:28
+msgid "Remind me"
+msgstr "Připomeň mi"
+
+#: application/modules/default/forms/UserLogin.php:26
+msgid "Sign In"
+msgstr "Přihlásit se"
+
+#: application/modules/default/models/Mailer.php:75
+msgid "New comment"
+msgstr "Nový komentář"
+
+#: application/modules/default/models/Mailer.php:103
+#: application/modules/default/models/Mailer.php:286
+#: application/modules/default/models/Mailer.php:343
+msgid "Your comment has been approved"
+msgstr "Váš komentář byl schválen"
+
+#: application/modules/default/models/Mailer.php:128
+msgid "Contact form"
+msgstr "Kontaktní formulář"
+
+#: application/modules/default/models/Mailer.php:157
+msgid "New password for ~0~"
+msgstr "Nové heslo pro ~0~"
+
+#: application/modules/default/models/Mailer.php:184
+#: application/modules/default/models/Mailer.php:252
+msgid "New comment has been added."
+msgstr "Nový komentář"
+
+#: application/modules/default/models/Mailer.php:186
+#: application/modules/default/models/Mailer.php:288
+msgid "Comment"
+msgstr "Komentář"
+
+#: application/modules/default/models/Mailer.php:193
+#: application/modules/default/models/Mailer.php:259
+#: application/modules/default/models/Mailer.php:295
+#: application/modules/default/models/Mailer.php:350
+#: application/modules/default/models/Mailer.php:381
+#: application/modules/default/models/Mailer.php:413
+msgid "Name and Surname"
+msgstr "Jméno a Příjmení"
+
+#: application/modules/default/models/Mailer.php:205
+#: application/modules/default/models/Mailer.php:262
+msgid "Akismet"
+msgstr "Akismet"
+
+#: application/modules/default/models/Mailer.php:209
+#: application/modules/default/models/Mailer.php:263
+msgid "IP"
+msgstr "IP"
+
+#: application/modules/default/models/Mailer.php:219
+#: application/modules/default/models/Mailer.php:313
+msgid "Article Name"
+msgstr "Název článku"
+
+#: application/modules/default/models/Mailer.php:227
+msgid "Approve"
+msgstr "Schválit"
+
+#: application/modules/default/models/Mailer.php:228
+#: application/modules/default/models/Mailer.php:267
+msgid "Approve comment"
+msgstr "Schválit komentář"
+
+#: application/modules/default/models/Mailer.php:231
+msgid "Delete"
+msgstr "Smazat"
+
+#: application/modules/default/models/Mailer.php:232
+#: application/modules/default/models/Mailer.php:268
+msgid "Delete comment"
+msgstr "Smazat komentář"
+
+#: application/modules/default/models/Mailer.php:258
+#: application/modules/default/models/Mailer.php:349
+msgid "Data about comment"
+msgstr "Data o komentáři"
+
+#: application/modules/default/models/Mailer.php:266
+#: application/modules/default/models/Mailer.php:321
+#: application/modules/default/models/Mailer.php:355
+msgid "Article Url"
+msgstr "Odkaz na článek"
+
+#: application/modules/default/models/Mailer.php:322
+msgid "Go to article"
+msgstr "Přejít na článek"
+
+#: application/modules/default/models/Mailer.php:372
+#: application/modules/default/models/Mailer.php:410
+msgid "New message has been sent from contact form."
+msgstr "Nová zpráva z kontaktního formuláře"
+
+#: application/modules/default/models/Mailer.php:436
+msgid "Your password for <strong>~0~</strong> has been reseted."
+msgstr "Vaše heslo pro <b>~0~</b> bylo změněno."
+
+#: application/modules/default/models/Mailer.php:468
+msgid "Your password for *** ~0~ *** has been reseted."
+msgstr "Vaše heslo pro *** ~0~ *** bylo změněno."
+
+#: application/modules/default/models/Mailer.php:474
+#: application/modules/default/models/Mailer.php:516
+msgid "We wish you good day, Team of ~0~"
+msgstr "S přáním příjemného zbytku dne, ~0~"
+
+#: application/layouts/admin/layout.phtml:32
+msgid "Logout"
+msgstr "Odhlásit"
+
+#: application/layouts/advert/layout.phtml:93
+#: application/layouts/article/layout.phtml:93
+#: application/layouts/photo/layout.phtml:93
+msgid "Top"
+msgstr "Nahoru"
+
+#: application/layouts/default/layout.phtml:34
+msgid "Back to Homepage"
+msgstr "Zpět na hlavní stránku"
+
+#: application/layouts/default/layout.phtml:50
+#: application/layouts/default/layout.phtml:82
+msgid "All Articles"
+msgstr "Přehled všech článků"
+
+#: application/modules/admin/views/scripts/admin-menu/add.phtml:15
+#: application/modules/admin/views/scripts/admin-menu/edit.phtml:16
+msgid "Reset form"
+msgstr "Vyčistit formulář"
+
+#: application/modules/admin/views/scripts/admin-menu/list.phtml:6
+msgid "New Menu"
+msgstr "Nové menu"
+
+#: application/modules/admin/views/scripts/admin-menu/list.phtml:20
+msgid "name"
+msgstr "název"
+
+#: application/modules/admin/views/scripts/article/edit.phtml:42
+#: application/modules/admin/views/scripts/article/edit.phtml:152
+msgid "Remove from category"
+msgstr "Odstranit z kategorie"
+
+#: application/modules/admin/views/scripts/article/edit.phtml:71
+#: application/modules/admin/views/scripts/article/edit.phtml:169
+msgid "Remove from tag"
+msgstr "Odebrat štítek"
+
+#: application/modules/admin/views/scripts/article/edit.phtml:133
+#: application/modules/admin/views/scripts/category/edit.phtml:62
+msgid "Additional data"
+msgstr "Doplňující informace"
+
+#: application/modules/admin/views/scripts/article/edit.phtml:161
+msgid "- select tag -"
+msgstr "- vyberte štítek -"
+
+#: application/modules/admin/views/scripts/article/edit.phtml:175
+#: application/modules/admin/views/scripts/category/edit.phtml:70
+msgid "Featured Picture"
+msgstr "Obrázek"
+
+#: application/modules/admin/views/scripts/article/list.phtml:34
+msgid "- sort by -"
+msgstr "- třídit podle - "
+
+#: application/modules/admin/views/scripts/article/list.phtml:45
+msgid "shown"
+msgstr "zobrazeno"
+
+#: application/modules/admin/views/scripts/article/list.phtml:46
+msgid "published"
+msgstr "publikováno"
+
+#: application/modules/admin/views/scripts/banner/edit.phtml:31
+msgid "To update image of banner, press <b>Image button</b> above."
+msgstr "Pakliže chcete změnit obrázek k banneru, klikněte na tlačícko <b>Logo</b>, které najdete výše."
+
+#: application/modules/admin/views/scripts/banner/index.phtml:10
+msgid "You <b>must first create section</b> for banners!"
+msgstr "Nejdříve <b>musíte vytvořit sekce</b> pro bannery."
+
+#: application/modules/admin/views/scripts/banner/list.phtml:23
+msgid "- banner section -"
+msgstr "- sekce pro bannery - "
+
+#: application/modules/admin/views/scripts/banner/logo.phtml:19
+msgid "Edit"
+msgstr "Editovat"
+
+#: application/modules/admin/views/scripts/banner/logo.phtml:36
+msgid "There is no picture yet."
+msgstr "Momentálně zde není žádný obrázek."
+
+#: application/modules/admin/views/scripts/banner/logo.phtml:45
+msgid "Hint: If you want to delete banner logo - submit empty form below."
+msgstr "Nápověda: Pokud chcete smazat aktuální obrázek pro banner, odešlete prázdný formulář, který naleznete níže."
+
+#: application/modules/admin/views/scripts/category/index.phtml:22
+msgid "- category type -"
+msgstr "- typ kategorie -"
+
+#: application/modules/admin/views/scripts/comment/list.phtml:15
+msgid "Reload page"
+msgstr "Přenačíst stránku"
+
+#: application/modules/admin/views/scripts/comment/list.phtml:21
+msgid "Comments for: ~0~"
+msgstr "Komentáře pro: ~0~"
+
+#: application/modules/admin/views/scripts/comment/list.phtml:31
+msgid "person name"
+msgstr "jméno a příjmení"
+
+#: application/modules/admin/views/scripts/comment/list.phtml:32
+msgid "message"
+msgstr "zpráva"
+
+#: application/modules/admin/views/scripts/comment/reply.phtml:29
+msgid "Comment you are replying to"
+msgstr "Komentář, na který odpovídáte"
+
+#: application/modules/admin/views/scripts/index/index.phtml:9
+msgid "Clear cache"
+msgstr "Vyčistit cache"
+
+#: application/modules/admin/views/scripts/index/index.phtml:10
+msgid "My profile"
+msgstr "Můj profil"
+
+#: application/modules/admin/views/scripts/index/index.phtml:23
+msgid "author"
+msgstr "autor"
+
+#: application/modules/admin/views/scripts/index/index.phtml:24
+msgid "subject"
+msgstr "předmět"
+
+#: application/modules/admin/views/scripts/index/index.phtml:25
+msgid "date"
+msgstr "datum"
+
+#: application/modules/admin/views/scripts/index/index.phtml:26
+msgid "reply"
+msgstr "odpovědět"
+
+#: application/modules/admin/views/scripts/index/index.phtml:27
+msgid "forward"
+msgstr "přeposlat"
+
+#: application/modules/admin/views/scripts/index/index.phtml:57
+msgid "No records"
+msgstr "Vašim požadavkům neodpovídá žádný záznam."
+
+#: application/modules/admin/views/scripts/language/list.phtml:23
+msgid "locale"
+msgstr "locale"
+
+#: application/modules/admin/views/scripts/log/detail.phtml:4
+msgid "Back to list"
+msgstr "Zpět na seznam"
+
+#: application/modules/admin/views/scripts/log/detail.phtml:17
+msgid "Basic data"
+msgstr "Základní data"
+
+#: application/modules/admin/views/scripts/log/detail.phtml:21
+msgid "Table"
+msgstr "Tabulka"
+
+#: application/modules/admin/views/scripts/log/detail.phtml:25
+msgid "Where"
+msgstr "Podminka"
+
+#: application/modules/admin/views/scripts/log/list.phtml:6
+msgid "Archive"
+msgstr "Archivovat"
+
+#: application/modules/admin/views/scripts/log/list.phtml:27
+msgid "- all tables -"
+msgstr "- všechny tabulky - "
+
+#: application/modules/admin/views/scripts/log/list.phtml:28
+msgid "- all users -"
+msgstr "- všichni uživatelé -"
+
+#: application/modules/admin/views/scripts/log/list.phtml:39
+msgid "user"
+msgstr "uživatel"
+
+#: application/modules/admin/views/scripts/log/list.phtml:40
+msgid "table"
+msgstr "tabulka"
+
+#: application/modules/admin/views/scripts/log/list.phtml:41
+msgid "where"
+msgstr "where"
+
+#: application/modules/admin/views/scripts/log/list.phtml:42
+msgid "content"
+msgstr "obsah"
+
+#: application/modules/admin/views/scripts/manage/admin.phtml:12
+#: application/modules/admin/views/scripts/manage/advert.phtml:17
+#: application/modules/admin/views/scripts/manage/content.phtml:12
+#: application/modules/admin/views/scripts/manage/page.phtml:12
+#: application/modules/admin/views/scripts/manage/photogallery.phtml:12
+msgid "Quick links"
+msgstr "Rychlé odkazy"
+
+#: application/modules/admin/views/scripts/menu-input/index.phtml:10
+msgid "You <b>must first create places</b> for menu!"
+msgstr "Nejdříve <b>musíte vytvořit umístění</b> pro menu."
+
+#: application/modules/admin/views/scripts/menu-input/list.phtml:7
+msgid "New Menu input"
+msgstr "Nová položka menu"
+
+#: application/modules/admin/views/scripts/menu-input/list.phtml:24
+msgid "- menu place -"
+msgstr "- umístění pro menu -"
+
+#: application/modules/admin/views/scripts/message/control.phtml:8
+#: application/modules/admin/views/scripts/message/detail.phtml:7
+#: application/modules/admin/views/scripts/message/sent.phtml:8
+msgid "Inbox"
+msgstr "Doručená počta"
+
+#: application/modules/admin/views/scripts/message/control.phtml:9
+#: application/modules/admin/views/scripts/message/detail.phtml:35
+#: application/modules/admin/views/scripts/message/list.phtml:8
+msgid "Sent"
+msgstr "Odeslaná pošta"
+
+#: application/modules/admin/views/scripts/message/control.phtml:10
+#: application/modules/admin/views/scripts/message/list.phtml:9
+#: application/modules/admin/views/scripts/message/sent.phtml:9
+msgid "New Message"
+msgstr "Nová zpráva"
+
+#: application/modules/admin/views/scripts/message/control.phtml:31
+msgid "- author -"
+msgstr "- autor -"
+
+#: application/modules/admin/views/scripts/message/control.phtml:32
+msgid "- sent to -"
+msgstr "- posláno  "
+
+#: application/modules/admin/views/scripts/message/control.phtml:45
+#: application/modules/admin/views/scripts/message/sent.phtml:46
+msgid "sent to"
+msgstr "posláno"
+
+#: application/modules/admin/views/scripts/message/control.phtml:46
+#: application/modules/admin/views/scripts/message/list.phtml:47
+#: application/modules/admin/views/scripts/message/sent.phtml:48
+msgid "created"
+msgstr "vytvořeno"
+
+#: application/modules/admin/views/scripts/message/control.phtml:47
+#: application/modules/admin/views/scripts/message/list.phtml:48
+#: application/modules/admin/views/scripts/message/sent.phtml:49
+msgid "read"
+msgstr "čteno"
+
+#: application/modules/admin/views/scripts/message/detail.phtml:12
+msgid "Previous"
+msgstr "Předchozí"
+
+#: application/modules/admin/views/scripts/message/detail.phtml:16
+msgid "Next"
+msgstr "Další"
+
+#: application/modules/admin/views/scripts/message/detail.phtml:36
+msgid "Read"
+msgstr "Přečteno"
+
+#: application/modules/admin/views/scripts/message/detail.phtml:37
+msgid "Author"
+msgstr "Autor"
+
+#: application/modules/admin/views/scripts/message/list.phtml:15
+#: application/modules/admin/views/scripts/message/sent.phtml:15
+msgid "Control panel"
+msgstr "Kontrolní panel"
+
+#: application/modules/admin/views/scripts/photo/list.phtml:6
+msgid "New Photo"
+msgstr "Nové Foto"
+
+#: application/modules/admin/views/scripts/photo/list.phtml:15
+msgid "Import from Picasa"
+msgstr "Importovat z Picasa"
+
+#: application/modules/admin/views/scripts/photo/list.phtml:32
+msgid "- all parents -"
+msgstr "- všechny rodiče -"
+
+#: application/modules/admin/views/scripts/photo/list.phtml:45
+msgid "thumbnail"
+msgstr "náhled"
+
+#: application/modules/admin/views/scripts/photo/list.phtml:47
+msgid "perex"
+msgstr "perex"
+
+#: application/modules/admin/views/scripts/photo/organize.phtml:51
+msgid "Save order"
+msgstr "Uložit pořadí"
+
+#: application/modules/admin/views/scripts/photo/organize.phtml:54
+msgid "Storing positions. Please wait ..."
+msgstr "Ukládám nové pořadí. Chvilinku strpení, prosím ..."
+
+#: application/modules/admin/views/scripts/photo/organize.phtml:55
+msgid "New position has been stored."
+msgstr "Nové pořadí bylo uloženo."
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:25
+#: application/modules/admin/views/scripts/sitemap/index.phtml:39
+msgid "(re)generate"
+msgstr "(pře)generovat"
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:29
+#: application/modules/admin/views/scripts/sitemap/index.phtml:43
+msgid "File path"
+msgstr "Cesta k souboru"
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:30
+#: application/modules/admin/views/scripts/sitemap/index.phtml:44
+msgid "Url"
+msgstr "Odkaz"
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:31
+#: application/modules/admin/views/scripts/sitemap/index.phtml:45
+msgid "Last change"
+msgstr "Poslední změna"
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:32
+#: application/modules/admin/views/scripts/sitemap/index.phtml:46
+msgid "File size"
+msgstr "Velikost souboru"
+
+#: application/modules/admin/views/scripts/sitemap/index.phtml:33
+#: application/modules/admin/views/scripts/sitemap/index.phtml:47
+msgid "(Re)generate sitemap"
+msgstr "(Pře)generovat sitemap"
+
+#: application/modules/admin/views/scripts/user/detail.phtml:26
+msgid "Role"
+msgstr "role"
+
+#: application/modules/admin/views/scripts/user/detail.phtml:28
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#: application/modules/admin/views/scripts/user/detail.phtml:36
+msgid "Time data"
+msgstr "Časové údaje"
+
+#: application/modules/admin/views/scripts/user/detail.phtml:38
+msgid "Created"
+msgstr "Vytvořeno"
+
+#: application/modules/admin/views/scripts/user/detail.phtml:39
+msgid "Last updated"
+msgstr "Poslední editace"
+
+#: application/modules/admin/views/scripts/user/list.phtml:6
+msgid "New User"
+msgstr "Nový uživatel"
+
+#: application/modules/admin/views/scripts/user/list.phtml:28
+msgid "- all roles -"
+msgstr "- všechny role -"
+
+#: application/modules/admin/views/scripts/user/list.phtml:38
+msgid "role"
+msgstr "role"
+
+#: application/modules/admin/views/scripts/user/list.phtml:40
+msgid "email"
+msgstr "email"
+
+#: application/modules/admin/views/scripts/widget/add.phtml:18
+msgid "Change Type"
+msgstr "Změnit typ"
+
+#: application/modules/admin/views/scripts/widget/index.phtml:10
+msgid "You <b>must first create places</b> for widgets!"
+msgstr "Nejdříve <b>musíte vytvořit umístění</b> pro widgety."
+
+#: application/modules/admin/views/scripts/widget/list.phtml:12
+msgid "INFO: Select widget place to see widgets belong to it."
+msgstr "INFO: K zobrazení widgetů musíte prvně vybral umístění."
+
+#: application/modules/admin/views/scripts/widget/list.phtml:32
+msgid "- widget place -"
+msgstr "- umístění pro widgety -"
+
+#: application/modules/admin/views/scripts/widget/list.phtml:44
+#: application/modules/admin/views/scripts/widget-place/list.phtml:23
+msgid "type"
+msgstr "typ"
+
+#: application/modules/admin/views/scripts/_elements/content-buttons.phtml:19
+#: application/modules/admin/views/scripts/_elements/quick-buttons.phtml:33
+msgid "missing description"
+msgstr "popisek chybí"
+
+#: application/modules/admin/views/scripts/_elements/fastjump-form.phtml:14
+msgid "- fast change -"
+msgstr "- rychlá změna -"
+
+#: application/modules/admin/views/scripts/_elements/photo-gallery.phtml:20
+msgid "Date"
+msgstr "Datum"
+
+#: application/modules/admin/views/scripts/_elements/photo-gallery.phtml:22
+msgid "WARNING: Are you sure?"
+msgstr "UPOZORNĚNÍ: Jste si opravdu jistí?"
+
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:33
+msgid "- per page -"
+msgstr "- na stránku -"
+
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:36
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:38
+msgid "~0~ inputs"
+msgstr "~0~ záznamů"
+
+#: application/modules/admin/views/scripts/_elements/restrict-form.phtml:63
+msgid "OK"
+msgstr "OK"
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:13
+msgid "Do you really want to activate this revision? It will rewrite actual content!"
+msgstr "Opravdu chcete aktivovat tuto revizi? Současný obsah bude smazán!"
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:26
+msgid "id"
+msgstr "id"
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:29
+msgid "notice"
+msgstr "poznámka"
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:30
+msgid "preview"
+msgstr "náhled"
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:31
+msgid "activate"
+msgstr "aktivovat"
+
+#: application/modules/admin/views/scripts/_elements/table-revision.phtml:41
+msgid "Show revision"
+msgstr "Zobrazit revizi"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:35
+#: application/modules/admin/views/scripts/_elements/table.phtml:32
+msgid "text"
+msgstr "text"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:36
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:64
+#: application/modules/admin/views/scripts/_elements/table.phtml:33
+msgid "logo"
+msgstr "logo"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:37
+#: application/modules/admin/views/scripts/_elements/table.phtml:34
+msgid "password"
+msgstr "heslo"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:40
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:68
+#: application/modules/admin/views/scripts/_elements/table.phtml:37
+msgid "edit"
+msgstr "editovat"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:41
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:72
+#: application/modules/admin/views/scripts/_elements/table.phtml:38
+#: application/modules/admin/views/scripts/_elements/table.phtml:39
+msgid "delete"
+msgstr "smazat"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:60
+#: application/modules/admin/views/scripts/_elements/table.phtml:58
+msgid "status"
+msgstr "status"
+
+#: application/modules/admin/views/scripts/_elements/table-tree.phtml:111
+#: application/modules/admin/views/scripts/_elements/table.phtml:85
+msgid "detail"
+msgstr "detail"
+
+#: application/modules/admin/views/scripts/_elements/wysiwyg-setting.phtml:45
+msgid "Editor"
+msgstr "Editor"
+
+#: application/modules/admin/views/scripts/_elements/wysiwyg-setting.phtml:46
+msgid "HMTL"
+msgstr "HMTL"
+
+#: application/modules/admin/views/scripts/_elements/wysiwyg-setting.phtml:47
+msgid "New Image"
+msgstr "Nový Obrázek"
+
+#: application/modules/admin/views/scripts/_forms/language.phtml:19
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:18
+msgid "Value is required and can't be empty"
+msgstr "Položka je vyžadována, a proto nemůže být prázdná"
+
+#: application/modules/admin/views/scripts/_forms/language.phtml:62
+#: application/modules/admin/views/scripts/_forms/language.phtml:65
+#: application/modules/admin/views/scripts/_forms/language.phtml:72
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:60
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:63
+#: application/modules/advert/views/scripts/ad/form/ad.phtml:70
+msgid "Value"
+msgstr "Hodnota"
+
+#: application/modules/admin/views/scripts/_inc/left.phtml:13
+msgid "customize this"
+msgstr "upravit"
+
+#: application/modules/admin/views/scripts/_inc/top-row.phtml:14
+msgid "PROJECT"
+msgstr "PROJEKT"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:13
+msgid "First"
+msgstr "První"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:29
+msgid "Last"
+msgstr "Poslední"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:33
+msgid "Showing"
+msgstr "Zobrazuji"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+msgid "from"
+msgstr "z"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+msgid "from record"
+msgstr "záznamu"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+msgid "from records"
+msgstr "záznamů"
+
+#: application/modules/admin/views/scripts/_paginator/default.phtml:34
+msgid "from records2"
+msgstr "záznamů"
+
+#: application/modules/advert/views/scripts/index/index.phtml:8
+msgid "New Classified Ad"
+msgstr ""
+
+#: application/modules/advert/views/scripts/_elements/ads.phtml:21
+#: application/modules/advert/views/scripts/_elements/articles.phtml:27
+msgid "Posted on ~0~"
+msgstr "Publikováno ~0~"
+
+#: application/modules/advert/views/scripts/_elements/ads.phtml:37
+#: application/modules/advert/views/scripts/_elements/articles.phtml:43
+msgid "Categories:"
+msgstr "Kategorie:"
+
+#: application/modules/advert/views/scripts/_elements/ads.phtml:42
+#: application/modules/advert/views/scripts/_elements/articles.phtml:48
+msgid "Tagged:"
+msgstr "Štítky:"
+
+#: application/modules/advert/views/scripts/_elements/categories.phtml:31
+msgid "Posted in ~0~"
+msgstr "Publikováno v kategorii ~0~"
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:20
+msgid "Your Name"
+msgstr "Jméno a Příjmení"
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:24
+msgid "Your E-mail"
+msgstr "E-mail"
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:28
+msgid "Your Phone"
+msgstr "Telefon"
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:32
+msgid "Your Message"
+msgstr "Vaše zpráva"
+
+#: application/modules/advert/views/scripts/_inc/contact-form.phtml:35
+msgid "Send"
+msgstr "Odeslat"
+
+#: application/modules/advert/views/scripts/_inc/statistics.phtml:16
+msgid "Statistics"
+msgstr "Statistika"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:14
+msgid "Newer articles"
+msgstr "Novější články"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:21
+msgid "Older articles"
+msgstr "Starší články"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+msgid "from article"
+msgstr "článku"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+msgid "from articles"
+msgstr "článků"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+msgid "from articles2"
+msgstr "článků"
+
+#: application/modules/advert/views/scripts/_paginator/articles.phtml:25
+#: application/modules/advert/views/scripts/_paginator/param.phtml:50
+msgid "Showing <b>~0~ - ~1~</b> from <b>~2~</b>"
+msgstr "Zobrazuji <b>~0~ - ~1~</b> ze <b>~2~</b>"
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:13
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:15
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:22
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:25
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:32
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:34
+msgid "Go to page: ~0~"
+msgstr "Přejít na ~0~. stránku "
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:39
+msgid "from category"
+msgstr "kategorie"
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:39
+msgid "from categories"
+msgstr "kategorií"
+
+#: application/modules/advert/views/scripts/_paginator/categories.phtml:39
+msgid "from categories2"
+msgstr "katerogrií"
+
+#: application/modules/article/views/scripts/article/detail.phtml:70
+msgid "Leave a reply &#187;"
+msgstr "Přidat komentář &#187;"
+
+#: application/modules/article/views/scripts/article/detail.phtml:91
+msgid "Reply &#187;"
+msgstr "Odpovědět &#187;"
+
+#: application/modules/article/views/scripts/article/revision.phtml:8
+msgid "Revision: <b>~0~</b> [~1~]"
+msgstr "Revize: <b>~0~</b> [~1~]"
+
+#: application/modules/article/views/scripts/article/revision.phtml:29
+msgid "Actual content"
+msgstr "Aktuální obsah"
+
+#: application/modules/article/views/scripts/_elements/articles.phtml:25
+msgid "Posted in: ~0~"
+msgstr "Publikováno v kategorii ~0~"
+
+#: application/modules/article/views/scripts/_elements/articles.phtml:29
+msgid "Tagged by"
+msgstr "Označeno tagem"
+
+#: application/modules/article/views/scripts/_elements/articles.phtml:39
+msgid "Shown: ~0~x"
+msgstr "Zobrazeno: ~0~x"
+
+#: application/modules/article/views/scripts/_elements/photos.phtml:26
+#: application/modules/article/views/scripts/_elements/photos.phtml:29
+msgid "All Photos from category: ~0~"
+msgstr "Všechny fotky z kategorie: ~0~"
+
+#: application/modules/article/views/scripts/_elements/photos.phtml:38
+msgid "All Photos tagged: ~0~"
+msgstr "Všechny fotky označené tagem: ~0~"
+
+#: application/modules/article/views/scripts/_elements/relatives.phtml:9
+msgid "Relative articles"
+msgstr "Související články"
+
+#: application/modules/article/views/scripts/_paginator/photos.phtml:40
+msgid "from photo"
+msgstr "fotky"
+
+#: application/modules/article/views/scripts/_paginator/photos.phtml:40
+msgid "from photos"
+msgstr "fotek"
+
+#: application/modules/article/views/scripts/_paginator/photos.phtml:40
+msgid "from photos2"
+msgstr "fotek"
+
+#: application/modules/default/views/scripts/authentication/forgot.phtml:14
+msgid "Enter your email address."
+msgstr "Vložte svoji e-mailovou adresu."
+
+#: application/modules/default/views/scripts/authentication/forgot.phtml:21
+msgid "Sing In"
+msgstr "Přihlásit se"
+
+#: application/modules/default/views/scripts/authentication/login.phtml:15
+msgid "Enter your <b>e-mail address</b> and <b>password</b>."
+msgstr "Vyplňte svou <b>e-mailovou adresu</b> a <b>heslo</b>."
+
+#: application/modules/default/views/scripts/error/error.phtml:10
+msgid "Homepage"
+msgstr "Úvodní stránka"
+
+#~ msgid "Select menu input"
+#~ msgstr "Vyberte typ odkazu"
+
+#~ msgid "category"
+#~ msgstr "kategorie"
+
+#~ msgid "Change type"
+#~ msgstr "Změnit typ"
+
+#~ msgid "INFO: Select menu place to see menu inputs belong to it."
+#~ msgstr ""
+#~ "INFO: K zobrazení položek menu vyberte nejdříve umístění, pro které "
+#~ "chcete položky vidět."
+
+#~ msgid "Relative has been removed."
+#~ msgstr "Související článek byl odstraněn."
+
+#~ msgid "Relative could not be removed."
+#~ msgstr "Související článek nemohl být ostraněn."
+
+#~ msgid "Revision cannot be activated."
+#~ msgstr "Revize nemůže být aktivována."
+
+#~ msgid "Revision ~0~ activated."
+#~ msgstr "Aktivována revize č. ~0~."
+
+#~ msgid "Revision has been activated."
+#~ msgstr "Revize byla aktivována."
+
+#~ msgid "Picasa Id is missing."
+#~ msgstr "Picasa ID není nastaveno."
+
+#~ msgid "Import from Picasa Web has succeeded."
+#~ msgstr "Import z Picasa Web proběhl v pořádku."
+
+#~ msgid "Static page <b>~0~</b> has been published."
+#~ msgstr "Statická stránka <b>~0~</b> byla zveřejněna."
+
+#~ msgid "Static page <b>~0~</b> could not be published."
+#~ msgstr "Statická stránka <b>~0~</b> nemohla být zveřejněna."
+
+#~ msgid "Static page <b>~0~</b> has been unpublished."
+#~ msgstr "Statická stránka <b>~0~</b> byla zneaktivněna."
+
+#~ msgid "Static page <b>~0~</b> could not be unpublished."
+#~ msgstr "Statická stránka <b>~0~</b> nemohla být zneaktivněna."
+
+#~ msgid "Feature Image"
+#~ msgstr "Obrázek"
+
+#~ msgid "last input"
+#~ msgstr "poslední záznam"
+
+#~ msgid "Current category logo"
+#~ msgstr "Aktuální logo kategorie"
+
+#~ msgid ""
+#~ "Hint: If you want to delete category picture - submit empty form below."
+#~ msgstr ""
+#~ "Nápověda: Pokud chcete smazat aktuální obrázek pro kategorii, odešlete "
+#~ "prázdný formulář, který naleznete níže."
+
+#~ msgid "Posted on ~0~ in ~1~"
+#~ msgstr "Publikováno ~0~ v kategorii ~1~"
+
+#~ msgid "articles_link"
+#~ msgstr "clanky"
+
+#~ msgid "unknown"
+#~ msgstr "neznámý"
+
+#~ msgid "Article <b>~0~</b> content has been updated."
+#~ msgstr "Obsah článku <b>~0~</b> byl aktualizován."
+
+#~ msgid "New relative article for  <b>~0~</b> has been set."
+#~ msgstr "Nový související článek pro <b>~0~</b> byla nastaven."
+
+#~ msgid "Static page <b>~0~</b> content has been updated."
+#~ msgstr "Obsah statické stránky <b>~0~</b> byl aktualizován."
+
+#~ msgid "Photos focus on ~0~"
+#~ msgstr "Fotky zaměřené na ~0~"
+
+#~ msgid "Photos focus on ~0~ - Today I would like to show photos about ~0~"
+#~ msgstr "Fotky zaměřené na ~0~ - Prohlédněte si mé fotky zaměřené ~0~"
+
+#~ msgid "photo ~0~, photo about ~0~, ~0~ discussion, ~0~ review"
+#~ msgstr "foto ~0~, foto na téma ~0~, ~0~ diskuze, ~0~ foto"
+
+#~ msgid "Live preview"
+#~ msgstr "Živý náhled"
+
+#~ msgid "Photo categories"
+#~ msgstr "Foto kategorie"
+
+#~ msgid ""
+#~ "List of photo categories. Browse photo categories with my pictures and "
+#~ "have a fun."
+#~ msgstr ""
+#~ "Seznam foto kategorií. Projděte si mé foto kategorie a užijte si hromadu "
+#~ "zábavy."
+
+#~ msgid "photo category, category list, photo list"
+#~ msgstr "foto kategorie, seznam kategorií, seznam fotek"
+
+#~ msgid ""
+#~ "Do you have something to tell on topic: <strong>~0~</strong>? Comments "
+#~ "are ready for you."
+#~ msgstr ""
+#~ "Máte co říci na téma <strong>~0~</strong>? Podělte se o svůj názor ..."
+
+#~ msgid "Add comment"
+#~ msgstr "Přidat komentár"
+
+#~ msgid "says"
+#~ msgstr "říká"
+
+#~ msgid "Czech"
+#~ msgstr "Čeština"
+
+#~ msgid "English"
+#~ msgstr "Angličtina"
+
+#~ msgid "Polish"
+#~ msgstr "Polština"
+
+#~ msgid "News"
+#~ msgstr "Aktuality"
+
+#~ msgid "all news"
+#~ msgstr "všechny aktuality"
+
+#~ msgid "Photos's data"
+#~ msgstr "Data o fotce"
+
+#~ msgid "Time's data"
+#~ msgstr "Časové údaje"
+
+#~ msgid "Picture"
+#~ msgstr "Obrázek"
+
+#~ msgid "INFO: Select parent to see photos belong to it."
+#~ msgstr ""
+#~ "INFO: K zobrazení fotek vyberte nejdříve kategorii, pro kterou chcete "
+#~ "fotky vidět."
+
+#~ msgid "New article"
+#~ msgstr "Nový článek"
+
+#~ msgid "Article <b>~0~</b> has been published."
+#~ msgstr "Článek <b>~0~</b> byl zveřejněn."
+
+#~ msgid "Article <b>~0~</b> could not be published."
+#~ msgstr "Článek <b>~0~</b> nemohl být zveřejněn."
+
+#~ msgid "Article <b>~0~</b> has been unpublished."
+#~ msgstr "Článek <b>~0~</b> byl zneaktivněn."
+
+#~ msgid "Article <b>~0~</b> could not be unpublished."
+#~ msgstr "Článek <b>~0~</b> nemohl být zneaktivněn."
+
+#~ msgid "Setting"
+#~ msgstr "Nastavení"
+
+#~ msgid "New widget"
+#~ msgstr "Nový widget"
+
+#~ msgid "Title [SEO]"
+#~ msgstr "Název [SEO]"
+
+#~ msgid "No category logo is set"
+#~ msgstr "Tato kategorie zatím nemá žádné logo."
+
+#~ msgid "Homepage link"
+#~ msgstr "Úvodní stránka"
+
+#~ msgid "Text page"
+#~ msgstr "Textová stránka"
+
+#~ msgid "Publish"
+#~ msgstr "Publikovat"
+
+#~ msgid "Unpublish"
+#~ msgstr "Zneaktivnit"
+
+#~ msgid "Relatives"
+#~ msgstr "Příbuzní"
+
+#~ msgid "Article's data"
+#~ msgstr "Data o článku"
+
+#~ msgid "Shown"
+#~ msgstr "Zobrazeno"
+
+#~ msgid "Revision history"
+#~ msgstr "Historie změn"
+
+#~ msgid "Category's data"
+#~ msgstr "Data o kategorii"
+
+#~ msgid "Last input"
+#~ msgstr "Poslední záznam"
+
+#~ msgid "INFO: Select banner section to see banners belong to it."
+#~ msgstr ""
+#~ "INFO: K zobrazení bannerů vyberte nejdříve sekci, pro kterou chcete "
+#~ "bannery vidět."
+
+#~ msgid "Menu input"
+#~ msgstr "Položka v menu"
+
+#~ msgid "INFO: Select section type to see sections belong to it."
+#~ msgstr ""
+#~ "INFO: K zobrazení sekcí vyberte nejdříve typ sekcí, o který máte zájem."
+
+#~ msgid "- section type -"
+#~ msgstr "- vyberte typ -"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Widget"
+#~ msgstr "Widget"
+
+#~ msgid "Help"
+#~ msgstr "Help"
+
+#~ msgid "New widget place"
+#~ msgstr "Nové umístění"
+
+#~ msgid "Static page named <b>~0~</b> already exists in our database."
+#~ msgstr "Statická stránka <b>~0~</b> již v databázi existuje."
+
+#~ msgid "New Widget place"
+#~ msgstr "Nové umístění pro widgety"
+
+#~ msgid "Menu name"
+#~ msgstr "Název menu"
+
+#~ msgid "Page content"
+#~ msgstr "Obsah stránky"
+
+#~ msgid "Parameters"
+#~ msgstr "Parametry"
+
+#~ msgid "INFO: Select category type to see categories belong to it."
+#~ msgstr ""
+#~ "INFO: K zobrazení kategorií vyberte nejdříve typ kategorií, o který máte "
+#~ "zájem."
+
+#~ msgid "New Menu place"
+#~ msgstr "Nové umístění pro menu"
+
+#~ msgid "Page's data"
+#~ msgstr "Data o stránce"
+
+#~ msgid "markItUp editor"
+#~ msgstr "markItUp editor"
+
+#~ msgid "WYSIWYG editor"
+#~ msgstr "WYSIWYG editor"
+
+#~ msgid "read more"
+#~ msgstr "více"
+
+#~ msgid "New comment on the post [~0~]"
+#~ msgstr "Nový komentář k příspěvku [~0~]"
+
+#~ msgid "A new comment on the post [~0~] is waiting for your approval"
+#~ msgstr "Nový komentář k příspěvku [~0~] čeká na schválení"
+
+#~ msgid "is not spam"
+#~ msgstr "není spam"
+
+#~ msgid "Approve it"
+#~ msgstr "Schválit"
+
+#~ msgid "Owners"
+#~ msgstr "Vlastníci"
+
+#~ msgid "Owner"
+#~ msgstr "Vlastník"
+
+#~ msgid "Admin role"
+#~ msgstr "Administrátor"
+
+#~ msgid "Article comments"
+#~ msgstr "Komentáře"
+
+#~ msgid "Comment from user <b>~0~</b> cannot be approved."
+#~ msgstr "Komentář od uživatele <b>~0~</b> nemůže být schválen."
+
+#~ msgid "Comment from user <b>~0~</b> has been approved."
+#~ msgstr "Komentář od uživatele <b>~0~</b> byl schválen."
+
+#~ msgid "Comment from user <b>~0~</b> has been deleted."
+#~ msgstr "Komentář od uživatele <b>~0~</b> byl smazán."
+
+#~ msgid "Comment from user <b>~0~</b> cannot be disapproved."
+#~ msgstr "Komentář od uživatele <b>~0~</b> nemůže byt zneaktivněn."
+
+#~ msgid "Comment from user <b>~0~</b> has been disapproved."
+#~ msgstr "Komentář od uživatele <b>~0~</b> byl zneaktivněn."
+
+#~ msgid "Comment from <b>~0~</b> has been updated."
+#~ msgstr "Komentář od uživatele <b>~0~</b> byl aktualizován."
+
+#~ msgid "Parent comment"
+#~ msgstr "Odpověď na"
+
+#~ msgid "- select article category -"
+#~ msgstr "- vyberte kategorii článků -"
+
+#~ msgid "disapprove"
+#~ msgstr "zneaktivnit"
+
+#~ msgid "Index page"
+#~ msgstr "Úvodní stránka"
+
+#~ msgid "Articles for our visitors"
+#~ msgstr "Články - poradna, nápověda, zajímavosti ze života, minea blog"
+
+#~ msgid "read articles"
+#~ msgstr "přečíst články"
+
+#~ msgid "Leave message"
+#~ msgstr "Nový komentář"
+
+#~ msgid "Wrong current password."
+#~ msgstr "Špatné současné heslo."
+
+#~ msgid "Index"
+#~ msgstr "Index"
+
+#~ msgid "Page"
+#~ msgstr "Stránka"
+
+#~ msgid "Text pages"
+#~ msgstr "Textové stránky"
+
+#~ msgid "Form: ADMIN MENU"
+#~ msgstr "Formulář: ADMIN MENU"
+
+#~ msgid "Widget place"
+#~ msgstr "Umístění"
+
+#~ msgid "Form: WIDGET - CODE"
+#~ msgstr "Formulář: WIDGET - KÓD"
+
+#~ msgid "Form: WIDGET PLACE"
+#~ msgstr "Formulář: UMÍSTĚNÍ PRO WIDGETY"
+
+#~ msgid "Form: WIDGET - SEPARATOR"
+#~ msgstr "Formulář: WIDGET - ODDĚLOVAČ"
+
+#~ msgid "Form: WIDGET - SHORTCUT"
+#~ msgstr "Formulář: WIDGET - ODKAZ"
+
+#~ msgid "Form: ADVERT - CATEGORY"
+#~ msgstr "Formulář: INZERCE - KATEGORIE"
+
+#~ msgid "Form: ADVERT - CATEGORY - LOGO"
+#~ msgstr "Formulář: INZERCE - LOGO PRO KATEGORII"
+
+#~ msgid "Meta title"
+#~ msgstr "Titulek [META]"
+
+#~ msgid "SEO description"
+#~ msgstr "SEO - Popis "
+
+#~ msgid "SEO keywords"
+#~ msgstr "SEO - Klíčová slova"
+
+#~ msgid "Form: ARTICLE - CATEGORY"
+#~ msgstr "Formulář: KATEGORIE ČLÁNKŮ "
+
+#~ msgid "Form: ARTICLE - CATEGORY - LOGO"
+#~ msgstr "Formulář: ČLÁNKY - KATEGORIE - LOGO"
+
+#~ msgid "Article perex"
+#~ msgstr "Perex článku"
+
+#~ msgid "Menu place"
+#~ msgstr "Umístění pro menu"
+
+#~ msgid "Form: MENU - ARTICLE"
+#~ msgstr "Formulář: MENU - ODKAZ NA ČLÁNEK"
+
+#~ msgid "Form: MENU - ARTICLE CATEGORY"
+#~ msgstr "Formulář: MENU - KATEGORIE ČLÁNKŮ "
+
+#~ msgid "Form: MENU - HOMEPAGE"
+#~ msgstr "Formulář: MENU - ÚVODNÍ STRÁNKA"
+
+#~ msgid "Form: MENU - EXTERNAL LINK"
+#~ msgstr "Formulář: MENU - ODKAZ NA EXTERNÍ ZDROJ"
+
+#~ msgid "Form: MENU PLACE"
+#~ msgstr "Formulář: UMÍSTĚNÍ PRO MENU"
+
+#~ msgid "Form: MENU - TEXT PAGE"
+#~ msgstr "Formulář: MENU - TEXTOVÁ STRÁNKA"
+
+#~ msgid "Form: MESSAGE"
+#~ msgstr "Formulář: ZPRÁVA"
+
+#~ msgid "Form: USER"
+#~ msgstr "Formulář: UŽIVATELÉ"
+
+#~ msgid "Form: USER PASSWORD"
+#~ msgstr "Formulář: UŽIVATEL - HESLO"
+
+#~ msgid "Current password"
+#~ msgstr "Současné heslo"
+
+#~ msgid "Retype new password"
+#~ msgstr "Přepište nové heslo"
+
+#~ msgid "Form: CHANGE PASSWORD"
+#~ msgstr "Formulář: ZMĚNA HESLA"
+
+#~ msgid "Form: WIDGET - LAST ARTICLES"
+#~ msgstr "Formulář: WIDGET - POSLEDNÍ ČLÁNKY"
+
+#~ msgid "Form: WIDGET - RANDOM ARTICLES"
+#~ msgstr "Formulář: WIDGET - NÁHODNÉ ČLÁNKY"
+
+#~ msgid "Form: WIDGET - SHOWN ARTICLES"
+#~ msgstr "Formulář: WIDGET - NEJČTENĚJŠÍ ČLÁNKY"
+
+#~ msgid "Form: WIDGET - TEXT"
+#~ msgstr "Formulář: WIDGET - TEXT"
+
+#~ msgid "New advertise"
+#~ msgstr "Nový inzerát"
+
+#~ msgid "Advert name"
+#~ msgstr "Titulek inzerátu"
+
+#~ msgid "WWW"
+#~ msgstr "WWW"
+
+#~ msgid "Write text of your ad - max 500 letters"
+#~ msgstr "Napište text inzerátu - max 500 znaků"
+
+#~ msgid "Ad type"
+#~ msgstr "Typ inzerátu"
+
+#~ msgid "Offer"
+#~ msgstr "Nabídka"
+
+#~ msgid "Demand"
+#~ msgstr "Poptávka"
+
+#~ msgid "District"
+#~ msgstr "Kraj"
+
+#~ msgid "Ceska republika"
+#~ msgstr "Česká republika"
+
+#~ msgid "Company"
+#~ msgstr "Společnost"
+
+#~ msgid "Person"
+#~ msgstr "Osoba"
+
+#~ msgid "Mobile"
+#~ msgstr "Mobilní telefon"
+
+#~ msgid "Confirm password"
+#~ msgstr "Potvrdit heslo"
+
+#~ msgid "Agree with conditions"
+#~ msgstr "Souhlas"
+
+#~ msgid ""
+#~ "By thicking this button I'm saying: I have read tearms and conditions and "
+#~ "I agree with them."
+#~ msgstr ""
+#~ "Zašktnutím tohoto políčka prohlašuji, že jsem četl(-a) podmínky a "
+#~ "pravidla inzerce a bez výjimky s nimi souhlasím."
+
+#~ msgid "Retype chars"
+#~ msgstr "Přepište obrázek"
+
+#~ msgid "Save me"
+#~ msgstr "Ulož mne"
+
+#~ msgid "Back to profile"
+#~ msgstr "Zpět na profil"
+
+#~ msgid "Change password"
+#~ msgstr "Změnit heslo"
+
+#~ msgid "Edit profile"
+#~ msgstr "Edit profil"
+
+#~ msgid "Updated"
+#~ msgstr "Aktualizováno"
+
+#~ msgid "TOP"
+#~ msgstr "TOP"
+
+#~ msgid "Menu link details"
+#~ msgstr "Detail odkazu "
+
+#~ msgid "Back to detail"
+#~ msgstr "Zpět na detail"
+
+#~ msgid "WARNING: Do you really want to delete this menu?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat toto menu?"
+
+#~ msgid "WARNING: Do you really want to delete this user?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tohoto uživatele?"
+
+#~ msgid "passwd"
+#~ msgstr "heslo"
+
+#~ msgid "Basic widgets"
+#~ msgstr "Základní widgety"
+
+#~ msgid "Separate link in left menu"
+#~ msgstr "Odělte si jednotlivé odkazy v levém menu"
+
+#~ msgid "Back detail"
+#~ msgstr "Zpět na detail"
+
+#~ msgid "WARNING: Do you really want to delete this widget?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tento widget?"
+
+#~ msgid "WARNING: Do you really want to delete this widget place?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat toto umístění pro widgety?"
+
+#~ msgid "records"
+#~ msgstr "záznamů"
+
+#~ msgid "WARNING: Do you really want to delete this category?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto kategorii?"
+
+#~ msgid "adverts"
+#~ msgstr "inzeráty"
+
+#~ msgid "Edit content"
+#~ msgstr "Editovat obsah"
+
+#~ msgid "Page name"
+#~ msgstr "Název textové stránky"
+
+#~ msgid "WARNING: Do you really want to delete this article?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tento článek?"
+
+#~ msgid "s"
+#~ msgstr "s"
+
+#~ msgid "c"
+#~ msgstr "c"
+
+#~ msgid "w"
+#~ msgstr "w"
+
+#~ msgid "setting"
+#~ msgstr "nastavení"
+
+#~ msgid "ra"
+#~ msgstr "sč"
+
+#~ msgid "Comments waiting for approval"
+#~ msgstr "Komentáře, které čekají na schválení"
+
+#~ msgid "WARNING: Do you really want to delete this relation?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto vazbu?"
+
+#~ msgid "Edit setting"
+#~ msgstr "Editovat nastavení"
+
+#~ msgid "id_user"
+#~ msgstr "uživatel"
+
+#~ msgid "fv"
+#~ msgstr "fv"
+
+#~ msgid "Place"
+#~ msgstr "Umístění"
+
+#~ msgid "Internal links"
+#~ msgstr "Vnitřní odkazy"
+
+#~ msgid "External links"
+#~ msgstr "Externí odkazy"
+
+#~ msgid "Change menu input type"
+#~ msgstr "Změnit typ položky"
+
+#~ msgid "WARNING: Do you really want to delete this menu input?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto položku menu?"
+
+#~ msgid "WARNING: Do you really want to delete this menu place?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat toto umístění pro menu?"
+
+#~ msgid "Sent messages"
+#~ msgstr "Odeslaná pošta"
+
+#~ msgid "- recieved from -"
+#~ msgstr "- přijato od -"
+
+#~ msgid "recieved from"
+#~ msgstr "odesilatel"
+
+#~ msgid "not yet"
+#~ msgstr "zatím nikdy"
+
+#~ msgid "previous"
+#~ msgstr "předchozí"
+
+#~ msgid "next"
+#~ msgstr "další"
+
+#~ msgid "Forward"
+#~ msgstr "Přeposlat"
+
+#~ msgid "Message sent"
+#~ msgstr "Zpráva odeslána"
+
+#~ msgid "Message read"
+#~ msgstr "Zpráva přečtena"
+
+#~ msgid "WARNING: Do you really want to delete this message?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto zprávu?"
+
+#~ msgid "WARNING: Do you really want to delete this text page?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto textovou stránku?"
+
+#~ msgid "Add text widget"
+#~ msgstr "Přidat textový widget"
+
+#~ msgid "Add widget with last articles"
+#~ msgstr "Přidat widget - poslední články"
+
+#~ msgid "Add widget with random articles"
+#~ msgstr "Přidat widget - náhodné články"
+
+#~ msgid "Add widget with the most shown articles"
+#~ msgstr "Přidat widget - nejčtenější články"
+
+#~ msgid "Add new advertise"
+#~ msgstr "Přidat nový inzerát zdarma"
+
+#, fuzzy
+#~ msgid "Revision has ben activated."
+#~ msgstr "Menu bylo úspěšně přegenerováno."
+
+#~ msgid "Google map key"
+#~ msgstr "Google map klíč"
+
+#~ msgid "deal"
+#~ msgstr "dohoda"
+
+#~ msgid "This category is empty. "
+#~ msgstr "Tato kategorie je momentálně prázdná."
+
+#~ msgid "Statistics - adverts"
+#~ msgstr "Statistika - inzeráty"
+
+#~ msgid "from advert"
+#~ msgstr "inzerátu"
+
+#~ msgid "from adverts"
+#~ msgstr "inzerátů"
+
+#~ msgid "from adverts2"
+#~ msgstr "inzerátů"
+
+#, fuzzy
+#~ msgid "Newest products"
+#~ msgstr "Nový produkt"
+
+#~ msgid "Text page detail"
+#~ msgstr "Obsah"
+
+#, fuzzy
+#~ msgid "Add ~0~ into basket"
+#~ msgstr "Přidat odkaz na článek"
+
+#, fuzzy
+#~ msgid "out of stock"
+#~ msgstr "Na skladě"
+
+#~ msgid "Catalogue attributes"
+#~ msgstr "Parametry pro katalog"
+
+#~ msgid "New attribute"
+#~ msgstr "Nový parametr"
+
+#~ msgid "Attribute <b>~0~</b> has been deleted."
+#~ msgstr "Parametr <b>~0~</b> byl smazán."
+
+#~ msgid "Values"
+#~ msgstr "Hodnoty"
+
+#~ msgid "New value"
+#~ msgstr "Nová hodnota"
+
+#~ msgid "Attribute value <b>~0~</b> has been deleted."
+#~ msgstr "Hodnota parametru <b>~0~</b> byla smazána."
+
+#~ msgid "Attribute <b>~0~</b> has been stored."
+#~ msgstr "Parametr <b>~0~</b> byl uložen."
+
+#~ msgid "Attribute <b>~0~</b> is already in our database."
+#~ msgstr "Parametr <b>~0~</b> již v databázi existuje."
+
+#~ msgid "Attribute <b>~0~</b> has been updated."
+#~ msgstr "Parametr <b>~0~</b> byl aktualizován."
+
+#~ msgid "Attribute value <b>~0~</b> has been stored."
+#~ msgstr "Hodnota parametru <b>~0~</b> byla uložena."
+
+#~ msgid "Attribute value <b>~0~</b> has been updated."
+#~ msgstr "Hodnota parametru <b>~0~</b> byla aktualizována."
+
+#~ msgid "Catalogue attribute sets"
+#~ msgstr "Sety parametrů pro katalog"
+
+#~ msgid "Attributes"
+#~ msgstr "Atributy"
+
+#~ msgid "Attribute relation with <b>~0~</b> has been deleted."
+#~ msgstr "Vazba na atribut <b>~0~</b> byla smazána."
+
+#~ msgid "Attribute set <b>~0~</b> has been deleted."
+#~ msgstr "Set atributů <b>~0~</b> byl smazán."
+
+#~ msgid "Attribute set <b>~0~</b> has been stored."
+#~ msgstr "Set atributů <b>~0~</b> byl uložen."
+
+#~ msgid "Attribute set <b>~0~</b> is already in our database."
+#~ msgstr "Set atributů <b>~0~</b> již v databázi existuje."
+
+#~ msgid "Attribute relation with <b>~0~</b> has been stored."
+#~ msgstr "Vazba na atribut <b>~0~</b> byla uložena."
+
+#~ msgid "Attribute set <b>~0~</b> has been updated."
+#~ msgstr "Set atributů <b>~0~</b> byl aktualizován."
+
+#~ msgid "Catalogue categories"
+#~ msgstr "Kategorie pro katalog"
+
+#~ msgid "Category tree"
+#~ msgstr "Strom kategorií"
+
+#~ msgid "Payment methods"
+#~ msgstr "Platební metody"
+
+#~ msgid "New method"
+#~ msgstr "Nová metoda"
+
+#~ msgid "Country list"
+#~ msgstr "Seznam zemí"
+
+#~ msgid "New country"
+#~ msgstr "Nová země"
+
+#~ msgid "Edit country"
+#~ msgstr "Editovat zemi"
+
+#~ msgid "Payment method <b>~0~</b> has been deleted."
+#~ msgstr "Platební metoda <b>~0~</b> byla smazána."
+
+#~ msgid "Edit2"
+#~ msgstr "Editace"
+
+#~ msgid "Payment method <b>~0~</b> has been updated."
+#~ msgstr "Platební metoda <b>~0~</b> byla aktualizována."
+
+#~ msgid "Catalogue products"
+#~ msgstr "Produkty v katalogu"
+
+#~ msgid "Select product type"
+#~ msgstr "Vyberte typ produktu"
+
+#~ msgid "New picture"
+#~ msgstr "Nový obrázek"
+
+#~ msgid "Pictures for product <b>~0~</b> have been stored."
+#~ msgstr "Obrázky pro produkt <b>~0~</b> byly uloženy."
+
+#~ msgid "At least one field is not fill up correctly."
+#~ msgstr "Minimálně jedna položka formuláře je špatně vyplněna."
+
+#~ msgid "Price 0-9"
+#~ msgstr "Cena 0-9"
+
+#~ msgid "Price 9-0"
+#~ msgstr "Cena 9-0"
+
+#~ msgid "Sku 0-9"
+#~ msgstr "Sku 0-9"
+
+#~ msgid "Sku 9-0"
+#~ msgstr "Sku 9-0"
+
+#~ msgid "Quantity 0-9"
+#~ msgstr "Počet kusů 0-9"
+
+#~ msgid "Quantity 9-0"
+#~ msgstr "Počet kusů 9-0"
+
+#~ msgid "<b>~0~</b> product(-s) have been updated"
+#~ msgstr "<b>~0~</b> produtků bylo aktualizováno."
+
+#~ msgid "Changes for <b>~0~</b> photos have been done."
+#~ msgstr "Změny pro fotografie produktu <b>~0~</b> byly uloženy."
+
+#~ msgid "Problem with uploading of picture number: <b>~0~</b>"
+#~ msgstr ""
+#~ "Při nahravání obráku <b>~0~</b> nastal problém a obrázek se pravděpodobně "
+#~ "nenahrál."
+
+#~ msgid "Shipping methods"
+#~ msgstr "Metody doručení"
+
+#~ msgid "Country price"
+#~ msgstr "Ceník pro danou zemi"
+
+#~ msgid "New country price"
+#~ msgstr "Nový ceník"
+
+#~ msgid "Clone country prices"
+#~ msgstr "Klonovat ceník"
+
+#~ msgid "Edit country price"
+#~ msgstr "Editovat ceník"
+
+#~ msgid "Shipping method <b>~0~</b> has been deleted."
+#~ msgstr "Metoda doručení <b>~0~</b> byla smazána."
+
+#~ msgid "Shipping method <b>~0~</b> has been stored."
+#~ msgstr "Metoda doručení <b>~0~</b> byla uložena."
+
+#~ msgid "Price for <b>~0~</b> has been updated."
+#~ msgstr "Cena pro <b>~0~</b> byla aktualizována."
+
+#~ msgid "Shipping method <b>~0~</b> has been updated."
+#~ msgstr "Metoda doručení <b>~0~</b> byla aktualizována."
+
+#~ msgid "Catalogue suppliers"
+#~ msgstr "Dodavatelé"
+
+#~ msgid "New supplier"
+#~ msgstr "Nový dodavatel"
+
+#~ msgid "Supplier <b>~0~</b> has been deleted."
+#~ msgstr "Dodavatel <b>~0~</b> byl smazán."
+
+#~ msgid "New invoice"
+#~ msgstr "Nová faktura"
+
+#~ msgid ""
+#~ "Invoice input for <b>~0~</b> has been deleted. Number of pieces in stock "
+#~ "has been updated."
+#~ msgstr ""
+#~ "Položka faktury pro <b>~0~</b> byla smazána. Počet kusů ve skladu byl "
+#~ "aktualizován."
+
+#~ msgid "Edit invoice"
+#~ msgstr "Editace faktury"
+
+#~ msgid "From date"
+#~ msgstr "Od datumu"
+
+#~ msgid "Until date"
+#~ msgstr "Do datumu"
+
+#~ msgid "Supplier <b>~0~</b> has been stored."
+#~ msgstr "Dodavatel <b>~0~</b> byl uložen."
+
+#~ msgid "Supplier <b>~0~</b> has been updated."
+#~ msgstr "Dodavatel <b>~0~</b> byl aktualizován."
+
+#~ msgid "ID 0-9"
+#~ msgstr "ID 0-9"
+
+#~ msgid "ID 9-0"
+#~ msgstr "ID 9-0"
+
+#~ msgid "Date 01.01. - 31.12."
+#~ msgstr "Datum 01.01.-31.12."
+
+#~ msgid "Date 31.12. - 01.01."
+#~ msgstr "Datum 31.12.-01.01."
+
+#~ msgid "Date <b>~0~</b> is not correct date format."
+#~ msgstr "Datum <b>~0~</b> není koretní."
+
+#~ msgid "<b>~0~</b> inputs for invoice have been stored."
+#~ msgstr "<b>~0~</b> záznamů pro fakturu bylo uloženo."
+
+#~ msgid ""
+#~ "Invoice input for <b>~0~</b> has been updated. Number of pieces in stock "
+#~ "has been updated too."
+#~ msgstr ""
+#~ "Položka faktury pro <b>~0~</b> byla aktualizována. Počet kusů ve skladu "
+#~ "byl také aktualizován."
+
+#~ msgid "Catalogue taxes"
+#~ msgstr "DPH"
+
+#~ msgid "User groups"
+#~ msgstr "Uživatelské skupiny"
+
+#~ msgid "New user group"
+#~ msgstr "Nová uživatelská skupina"
+
+#~ msgid "User group <b>~0~</b> has been deleted."
+#~ msgstr "Uživatelská skupina <b>~0~</b> byla smazána."
+
+#~ msgid "User group <b>~0~</b> has been stored."
+#~ msgstr "Uživatelská skupina <b>~0~</b> byla uložena."
+
+#~ msgid "User group <b>~0~</b> has been updated."
+#~ msgstr "Uživatelská skupina <b>~0~</b> byla aktualizována."
+
+#~ msgid "Countries"
+#~ msgstr "Země"
+
+#~ msgid "Catalogue"
+#~ msgstr "Katalog"
+
+#~ msgid "Attribute type"
+#~ msgstr "Typ parametru"
+
+#~ msgid "- select attribute type -"
+#~ msgstr "- vyberte typ atributu -"
+
+#~ msgid "select"
+#~ msgstr "select"
+
+#~ msgid "multi select"
+#~ msgstr "multi select"
+
+#~ msgid "Value sort"
+#~ msgstr "Hodnoty třídit podle"
+
+#~ msgid "Value sort way"
+#~ msgstr "Hodnoty třídit jak"
+
+#~ msgid "Values type"
+#~ msgstr "Typ hodnot"
+
+#~ msgid "Boolean"
+#~ msgstr "Boolean"
+
+#~ msgid "Float"
+#~ msgstr "Float"
+
+#~ msgid "Int"
+#~ msgstr "Int"
+
+#~ msgid "Varchar"
+#~ msgstr "Varchar"
+
+#~ msgid "Required"
+#~ msgstr "Vyžadováno"
+
+#~ msgid "Searchable"
+#~ msgstr "Lze vyhledávat"
+
+#~ msgid "Filterable"
+#~ msgstr "Lze filtrovat"
+
+#~ msgid "Min value"
+#~ msgstr "Minimální hodnota"
+
+#~ msgid "Max value"
+#~ msgstr "Maximální hodnota"
+
+#~ msgid "Special params"
+#~ msgstr "Speciální parametry"
+
+#~ msgid "Add another attribute"
+#~ msgstr "Přidat další parametr"
+
+#~ msgid "Attribute detail"
+#~ msgstr "Detail parametru"
+
+#~ msgid "Form: CATALOGUE - ATTRIBUTE"
+#~ msgstr "Formulář: KATALOG - PARAMETR"
+
+#~ msgid "Set detail"
+#~ msgstr "Detail setu atributů"
+
+#~ msgid "Form: ADVERT - ATTRIBUTE - SET"
+#~ msgstr "Formulář: INZERCE - SET ATRIBUTŮ"
+
+#~ msgid "Attribute"
+#~ msgstr "Atribut"
+
+#~ msgid "- select attribute -"
+#~ msgstr "- vyberte atribut - "
+
+#~ msgid "List of relations"
+#~ msgstr "Přehled vazeb"
+
+#~ msgid "Form: ADVERT - ATTRIBUTE - SET - XREF"
+#~ msgstr "Formulář: INZERCE - SET ATRIBUTŮ - VAZBA"
+
+#~ msgid "Notice"
+#~ msgstr "Poznámka"
+
+#~ msgid "Add another value"
+#~ msgstr "Přidat dalš hodnotu"
+
+#~ msgid "Values list"
+#~ msgstr "Přehled hodnot"
+
+#~ msgid "Form: CATALOGUE - ATTRIBUTE - VALUE"
+#~ msgstr "Formulář: KATALOG - PARAMETR - HODNOTA"
+
+#~ msgid "Form: CATALOGUE - CATEGORY"
+#~ msgstr "Formulář: KATALOG - KATEGORIE"
+
+#~ msgid "Form: CATALOGUE - CATEGORY - LOGO"
+#~ msgstr "Formulář: KATALOG - KATEGORIE - LOGO"
+
+#~ msgid "Add another method"
+#~ msgstr "Přidat další metodu"
+
+#~ msgid "Form: CATALOGUE - PAYMENT METHOD"
+#~ msgstr "Formulář: KATALOG - PLATEBNÍ METODA"
+
+#~ msgid "Country"
+#~ msgstr "Stát"
+
+#~ msgid "Fix price"
+#~ msgstr "Fixní cena"
+
+#~ msgid "Percent"
+#~ msgstr "Procento"
+
+#~ msgid "Form: CATALOGUE - PAYMENT METHOD - COUNTRY"
+#~ msgstr "Formulář: KATALOG - PLATEBNÍ METODA - ZEMĚ"
+
+#~ msgid "- select country -"
+#~ msgstr "- zvolte zemi -"
+
+#~ msgid "Product sku"
+#~ msgstr "Sku"
+
+#~ msgid "Short description"
+#~ msgstr "Krátký popis"
+
+#~ msgid "Keywords"
+#~ msgstr "Klíčová slova [SEO]"
+
+#~ msgid "Set as new from date"
+#~ msgstr "Nastavit jako novinku od datumu"
+
+#~ msgid "Date must be dd/mm/yyyy"
+#~ msgstr ""
+#~ "Tato položka musí odpovídat vzorci dd/mm/yyyy, tzn. např. 22/08/2010 a "
+#~ "samozřejmě musí být platná."
+
+#~ msgid "Set as new to date"
+#~ msgstr "Nastavit jako novinku do datumu"
+
+#~ msgid "Price incl. VAT"
+#~ msgstr "Cena s DPH"
+
+#~ msgid "Special price"
+#~ msgstr "Speciální cena"
+
+#~ msgid "Special price from date"
+#~ msgstr "Speciální cena od"
+
+#~ msgid "Special price to date"
+#~ msgstr "Speciální cena do"
+
+#~ msgid "Tax class"
+#~ msgstr "DPH"
+
+#~ msgid "Form: CATALOGUE - PRODUCT"
+#~ msgstr "Formulář: KATALOG - PRODUKT"
+
+#~ msgid "- not listed -"
+#~ msgstr "- neuvedeno -"
+
+#~ msgid "Form: CATALOGUE - PRODUCT - PICTURES"
+#~ msgstr "Formulář: KATALOG - PRODUKT - FOTOGRAFIE"
+
+#~ msgid "Product type"
+#~ msgstr "Typ produktu"
+
+#~ msgid "- select product type -"
+#~ msgstr "- vyberte typ produktu -"
+
+#~ msgid "Form: CATALOGUE - PRODUCT - SELECT PRODUCT TYPE"
+#~ msgstr "Formulář: KATALOG - PRODUKT - VYBERTE TYP PRODUKTU"
+
+#~ msgid "Add another shipping method"
+#~ msgstr "Přidat další metodu doručení"
+
+#~ msgid "Go to shipping methods list"
+#~ msgstr "Zpět na seznam metod doručení"
+
+#~ msgid "Form: CATALOGUE - SHIPPING METHOD"
+#~ msgstr "Formulář: KATALOG - METODA DORUČENÍ"
+
+#~ msgid "Form: CATALOGUE - SHIPPING METHOD - COUNTRY"
+#~ msgstr "Formulář: KATALOG - METODA DORUČENÍ - ZEMĚ"
+
+#~ msgid "Min weight"
+#~ msgstr "Min váha"
+
+#~ msgid "Max weight"
+#~ msgstr "Max váha"
+
+#~ msgid "Add new country price"
+#~ msgstr "Přidat další cenu"
+
+#~ msgid "Go to country price list"
+#~ msgstr "Zpět na ceník"
+
+#~ msgid "Form: CATALOGUE - SHIPPING METHOD - COUNTRY PRICE"
+#~ msgstr "Formulář: KATALOG - METODA DORUČENÍ - CENA"
+
+#~ msgid "Clone from country"
+#~ msgstr "Klonovat podle země"
+
+#~ msgid "Form: CATALOGUE - PAYMENT METHOD - COUNTRY PRICE CLONE"
+#~ msgstr "Formulář: KATALOG - METODA DORUČENÍ - KLONOVA CENÍK"
+
+#~ msgid "Contact person"
+#~ msgstr "Kontaktní osoba"
+
+#~ msgid "Contact email"
+#~ msgstr "Kontaktní email"
+
+#~ msgid "Contact phone"
+#~ msgstr "Kontaktní telefon"
+
+#~ msgid "Contact mobile"
+#~ msgstr "Kontaktní mobil"
+
+#~ msgid "Add another supplier"
+#~ msgstr "Přidat dalšího dodavatele"
+
+#~ msgid "List of suppliers"
+#~ msgstr "Seznam dodavatelů"
+
+#~ msgid "Form: CATALOGUE - SUPPLIER"
+#~ msgstr "Formulář: KATALOG - DODAVATEL"
+
+#~ msgid "Pieces"
+#~ msgstr "Počet kusů"
+
+#~ msgid "Form: CATALOGUE - SUPPLIER - INVOICE"
+#~ msgstr "Formulář: KATALOG - DODAVATEL - FAKTURA"
+
+#~ msgid "Tax list"
+#~ msgstr "DPH"
+
+#~ msgid "Form: CATALOGUE - TAX"
+#~ msgstr "Formulář: KATALOG - DPH"
+
+#~ msgid "Global discount"
+#~ msgstr "Globální sleva"
+
+#~ msgid "Discount type"
+#~ msgstr "Typ slevy"
+
+#~ msgid "Fix"
+#~ msgstr "Fixní cena"
+
+#~ msgid "Add another user group"
+#~ msgstr "Přidat další uživatelskou skupinu"
+
+#~ msgid "List of user groups"
+#~ msgstr "Seznam uživatelských skupin"
+
+#~ msgid "Form: CATALOGUE - USER GROUP"
+#~ msgstr "Formulář: KATALOG - UŽIVATELSKÁ SKUPINA"
+
+#~ msgid "Add another country"
+#~ msgstr "Přidat další zemi"
+
+#~ msgid "Country detail"
+#~ msgstr "Detal země"
+
+#~ msgid "Form: COUNTRY"
+#~ msgstr "Formulář: ZEMĚ"
+
+#~ msgid "Default store"
+#~ msgstr "Základní obchod"
+
+#~ msgid "- select your default store -"
+#~ msgstr "- vzberte základní obchod -"
+
+#~ msgid "Minea.cz - Inzerce zdarma, bazar, inzeraty"
+#~ msgstr "Minea.cz - Inzerce zdarma, bazar, inzeráty"
+
+#~ msgid ""
+#~ "Inzerce zdarma, bazar, inzeraty - autobazar, volna pracovni mista, "
+#~ "seznamka"
+#~ msgstr ""
+#~ "Inzerce zdarma, bazar, inzeráty - autobazar, volná pracovní místa, "
+#~ "seznamka"
+
+#~ msgid ""
+#~ "inzerce zdarma, bazar, inzeraty, autobazar, volna pracovni mista, seznamka"
+#~ msgstr ""
+#~ "inzerce zdarma, bazar, inzeraty - autobazar, volna pracovni mista, "
+#~ "seznamka"
+
+#~ msgid "This code already exists in our database"
+#~ msgstr "Tento kód již v databázi existuje."
+
+#~ msgid "WARNING: Do you really want to delete this attribute?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tento atribut?"
+
+#~ msgid "value type"
+#~ msgstr "typ hodnoty"
+
+#~ msgid "values"
+#~ msgstr "hodnoty"
+
+#~ msgid "WARNING: Do you really want to delete this value?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto hodnotu?"
+
+#~ msgid "This attribute set already exists in our database"
+#~ msgstr "Tento atribut již v databázi existuje."
+
+#~ msgid "Attribute list"
+#~ msgstr "Seznam atributů"
+
+#~ msgid "WARNING: Do you really want to delete this set?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tento set atributů?"
+
+#~ msgid "attrs"
+#~ msgstr "atr."
+
+#~ msgid "Tree"
+#~ msgstr "Strom"
+
+#~ msgid "Main categories"
+#~ msgstr "Hlavní kategorie"
+
+#~ msgid "children"
+#~ msgstr "potomci"
+
+#~ msgid "tree"
+#~ msgstr "strom"
+
+#~ msgid "Method detail"
+#~ msgstr "Detail metody"
+
+#~ msgid "WARNING: Do you really want to delete this payment method country?"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto zemi pro platební metodu?"
+
+#~ msgid "country"
+#~ msgstr "země"
+
+#~ msgid "value"
+#~ msgstr "hodnota"
+
+#~ msgid "WARNING: Do you really want to delete this payment method?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto platební metodu?"
+
+#~ msgid "countries"
+#~ msgstr "země"
+
+#~ msgid "general"
+#~ msgstr "zakladní údaje"
+
+#~ msgid "meta data"
+#~ msgstr "meta data"
+
+#~ msgid "prices"
+#~ msgstr "ceny"
+
+#~ msgid "attributes"
+#~ msgstr "parametry"
+
+#~ msgid ""
+#~ "Select type of product you would like to add. If there is no suitable "
+#~ "type, go to <b>Catalogue > Attribute</b> set and create new one."
+#~ msgstr ""
+#~ "Vyberte typ produktu, který chcete přidat. Pakliže tu není vhodná volba, "
+#~ "přidejte nový - <b>Katalog > Parametry</b>."
+
+#~ msgid "WARNING: Do you really want to delete this product?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tento produkt?"
+
+#~ msgid "- all types -"
+#~ msgstr "- všechny typy - "
+
+#~ msgid "- all statuses -"
+#~ msgstr "- všechny statusy -"
+
+#~ msgid "sku"
+#~ msgstr "sku"
+
+#~ msgid "price"
+#~ msgstr "cena"
+
+#~ msgid "qty"
+#~ msgstr "qty"
+
+#~ msgid "pictures"
+#~ msgstr "obrázky"
+
+#~ msgid "Check All"
+#~ msgstr "Označit vše"
+
+#~ msgid "Uncheck All"
+#~ msgstr "Odznačit vše"
+
+#~ msgid "Do with selected"
+#~ msgstr "Provést s vybranými"
+
+#~ msgid "Edit product"
+#~ msgstr "Editovat produkt"
+
+#~ msgid "position"
+#~ msgstr "pozice"
+
+#~ msgid "repre"
+#~ msgstr "repre"
+
+#~ msgid "inactive"
+#~ msgstr "neaktivní"
+
+#~ msgid "submit"
+#~ msgstr "odeslat"
+
+#~ msgid "Meta data"
+#~ msgstr "Meta data"
+
+#~ msgid "Images"
+#~ msgstr "Obrázky"
+
+#~ msgid "New price"
+#~ msgstr "Nová cena"
+
+#~ msgid ""
+#~ "WARNING: Do you really want to delete this shipping method country price?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto cenu pro danou zemi?"
+
+#~ msgid "min"
+#~ msgstr "min"
+
+#~ msgid "max"
+#~ msgstr "max"
+
+#~ msgid "WARNING: Do you really want to delete this shipping method country?"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto zemi pro metodu doručení?"
+
+#~ msgid "WARNING: Do you really want to delete this shipping method?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto metodu doručení?"
+
+#~ msgid "New invoce"
+#~ msgstr "Nová faktura"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "Fast statistics"
+#~ msgstr "Rychlé statistiky"
+
+#~ msgid "product"
+#~ msgstr "produkt"
+
+#~ msgid "quantity"
+#~ msgstr "počet kusů"
+
+#~ msgid "WARNING: Do you really want to delete this supplier?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tohoto dodavatele?"
+
+#~ msgid "invoice"
+#~ msgstr "faktura"
+
+#~ msgid "stats"
+#~ msgstr "stat"
+
+#~ msgid "WARNING: Do you really want to delete this invoice input?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto položku faktury?"
+
+#~ msgid "Reset restrictions"
+#~ msgstr "Odstanit omezení"
+
+#~ msgid "- all suppliers -"
+#~ msgstr "- všichni dodavatelé -"
+
+#~ msgid "per piece"
+#~ msgstr "cena za ks"
+
+#~ msgid "subtotal"
+#~ msgstr "součet"
+
+#~ msgid "WARNING: Do you really want to delete this tax?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat toto DPH?"
+
+#~ msgid "WARNING: Do you really want to delete this user group?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto uživatelskou skupinu?"
+
+#~ msgid "discount"
+#~ msgstr "sleva"
+
+#~ msgid "WARNING: Do you really want to delete this country?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tuto zemi?"
+
+#~ msgid "Country price list"
+#~ msgstr "Ceník"
+
+#~ msgid "Clone prices"
+#~ msgstr "Klonovat cenu"
+
+#~ msgid "Form: SHIPPING METHOD - COUNTRY"
+#~ msgstr "Formulář: KATALOG - MEDOTA DORUČENÍ - ZEMĚ"
+
+#, fuzzy
+#~ msgid "save"
+#~ msgstr "Ulož mne"
+
+#~ msgid "publish"
+#~ msgstr "pu"
+
+#, fuzzy
+#~ msgid "unpublish"
+#~ msgstr "Zneaktivnit"
+
+#~ msgid "record"
+#~ msgstr "záznam"
+
+#~ msgid "records2"
+#~ msgstr "záznamy"
+
+#~ msgid "Left column"
+#~ msgstr "Levý sloupec"
+
+#, fuzzy
+#~ msgid "Menu type"
+#~ msgstr "Umístění pro menu"
+
+#~ msgid "Advert attribute"
+#~ msgstr "Atributy pro inzerci"
+
+#~ msgid "Advert attribute sets"
+#~ msgstr "Set atributů pro inzerci"
+
+#~ msgid "Advert inputs"
+#~ msgstr "Inzeráty"
+
+#~ msgid "Change category"
+#~ msgstr "Změna kategorie"
+
+#~ msgid "Advert <b>~0~</b> has been deleted."
+#~ msgstr "Inzerát <b>~0~</b> byl smazán."
+
+#~ msgid "Inform user"
+#~ msgstr "Informovat uživatele"
+
+#~ msgid "Category for advert <b>~0~</b> has been updated."
+#~ msgstr "Kategorie pro inzerát <b>~0~</b> byla změněna."
+
+#~ msgid "Advert <b>~0~</b> has been updated."
+#~ msgstr "Inzerát <b>~0~</b> byl aktualizován."
+
+#~ msgid "User for advert <b>~0~</b> has been informed."
+#~ msgstr "Uživatel, který uložit inzerát <b>~0~</b> byl informován."
+
+#~ msgid "Form: ADVERT - ATTRIBUTE"
+#~ msgstr "Formulář: INZERCE - ATRIBUT"
+
+#~ msgid "- no attribute set -"
+#~ msgstr "- žádný set atributů -"
+
+#~ msgid "Max length of advert name is 100 letters"
+#~ msgstr "Název inzerátu nesmí být prázdný ani delší než 100 znaků."
+
+#~ msgid "Max length of price is 10 digits"
+#~ msgstr ""
+#~ "Maximální délka pro cenu je 10 číslic. Pakliže hodnotu nelze vyjádřit "
+#~ "číslicemi, napište detail přímo do textu inzerátu."
+
+#~ msgid "Max length of advert content is 5000 letters"
+#~ msgstr "Text inzerátu nesmí být prázdný ani delší než 5000 znaků."
+
+#~ msgid "Max length of person name is 100 letters"
+#~ msgstr "Jména a příjmení nesmí být prázdné ani delší než 100 znaků."
+
+#~ msgid "ICQ"
+#~ msgstr "ICQ"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Form did not pass CSRF test."
+#~ msgstr ""
+#~ "Formulář neprošel naší závěrečnou kontrolovou. Zkuste jej odeslat znova."
+
+#~ msgid "Form: ADVERT - INPUT - CATEGORY"
+#~ msgstr "Formulář: INZERCE - INZERÁT - KATEGORIE"
+
+#~ msgid "Form: ADVERT - INPUT - INFORM USER"
+#~ msgstr "Formulář: INZERCE - INZERÁT - INFORMOVAT UŽIVATELE"
+
+#~ msgid "Offers"
+#~ msgstr "Nabídka"
+
+#~ msgid "Demands"
+#~ msgstr "Poptávka"
+
+#~ msgid "max. 24 hours"
+#~ msgstr "max. 24 hodin"
+
+#~ msgid "max. 48 hours"
+#~ msgstr "max. 48 hodin"
+
+#~ msgid "max. 1 week"
+#~ msgstr "max. 1 týden"
+
+#~ msgid "max. 2 weeks"
+#~ msgstr "max. 2 týdny"
+
+#~ msgid "New advert - Select category"
+#~ msgstr "Nový inzerát - Výběr kategorie"
+
+#~ msgid "New advert - Add content"
+#~ msgstr "Nový inzerát - Přidání obsahu"
+
+#~ msgid "Delete advert"
+#~ msgstr "Smazání inzerát"
+
+#~ msgid "Your advert <b>~0~</b> has been deleted from our system."
+#~ msgstr "Váš inzerát <b>~0~</b> byl úspěšně smazán z našeho systému."
+
+#~ msgid "Delete advert - Confirm"
+#~ msgstr "Smazání inzerát - Potvrzení"
+
+#~ msgid "Souhlasím s ~0~ tohoto webu"
+#~ msgstr "Souhlasím s ~0~ tohoto webu"
+
+#~ msgid "You must accept our terms and conditions."
+#~ msgstr ""
+#~ "S podmínkami a pravidly stránek musíte souhlasit. Jinak nemůžem Váš "
+#~ "inzerát zveřejnit."
+
+#~ msgid "Add advert"
+#~ msgstr "Přidat inzerát"
+
+#~ msgid "Your password must have exactly 5 digits."
+#~ msgstr "Vaše heslo musí mít přesně 5 číslic."
+
+#~ msgid "Max length of your reply is 5000 letters"
+#~ msgstr "Vaše odpověď nesmí být prázdná ani delší než 5000 znaků."
+
+#~ msgid "Max length of your name is 100 letters"
+#~ msgstr "Vaše jméno nesmí být prázdné ani delší než 100 znaků."
+
+#~ msgid "Send reply"
+#~ msgstr "odpovědět"
+
+#~ msgid "send mail"
+#~ msgstr "odeslat e-mail"
+
+#~ msgid "advert detail"
+#~ msgstr "detail inzerátu"
+
+#~ msgid ""
+#~ "System has generated password <b>~0~</b> for you. This password allows "
+#~ "you to edit or delete your advert."
+#~ msgstr ""
+#~ "Systém Vám vygeneroval heslo <b>~0~</b>. Pomocí tohoto hesla a Vaši "
+#~ "emailové adresy můžete daný inzerát  editovat nebo smazat. Zároveň slouží "
+#~ "i k prodloužení platnosti tohoto inzerátu."
+
+#~ msgid "Have a nice day, ~0~"
+#~ msgstr "Příjemný zbytek dne přeje ~0~"
+
+#~ msgid ""
+#~ "This email has only informative character. Has been generated <b>~0~</b>. "
+#~ "Do not reply on it."
+#~ msgstr ""
+#~ "Tento e-mail má pouze informativní charakter, a proto na něj "
+#~ "neodpovídejte: <b>~0~</b>. "
+
+#~ msgid ""
+#~ "System has generated password ~0~ for you. This password allows you to "
+#~ "edit or delete your advert."
+#~ msgstr ""
+#~ "Systém Vám vygeneroval heslo ~0~. Pomocí tohoto hesla a Vaši emailové "
+#~ "adresy můžete daný inzerát  editovat nebo smazat. Zároveň slouží i k "
+#~ "prodloužení platnosti tohoto inzerátu."
+
+#~ msgid ""
+#~ "This email has only informative character. Has been generated ~0~. Do not "
+#~ "reply on it."
+#~ msgstr ""
+#~ "Tento e-mail má pouze informativní charakter, a proto na něj "
+#~ "neodpovídejte: ~0~. "
+
+#~ msgid "set"
+#~ msgstr "nastavit"
+
+#~ msgid "WARNING: Do you really want to delete this advert photo?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat toto foto k inzerátu?"
+
+#~ msgid "Show live"
+#~ msgstr "Zobrazit reálně"
+
+#~ msgid "Detail params"
+#~ msgstr "Detalní parametry"
+
+#~ msgid "User's data"
+#~ msgstr "Data o uživateli"
+
+#~ msgid "inform user"
+#~ msgstr "informovat uživatele"
+
+#~ msgid "WARNING: Do you really want to delete this advert?"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tento inzerát?"
+
+#~ msgid "change"
+#~ msgstr "změna"
+
+#~ msgid "inform"
+#~ msgstr "informovat"
+
+#~ msgid "Contact data"
+#~ msgstr "Kontaktní údaje"
+
+#~ msgid "Detail attributes"
+#~ msgstr "Rozšiřující parametry"
+
+#~ msgid ""
+#~ "These attributes help to visitors to find your advert easily. They are "
+#~ "not mandatory but by their filling you can increase advert change to be "
+#~ "found."
+#~ msgstr ""
+#~ "Tyto parametry slouží našim návštěvníkům ještě lépe najít inzeráty, o "
+#~ "které mají zájem. Jejich vyplnění není povinné, ale zvýšuje "
+#~ "pravděpodobnost, že Váš inzerát bude nalezen a zobrazen."
+
+#~ msgid "Advert list"
+#~ msgstr "Výpis inzerátů"
+
+#~ msgid "Subcategories"
+#~ msgstr "Podkategorie"
+
+#~ msgid "All"
+#~ msgstr "Všechno"
+
+#~ msgid "Active filter"
+#~ msgstr "Momentálně máte nastaveny tyto filtry (tento filtr)"
+
+#~ msgid "remove this filter"
+#~ msgstr "odstranit tento filtr"
+
+#~ msgid ""
+#~ "This category is empty. Feel free to be first who add his advert here."
+#~ msgstr ""
+#~ "Tato kategorie je momentálně prázdná. Pokuď jste nastavili nějaký filtr, "
+#~ "pokuste se své požadavky více zobecnit. A vlastně, proč nebýt první, "
+#~ "jehož inzerát zde bude zveřejněn?"
+
+#~ msgid "Advert detail"
+#~ msgstr "Detail inzerátu"
+
+#~ msgid "Advert nr. ~0~"
+#~ msgstr "Inzerát č. ~0~"
+
+#~ msgid "Advert info"
+#~ msgstr "Informace o inzerátu"
+
+#~ msgid "Advert number"
+#~ msgstr "Číslo inzerátu"
+
+#~ msgid "Advert person"
+#~ msgstr "Inzerent"
+
+#~ msgid "Adverts from ~0~"
+#~ msgstr "Další inzeráty uživatele: ~0~"
+
+#~ msgid "New advert: ~0~"
+#~ msgstr "Nový inzerát: ~0~"
+
+#~ msgid ""
+#~ "<b>Bolded labels</b> are mandatory. Without them it is not possible to "
+#~ "store your advert."
+#~ msgstr ""
+#~ "Vyžadované položky jsou označeny <b>tučným písmem</b>. Bez jejich "
+#~ "vyplnění nebude Váš inzerát uložen."
+
+#~ msgid "Free advert for one month"
+#~ msgstr "Vložte si svůj inzerát do našeho systému zcela bezplatně"
+
+#~ msgid "Do not you know what to do to insert your advice? ~0~"
+#~ msgstr ""
+#~ "Pokud si nevíte rady, jak vložit inzerát do našeho inzertního portálu, "
+#~ "připravili jsme pro Vás malou nápovědu: ~0~."
+
+#~ msgid "Select category"
+#~ msgstr "Zvolte kategorii"
+
+#~ msgid "Add new advert into: ~0~"
+#~ msgstr "Nový inzerát do kategorie: ~0~"
+
+#~ msgid ""
+#~ "According to information you have sent, we have found this advert. To "
+#~ "delete it just press delete button."
+#~ msgstr ""
+#~ "Na základě zaslaných údajů, systém našel následující inzerát. Pro jeho "
+#~ "smazání klikněte na odkaz <b>Smazat tento inzerát</b>."
+
+#~ msgid "Your advertise"
+#~ msgstr "Váš inzerát"
+
+#~ msgid "Confirm delete"
+#~ msgstr "Smazat tento inzerát"
+
+#~ msgid "Delete this advert"
+#~ msgstr "Smazat tento inzerát"
+
+#~ msgid ""
+#~ "You have to know your email address which is mentioned in advert and "
+#~ "password which had been sent to \n"
+#~ "your email box after add of new advert."
+#~ msgstr ""
+#~ "Ke smazání inzerátu je třeba znát <b>e-mailovou adresu</b>, se kterou byl "
+#~ "inzerát zadán a <b>heslo</b>, které Vám bylo vygenerováno a zasláno ihned "
+#~ "po přidání inzerátu do systému."
+
+#~ msgid "Messages for you"
+#~ msgstr "Zpráva(-y) pro Vás"
+
+#~ msgid "Form"
+#~ msgstr "Fοrmulář"
+
+#~ msgid ""
+#~ "Pictures are the best way how to show subject of your advert. You can add "
+#~ "JPG, GIF or PNG images with 500kB limit for each of them."
+#~ msgstr ""
+#~ "Obrázky jsou nejlepší způsob, jak prezentovat předmět Vašeho inzerátu. "
+#~ "Můžete nahrávat obrázky ve formátu JPG, GIF nebo PNG. Limit pro jeden "
+#~ "obrázek je 1 MB. Při ukládání více větších fotek může chvíli trvat, než "
+#~ "se formulář odešle."
+
+#~ msgid "Terms and conditions"
+#~ msgstr "Podmínky a pravidla"
+
+#~ msgid "Offer + demand"
+#~ msgstr "Nabídka + poptávka"
+
+#~ msgid "newest adverts"
+#~ msgstr "nejnovější inzeráty"
+
+#~ msgid "most visited adverts"
+#~ msgstr "nejnavštěvovanější inzeráty"
+
+#~ msgid "all adverts"
+#~ msgstr "všechny inzeráty"
+
+#~ msgid "Show only"
+#~ msgstr "Zobrazit pouze"
+
+#~ msgid "Sort according to"
+#~ msgstr "Třídit inzeráty podle"
+
+#~ msgid "Layer navigation"
+#~ msgstr "Detailní filtr"
+
+#~ msgid ""
+#~ "Your advert has been removed by administrator. For more information write "
+#~ "email to ~0~."
+#~ msgstr ""
+#~ "Váš inzerát byl odstraněn administrátorem. Pakliže máte zájem vědět, proč "
+#~ "se tomu tak stalo, napiště email na ~0~."
+
+#~ msgid "Contact search"
+#~ msgstr "Vyhledávání v kontaktech"
+
+#~ msgid "delete advert"
+#~ msgstr "smazání inzerátu"
+
+#~ msgid "Information"
+#~ msgstr "Informace"
+
+#, fuzzy
+#~ msgid "Advert types"
+#~ msgstr "Typ inzerátu"
+
+#~ msgid "Home"
+#~ msgstr "Úvod"
+
+#, fuzzy
+#~ msgid "Create contact search form"
+#~ msgstr "Formulář pro kategorii"
+
+#, fuzzy
+#~ msgid "Admin login"
+#~ msgstr "E-mail / uživatelské jméno"
+
+#, fuzzy
+#~ msgid "Order status"
+#~ msgstr "Status"
+
+#, fuzzy
+#~ msgid "Fault"
+#~ msgstr "základní"
+
+#~ msgid "Firstname"
+#~ msgstr "Jméno"
+
+#, fuzzy
+#~ msgid "Customer"
+#~ msgstr "uživatel"
+
+#, fuzzy
+#~ msgid "Service status"
+#~ msgstr "Status"
+
+#~ msgid "Clone menu"
+#~ msgstr "Klonovat menu"
+
+#~ msgid "Menu has been deleted."
+#~ msgstr "Menu bylo smazáno."
+
+#~ msgid "Menu has been cloned."
+#~ msgstr "Menu bylo naklonováno."
+
+#~ msgid "Menu's data have been updated."
+#~ msgstr "Menu data byla aktualizována."
+
+#~ msgid "Article category logo has been deleted."
+#~ msgstr "Logo kategorie článků bylo smazáno."
+
+#~ msgid "Manage logo"
+#~ msgstr "Správa loga"
+
+#~ msgid "New category has been added."
+#~ msgstr "Nová kategorie byla přidána."
+
+#~ msgid "Category's data have been updated."
+#~ msgstr "Data kategorie byla aktualizována."
+
+#~ msgid "Ad has been deleted."
+#~ msgstr "Inzerát byl smazán."
+
+#~ msgid "Text pages's content has been updated."
+#~ msgstr "Obsah textové stránky byl aktualizován."
+
+#~ msgid "Clients"
+#~ msgstr "Klienti"
+
+#~ msgid "Employees"
+#~ msgstr "Zaměstnanci"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "Manage page"
+#~ msgstr "Správa stránek"
+
+#~ msgid "Projects"
+#~ msgstr "Projekty"
+
+#~ msgid "Menu"
+#~ msgstr "Menu"
+
+#~ msgid "Wrong id menu type"
+#~ msgstr "Špatné id typu menu"
+
+#~ msgid "New menu input has been added."
+#~ msgstr "Nová položka bylo přidána do menu."
+
+#~ msgid "Menu types have been cloned."
+#~ msgstr "Typy menu byly naklonovány."
+
+#~ msgid "Menu type's data have been updated."
+#~ msgstr "Nastavení typu menu bylo aktualizováno."
+
+#~ msgid "Servers"
+#~ msgstr "Servery"
+
+#~ msgid "New server"
+#~ msgstr "Nový server"
+
+#~ msgid "Folder setting has been checked."
+#~ msgstr "Nastavení adresářů bylo zkontrolováno a doplněno."
+
+#~ msgid "Server's data have been updated."
+#~ msgstr "Nastavení serveru bylo aktualizováno."
+
+#~ msgid "Sitemap has been generated."
+#~ msgstr "Sitemap byla přegenerována."
+
+#~ msgid "Text pages's data have been updated."
+#~ msgstr "Nastavení textové stránky bylo aktualizováno."
+
+#~ msgid "Error_email_exists"
+#~ msgstr "Tento email již v databázi existuje."
+
+#~ msgid "Error_passwords"
+#~ msgstr "Nové heslo a heslo znovu musí být stejné."
+
+#~ msgid "User's data have been stored."
+#~ msgstr "Data o uživateli byla aktualizována."
+
+#~ msgid "New widget has been added."
+#~ msgstr "Nový widget byl přidán."
+
+#~ msgid "Widgets have been cloned."
+#~ msgstr "Widgety byly naklonovány."
+
+#~ msgid "Clone widget places"
+#~ msgstr "Klonovat umístění pro widgety"
+
+#~ msgid "Widget place has been deleted."
+#~ msgstr "Umístění pro widgety bylo smazáno."
+
+#~ msgid "New place has been added."
+#~ msgstr "Nové umístění bylo uloženo."
+
+#~ msgid "Widget places have been cloned."
+#~ msgstr "Umístění pro widgety byla naklonována."
+
+#~ msgid "Widget place's data have been updated."
+#~ msgstr "Nastavení umístění pro widgety bylo aktualizováno."
+
+#~ msgid "From Server"
+#~ msgstr "Ze serveru"
+
+#~ msgid "Clone"
+#~ msgstr "Klonovat"
+
+#~ msgid "Form: ADMIN MENU CLONE"
+#~ msgstr "Formulář: KLONOVAT ADMIN MENU"
+
+#~ msgid "Contact to you"
+#~ msgstr "Kontakt na Vás"
+
+#~ msgid "Form: ARTICLE COMMENT"
+#~ msgstr "Formulář: KOMENTÁŘ ČLÁNKU"
+
+#~ msgid "Form: ARTICLE CONTENT"
+#~ msgstr "Formulář: OBSAH ČLÁNKU"
+
+#~ msgid "Input name"
+#~ msgstr "Název položky"
+
+#~ msgid "Form: MENU INPUT - LINK TO ARTICLE"
+#~ msgstr "Formulář: MENU - ODKAZ NA ČLÁNEK"
+
+#~ msgid "Form: MENU INPUT - LINK TO ARTICLE CATEGORY"
+#~ msgstr "Formulář: MENU - ODKAZ NA KATEGORII ČLÁNKŮ"
+
+#~ msgid "Form: MENU CLONE"
+#~ msgstr "Formulář: KLONOVA MENU"
+
+#~ msgid "Type name"
+#~ msgstr "Název typu"
+
+#~ msgid "Form: MENU TYPE CLONE"
+#~ msgstr "Formulář: KLONOVA MENU TYPY"
+
+#~ msgid "Type file"
+#~ msgstr "Konfigurační soubor"
+
+#~ msgid "- select xml file -"
+#~ msgstr "- vyberte xml soubor -"
+
+#~ msgid "Form: RESTRICT"
+#~ msgstr "Formulář: ZMĚNIT VÝBĚR"
+
+#~ msgid "Server name"
+#~ msgstr "Název serveru"
+
+#~ msgid "Server url"
+#~ msgstr "Server url"
+
+#~ msgid "Config folder"
+#~ msgstr "Adresář s nastavením"
+
+#~ msgid "- select locale -"
+#~ msgstr "- vyberte locale -"
+
+#~ msgid "Form: SERVER"
+#~ msgstr "Formulář: SERVER"
+
+#~ msgid "Project name"
+#~ msgstr "Název projektu"
+
+#~ msgid "Own css file"
+#~ msgstr "Vlastní css soubor"
+
+#~ msgid "Project slogan"
+#~ msgstr "Slogan projektu"
+
+#~ msgid "Project lang"
+#~ msgstr "Jazyk projektu"
+
+#~ msgid "Meta description"
+#~ msgstr "Popis [META]"
+
+#~ msgid "Common data"
+#~ msgstr "Základní data"
+
+#~ msgid "Advert module"
+#~ msgstr "Inzerce [modul]"
+
+#~ msgid "Forum module"
+#~ msgstr "Forum [modul]"
+
+#~ msgid "Work departments module"
+#~ msgstr "Úřady práce [modul]"
+
+#~ msgid "Free jobs module"
+#~ msgstr "Volná místa [modul]"
+
+#~ msgid "Career module"
+#~ msgstr "Přímá nabídka firem - nabídka práce přesně pro Vás - OSIX"
+
+#~ msgid "Form: SITEMAP"
+#~ msgstr "Formulář: SITEMAP"
+
+#~ msgid "Personname"
+#~ msgstr "Jméno"
+
+#~ msgid "Widget name"
+#~ msgstr "Název widgetu"
+
+#~ msgid "Form: WIDGET PLACE CLONE"
+#~ msgstr "Formulář: KLONOA UMÍSTĚNÍ PRO WIDGETY"
+
+#~ msgid "Advert - Homepage"
+#~ msgstr "Inzerce - Úvodní stránka"
+
+#~ msgid "Advert - Category"
+#~ msgstr "Inzerce - Kategorie"
+
+#~ msgid "Forum homepage"
+#~ msgstr "Úvodní stránka fora"
+
+#~ msgid "Forum category"
+#~ msgstr "Forum kategorie"
+
+#~ msgid "Language courses"
+#~ msgstr "Jazykové kurzy"
+
+#~ msgid "Language schools"
+#~ msgstr "Jazykové školy"
+
+#~ msgid "Language translators"
+#~ msgstr "Překladatelé"
+
+#~ msgid "Last advert ads"
+#~ msgstr "Poslední inzeráty"
+
+#~ msgid "Random advert ads"
+#~ msgstr "Náhodné inzeráty"
+
+#~ msgid "day"
+#~ msgstr "den"
+
+#~ msgid "days2"
+#~ msgstr "dny"
+
+#~ msgid "hour"
+#~ msgstr "hodina"
+
+#~ msgid "hours"
+#~ msgstr "hodin"
+
+#~ msgid "hours2"
+#~ msgstr "hodiny"
+
+#~ msgid "minute"
+#~ msgstr "minuta"
+
+#~ msgid "minutes"
+#~ msgstr "minut"
+
+#~ msgid "minutes2"
+#~ msgstr "minuty"
+
+#~ msgid "Fill your username or email address"
+#~ msgstr "Vyplňte "
+
+#~ msgid "You must fill all mandatory fields."
+#~ msgstr "Musíte vyplnit všechna povinná políčka."
+
+#~ msgid "Fast contact"
+#~ msgstr "Rychlý kontakt"
+
+#~ msgid "Form: FORGOT LOGIN DATA"
+#~ msgstr "Formulář: ZAPOMENUTÉ PŘIHLAŠOVACÍ ÚDAJE"
+
+#~ msgid "Form: LOGIN FORM"
+#~ msgstr "Formulář: PŘIHLÁŠENÍ"
+
+#~ msgid ""
+#~ "Thx for your comment. Akismet said, you are not spammer, so I believe and "
+#~ "I publish your comment immidiatelly."
+#~ msgstr ""
+#~ "Děkuji za Váš komentář. Akismet navíc říká, že Váš komentář není spam. "
+#~ "Tudíž nic nebrání tomu, jej ihned zveřejnit."
+
+#~ msgid ""
+#~ "Thx for your comment. From Akismet point of view, you are spammer. I "
+#~ "store your comment to database and I will verify it by myself."
+#~ msgstr ""
+#~ "Děkuji za Váš komentář. Podle Akismet je Váš komentář spam. Uložil jsem "
+#~ "jej i tak do databáze a zkontroluji ho později sám."
+
+#~ msgid ""
+#~ "Thx for your comment. My akismet is having lunch time right now so I will "
+#~ "verify your comment by myself."
+#~ msgstr ""
+#~ "Děkuji za Váš komentář. Bohužel Akismet má právě pauzu na oběd, takže Váš "
+#~ "příspěvek zkontroluji sám později."
+
+#~ msgid "Form: New comment"
+#~ msgstr "Formulář: Nový komentář"
+
+#~ msgid "Azbuka to latin - transfer azbuka string to latin alfabeth"
+#~ msgstr "Azbuka do latinky - převod textu z azbuky do latinske abecedy"
+
+#~ msgid ""
+#~ "Do you need to transfer azbuka string into latin alfabeth? We can "
+#~ "transfer it for you."
+#~ msgstr ""
+#~ "Potřebujete převést text v azbuce do latinské abeceny? Žádný problém, "
+#~ "udělám to pro Vás."
+
+#~ msgid "azbuka translator, azbuka to latin"
+#~ msgstr "azbuka translátor, azbuka převod, azbuka do latinky"
+
+#~ msgid "Greek to latin - transfer azbuka string to latin alfabeth"
+#~ msgstr "Řečtina do latinky - převod textu z řečtiny do latinske abecedy"
+
+#~ msgid ""
+#~ "Do you need to transfer greek string into latin alfabeth? We can transfer "
+#~ "it for you."
+#~ msgstr ""
+#~ "Potřebujete převést text v řečtině do latinské abeceny? Žádný problém, "
+#~ "udělám to pro Vás."
+
+#~ msgid "greek translator, greek to latin"
+#~ msgstr "řečtina translátor, řečtina převod, řečtina do latinky"
+
+#~ msgid "Mktime to datetime - transfer mktime to date time"
+#~ msgstr "Mktime na datum a čas - převod mktime hodnoty na datum a čas"
+
+#~ msgid ""
+#~ "Do you have a mktime value and you want to find out date time? I can do "
+#~ "it for you."
+#~ msgstr ""
+#~ "Máte mktime / time hodnotu a chcete zjistit její ekvivalent v podobě "
+#~ "datumu a času? Žádný problem."
+
+#~ msgid "mktime transfer, mktime to datetime"
+#~ msgstr "mktime prevodnik, mktime na datum, mktime na datum a cas"
+
+#~ msgid "Password generator - potrebujete bezpecne heslo?"
+#~ msgstr "Generátor hesel - potřebujete bezpečné heslo?"
+
+#~ msgid ""
+#~ "Password generator - Nechte si vygenerovat bezpecne heslo, moznost "
+#~ "nastaveni delky, kvality + prevod hesla do normalni reci"
+#~ msgstr ""
+#~ "Generátor hesel - Nechte si vygenerovat bezpečné heslo, možnost nastavení "
+#~ "délky a síly hesla+ převod hesla do normální řeči."
+
+#~ msgid "password generator, safe password, online password generate"
+#~ msgstr "generátor hesel, bezpečné heslo, online generátor hesel"
+
+#~ msgid "Hash calculator - zjisti hash vaseho retezce"
+#~ msgstr "Hash kalkulátor - spočte hash hodnotu řetězce"
+
+#~ msgid ""
+#~ "Hash calculator - Do you need to find out a hash value of your string? I "
+#~ "can do it instead of you."
+#~ msgstr ""
+#~ "Hash kalkulátor - Potřebujete zjistit hash hodnotu Vašeho řetezce? Udělám "
+#~ "to za Vás - md5, sha1, crc32, sha256, aj."
+
+#~ msgid "hash calculator, md5 calculator, sha1 calculator, sha256 calculator"
+#~ msgstr "hash kalkulator, md5 kalkulator, sha1 kalkulator, sha256 kalkulator"
+
+#~ msgid "Mandator_field_explain"
+#~ msgstr "Povinné položky jsou <b>označeny tučně</b>."
+
+#~ msgid "menu_regeneration_error"
+#~ msgstr ""
+#~ "Během operace nastala chyba. Operaci prosím opakujte. Pakliže i poté se "
+#~ "opět objeví toto varovné hlašení, kontaktujte mne prosím."
+
+#~ msgid "confirm_delete_menu"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat toto menu? Tato operace je NEVRATNÁ!"
+
+#~ msgid "where_regenerate_menu"
+#~ msgstr ""
+#~ "<b>* Kdy přegenerovat menu?</b> Pakliže uděláte jakoukoliv změnu v "
+#~ "nastavení, musí se menu přegenerovat. <b>Udělejte to až na konci své "
+#~ "práce v tomto modulu.</b>"
+
+#~ msgid "View spams"
+#~ msgstr "Zobrazit spamy"
+
+#~ msgid "Last edited"
+#~ msgstr "Poslední editace"
+
+#~ msgid "confirm_delete_article"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento článek? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "comments"
+#~ msgstr "komentáře"
+
+#~ msgid "Back to spam list"
+#~ msgstr "Zpět na seznam spamů"
+
+#~ msgid "It is spam"
+#~ msgstr "Je spam"
+
+#~ msgid "Akismet: CORRECT"
+#~ msgstr "Akismet: \"Z mého pohledu je vše OK\""
+
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
+
+#~ msgid "All spams"
+#~ msgstr "Všechny spamy"
+
+#~ msgid "confirm_delete_comment"
+#~ msgstr "UPOZORNĚNÍ: Opravdu si přejete smazat tento komentář?"
+
+#~ msgid "Back to whole list"
+#~ msgstr "Zpět na celý seznam"
+
+#~ msgid "Last article"
+#~ msgstr "Poslední článek"
+
+#~ msgid "Tree data"
+#~ msgstr "Data o stromu"
+
+#~ msgid "Children"
+#~ msgstr "Potomci"
+
+#~ msgid "confirm_delete_article_category"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto kategorie pro články? Tato "
+#~ "operace je NEVRATNÁ!"
+
+#~ msgid "Warning"
+#~ msgstr "Varování"
+
+#~ msgid "Now you have"
+#~ msgstr "Momentálně máte"
+
+#~ msgid "show / hide"
+#~ msgstr "zobrazit / skrýt"
+
+#~ msgid "Content management"
+#~ msgstr "Administrace obsahu"
+
+#~ msgid "text page2"
+#~ msgstr "textové stránky"
+
+#~ msgid "article"
+#~ msgstr "článek"
+
+#~ msgid "article category"
+#~ msgstr "kategorii pro články"
+
+#~ msgid "article categories2"
+#~ msgstr "kategorie pro články"
+
+#~ msgid "comment"
+#~ msgstr "komentář"
+
+#~ msgid "commets2"
+#~ msgstr "komentáře"
+
+#~ msgid "spam"
+#~ msgstr "spam"
+
+#~ msgid "spams"
+#~ msgstr "spamů"
+
+#~ msgid "spams2"
+#~ msgstr "spamy"
+
+#~ msgid "Add a link to text page"
+#~ msgstr "Přidat odkaz na textovou stránku"
+
+#~ msgid "Modules"
+#~ msgstr "Moduly"
+
+#~ msgid "Add a link to homepage of articles module"
+#~ msgstr "Přidat odkaz na úvodní stránku modulu pro články"
+
+#~ msgid "Input type"
+#~ msgstr "Typ položky"
+
+#~ msgid "Tree path"
+#~ msgstr "Cesta stromem"
+
+#~ msgid "confirm_delete_menu_item"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto položku menu? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "restrict form"
+#~ msgstr "změnit výběr"
+
+#~ msgid "Menu type's data"
+#~ msgstr "Data o typu menu"
+
+#~ msgid "Css class"
+#~ msgstr "Css třída "
+
+#~ msgid "type name"
+#~ msgstr "název typu"
+
+#~ msgid "type file"
+#~ msgstr "typ souboru"
+
+#~ msgid "type class"
+#~ msgstr "třída typu"
+
+#~ msgid "Control setting"
+#~ msgstr "Zkontrolovat nastavení"
+
+#~ msgid "Servers's data"
+#~ msgstr "Data o serveru"
+
+#~ msgid "Folder"
+#~ msgstr "Složka"
+
+#~ msgid "confirm_delete_server"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento server? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "url"
+#~ msgstr "url"
+
+#~ msgid "folder"
+#~ msgstr "složka"
+
+#~ msgid "file path (www)"
+#~ msgstr "cesta k souboru (www formát)"
+
+#~ msgid "View live"
+#~ msgstr "Zobrazit reálný náhled"
+
+#~ msgid "confirm_delete_text_page"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto textovou stránku? Tato operace "
+#~ "je NEVRATNÁ!"
+
+#~ msgid "Group"
+#~ msgstr "Skupina"
+
+#~ msgid "confirm_delete_admin_user"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tohoto uživatele? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "group"
+#~ msgstr "skupina"
+
+#~ msgid "personame"
+#~ msgstr "jméno"
+
+#~ msgid "Show its widgets"
+#~ msgstr "Zobrazit widgety"
+
+#~ msgid "confirm_delete_widget"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento widget? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "Identificator"
+#~ msgstr "Identifikátor"
+
+#~ msgid "confirm_delete_widget_place"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat toto umístění pro widgety? Tato "
+#~ "operace je NEVRATNÁ!"
+
+#~ msgid "Server"
+#~ msgstr "Server"
+
+#~ msgid "WE RECOMMEND TO CHANGE PASSWORD"
+#~ msgstr "DOPORUČUJEME ZMĚNIT HESLO"
+
+#~ msgid "Useful links"
+#~ msgstr "Užitečné odkazy"
+
+#~ msgid "Are you ready to login?"
+#~ msgstr "Jste připraveni se přihlásit?"
+
+#~ msgid "click here"
+#~ msgstr "klikni zde"
+
+#~ msgid "Did you forgot your password?"
+#~ msgstr "Zapomněli jste své heslo?"
+
+#~ msgid "homepage full"
+#~ msgstr "úvodní stránku"
+
+#~ msgid "|~0~| is taking care about comments"
+#~ msgstr "Tady hlídá |~0~|"
+
+#~ msgid "Article focus on programming, internet, blog"
+#~ msgstr "Články zaměřené na programování, internet a blog"
+
+#~ msgid "first"
+#~ msgstr "první"
+
+#~ msgid "Visit site"
+#~ msgstr "Přejít na stránku"
+
+#~ msgid "Tomas Pavlatka - www pages, intranet, web applications"
+#~ msgstr "Tomáš Pavlátka - www stránky, intranet, web aplikace"
+
+#~ msgid "www pages, intranet, web applications"
+#~ msgstr "www stránky, intranet, web aplikace"
+
+#~ msgid "Azbuka string"
+#~ msgstr "Text v azbuce"
+
+#~ msgid "Transfer"
+#~ msgstr "Převést"
+
+#~ msgid "Result for you"
+#~ msgstr "Výsledek operace přesně pro Vás"
+
+#~ msgid "Pure transfer azbuka to latin"
+#~ msgstr "Čistý převod azbuky do latinky"
+
+#~ msgid "Transfer azbuka to latin e.g. for url"
+#~ msgstr "Převod azbuky do latinky např. pro url"
+
+#~ msgid "Find translate with Google"
+#~ msgstr "Najdi překlad s Googlem"
+
+#~ msgid "Translate with Google"
+#~ msgstr "Přelož s Googlem"
+
+#~ msgid "Greek to latin - transfer greek string to latin alfabeth"
+#~ msgstr "Řečtina do latinky - převod textu z řečtiny do latinske abecedy"
+
+#~ msgid "Greek string"
+#~ msgstr "Text v řečtině"
+
+#~ msgid "Pure transfer greek to latin"
+#~ msgstr "Čistý převod řečtiny do latinky"
+
+#~ msgid "Transfer greek to latin e.g. for url"
+#~ msgstr "Převod řečtiny do latinky např. pro url"
+
+#~ msgid "Mktime (10 digits)"
+#~ msgstr "Mktime / time (10 číslic)"
+
+#~ msgid "Date time format"
+#~ msgstr "Formát datumu a času"
+
+#~ msgid "Result 4 you"
+#~ msgstr "Výsledek operace přesně pro Vás"
+
+#~ msgid ""
+#~ "Do you need a safe password and you do not want to create some in your "
+#~ "mind? Does not matter, we can create safe password for you."
+#~ msgstr ""
+#~ "Potřebujete bezpečné heslo a nechce se Vám jej vymýšlet z hlavy? Nevadí, "
+#~ "já pro Vás už nějaké vygeneruji."
+
+#~ msgid "Number of letters (1-64)"
+#~ msgstr "Délka hesla (1-64)"
+
+#~ msgid "Includes"
+#~ msgstr "Zahrnout"
+
+#~ msgid "Passwords for your"
+#~ msgstr "Vygenerované bezpečné heslo podle Vašich požadavků"
+
+#~ msgid ""
+#~ "Do you need to find out a hash value of your string? I can do it instead "
+#~ "of you."
+#~ msgstr ""
+#~ "Potřebujete zjistit hash hodnotu Vašeho řetezce? Udělám to za Vás - md5, "
+#~ "sha1, crc32, sha256, aj."
+
+#~ msgid "Count hash"
+#~ msgstr "Spočti hash"
+
+#~ msgid "Result according to your requirements"
+#~ msgstr "Výsledky počítání podle Vašich požadavků"
+
+#~ msgid "Result for you - e.g. for url"
+#~ msgstr "Výsledek operace přesně pro Vás - např. pro url"
+
+#~ msgid "Pure transfer"
+#~ msgstr "Čistý převod řečtiny do latinky "
+
+#~ msgid "Password generator"
+#~ msgstr "Generátor hesel"
+
+#~ msgid "confirm_delete_advert_input"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento inzerát? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "confirm_delete_gb_input"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento příspěvek z fora? Tato "
+#~ "operace je NEVRATNÁ!"
+
+#~ msgid "advert categories"
+#~ msgstr "kategorií pro inzerci"
+
+#~ msgid "advert categories2"
+#~ msgstr "kategorie pro inzerci"
+
+#~ msgid "ad"
+#~ msgstr "inzerát"
+
+#~ msgid "ads"
+#~ msgstr "inzerátů"
+
+#~ msgid "ads2"
+#~ msgstr "inzeráty"
+
+#~ msgid "ad younger than 24 hours"
+#~ msgstr "inzerát mladší než 24 hodin"
+
+#~ msgid "ads younger than 24 hours"
+#~ msgstr "inzerátů mladší než 24 hodin"
+
+#~ msgid "ads2 younger than 24 hours"
+#~ msgstr "inzeráty mladší než 24 hodin"
+
+#~ msgid "inputs3"
+#~ msgstr "záznamů"
+
+#~ msgid "inputs2"
+#~ msgstr "záznamy"
+
+#~ msgid "input younger than 24 hours"
+#~ msgstr "záznam mladší než 24 hodin"
+
+#~ msgid "inputs younger than 24 hours"
+#~ msgstr "záznamů mladší než 24 hodin"
+
+#~ msgid "inputs2 younger than 24 hours"
+#~ msgstr "záznamy mladší než 24 hodin"
+
+#~ msgid "input name"
+#~ msgstr "název inzerátu"
+
+#~ msgid "Work departments"
+#~ msgstr "Úřady práce"
+
+#~ msgid "Add a link to homepage of work department module"
+#~ msgstr "Přidat odkaz na úvodní stránku modulu úřadů práce"
+
+#~ msgid "Free jobs"
+#~ msgstr "Volná místa"
+
+#~ msgid "Add a link to homepage of free job module"
+#~ msgstr "Přidat odkaz na úvodní stránku modulu volných pracovních míst"
+
+#~ msgid "Add a link to homepage of catalogue"
+#~ msgstr "Přidat odkaz na úvodní stránku modulu pro katalog"
+
+#~ msgid "Add a link to homepage of careerJet module"
+#~ msgstr "Přidat odkaz na úvodní stránku modulu pro careerJet"
+
+#~ msgid "Advert homepage"
+#~ msgstr "Úvodní stránka inzerce"
+
+#~ msgid "Add link to advert homepage"
+#~ msgstr "Přidat odkaz na úvodní stránku inzerce"
+
+#~ msgid "Add link to advert category"
+#~ msgstr "Přidat odkaz na kategorii v inzerci"
+
+#~ msgid "Add link to forum category"
+#~ msgstr "Přidat odkaz na kategorii ve foru"
+
+#~ msgid "Add widget - last ads from advert module"
+#~ msgstr "Přidat widget - poslední inzeráty z modulu inzerce"
+
+#~ msgid "Add widget - random ads from advert module"
+#~ msgstr "Přidat widget - náhodné inzeráty z modulu inzerce"
+
+#~ msgid "Random free jobs"
+#~ msgstr "Náhodná volná pracovní místa"
+
+#~ msgid "Add widget - random free jobs"
+#~ msgstr "Přidat widget - náhodná volná pracovní místa"
+
+#~ msgid "Actual offer from Czech republic"
+#~ msgstr "Aktuální volná pracovní místa / nabídka práce v ČR"
+
+#~ msgid "Articles focus on work - part work - job"
+#~ msgstr "Články zaměřené na práci, zaměstnání, brigádu"
+
+#~ msgid "Najdete si praci primo pro Vas - s nami je to hracka"
+#~ msgstr "Vyhledat volná pracovní místa v ČR? S námi je to hračka"
+
+#~ msgid "- all districts -"
+#~ msgstr "- všechny kraje -"
+
+#~ msgid "Obor"
+#~ msgstr "Obor"
+
+#~ msgid "- vsechny obory -"
+#~ msgstr "- všechny obory -"
+
+#~ msgid "Min. vzdelani"
+#~ msgstr "Min. vzdělání"
+
+#~ msgid "- without restriction -"
+#~ msgstr "- bez omezení -"
+
+#~ msgid "Prace vhodna pro"
+#~ msgstr "Práce vhodná pro"
+
+#~ msgid "- vsechny -"
+#~ msgstr "- všechny -"
+
+#~ msgid "Min. mzda"
+#~ msgstr "Min. mzda"
+
+#~ msgid "Nastup"
+#~ msgstr "Nástup"
+
+#~ msgid "Najdi pro mne"
+#~ msgstr "Najdi pro mne"
+
+#~ msgid "Manufacturer's data have been updated."
+#~ msgstr "Data o výrobci byla aktualizována."
+
+#~ msgid "Manufacturers"
+#~ msgstr "Výrobci"
+
+#~ msgid "New manufacturer"
+#~ msgstr "Nový výrobce"
+
+#~ msgid "Product's data have been updated."
+#~ msgstr "Data produktu byla aktualizována."
+
+#~ msgid "Notice for contact has been saved."
+#~ msgstr "Nová poznámka byla uložena."
+
+#~ msgid "Notice's data have been updated."
+#~ msgstr "Poznámka byla aktualizována."
+
+#~ msgid "Domains"
+#~ msgstr "Domény"
+
+#~ msgid "Domain's data have been updated."
+#~ msgstr "Data o doméně byla aktualizována."
+
+#~ msgid "New project"
+#~ msgstr "Nový projekt"
+
+#~ msgid "Project has been deleted."
+#~ msgstr "Projekt byl smazán."
+
+#~ msgid "Project's data have been updated."
+#~ msgstr "Data o projektu byla aktualizována."
+
+#~ msgid "New employee"
+#~ msgstr "Nový zaměstnanec"
+
+#~ msgid "Employee has been deleted."
+#~ msgstr "Zaměstnanec byl smazán."
+
+#~ msgid "Employee's data have been updated."
+#~ msgstr "Data o zaměstnanci byla aktualizována."
+
+#~ msgid "Upload image(-s)"
+#~ msgstr "Nahrát obrázek(-zky)"
+
+#~ msgid "Forum categories"
+#~ msgstr "Kategorie pro forum"
+
+#~ msgid "Forum topics"
+#~ msgstr "Téma"
+
+#~ msgid "Post's data have been updated."
+#~ msgstr "Data příspěvku byla aktualizována."
+
+#~ msgid "Sell"
+#~ msgstr "Prodat"
+
+#~ msgid "Buy"
+#~ msgstr "Koupit"
+
+#~ msgid "Form: RESTRICT FORM"
+#~ msgstr "Formulář: ZMĚNIT VÝBĚR"
+
+#~ msgid "Form: CATALOGUE - MANUFACTURER"
+#~ msgstr "Formulář: KATALOG - VÝROBCE"
+
+#~ msgid "Sku / Product code"
+#~ msgstr "Sku / Kód produktu"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Výrobce"
+
+#~ msgid "Photo "
+#~ msgstr "Foto"
+
+#~ msgid "SEO data"
+#~ msgstr "SEO data"
+
+#~ msgid "IC"
+#~ msgstr "IČ"
+
+#~ msgid "DIC"
+#~ msgstr "DIČ"
+
+#~ msgid "Contact street"
+#~ msgstr "Ulice [kontakt]"
+
+#~ msgid "Contact street n."
+#~ msgstr "Číslo popisné [kontakt]"
+
+#~ msgid "Contact ZIP"
+#~ msgstr "PSČ [kontakt]"
+
+#~ msgid "Contact country"
+#~ msgstr "Stát [kontakt]"
+
+#~ msgid "Invoice street"
+#~ msgstr "Ulice [faktura]"
+
+#~ msgid "Invoice street n."
+#~ msgstr "Číslo popisné [faktura]"
+
+#~ msgid "Invoice ZIP"
+#~ msgstr "PSČ [faktura]"
+
+#~ msgid "Invoice city"
+#~ msgstr "Město [faktura]"
+
+#~ msgid "Invoice country"
+#~ msgstr "Stát [faktura]"
+
+#~ msgid "Www"
+#~ msgstr "Internet"
+
+#~ msgid "Form: CLIENT - CONTACT"
+#~ msgstr "Formulář: KLIENTI - KONTAKT"
+
+#~ msgid "Form: CLIENT - CONTACT - NOTICE"
+#~ msgstr "Formulář: KLIENTI - KONTAKT - POZNÁMKA"
+
+#~ msgid "Domain"
+#~ msgstr "Doména"
+
+#~ msgid "Registered"
+#~ msgstr "Registrováno"
+
+#~ msgid "Form: CLIENT - DOMAIN"
+#~ msgstr "Formulář: KLIENTI - DOMÉNA"
+
+#~ msgid "Project end"
+#~ msgstr "Konec projektu"
+
+#~ msgid "Estimate end"
+#~ msgstr "Předpokládaný konec"
+
+#~ msgid "Late reason"
+#~ msgstr "Důvod zpozdění"
+
+#~ msgid "Form: CLIENT - PROJECT"
+#~ msgstr "Formulář: KLIENTI - PROJEKT"
+
+#~ msgid "First name"
+#~ msgstr "Jméno"
+
+#~ msgid "Birthday"
+#~ msgstr "Narozeniny"
+
+#~ msgid "Form: EMPLOYEE"
+#~ msgstr "Formulář: ZAMĚSTNANEC"
+
+#~ msgid "Form: EMPLOYEE - NOTICE"
+#~ msgstr "Formulář: ZAMĚSTNANEC - POZNÁMKA"
+
+#~ msgid "Form: FORUM CATEGORY"
+#~ msgstr "Formulář: KATEGORIE PRO FORUM"
+
+#~ msgid "Form: FORUM CATEGORY LOGO"
+#~ msgstr "Formulář: LOGO KATEGORIE PRO FORUM"
+
+#~ msgid "Topic"
+#~ msgstr "Téma"
+
+#~ msgid "Form: FORUM - TOPIC"
+#~ msgstr "Formulář: FORUM - TÉMA"
+
+#~ msgid "Form: FORUM - REPLY"
+#~ msgstr "Formulář: FORUM - ODPOVĚĎ"
+
+#~ msgid "Form: MENU INPUT - ADVERT - HOMEPAGE"
+#~ msgstr "Formulář: MENU - INZERCE - ÚVODNÍ STRÁNKA"
+
+#~ msgid "Form: MENU INPUT - ADVERT - CATEGORY"
+#~ msgstr "Formulář: MENU - INZERCE - KATEGORIE"
+
+#~ msgid "Form: MENU INPUT - FORUM - CATEGORY"
+#~ msgstr "Formulář: MENU - FORUM - KATEGORIE"
+
+#~ msgid "Form: MENU INPUT - CAREER JET"
+#~ msgstr "Formulář: MENU - CAREER JET"
+
+#~ msgid "Form: MENU INPUT - FORUM"
+#~ msgstr "Formulář: MENU - ODKAZ NA FORUM"
+
+#~ msgid "Form: MENU INPUT - FREE JOBS"
+#~ msgstr "Formulář: MENU - ODKAZ NA VOLNÁ PRACOVNÍ MÍSTA"
+
+#~ msgid "Form: MENU INPUT - WORK DEPARTMENTS"
+#~ msgstr "Formulář: MENU - Úřady práce"
+
+#~ msgid "Form: WIDGET - ADVERT - ADS - LAST"
+#~ msgstr "Formulář: WIDGET - INZERCE - POSLEDNÍ INZERÁTY"
+
+#~ msgid "Number of offer"
+#~ msgstr "Počet nabídek"
+
+#~ msgid "From district"
+#~ msgstr "Z kraje"
+
+#~ msgid "Form: WIDGET - FREE JOBS - RANDOM"
+#~ msgstr "Formulář: WIDGET - VOLNÁ PRACOVNÍ MÍSTA - NÁHODNĚ"
+
+#~ msgid "Input has been deleted."
+#~ msgstr "Inzerát byl smazán."
+
+#~ msgid "Wrong password. Not possible to delete."
+#~ msgstr ""
+#~ "Zadané heslo nesouhlasí s heslem ke smazání. Z tohoto důvodu inzerát "
+#~ "smazat nelze."
+
+#~ msgid "Tac data"
+#~ msgstr "Souhlas s podmínkami a pravidly inzerce"
+
+#~ msgid "Delete me"
+#~ msgstr "Smaž mne"
+
+#~ msgid "Form: DELETE ADVERT INPUT"
+#~ msgstr "Formulář: SMAZAT INZERÁT"
+
+#~ msgid "Free jobs in area"
+#~ msgstr "Nabídka práce v okrese"
+
+#~ msgid "Free jobs in brand"
+#~ msgstr "Nabídka práce v oboru"
+
+#~ msgid "Free jobs in district"
+#~ msgstr "Nabídka práce v kraji"
+
+#~ msgid "Free job"
+#~ msgstr "Nabídka práce"
+
+#~ msgid "Freejob searcher"
+#~ msgstr "Hledač práce pro Vás"
+
+#~ msgid "Freejob newsletter"
+#~ msgstr "Hlídač pracovních nabídek"
+
+#~ msgid "Form: NEWSLETTER - REGISTATION"
+#~ msgstr "Formulář: HLÍDAČ PRÁCE"
+
+#~ msgid "Work department"
+#~ msgstr "Úřad práce"
+
+#~ msgid "Address"
+#~ msgstr "Adresa"
+
+#~ msgid "Career search history"
+#~ msgstr "Historie vyhledávání práce"
+
+#~ msgid "Career search histrory description"
+#~ msgstr ""
+#~ "Historie vyhledávání práce - Archiv požadavků, které měli naši uživatelé "
+#~ "při vyhledávání práce přímo pro ně"
+
+#~ msgid "Career search history keywords"
+#~ msgstr ""
+#~ "historie vyhledavani, nabidka prace, archiv prace, archiv volnych "
+#~ "pracovnich mist"
+
+#~ msgid "No logo set"
+#~ msgstr "Nebylo zadáno žádné logo."
+
+#~ msgid "confirm_delete_advert_category"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto kategori pro inzerci? Tato "
+#~ "operace je NEVRATNÁ!"
+
+#~ msgid "Show inputs"
+#~ msgstr "Zobrazit inzeráty"
+
+#~ msgid "Logo width"
+#~ msgstr "Logo šířka"
+
+#~ msgid "Logo height"
+#~ msgstr "Logo výška"
+
+#~ msgid "Logo mime type"
+#~ msgstr "Logo mine type"
+
+#~ msgid "Logo created"
+#~ msgstr "Logo vytvořeno"
+
+#~ msgid "Delete logo"
+#~ msgstr "Smazat logo"
+
+#~ msgid "Delete photo"
+#~ msgstr "Smazat obrázek"
+
+#~ msgid "Show list of input for"
+#~ msgstr "Zobraz inzeráty pro"
+
+#~ msgid "Show category detail"
+#~ msgstr "Zobrazit detail kategorie"
+
+#~ msgid "User agent"
+#~ msgstr "Prohlížeč"
+
+#~ msgid "Cookie"
+#~ msgstr "Cookie"
+
+#~ msgid "Show tree"
+#~ msgstr "Zobrazit strom"
+
+#~ msgid "Tree travel"
+#~ msgstr "Cestování stromem"
+
+#~ msgid "Top level"
+#~ msgstr "Top úroveň"
+
+#~ msgid "confirm_delete_category"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto kategorii? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "Back to parent detail"
+#~ msgstr "Zpět na detail rodiče"
+
+#~ msgid "confirm_delete_catalogue_manufacturer"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tohoto výrobce? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "Sku"
+#~ msgstr "Sku"
+
+#~ msgid "list of descriptions"
+#~ msgstr "seznam popisů"
+
+#~ msgid "short description"
+#~ msgstr "krátký popis"
+
+#~ msgid "description"
+#~ msgstr "popis"
+
+#~ msgid "Activate description"
+#~ msgstr "Aktivovat popis"
+
+#~ msgid "Show products"
+#~ msgstr "Zobrazit produkty"
+
+#~ msgid "confirm_delete_catalogue_product"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento produkt? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "New order has been saved."
+#~ msgstr "Nová objednávka byla uložena."
+
+#~ msgid "Contact's data"
+#~ msgstr "Data o kontaktu"
+
+#~ msgid "Contact address"
+#~ msgstr "Kontaktní adresa"
+
+#~ msgid "Street no"
+#~ msgstr "Ulice"
+
+#~ msgid "City"
+#~ msgstr "Město"
+
+#~ msgid "Zip"
+#~ msgstr "PSČ"
+
+#~ msgid "Address 4 print"
+#~ msgstr "Adresa k vytištění"
+
+#~ msgid "Invoice address"
+#~ msgstr "Fakturační adresa"
+
+#~ msgid "Notices"
+#~ msgstr "Poznámky"
+
+#~ msgid "start"
+#~ msgstr "začátek"
+
+#~ msgid "estimate end"
+#~ msgstr "očekáv. konec"
+
+#~ msgid "registered"
+#~ msgstr "registrováno"
+
+#~ msgid "confirm_delete_client_contact"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento kontakt? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "projects"
+#~ msgstr "projekty"
+
+#~ msgid "domains"
+#~ msgstr "domény"
+
+#~ msgid "Show projects"
+#~ msgstr "Zobrazit projekty"
+
+#~ msgid "Show domains"
+#~ msgstr "Zobrazit domény"
+
+#~ msgid "confirm_delete_client_domain"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto doménu? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "New domain"
+#~ msgstr "Noví doména"
+
+#~ msgid "Start"
+#~ msgstr "Začátek"
+
+#~ msgid "End"
+#~ msgstr "Konec"
+
+#~ msgid "confirm_delete_client_project"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento projekt? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "confirm_delete_notice"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto poznámku? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "confirm_delete_employee"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tohoto zaměstnance? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "birthday"
+#~ msgstr "narozeniny"
+
+#~ msgid "FileManager"
+#~ msgstr "Správce souborů"
+
+#~ msgid "confirm_delete_gb_category"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tuto kategori pro forum? Tato "
+#~ "operace je NEVRATNÁ!"
+
+#~ msgid "Data"
+#~ msgstr "Data"
+
+#~ msgid "User agent (Browser)"
+#~ msgstr "Prohlížeč"
+
+#~ msgid "topic"
+#~ msgstr "téma"
+
+#~ msgid "Home   "
+#~ msgstr "Úvod"
+
+#~ msgid "Expiration"
+#~ msgstr "Expirace"
+
+#~ msgid "Simple travel"
+#~ msgstr "Jednoduché cestování inzeráty"
+
+#~ msgid "Try to find job accoring to keywords"
+#~ msgstr "Najděte si práci pomocí klíčových slov a lokality"
+
+#~ msgid "Search for work"
+#~ msgstr "Hledej práci"
+
+#~ msgid "Career jet keywords hint"
+#~ msgstr "Profese, klíčová slova nebo název firmy"
+
+#~ msgid "Career jet location hint"
+#~ msgstr "Město nebo kraj (nepovinné)"
+
+#~ msgid "Find for me"
+#~ msgstr "Najdi práci"
+
+#~ msgid "Offer only"
+#~ msgstr "Pouze nabídka"
+
+#~ msgid "Demand only"
+#~ msgstr "Pouze poptávka"
+
+#~ msgid "Firemni a osobni inzerce v oblasti prace - brigady - zamestnani"
+#~ msgstr "Firemní a osobní inzerce v oblasti práce - brigády - zaměstnání"
+
+#~ msgid "Newest ads"
+#~ msgstr "Nejnovější inzeráty"
+
+#~ msgid "Actual offer for this area"
+#~ msgstr "Aktuální nabídka práce / pracovních míst v okrese"
+
+#~ msgid "Uvazek"
+#~ msgstr "Úvazek"
+
+#~ msgid "Pracovni pomer"
+#~ msgstr "Pracovní poměr"
+
+#~ msgid "Actual offer for this brand"
+#~ msgstr "Aktuální nabídka práce /  pracovních míst v oboru"
+
+#~ msgid "Actual offer for this district"
+#~ msgstr "Aktuální nabídka práce / pracovních míst v kraji"
+
+#~ msgid "Free job details"
+#~ msgstr "Informace o volném pracovním místě"
+
+#~ msgid "Offer data"
+#~ msgstr "Detailní informace"
+
+#~ msgid "Pocet mist k obsazeni"
+#~ msgstr "Počet míst k obsazení"
+
+#~ msgid "Volne misto je vhodne pro"
+#~ msgstr "Volné místo je vhodné pro"
+
+#~ msgid "absolventy strednich skol"
+#~ msgstr "absolventy středních škol"
+
+#~ msgid "absolventy vysokych skol"
+#~ msgstr "absolventy vysokých škol"
+
+#~ msgid "mladistve"
+#~ msgstr "mladistvé"
+
+#~ msgid "osoby se zdravotnim postizenim"
+#~ msgstr "osoby se zdravotním postižením"
+
+#~ msgid "osoby s telesnym postizenim"
+#~ msgstr "osoby s tělesným postižením"
+
+#~ msgid "cizince"
+#~ msgstr "cizince"
+
+#~ msgid "Company data"
+#~ msgstr "Informace o společnosti"
+
+#~ msgid "Contact e-mail"
+#~ msgstr "Kontaktní e-mail"
+
+#~ msgid "Work address"
+#~ msgstr "Pracoviště"
+
+#~ msgid "Last update"
+#~ msgstr "Poslední editace"
+
+#~ msgid "Refference nm."
+#~ msgstr "Ref.č."
+
+#~ msgid "Identification nm."
+#~ msgstr "Ident.č."
+
+#~ msgid "Another 5 jobs offer for area"
+#~ msgstr "5 náhodných nabídek práce / pracovních míst v okrese"
+
+#~ msgid "Show all offers from this area"
+#~ msgstr "Zobrazit všechny nabídky práce v okrese"
+
+#~ msgid "Another 5 jobs offer for district"
+#~ msgstr "5 náhodných nabídek práce / pracovních míst v kraje"
+
+#~ msgid "Show all offers from this district"
+#~ msgstr "Zobrazit všechny nabídky práce v kraji"
+
+#~ msgid "Catalogue of free jobs"
+#~ msgstr "Katalog volných pracovních míst"
+
+#~ msgid "all districts"
+#~ msgstr "všechny kraje"
+
+#~ msgid "all people"
+#~ msgstr "všechny"
+
+#~ msgid "all brands"
+#~ msgstr "všechny obory"
+
+#~ msgid "no matter"
+#~ msgstr "nedůležité"
+
+#~ msgid "Actual offer accordig your request"
+#~ msgstr "Aktuální nabídka volných pracovních míst podle Vašich požadavků"
+
+#~ msgid "According brand"
+#~ msgstr "Nabídka práce v jednotlivých oborech"
+
+#~ msgid "Show offers for brand"
+#~ msgstr "Zobrazit všechny nabídky v oboru"
+
+#~ msgid "According district"
+#~ msgstr "Nabídka práce v jednotlivých krajích"
+
+#~ msgid "Show offers for district"
+#~ msgstr "Zobrazit všechny nabídky pro kraj"
+
+#~ msgid "Open hours"
+#~ msgstr "Úřední doba"
+
+#~ msgid "Monday"
+#~ msgstr "Pondělí"
+
+#~ msgid "Tuesday"
+#~ msgstr "Úterý"
+
+#~ msgid "Wednesday"
+#~ msgstr "Středa"
+
+#~ msgid "Thursday"
+#~ msgstr "Čtvrtek"
+
+#~ msgid "Friday"
+#~ msgstr "Pátek"
+
+#~ msgid "Work hours"
+#~ msgstr "Úřední doba pro zprostředkování"
+
+#~ msgid "Electonix sent"
+#~ msgstr "Elektronická podatelna"
+
+#~ msgid "Contact people"
+#~ msgstr "Kontaktní osoby"
+
+#~ msgid "WD filials"
+#~ msgstr "Dislokovaná pracoviště, pobočky aj."
+
+#~ msgid "Random 10 free jobs"
+#~ msgstr "10 volných pracovních míst z úřadu práce"
+
+#~ msgid "Have you found a mistake?"
+#~ msgstr "Našli jste chybu?"
+
+#~ msgid ""
+#~ "If your found mistake, let us know to correct it. It will be helpfull for "
+#~ "all our visitors. Thank you in advance."
+#~ msgstr ""
+#~ "Pokud jste našli chybu, budeme velice rádi, když nás na ni upozorníte. "
+#~ "Pomůžete tím i ostatním návštěvníkům stránek. Předem děkujeme."
+
+#~ msgid "I have found a mistake"
+#~ msgstr "Našel/našla jsem chybu a rád(-a) bych o ní informoval(-a)"
+
+#~ msgid "Select district"
+#~ msgstr "Zvolte kraj"
+
+#~ msgid "Actual offer from Czech republic - CareerJet"
+#~ msgstr "Vyhledávat v nabídce volných pracovních míst - najdi práci"
+
+#~ msgid "Show job offers for"
+#~ msgstr "Zobrazit nabídku práce pro"
+
+#~ msgid "Career jet module"
+#~ msgstr "Přímá nabídka firem - nabídka práce přesně pro Vás"
+
+#~ msgid "Show career jet search history"
+#~ msgstr "Zobrazit starší záznamy "
+
+#~ msgid "show archive of search"
+#~ msgstr "přejít do archivu"
+
+#~ msgid "Prima nabidka firem - nabidka prace presne pro Vas"
+#~ msgstr "Přímá nabídka firem - nabídka práce přesně pro Vás"
+
+#~ msgid "Show result for"
+#~ msgstr "Zobrazit nabídku práce pro"
+
+#~ msgid "Form: MENU INPUT - CATALOGUE"
+#~ msgstr "Formulář: MENU - ODKAZ NA KATALOG"
+
+#~ msgid "Form: MENU INPUT - COURSES - HOMEPAGE"
+#~ msgstr "Formulář: MENU - JAZYKOVÉ KURZY - ÚVODNÍ STRÁNKA"
+
+#~ msgid "Form: MENU INPUT - SCHOOLS - HOMEPAGE"
+#~ msgstr "Formulář: MENU - JAZYKOVÉ ŠKOLY - ÚVODNÍ STRÁNKA"
+
+#~ msgid "Form: MENU INPUT - TRANSLATORS - HOMEPAGE"
+#~ msgstr "Formulář: MENU - PŘEKLADATELÉ - ÚVODNÍ STRÁNKA"
+
+#~ msgid "Language school module"
+#~ msgstr "Jazykové školy [modul]"
+
+#~ msgid "Language course module"
+#~ msgstr "Jazykové kurzy [modul]"
+
+#~ msgid "Language modules"
+#~ msgstr "Jazykové moduly"
+
+#~ msgid "Add a link to homepage of language schools module"
+#~ msgstr "Přidat odkaz na úvodní stránku jazykových škol"
+
+#~ msgid "Add a link to homepage of language courses module"
+#~ msgstr "Přidat odkaz na úvodní stránku jazykových kurzů"
+
+#~ msgid "Add a link to homepage of language translator module"
+#~ msgstr "Přidat odkaz na úvodní stránku překladatelů"
+
+#~ msgid "Actual free jobs offer in districts"
+#~ msgstr "Aktuální nabídka práce / pracovních míst v jednotlivých krajích"
+
+#, fuzzy
+#~ msgid "Wrong password."
+#~ msgstr "Špatné současné heslo"
+
+#, fuzzy
+#~ msgid "We recommnend these language translators"
+#~ msgstr "Překladatelé"
+
+#~ msgid "Manage params"
+#~ msgstr "Správa parametrů"
+
+#~ msgid "New setting has been cloned."
+#~ msgstr "Nové nastavení bylo naklonováno."
+
+#~ msgid "New form"
+#~ msgstr "Nový formulář"
+
+#~ msgid "Advert form's data have been updated."
+#~ msgstr "Nastavení formuláře pro inzerci bylo aktualizováno."
+
+#~ msgid "New param"
+#~ msgstr "Nový parametr"
+
+#~ msgid "New param has been stored."
+#~ msgstr "Nový parametr byl uložen."
+
+#~ msgid "Advert param's data have been updated."
+#~ msgstr "Nastavení parametru pro inzerci bylo aktualizováno."
+
+#~ msgid "User has been blocked."
+#~ msgstr "Uživatel byl zablokován."
+
+#~ msgid "Only active users can be blocked."
+#~ msgstr "Pouze aktivní uživatelé mohou být zablokováni."
+
+#~ msgid "User has been unblocked."
+#~ msgstr "Uživatel byl odblokován."
+
+#~ msgid "Only blocked users can be unblocked."
+#~ msgstr "Pouze zablokovaní uživatelé mohou být odblokováni."
+
+#~ msgid "User's block message has been updated."
+#~ msgstr "Zpráva pro uživatele, proč byl zablokován, byla aktualizována."
+
+#, fuzzy
+#~ msgid "MPSV Offers"
+#~ msgstr "Nabídka"
+
+#, fuzzy
+#~ msgid "MPSV offers database has been updated."
+#~ msgstr "Nastavení serveru bylo aktualizováno."
+
+#~ msgid "New department"
+#~ msgstr "Nový úřad práce"
+
+#~ msgid "Work department has been deleted."
+#~ msgstr "Úřad práce byl smazán."
+
+#~ msgid "Work department has been added."
+#~ msgstr "Úřad práce byl přidán."
+
+#~ msgid "Work department has been updated."
+#~ msgstr "Data o úřad práce byl aktualizována."
+
+#~ msgid "Param"
+#~ msgstr "Parametr"
+
+#~ msgid "Form: ADVERT CATEGORY PARAM"
+#~ msgstr "Formulář: PARAMETR PRO KATEGORII V INZERCI"
+
+#~ msgid "Form: ADVERT CATEGORY PARAM CLONE"
+#~ msgstr "Formulář: KLONOVÁNÍ PARAMETRŮ PRO KATEGORII"
+
+#~ msgid "Form class"
+#~ msgstr "Form třída"
+
+#~ msgid "E.g.: Advert_Form_AdvertInputCat"
+#~ msgstr "E.g.: Advert_Form_AdvertInputCat"
+
+#~ msgid "Form file"
+#~ msgstr "Soubor s formulářem"
+
+#~ msgid "E.g.: AdvertInputCat.php"
+#~ msgstr "E.g.: AdvertInputCat.php"
+
+#~ msgid "Form path"
+#~ msgstr "Cesta k formuláři"
+
+#~ msgid "/modules/advert/forms/"
+#~ msgstr "/modules/advert/forms/"
+
+#~ msgid "Form: ADVERT FORM"
+#~ msgstr "Formulář: FORMULÁŘ PRO INZERCI"
+
+#~ msgid "Text extend"
+#~ msgstr "Rozšířený text"
+
+#~ msgid "Write text of your ad - max 5000 letters"
+#~ msgstr "Napište text inzerátu - max 5000 znaků"
+
+#~ msgid "Extended data"
+#~ msgstr "Rozšířená data"
+
+#~ msgid "Param name"
+#~ msgstr "Název parametru"
+
+#~ msgid "Param type"
+#~ msgstr "Typ parametru"
+
+#~ msgid "Param code"
+#~ msgstr "Kód parametru"
+
+#~ msgid "Shown option"
+#~ msgstr "Zobraz možnosti"
+
+#~ msgid "SHOW my data in all my ads"
+#~ msgstr "ZOBRAZ kontaktní údaje v mých inzerátech"
+
+#~ msgid "DO NOT SHOW my data in all my ads"
+#~ msgstr "NEZOBRAZ kontaktní údaje v mých inzerátech"
+
+#~ msgid "I have read them and I DO NOT AGREE with them "
+#~ msgstr "Četl jsem je ale NESOUHLASÍM s nimi"
+
+#~ msgid "I have read them and I AGREE with them"
+#~ msgstr "Četl jsem je a SOUHLASÍM s nimi"
+
+#~ msgid "I have not read them"
+#~ msgstr "Nečetl jsem je"
+
+#~ msgid "Login data"
+#~ msgstr "Přihlašovací údaje"
+
+#~ msgid "Terms and conditions accept"
+#~ msgstr "Potvrzení se souhlasem s podmínkami"
+
+#~ msgid "File"
+#~ msgstr "Soubor"
+
+#~ msgid "Form: GOOGLE MAPS"
+#~ msgstr "Formulář: GOOGLE MAPA"
+
+#~ msgid "Load address from form"
+#~ msgstr "Načíst adresu z formuláře"
+
+#, fuzzy
+#~ msgid "Google mapa"
+#~ msgstr "Google map klíč"
+
+#~ msgid "- main work department -"
+#~ msgstr "- hlavní úřad práce -"
+
+#~ msgid "- select district -"
+#~ msgstr "- zvolte kraj -"
+
+#~ msgid "Form: WORK DEPARTMENT"
+#~ msgstr "Formulář: ÚŘAD PRÁCE"
+
+#~ msgid "New setting has been set"
+#~ msgstr "Nové nastavení bylo uloženo."
+
+#~ msgid "clone settings"
+#~ msgstr "klonovat nastavení"
+
+#~ msgid "save setting"
+#~ msgstr "uložit nastavení"
+
+#~ msgid "Drop and 's no more param to add"
+#~ msgstr "Chytni a přetáhni parametr, který si přeješ přidat"
+
+#~ msgid "Possible params"
+#~ msgstr "Dostupné parametry"
+
+#~ msgid "There's no more param to add"
+#~ msgstr "Všechny dostupné parametry byly přidány."
+
+#~ msgid "Advert form's data"
+#~ msgstr "Inzerce - Kategorie"
+
+#~ msgid "No categories are using it."
+#~ msgstr "Zatím žádná kategorie toto nepoužívá."
+
+#~ msgid "Form's view"
+#~ msgstr "Náhled formuláře"
+
+#~ msgid "confirm_delete_advert_form"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento formulář pro inzerci? Tato "
+#~ "operace je NEVRATNÁ!"
+
+#~ msgid "class"
+#~ msgstr "třída"
+
+#~ msgid "path"
+#~ msgstr "cesta"
+
+#~ msgid "Extended text"
+#~ msgstr "Rozšířený text"
+
+#~ msgid "special params"
+#~ msgstr "specialní parametry"
+
+#~ msgid "Current photo(-s)"
+#~ msgstr "Současné fotky"
+
+#~ msgid "Advert param's data"
+#~ msgstr "Data o parametru"
+
+#~ msgid "Advert param's setting"
+#~ msgstr "Nastavení parametrů"
+
+#~ msgid "confirm_delete_advert_param"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento parametr pro inzerci? Tato "
+#~ "operace je NEVRATNÁ!"
+
+#~ msgid "Reply's data"
+#~ msgstr "Data odpovědi"
+
+#~ msgid "Link's data"
+#~ msgstr "Data odkazu"
+
+#~ msgid "Ad"
+#~ msgstr "Inzerát"
+
+#~ msgid "This user has been blocked by administrator."
+#~ msgstr "Tento uživatel byl zablokován administrátorem."
+
+#~ msgid "Block user"
+#~ msgstr "Zablokovat uživatele"
+
+#~ msgid "Icq"
+#~ msgstr "Icq"
+
+#~ msgid "Advert data"
+#~ msgstr "Data o inzerátu"
+
+#~ msgid "Accept terms and conditins"
+#~ msgstr "Souhlas s podmínkami a pravidlz"
+
+#~ msgid "confirm_delete_user"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tohoto uživatele? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#, fuzzy
+#~ msgid "Company ic"
+#~ msgstr "Společnost"
+
+#, fuzzy
+#~ msgid "Company www"
+#~ msgstr "Společnost"
+
+#, fuzzy
+#~ msgid "Prijmeni"
+#~ msgstr "Cena"
+
+#, fuzzy
+#~ msgid "Textova adresa"
+#~ msgstr "Textové stránky"
+
+#, fuzzy
+#~ msgid "Co obec"
+#~ msgstr "Cookie"
+
+#, fuzzy
+#~ msgid "Ulice"
+#~ msgstr "Cena"
+
+#~ msgid "Back to basic view"
+#~ msgstr "Zpět na základní přehled"
+
+#, fuzzy
+#~ msgid "company"
+#~ msgstr "Společnost"
+
+#, fuzzy
+#~ msgid "work department"
+#~ msgstr "Úřady práce"
+
+#~ msgid "Geo data"
+#~ msgstr "Geografické údaje"
+
+#~ msgid "WD Children"
+#~ msgstr "Pobočky, dislokováná pracoviště aj."
+
+#~ msgid "confirm_delete_work_department"
+#~ msgstr ""
+#~ "UPOZORNĚNÍ: Opravdu si přejete smazat tento úřad práce? Tato operace je "
+#~ "NEVRATNÁ!"
+
+#~ msgid "area"
+#~ msgstr "okres"
+
+#, fuzzy
+#~ msgid "Edit ad"
+#~ msgstr "Editovat"
+
+#, fuzzy
+#~ msgid "Problem occurs during my uploading."
+#~ msgstr "Nastal problem během nahrávání souboru na server."
+
+#, fuzzy
+#~ msgid "New ad confirm"
+#~ msgstr "Nový formulář"
+
+#, fuzzy
+#~ msgid "My ads"
+#~ msgstr "inzerátů"
+
+#, fuzzy
+#~ msgid "Write name of your ad - max 100 letters"
+#~ msgstr "Napište text inzerátu - max 500 znaků"
+
+#, fuzzy
+#~ msgid "Engine"
+#~ msgstr "Odkaz"
+
+#, fuzzy
+#~ msgid "Form: ADVERT"
+#~ msgstr "Formulář: UŽIVATELÉ"
+
+#, fuzzy
+#~ msgid "Width"
+#~ msgstr "Widgety"
+
+#, fuzzy
+#~ msgid "Heihgt"
+#~ msgstr "editovat"
+
+#, fuzzy
+#~ msgid "Bits"
+#~ msgstr "zázn."
+
+#, fuzzy
+#~ msgid "Mime"
+#~ msgstr "Mobil"
+
+#, fuzzy
+#~ msgid "Form: FORUM - NEW TOPIC"
+#~ msgstr "Formulář: FORUM - TÉMA"
+
+#, fuzzy
+#~ msgid "Form: FORUM - NEW REPLY"
+#~ msgstr "Formulář: FORUM - ODPOVĚĎ"
+
+#, fuzzy
+#~ msgid "Extended description"
+#~ msgstr "Popis menu"
+
+#, fuzzy
+#~ msgid "Seller"
+#~ msgstr "Prodat"
+
+#, fuzzy
+#~ msgid "User address"
+#~ msgstr "Role"
+
+#, fuzzy
+#~ msgid "Insert your ad"
+#~ msgstr "Potvrdit heslo"
+
+#, fuzzy
+#~ msgid "Confirm your ad"
+#~ msgstr "Potvrdit heslo"
+
+#, fuzzy
+#~ msgid "Back to"
+#~ msgstr "Zpět na seznam"
+
+#, fuzzy
+#~ msgid "Ad url"
+#~ msgstr "url"
+
+#, fuzzy
+#~ msgid "show live view"
+#~ msgstr "zobrazit / skrýt"
+
+#, fuzzy
+#~ msgid "Reply detail"
+#~ msgstr "Data odpovědi"
+
+#, fuzzy
+#~ msgid "Drafts"
+#~ msgstr "kat."
+
+#, fuzzy
+#~ msgid "Usefull links"
+#~ msgstr "Poslední přihlášení"
+
+#, fuzzy
+#~ msgid "contact us"
+#~ msgstr "Status"
+
+#, fuzzy
+#~ msgid "secure value"
+#~ msgstr "User locale"
+
+#, fuzzy
+#~ msgid "My settings"
+#~ msgstr "Editovat nastavení"
+
+#, fuzzy
+#~ msgid "Show contact data in my ads"
+#~ msgstr "Zobrazit data v inzerátech"
+
+#, fuzzy
+#~ msgid "Accept terms and conditions"
+#~ msgstr "Souhlas s podmínkami a pravidlz"
+
+#, fuzzy
+#~ msgid "Account time's data"
+#~ msgstr "Data o stránce"
+
+#, fuzzy
+#~ msgid "registration"
+#~ msgstr "Administrace"
+
+#, fuzzy
+#~ msgid "log in"
+#~ msgstr "Odkaz"
+
+#, fuzzy
+#~ msgid "Topics"
+#~ msgstr "Téma"
+
+#~ msgid "do 1 mesice"
+#~ msgstr "do 1 měsíce"
+
+#~ msgid "do 2 mesicu"
+#~ msgstr "do 2 měsíců"
+
+#~ msgid "za 2 mesice"
+#~ msgstr "za 2 měsíce"
+
+#, fuzzy
+#~ msgid "- all brands -"
+#~ msgstr "- všichni uživatelé -"
+
+#~ msgid "vsechny"
+#~ msgstr "- všechny -"
+
+#~ msgid "From menu type"
+#~ msgstr "Klonovat z"
+
+#~ msgid "category name"
+#~ msgstr "kategorie"
+
+#~ msgid "Form: PAGE SETTING"
+#~ msgstr "Formulář: TEXTOVÁ STRÁNKA - NASTAVENÍ"
+
+#~ msgid "Posibilities"
+#~ msgstr "Možnosti"
+
+#, fuzzy
+#~ msgid "Index keywords"
+#~ msgstr "Klíčová slova"
+
+#, fuzzy
+#~ msgid "School title"
+#~ msgstr "Zobrazit články"
+
+#, fuzzy
+#~ msgid "School keywords"
+#~ msgstr "Klíčová slova"
+
+#, fuzzy
+#~ msgid "Translator description"
+#~ msgstr "Popis menu"
+
+#, fuzzy
+#~ msgid "Translator keywords"
+#~ msgstr "Klíčová slova"
+
+#, fuzzy
+#~ msgid "Advert description"
+#~ msgstr "Popis menu"
+
+#, fuzzy
+#~ msgid "Article keywords"
+#~ msgstr "Kategorie pro články"
+
+#, fuzzy
+#~ msgid "Forum title"
+#~ msgstr "Soubor s formulářem"
+
+#, fuzzy
+#~ msgid "Forum keywords"
+#~ msgstr "Klíčová slova"
+
+#~ msgid "Category for index"
+#~ msgstr "Kategorie pro index"
+
+#, fuzzy
+#~ msgid "Form: EDIT MY PROFILE"
+#~ msgstr "Formulář: TEXTOVÁ STRÁNKA"
+
+#, fuzzy
+#~ msgid "Userfull links"
+#~ msgstr "Poslední přihlášení"
+
+#, fuzzy
+#~ msgid "Log in"
+#~ msgstr "Odkaz"
+
+#~ msgid "Error_username_exists"
+#~ msgstr "Toto uživatelské jméno již v databázi existuje."
+
+#~ msgid "Remove markItUp!"
+#~ msgstr "Odstranit markItUp"
+
+#~ msgid "Group: A-Z"
+#~ msgstr "Skupina: A-Z"
+
+#~ msgid "Group: Z-A"
+#~ msgstr "Skupina: Z-A"
+
+#~ msgid "Personname: A-Z"
+#~ msgstr "Jméno: A-Z"
+
+#~ msgid "Personname: Z-A"
+#~ msgstr "Jméno: Z-A"
+
+#~ msgid "Username: A-Z"
+#~ msgstr "Uživatelské jméno: A-Z"
+
+#~ msgid "Username: Z-A"
+#~ msgstr "Uživatelské jméno: Z-A"
+
+#~ msgid "Menu controller"
+#~ msgstr "Kontroler"

@@ -1,0 +1,58 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        'add' => array('text'=>$this->trans('New Photo'),'link'=>"/admin/photo/add/type/".$this->params['type'],'class'=>'btn')
+    ),
+);
+
+if(!empty($this->params['parent'])) {
+    $buttons['links']['add']['link'] .= '/parent/'.(int)$this->params['parent'];
+}
+
+if($this->params['type'] == 'photos') {
+	$buttons['links'][] = array('text'=>$this->trans('Import from Picasa'),'link'=>"/admin/category/import-picasa/",'class'=>'btn');
+}
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+	echo $this->viewMsgs($this->msgs);
+} 
+ 
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/photo/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+    'rightbox' => '<a href="/admin/photo/organize/parent/'.$this->params['parent'].'/type/'.$this->params['type'].'" title="'.$this->trans('Organize photos').'" class="nounderline"><span class="label label-02">'.$this->trans('Organize photos').'</span></a>',
+
+    'fields' => array(
+        'parent' => array('name' => 'parent', 'id' => 'parent', 'class'=>'input-text', 'values' => $this->parents,'type' => 'select','empty_value' => $this->trans('- all parents -')),
+        'type' => array('name' => 'type', 'id' => 'type', 'value'=>$this->params['type'],'type'=>'hidden'),
+        'input' => array(),
+        'search' => array()
+    ),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => '&nbsp;','width'=>'50','column'=>'arrows'),
+        array('name' => $this->trans('thumbnail'),'column'=>'thumbnail','escape' => false, 'width'=>60, 'class'=>'t-center'),
+        array('name' => $this->trans('name'),'column'=>'name'),
+        array('name' => $this->trans('perex'),'column'=>'perex')),
+    
+    'actions' => array('status','detail','edit','delete'),
+    'controller' => 'photo',
+    'db_table' => 'photos',  
+    'status_action' => 'photo-status',              
+    'records' => $this->data4View,
+);
+echo $this->partial('_elements/photo-gallery.phtml',array('options'=>$tableOptions));
+
+
+

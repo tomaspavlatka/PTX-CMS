@@ -1,0 +1,20 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas@pavlatka.cz]
+ * Created: Oct 21, 2011
+ */
+
+$locale = Zend_Registry::get('PTX_Locale');
+$select = Admin_Model_DbSelect_Languages::pureSelect();
+$select->columns(array('code','name_'.$locale.' as name'))->where('status = 1')->order('position asc');
+$stmt = $select->query();
+$langs = $stmt->fetchAll();
+?>
+
+<ul>
+<?php foreach($langs as $key => $values): ?>
+    <li><a href="<?php echo $this->baseUrl().$this->ptxUrl(array('lang'=>$values['code']),'homepage',true); ?>" title="<?php echo $this->escape($values['name']); ?>">
+        <img src="/images/icons/flag/png/<?php echo $this->escape($values['code']); ?>.png" alt="<?php echo $this->escape($values['name']); ?>" title="<?php echo $this->escape($values['name']); ?>" width="16" height="11" /> 
+    </a></li>
+<?php endforeach; ?>
+</ul>

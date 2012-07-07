@@ -1,0 +1,130 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 7, 2010
+**/
+
+// Play with status.
+if(in_array('status',$this->options['actions'])) {
+    $this->jQuery()->enable(); ?>
+<script type="text/javascript">
+$(function(){
+    $(".status").click(function(){
+        var id = $(this).attr('id');
+        var array = id.split('-');
+        $.getJSON('/admin/ajax/<?php echo $this->options['status_action']; ?>/id/'+array[1]+'/',function(data){
+            if(data.result == 1) {
+                $('#status-'+array[1]).html('<?php echo $this->statusIcon(1); ?>');
+            } else {
+                $('#status-'+array[1]).html('<?php echo $this->statusIcon(0); ?>');
+            }
+        });
+    });
+});
+</script>
+<?php } 
+
+// Speacial keys.
+$tableSpecials = array('class','width');
+
+// Actions setting.
+$actions = array(
+    'text' => array('image'=>'/images/icons/blue/18/cycle.png','text'=>$this->trans('text'),'action'=>'text'),
+    'logo' => array('image'=>'/images/icons/blue/18/object_15.png','text'=>$this->trans('logo'),'action'=>'logo'),
+    'password' => array('image'=>'/images/icons/blue/18/key.png','text'=>$this->trans('password'),'action'=>'password'),
+    'reply'   => array('image'=>'/images/icons/blue/18/object_03.png','text'=>$this->trans('reply'),'action'=>'reply'),
+    'forward' => array('image'=>'/images/icons/blue/18/object_04.png','text'=>$this->trans('forward'),'action'=>'forward'),
+    'edit' => array('image'=>'/images/icons/blue/18/cycle.png','text'=>$this->trans('edit'),'action'=>'edit'),
+    'delete' => array('image'=>'/images/icons/yellow/18/recycle.png','text'=>$this->trans('delete'),'action'=>'delete','confirm_message'=>$this->trans('WARNING: Are you sure?')),
+    'delete-relative' => array('image'=>'/images/icons/yellow/18/recycle.png','text'=>$this->trans('delete'),'action'=>'delete-relative','confirm_message'=>$this->trans('WARNING: Are you sure?')),
+);
+?>
+<table class="detail" width="100%">
+    <thead>
+        <tr>
+            <?php foreach($this->options['columns'] as $column){ 
+                echo '<th';
+                
+                foreach($tableSpecials as $special) {
+                    if(isset($column[$special])) {
+                        echo ' '.$special.'="'.$column[$special].'"';
+                    }
+                }
+                
+                echo '>'.$column['name'].'</th>';
+            }?>
+            
+            <?php if(in_array('status',$this->options['actions'])): ?>
+                <th class="icon t-center"><?php echo $this->trans('status'); ?></th>
+            <?php endif; ?>
+            
+            <?php foreach($actions as $action => $options): ?>
+                <?php if(in_array($action,$this->options['actions'])): ?>
+                    <th class="icon t-center"><?php echo $options['text']; ?></th>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach($this->options['records'] as $row): ?>
+        <tr class="<?php echo $this->cycle(array("even","odd"))->next();?>">
+            <?php foreach($this->options['columns'] as $column) {
+                // Special settings for arrows.
+                echo '<td';
+                 
+                foreach($tableSpecials as $special) {
+                    if(isset($column[$special])) {
+                        echo ' '.$special.'="'.$column[$special].'"';
+                    }
+                }
+
+                echo '>';
+
+                // Show link for detail.
+                if(in_array('detail',$this->options['actions']) && $column['column'] == 'name') {
+                    echo '<a href="/admin/'.$this->options['controller'].'/detail/id/'.(int)$row['id'].'" title="'.$this->trans('detail').'">'.$this->escape($row[$column['column']]).'</a>';
+                } else {
+                    if(isset($column['helper'])) {
+                        switch($column['helper']) {
+                            case 'viewDate':
+                                echo $this->viewDate($row[$column['column']]);
+                                break;
+                            default:
+                                echo $this->escape($row[$column['column']]);
+                                break;                                
+                        }
+                    } else {
+                        echo $this->escape($row[$column['column']]);
+                    }
+                }
+                echo '</td>';
+            } ?>
+        
+            <?php if(in_array('status',$this->options['actions'])): ?>
+                <td class="icon t-center status" id="status-<?php echo $this->escape($row['id']); ?>"><?php echo $this->statusIcon($row['status']); ?></td>
+            <?php endif; ?>
+            
+            <?php foreach($actions as $action => $options) {
+                if(in_array($action,$this->options['actions'])) {
+                    echo '<td class="icon t-center">';
+                        echo '<a href="/admin/'.$this->options['controller'].'/'.$options['action'].'/id/'.(int)$row['id'].'" title="'.$options['text'].'"';
+                        
+                        // Confirm message.
+                        if(isset($options['confirm_message'])) {
+                            echo ' onclick="if(!confirm(\''.$options['confirm_message'].'\')){return false;}" ';
+                        }
+                        echo '>';
+                        
+                        echo '<img src="'.$this->baseUrl.$options['image'].'" alt="'.$options['text'].'" width="18" height="18" />';
+                        
+                        echo '</a>';
+                    echo '</td>';
+                }
+            }?>
+        </tr>
+    <?php endforeach;?>
+    <?php if((is_array($this->options['records']) || $this->options['records'] instanceof ArrayIterator) && count($this->options['records']) < 1): ?>
+        <tr><td colspan="8"><?php echo $this->viewMsg($this->trans('No records'),'info');?></td></tr>
+    <?php endif;?>
+    </tbody>
+</table>

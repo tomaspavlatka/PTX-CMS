@@ -1,0 +1,91 @@
+.t-left {text-align: left;}
+.t-right {text-align: right;}
+.t-center {text-align: center;}
+.t-justify {text-align: justify;}
+
+.f-left {float: left;}
+.f-right {float: right;}
+.f-center {float: center;}
+
+.perex {color: #777; font-size: 0.9em; margin-bottom: 12px;}
+.margin10 {margin: 0px 10px 10px 10px;}
+.padding10 {padding: 5px;}
+
+.tb {font-weight: bold;}
+.ti {font-style: italic}
+.tu {text-decoration: underline;}
+.ts {font-size: 0.9em;}
+
+.done, .info, .warning{border:1px solid #DDD;margin-bottom:1em;padding:0.6em 0.8em}
+.warning {background:#FBE3E4;color:#8A1F11;border-color:#FBC2C4}
+.warning a{color:#8A1F11}
+.info{background:#FFF6BF;color:#514721;border-color:#FFD324}
+.info a{color:#514721}
+.done{background:#E6EFC2;color:#264409;border-color:#C6D880}
+.done a{color:#264409}
+
+/*** POST ***/
+.post p {text-align: justify}
+.post h1 {border-bottom: 1px solid #E5E5E5;}
+.post .post-date abbr {border: 0px;}
+.post .post-body .featured-picture {float: left; margin-right: 10px; margin-bottom: 3px; border: 3px solid #ccc}
+
+/*** FORM ***/
+label {font-weight: bold; cursor: pointer;}
+fieldset {padding: 1.4em; margin: 0 0 1.5em 0; border: 1px solid #DDD; background: #F6F6F6;}
+legend {font-weight: bold; font-size: 1.2em;}
+textarea {overflow: auto;}
+input.text, textarea, select {background: #FCFCFC; border: 1px inset #AAA; margin: 0.5em 0; padding: 4px 5px;}
+input.text:focus, textarea:focus, select:focus {background: #FFFFF5;}
+input.long {width: 550px;}
+textarea.long {width: 550px; height: 100px;}
+input.button {background: #DDD; border: 1px outset #AAA; padding: 4px 5px;}
+input.button:active {border-style: inset;}
+form .form-error {border-color: #F00;}
+form #dt_submit-label, #dt_parent-label, #submit-label {display: none;}
+#dd_submit {margin: 0px 0px 0px -20px;}
+form .hint {margin: -2px 0px 5px 0px; padding: -2px 0px 3px 0px; font-size: 0.85em; color: #777;}
+
+/*** Zend Form ***/
+#ad_form label {display: block; margin: 5px 0px 2px 0px;}
+#ad_form input {padding: 3px; border: 1px solid #ccc}
+#ad_form input,#ad_form textarea,#ad_form select {padding: 3px; border: 1px solid #ccc}
+#ad_form textarea {height: 150px;}
+#ad_form input, #ad_form textarea, #ad_form select {margin: 0px;}
+#ad_form .big {font-weight: bold;}
+#ad_form .long {width: 600px;}
+#ad_form .hint {padding: 2px; font-style: italic; margin: 0px;}
+#ad_form .ad_half {width: 305px; float: left; margin: 0px; padding: 0px;}
+#ad_form .ad_half .long {width: 290px;}
+#ad_form .ad_half select.long {width: 300px;}
+#ad_form .ad_submit input {margin-left: 20px; background:#DDD;border:1px outset #AAA;padding:4px 5px}
+
+/*** COMMENTS ***/
+.comment-container {margin-top: 10px;}
+.comment-reply {margin-top: 5px;}
+.comment-reply a {text-decoration: none;}
+.comment-level-1 {margin-left: 15px;}
+.comment-level-2 {margin-left: 25px;}
+.comment-level-3 {margin-left: 35px;}
+.comment-level-4 {margin-left: 45px;}
+.comment-level-5 {margin-left: 55px;}
+.comment-level-6 {margin-left: 65px;}
+.comment-level-7 {margin-left: 75px;}
+.comment-level-8 {margin-left: 85px;}
+.comment-level-9 {margin-left: 95px;}
+.comment-level-10 {margin-left: 105px;}
+
+/*** PAGINATOR ***/
+.paginator { background: #FCFCFC; border: 1px solid #ECECEC; color: #777; font-size: 0.9em; padding: 6px 10px; margin: 5px 0px; }
+.paginator .pagiright {width:350px;float: right; text-align: right;}
+.paginator .pagiright a{margin-left: 25px;}
+
+/*** PHOTOS ***/
+.photos {margin-bottom: 12px;}
+.photo {float: left; margin: 5px; width: 205px;}
+.photo img{border: 3px solid #ccc;}
+
+/*** LANGUAGES ***/
+#header {position: relative;}
+#lang-switcher {position: absolute; top: 10px; right: 0px;}
+#lang-switcher ul {list-style-type: none;}

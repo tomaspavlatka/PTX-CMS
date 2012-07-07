@@ -1,0 +1,50 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 7, 2010
+**/
+
+// Activate jQuery.
+$this->jQuery()->enable();
+?>
+<script type="text/javascript">
+$(function(){
+    $('.confirm').click(function() {
+        if(!confirm('<?php echo $this->trans('Do you really want to activate this revision? It will rewrite actual content!'); ?>')) {
+            return false;
+        }        
+    });
+});
+</script>
+<?php if(isset($this->options['header'])): ?>
+    <h3><?php echo $this->options['header']; ?></h3>
+<?php endif;?>
+
+<table width="100%">
+    <thead>
+        <tr>
+            <th class="t-center" width="50"><?php echo $this->trans('id'); ?></th>
+            <th class="t-center" width="130"><?php echo $this->trans('date'); ?></th>
+            <th class="t-center" width="130"><?php echo $this->trans('user'); ?></th>
+            <th><?php echo $this->trans('notice'); ?></th>
+            <th class="t-center icon"><?php echo $this->trans('preview'); ?></th>
+            <th class="t-center icon"><?php echo $this->trans('activate'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($this->options['data'] as $row): ?>
+        <tr class="<?php echo $this->cycle(array('even','odd'))->next(); ?>">
+            <td class="t-center"><?php echo $this->escape($row['id']); ?></td>
+            <td class="t-center"><?php echo $this->viewDate($row['created']); ?></td>
+            <td class="t-center"><?php echo $this->escape($row['user']['name']); ?></td>
+            <td><?php echo $row['notice']; ?></td>
+            <td class="t-center icon"><a href="<?php echo sprintf($this->options['preview'],$row['id']); ?>" target="_blank" title="<?php echo $this->trans('Show revision'); ?>"><img src="<?php echo $this->baseUrl(); ?>/images/icons/blue/18/charts01.png" alt="edit" width="18" height="18" /></a></td>
+            <td class="t-center icon"><a href="<?php echo sprintf($this->options['activate'],$row['content_id'],$row['id']); ?>" class="confirm"><img src="<?php echo $this->baseUrl(); ?>/images/icons/green/18/Repeat.png" alt="edit" width="18" height="18" /></a></td>
+        </tr>
+        <?php endforeach; ?>
+        
+        <?php if(!is_array($this->options['data']) || count($this->options['data']) == 0): ?>
+            <tr><td colspan="6"><p class="msg info"><?php echo $this->trans('No records'); ?></p></td></tr>
+        <?php endif;?>
+    </tbody>
+</table>

@@ -1,0 +1,53 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 15.11.2010
+**/
+
+?>
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('Clear cache'),'link'=>'/admin/setting/clear-cache','class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Table detail.
+$regenerateLink = '<a href="/admin/sitemap/generate/gmodule/default" class="label label-02">'.$this->trans('(re)generate').'</a>';
+$tableOptions = array(
+    'header' => $this->trans('Default module'),
+    'rows' => array(
+        array('ident' => $this->trans('File path'),'value'=>$this->escape($this->xmlFolder.$this->xmlFileDefault)),
+        array('ident' => $this->trans('Url'),'value'=>$this->escape('http://'.$_SERVER['HTTP_HOST'].'/'.$this->xmlFileDefault)),
+        array('ident' => $this->trans('Last change'),'value'=>$this->escape($this->defaultLastUpdate),'helper'=>'viewDate'),
+        array('ident' => $this->trans('File size'),'value'=>$this->escape($this->defaultFileSize)),
+        array('ident' => $this->trans('(Re)generate sitemap'),'value'=>$regenerateLink),
+    ),
+);
+echo $this->partial('_elements/table-detail.phtml',array('options'=>$tableOptions));
+
+// Table detail.
+$regenerateLink = '<a href="/admin/sitemap/generate/gmodule/article" class="label label-02">'.$this->trans('(re)generate').'</a>';
+$tableOptions = array(
+    'header' => $this->trans('Article module'),
+    'rows' => array(
+        array('ident' => $this->trans('File path'),'value'=>$this->escape($this->xmlFolder.$this->xmlFileArticle)),
+        array('ident' => $this->trans('Url'),'value'=>$this->escape('http://'.$_SERVER['HTTP_HOST'].'/'.$this->xmlFileArticle)),
+        array('ident' => $this->trans('Last change'),'value'=>$this->escape($this->articleLastUpdate),'helper'=>'viewDate'),
+        array('ident' => $this->trans('File size'),'value'=>$this->escape($this->articleFileSize)),
+        array('ident' => $this->trans('(Re)generate sitemap'),'value'=>$regenerateLink),
+    ),
+);
+echo $this->partial('_elements/table-detail.phtml',array('options'=>$tableOptions));
+
+
+

@@ -1,0 +1,18 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+ * Created: Sep 21, 2011
+ */
+  
+$params = array(
+    'header_before'=> null,
+    'header_after' => null,
+    'block_before' => null,
+    'block_after'  => null,
+    'item_before'  => null,
+    'item_after'   => null);
+
+if(isset($this->params)) {
+	$params = array_merge($params,$this->params);
+}
+echo $this->getWidget4Print(3,$params);

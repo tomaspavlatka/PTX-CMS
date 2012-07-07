@@ -1,0 +1,29 @@
+<?php echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headLink()->appendStylesheet($this->baseUrl().'/project/admin/css/reset.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/main.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/style.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/2col.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/mystyle.css'); ?>
+
+    <?php echo $this->headScript() ?>
+    <?php if($this->jQuery()->isEnabled()){
+            $this->jQuery()->setLocalPath($this->baseUrl().'/js/jquery/js/jquery-1.4.2.min.js')
+                       ->setUiLocalPath($this->baseUrl().'/js/jquery/js/jquery-ui-1.8rc3.custom.min.js')
+                       ->addStylesheet($this->baseUrl().'/js/jquery/css/black-tie/jquery-ui-1.8rc3.custom.css');
+            echo $this->jQuery();
+        }?>
+</head>
+<body>
+<div id="main">
+    <!-- Tray -->
+    <?php echo $this->layout()->incTop; ?>
+    <hr class="noscreen" />
+
+    <?php echo $this->layout()->content; ?>    
+</div> <!-- /main -->
+</body>
+</html>

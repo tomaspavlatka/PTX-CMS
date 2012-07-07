@@ -1,0 +1,31 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 7, 2010
+**/
+
+?>
+<?php if(isset($this->options['header'])): ?>
+    <h3><?php echo $this->options['header']; ?></h3>
+<?php endif;?>
+
+<table width="100%" class="detail">
+    <tbody>
+        <?php foreach($this->options['rows'] as $row): ?>
+            <?php if(isset($row['value']) && !empty($row['value'])): ?>
+                <tr>
+                    <td class="black"><?php echo $row['ident']; ?></td>
+                    <?php if(!isset($row['helper'])): ?>
+                        <td><?php echo $row['value']; ?></td>
+                    <?php elseif($row['helper'] == 'viewDate'): ?>
+                        <td><?php echo $this->viewDate($row['value']); ?></td>
+                    <?php elseif($row['helper'] == 'statusIcon'): ?>
+                        <td><?php echo $this->statusIcon($row['value']); ?></td>
+                    <?php elseif($row['helper'] == 'roleName'): ?>
+                        <td><?php echo $this->roleName($row['value']); ?></td>
+                    <?php endif;?>
+                </tr>
+            <?php endif; ?>                    
+        <?php endforeach; ?>
+    </tbody>
+</table>

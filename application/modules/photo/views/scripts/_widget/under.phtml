@@ -1,0 +1,12 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+ * Created: Sep 21, 2011
+ */
+  
+$params = array();
+
+if(isset($this->params)) {
+	$params = array_merge($params,$this->params);
+}
+echo $this->getWidget4Print(3,$params);

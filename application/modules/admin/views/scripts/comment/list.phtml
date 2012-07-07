@@ -1,0 +1,40 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 10.11.2010
+**/
+
+?>
+
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('Reload page'),'link'=>"/admin/comment/list/type/".$this->params['type']."/id/".$this->params['id'],'class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+?>
+
+<h2><?php echo $this->transParam('Comments for: ~0~',array('~0~'=>$this->parentData['name'])); ?></h2>
+<?php 
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}     
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => $this->trans('person name'),'column'=>'name', 'width'=> 200),
+        array('name' => $this->trans('message'),'column'=>'message'),
+        ),
+    
+    'actions' => array('status','edit','reply','delete'),
+    'controller' => 'comment',        
+    'status_action' => 'comment-status',              
+    'records' => $this->comments
+);
+echo $this->partial('_elements/table.phtml',array('options'=>$tableOptions));

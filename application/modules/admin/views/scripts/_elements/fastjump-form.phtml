@@ -1,0 +1,20 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas@pavlatka.cz]
+ * Created: Oct 15, 2011
+ */
+     
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/ajax/fast-jump',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'id' => array('name' => 'id', 'id' => 'fast_id', 'class'=>'input-text', 'values' => $this->select_options,'type' => 'select','empty_value' => $this->trans('- fast change -')),
+        'action' => array('name' => 'action', 'id' => 'fast_action', 'class'=>'input-text', 'value' => $this->action,'type' => 'hidden'),
+        'controller' => array('name' => 'controller', 'id' => 'fast_controller', 'class'=>'input-text', 'value' => $this->controller,'type' => 'hidden'),
+    ),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));

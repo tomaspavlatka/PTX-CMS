@@ -1,0 +1,28 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('New Menu'),'link'=>"/admin/admin-menu/add",'class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+	echo $this->viewMsgs($this->msgs);
+} 
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => '&nbsp;','width'=>'50','column'=>'arrows'),
+        array('name' => $this->trans('name'),'column'=>'name')),
+    
+    'actions' => array('status','edit','delete'),
+    'controller' => 'admin-menu',
+    'db_table' => 'categories',  
+    'status_action' => 'admin-menu-status',              
+    'records' => $this->tree,
+);
+echo $this->partial('_elements/table-tree.phtml',array('options'=>$tableOptions));

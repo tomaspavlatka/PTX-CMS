@@ -1,0 +1,88 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 12, 2010
+**/
+
+$this->jQuery()->enable()
+    ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js')
+    ->addStylesheet($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.css');
+    
+$params = array(
+    'block_before'  => '',
+    'block_after'   => '',
+    
+    'name_style'    => 'text',
+    'name_before'   => '<h1>',
+    'name_after'    => '</h1>',
+    'name_column'   => 'name',
+    
+    'item_before'   => '',
+    'item_after'    => '',
+    
+    'date_show'     => true,
+    'date_text'  => '%s',
+    'date_before' => null,
+    'date_after' => null,
+    
+    'text_before'    => '<p>',
+    'text_after'     => '</p>',
+    'text_words_number' => 0,
+    'text_column'     => 'perex',
+    'name_link_extra' => '',
+    
+    'image_show' => true,
+    'image_before' => null,
+    'image_after' => null,
+    'image_width' => 200,
+    
+    'link_extra' => true,
+    'link_extra_before' => '',
+    'link_extra_after' => '',
+    'link_extra_column' => 'short_name',
+    'link_extra_extra' => 'class="ts tb tshadow black bg_yellow rounded"',
+);
+
+if(isset($this->options)) {
+    $params = array_merge($params,$this->options);
+}
+
+if(!empty($this->options['articles'])) {
+    $code = $params['block_before'];
+    foreach($this->options['articles'] as $key => $values) {
+        $code .= $params['item_before'];
+            // Name.
+            if($params['name_style'] == 'link') {
+                $code .= $params['name_before'];
+                $code .= '<a href="'.$this->baseUrl().$this->ptxUrl(array('url'=>$values['url'],'id'=>$values['id']),'article',true).'"
+                                title="'.$this->escape(PTX_String::wrapWord(strip_tags($values[$params['text_column']]),15)).'" '.$this->_params['name_link_extra'].'>'.$this->escape($values[$params['name_column']]).'</a>';
+                $code .= $params['name_after'];
+            } else if($params['name_style'] == 'text') {
+                $code .= $params['name_before'].$this->escape($values[$params['name_column']]).$params['name_after'];
+            }
+            
+            // Date.
+            if($params['date_show']) {
+                $code .= $params['date_before'];
+                    $code .= '<abbr class="published" title="'.$this->viewDate($values['published'],Zend_Date::ISO_8601).'">'.sprintf($params['date_text'],$this->viewDate($values['published'],Zend_Date::DATE_FULL)).'</abbr>';        
+                $code .= $params['date_after'];                    
+            }
+            
+            // Content.
+            $code .= $params['text_before'];
+                // Image.
+                if($params['image_show'] && !empty($values['image_file']) && file_exists('.'.$values['image_file'])) {
+                    $code .= '<a href="'.$values['image_file'].'" title="'.$this->escape($values[$params['name_column']]).'" class="lightbox"/>';
+                    $code .= '<img src="'.$values['image_file'].'" alt="'.$this->escape($values[$params['name_column']]).'" class="featured-picture" width="'.$params['image_width'].'" />';
+                    $code .= '</a>';;
+                }
+                
+                $code .= $values[$params['text_column']];
+            $code .= $params['text_after'];
+            
+        $code .= $params['item_after'];
+    }
+    $code .= $params['block_after'];
+    
+    echo $code;
+}   

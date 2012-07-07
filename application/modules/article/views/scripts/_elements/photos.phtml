@@ -1,0 +1,46 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 12, 2010
+**/
+
+
+foreach($this->options['photos'] as $row): ?>   
+    <div class="wp-caption ptxwpfull"> 
+        <?php echo $row['thumbnail']; ?>
+        <p></p> 
+        <div class="categories alt-font">
+            <?php
+            echo '<strong>'.$this->escape($row['name']).'</strong>'; 
+            
+            if(!empty($row['perex'])) {
+                echo ' : '.$this->escape($row['perex']);
+            } ?>
+        </div>   
+        <div class="categories alt-font">
+            <?php 
+            // Category.
+            echo '<em>'.$this->trans('Category').'</em>: ';
+            if(array_key_exists('category',$row)) {
+                echo '<a href="'.$this->baseUrl().$this->url(array('url'=>$row['category']['url']),'photo-category',true).'"
+                    title="'.$this->transParam('All Photos from category: ~0~',array('~0~'=>strip_tags($row['category']['name']))).'">'.$this->escape($row['category']['name']).'</a>';
+            } else if(array_key_exists('category_data',$this->options)){
+                echo '<a href="'.$this->baseUrl().$this->url(array('url'=>$this->options['category_data']['url']),'photo-category',true).'"
+                    title="'.$this->transParam('All Photos from category: ~0~',array('~0~'=>strip_tags($this->options['category_data']['name']))).'">'.$this->escape($this->options['category_data']['name']).'</a>';
+            }
+            
+            // Tags.
+            if(isset($row['tags']) && count($row['tags']) > 0) {
+                echo ' | <em>'.$this->trans('Tags').'</em>: ';
+
+                foreach($row['tags'] as $tag) {
+                    echo '<a href="'.$this->baseUrl().$this->url(array('url'=>$tag['url']),'photo-tag',true).'" 
+                        title="'.$this->transParam('All Photos tagged: ~0~',array('~0~'=>strip_tags($tag['name']))).'">'.$this->escape($tag['name']).'</a>, ';
+                }
+            }
+            ?>
+        </div> 
+    </div>
+<div class="rule"><hr /></div>
+
+<?php endforeach; ?>   

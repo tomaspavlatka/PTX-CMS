@@ -1,0 +1,55 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('New Widget'),'link'=>"/admin/widget/add-select/place/".(int)$this->params['place'],'class'=>'btn')
+    ),
+);
+
+if(!isset($this->params['place']) || empty($this->params['place'])) {
+    echo $this->viewMsg($this->trans('INFO: Select widget place to see widgets belong to it.'),'info');
+} else {
+    echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+}
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml');
+
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/widget/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'place' => array('name' => 'place', 'id' => 'place', 'class'=>'input-text', 'values' => $this->widgetPlaces,'type' => 'select','empty_value' => $this->trans('- widget place -')),
+        'input' => array(),
+        'search' => array()),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => '&nbsp;','width'=>'50','column'=>'arrows'),
+        array('name' => $this->trans('name'),'column'=>'name'),
+        array('name' => $this->trans('type'),'column'=>'parent_type','width'=>"100",'class'=>'t-center'),
+        ),
+    
+    'actions' => array('status','edit','delete'),
+    'controller' => 'widget',
+    'status_action' => 'widget-status',              
+    'records' => $this->paginator->getCurrentItems(),
+);
+echo $this->partial('_elements/table-tree.phtml',array('options'=>$tableOptions));
+
+// Paginator. 
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml'); ?>

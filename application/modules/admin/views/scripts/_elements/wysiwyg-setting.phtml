@@ -1,0 +1,48 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 10, 2010
+**/
+
+$this->jQuery()
+    ->enable()->addJavascriptFile('/js/markitup/jquery.markitup.pack.js')
+    ->addJavascriptFile('/js/markitup/sets/default/set.js')
+    ->addJavascriptFile('/js/fckeditor/fckeditor.js'); 
+$this->headLink()
+    ->prependStylesheet('/js/markitup/sets/default/style.css')
+    ->prependStylesheet('/js/markitup/skins/simple/style.css');
+?>
+
+<script type="text/javascript">
+$(function()    {
+    <?php foreach($this->options['ids'] as $id): ?>
+    $('#<?php echo $id; ?>').markItUp(mySettings);
+    
+    $('.markupit').click(function() {
+        if ($("#markItUp.markItUpEditor").length === 1) {
+        } else {
+            var fck_content = FCKeditorAPI.GetInstance('<?php echo $id; ?>').GetXHTML(true);
+            var content = '<textarea name="<?php echo $id; ?>" id="<?php echo $id; ?>" class="long" rows="24" cols="80">'+fck_content+'</textarea>';
+            $("#dd_<?php echo $id; ?>").html(content);
+            $('#<?php echo $id; ?>').markItUp(mySettings);
+        }
+    });
+
+    $('.fckeditor').click(function() {
+        $("#<?php echo $id; ?>").markItUpRemove();
+        var oFCKeditor = new FCKeditor('<?php echo $id; ?>');
+        oFCKeditor.BasePath = '/js/fckeditor/';
+        oFCKeditor.Width = 730;
+        oFCKeditor.Height = 300;
+        oFCKeditor.ToolbarSet = 'PTX';
+        oFCKeditor.ReplaceTextarea();
+    });
+    <?php endforeach; ?>
+});
+</script>
+
+<div class="t-right">
+    <span class="label label-02 fckeditor hand"><?php echo $this->trans('Editor')?></span>
+    <span class="label label-01 markupit hand"><?php echo $this->trans('HMTL')?></span>
+    <a href="/js/fckeditor/editor/filemanager/kcfinder/browse.php?type=images" target="_blank" title="<?php echo $this->trans('New Image'); ?>"><span class="label label-03 "><?php echo $this->trans('New Image')?></span></a>
+</div>

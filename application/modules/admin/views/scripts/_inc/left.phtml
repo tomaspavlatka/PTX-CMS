@@ -1,0 +1,13 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 10.8.2010
+**/
+
+
+$session = new Zend_Session_Namespace('admindata');
+$user = Zend_Auth::getInstance()->getStorage()->read();
+
+echo $this->showWidgets('left'); ?>
+
+<p class="t-right"><a href="/admin/widget/list/place/1"><?php echo $this->trans('customize this'); ?> &#187;</a></p>

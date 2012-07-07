@@ -1,0 +1,68 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 23.8.2010
+**/
+
+$articleUrl = 'http://'.$_SERVER['HTTP_HOST'].$this->baseUrl().$this->url(array('id'=>$this->articleData->id,'url'=>$this->articleData->url,'caturl'=>$this->catData->url),'article-input',true);
+
+$this->jQuery()->enable();
+?>
+<h1><?php echo $this->escape($this->articleData->name); ?></h1>
+<p class="by-line">
+    <span class="date full-date"><abbr class="published" title="<?php echo $this->viewDate($this->articleData->published,Zend_Date::ISO_8601); ?>"><?php echo $this->viewDate($this->articleData->published,Zend_Date::DATE_FULL); ?></abbr></span>
+</p><!--/by-line-->
+
+<?php if(is_array($this->msgs) && count($this->msgs) > 0) {
+    echo $this->viewMsgs($this->msgs);
+} ?>
+
+<!-- google_ad_section_start -->
+<div class="aic"><?php echo $this->highlighter($this->articleData->content); ?></div>
+<!-- google_ad_section_end -->
+<div class="clear"></div>
+
+<table class="social-buttons">
+    <tbody>
+        <tr>
+            <td class="sb-facebook"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php echo $articleUrl; ?>" 
+                layout="button_count" show_faces="false" width="240" font="arial"></fb:like></td>
+                
+            <td class="sb-twitter"><a href="http://twitter.com/share" class="twitter-share-button" 
+                data-url="<?php echo $articleUrl; ?>" 
+                data-text="<?php echo $this->escape($this->articleData->name); ?>" 
+                data-count="horizontal">Tweet</a>
+            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></td>
+            
+            <td class="sb-buzz"><a href="http://www.google.com/reader/link?url=<?php echo $articleUrl; ?>&title=<?php echo $this->escape($this->articleData->name); ?>" 
+                rel="nofollow" target="_blank"><img src="/images/page/buzz.png" width="89" height="24" alt="Buzz this" /></a></td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="filed categories alt-font tight">
+<?php 
+$categoryLink = '<a href="'.$this->baseUrl().$this->url(array('url'=>$this->catData->url),'article-category',true).'" 
+        title="'.$this->escape($this->catData->perex).'">'.$this->escape($this->catData->name).'</a>';
+echo $this->transParam('Posted in ~0~',array('~0~'=>$categoryLink),'article-category',false); ?>.</p> 
+<div class="clear"></div>
+
+<?php
+// Tags.
+$options = array(
+    'tags' => $this->tags,
+);
+echo $this->partial('_elements/tags.phtml',array('options'=>$options));
+
+// Relatives.
+$options = array(
+    'relatives' => $this->relatives,
+);
+echo $this->partial('_elements/relatives.phtml',array('options'=>$options));
+
+// Comments.
+$options = array(
+    'comments' => $this->comments,
+    'name' => $this->escape($this->articleData->name)
+);
+echo $this->partial('_elements/comments.phtml',array('options'=>$options,'form'=>$this->form));

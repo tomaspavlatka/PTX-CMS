@@ -1,0 +1,30 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 22.8.2010
+**/
+
+$content = $this->highlighter($this->data['content_'.$this->locale]);
+$breakPoint = strpos($content,'</p>');
+
+$part_before_image = substr($content,0,($breakPoint+4));
+$part_after_image = substr($content,($breakPoint+4));
+
+?>
+<div class="post">
+    <h1><?php echo $this->escape($this->data['name_'.$this->locale]); ?></h1>
+    
+    <div class="post-body">
+    <!-- google_ad_section_start -->
+    <?php echo $part_before_image; ?>
+    
+    <?php if(!empty($this->data['image_file']) && file_exists('.'.$this->data['image_file'])): ?>
+       <div class="fetured_image t-center margin10">
+            <img src="<?php echo $this->data['image_file']; ?>" alt="<?php echo $this->escape($this->data['name_'.$this->locale]); ?>" width="<?php echo (int)$this->data['image_width']; ?>" height="<?php echo (int)$this->data['image_height']; ?>"/>
+        </div>
+    <?php endif; ?>
+    
+    <?php echo $part_after_image; ?>
+    <!-- google_ad_section_end -->
+    </div>
+</div>

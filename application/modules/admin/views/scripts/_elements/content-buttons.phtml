@@ -1,0 +1,25 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 9, 2010
+**/
+
+if(isset($this->options['header'])): ?>
+    <h2><?php echo $this->options['header']; ?></h2>
+<?php endif; ?>
+
+<?php foreach($this->options['buttons'] as $item): ?>
+    <div class="btn-box">
+        <div class="btn-top"></div>
+        <div class="btn">
+            <dl><dt><a href="<?php echo $item['link']; ?>" title="<?php echo $item['name']; ?>"><?php echo $item['name']; ?></a></dt>
+            <?php if(!empty($item ['description'])): ?>                
+                <dd><?php echo $item['description']; ?></dd>
+            <?php else: ?>
+                <dd><?php echo $this->trans('missing description'); ?></dd>
+            <?php endif; ?>
+            </dl>
+        </div>
+        <div class="btn-bottom"></div>
+    </div>
+<?php endforeach; ?>

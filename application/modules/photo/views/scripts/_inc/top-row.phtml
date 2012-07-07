@@ -1,0 +1,9 @@
+<?php $projectConfig = PTX_Session::getSessionValue('settings', 'project'); ?>
+<div id="tray" class="box">
+    <p class="f-left box">
+        <span class="f-left" id="switcher">
+            <a href="#" rel="1col" class="styleswitch ico-col1" title="Display one column"><img src="<?php echo $this->baseUrl(); ?>/project/admin/css/design/switcher-1col.gif" alt="1 Column" /></a>
+        </span>
+        <?php echo $this->trans('PROJECT').': <a href="#">'.$projectConfig['name'].'</a>'; ?>
+    </p>
+</div> <!--  /tray -->

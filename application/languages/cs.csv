@@ -1,0 +1,32 @@
+#Zend_Validate CS
+
+stringEmpty;                   "Řetězec nesmí být prázdný"
+isEmpty;                       "Položka nesmí být prázdná"
+notAlnum;                      '%value%' neobsahuje pouze alfanumerické znaky
+notAlpha;                      '%value%' neobsahuje pouze písmena
+notBetween;                    '%value%' není mezi '%min%' a '%max%', včetně
+notBetweenStrict;              '%value%' není přesně mezi '%min%' a '%max%'
+dateNotYYYY-MM-DD;             '%value%' není ve formátu RRRR-MM-DD
+dateInvalid;                   '%value%' není platné datum
+dateFalseFormat;               '%value%' není v platném formátu
+notDigits;                     '%value%' neobsahuje pouze číslice
+emailAddressInvalid;           '%value%' není platná emailová adresa
+notFloat;                      '%value%' není reálné číslo
+notGreaterThan;                '%value%' není větší než '%min%'
+notHex;                        '%value%' neobsahuje pouze hexadecimální znaky
+hostnameIpAddressNotAllowed;   '%value%' je IP adresa což není povoleno
+hostnameUnknownTld;            '%value%' je host s neznámou TLD
+hostnameDashCharacter;         '%value%' je host s pomlčkou (-) na nesprávném místě
+hostnameInvalidHostname;       '%value%' nesplňuje požadavky na strukturu DNS hostname
+hostnameInvalidLocalName;      '%value%' není platný lokální host
+hostnameLocalNameNotAllowed;   '%value%' je lokální host což není povoleno
+notInArray;                    '%value%' nebylo v poli nalezeno
+notInt;                        '%value%' není celé číslo
+notIpAddress;                  '%value%' není platná IP adresa
+notLessThan;                   '%value%' není menší než '%max%'
+regexNotMatch;                 '%value%' neodpovídá vzorci '%pattern%'
+stringLengthTooShort;          '%value%' je menší než %min% znaků
+stringLengthTooLong;           '%value%' je větší než %max% znaků
+missingValue;		        Missing captcha fields
+errCaptcha;		        Failed to validate captcha
+badCaptcha;		        Text z obrázku se neshoduje s: '%value%'

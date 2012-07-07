@@ -1,0 +1,26 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+ * Created: Oct 12, 2011
+ */
+?>
+
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/category/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'place' => array('name' => 'type', 'id' => 'type', 'class'=>'input-text', 'values' => $this->categoryTypes,'type' => 'select','empty_value' => $this->trans('- category type -')),
+    ),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));

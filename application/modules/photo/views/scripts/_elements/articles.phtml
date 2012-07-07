@@ -1,0 +1,48 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 12, 2010
+**/
+
+foreach($this->options['articles'] as $row): ?>   
+
+<div id="post-content-<?php echo $this->escape($row['id']); ?>" class="<?php echo $this->escape($row['id']); ?> post type-post hentry category-general full">
+    <h2 class="entry-title full-title"><a href="<?php echo $this->baseUrl().$this->url(array('url'=>$row['url'],'id'=>$row['id'],'caturl'=>$row['category']['url']),'article-input',true); ?>" 
+        title="<?php echo $this->escape(strip_tags($row['perex'])); ?>"><?php echo $this->escape($row['name']); ?></a></h2>
+    
+    <div class="by-line">
+        <span class="date full-date"><abbr class="published" title="<?php echo $this->viewDate($row['published'],Zend_Date::ISO_8601); ?>"><?php echo $this->viewDate($row['published'],Zend_Date::DATE_FULL); ?></abbr></span>
+    </div><!--/by-line-->
+
+    <!-- google_ad_section_start -->
+    <div class="entry-content full-content"><?php echo $row['perex']; ?></div><!-- .entry-content-->
+    <!-- google_ad_section_end -->
+    
+    <p class="filed categories alt-font tight">
+    
+    <?php 
+    $categoryLink = '<a href="'.$this->baseUrl().$this->url(array('url'=>$row['category']['url']),'article-category',true).'" title="'.$this->escape($row['category']['perex']).'">'.$this->escape($row['category']['name']).'</a>';
+    echo $this->transParam('Posted in: ~0~',array('~0~'=>$categoryLink),'article-category',false); ?> - 
+    
+    <?php
+    if(isset($row['tags']) && is_array($row['tags']) && count($row['tags']) > 0) {
+        echo $this->trans('Tagged by').': ';
+        
+        $tags = null;
+        foreach($row['tags'] as $tag) {
+            $tags .= '<a href="'.$this->baseUrl().$this->url(array('url'=>$tag['url'])).'">'.$this->escape($tag['name']).'</a>, ';
+        }
+        
+        echo substr($tags,0,-2). ' - ';
+    } 
+    ?>
+    <?php echo $this->transParam('Shown: ~0~x',array('~0~'=>(int)$row['shown'])); ?>
+    
+    </p> 
+    <div class="clear"></div>
+
+    
+    </div><!-- .post -->
+<div class="rule"><hr /></div>
+
+<?php endforeach; ?>   

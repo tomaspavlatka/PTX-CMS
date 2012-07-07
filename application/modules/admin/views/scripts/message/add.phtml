@@ -1,0 +1,27 @@
+<?php
+/**
+ * Author: Tomas Pavlatka
+ * Email: tomas.pavlatka@gmail.com
+ * Created: 23.1.2010 23:00:58
+ */
+?>
+
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('message','list','admin'),'class'=>'btn'),
+        array('text'=>$this->trans('Reset form'),'link'=>'/admin/message/add','class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+// Form.
+echo $this->form;

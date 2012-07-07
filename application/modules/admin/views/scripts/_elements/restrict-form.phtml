@@ -1,0 +1,65 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 7, 2010
+**/
+
+if(array_key_exists('search',$this->options['fields'])) {
+    $this->jQuery()->enable();?>
+<script type="text/javascript">
+$(function(){
+    $("#search").css({'font-style':'italic'});
+    $("#search").focus(function(){
+        var value = $(this).val();
+        if(value == '<?php echo $this->trans('Search'); ?>') { $(this).val(''); }
+    });
+    $("#search").blur(function(){
+        var value = $(this).val();
+        if(value == '') { $(this).val('<?php echo $this->trans('Search'); ?>'); }
+    });
+});
+</script>
+<?php } // endif; ?>
+
+<!-- Actions -->
+<div class="box-02 bottom box">
+<?php if(isset($this->options['rightbox'])): ?>
+    <div class="f-right"><?php echo $this->options['rightbox']; ?></div> <!-- /f-right -->
+<?php endif; ?>
+<form method="<?php echo $this->options['method']; ?>" action="<?php echo $this->options['action']; ?>" class="<?php echo $this->options['class']; ?>">    
+    <?php foreach($this->options['fields'] as $field => $options): ?>
+        <?php if($field == 'input'): ?>
+            <select name="input" class="input-text" id="input">
+                <option value=""><?php echo $this->trans('- per page -')?></option>
+                <?php $numbers = array(10,25,50,100); foreach($numbers as $number): ?>
+                    <?php if(isset($this->options['params']['input']) && $this->options['params']['input'] == $number): ?>
+                        <option value="<?php echo $this->escape($number); ?>" selected="selected"><?php echo $this->transParam('~0~ inputs',array('~0~'=>$number)); ?></option>
+                    <?php else: ?>
+                        <option value="<?php echo $this->escape($number); ?>"><?php echo $this->transParam('~0~ inputs',array('~0~'=>$number)); ?></option>
+                    <?php endif; ?>                        
+                <?php endforeach;?>
+            </select>
+        <?php elseif($field == 'search'): ?>
+            <?php $value = (isset($this->params['search'])) ? $this->params['search'] : $this->trans('Search'); ?>
+            <input type="text" name="search" id="search" class="input-text" value="<?php echo $this->escape($value); ?>" />
+        <?php else: ?>
+            <?php if($options['type'] == 'select'): ?>
+                <select name="<?php echo $options['name']; ?>" class="<?php echo $options['class']; ?>" id="<?php echo $options['type']; ?>">
+                    <option value=""><?php echo $options['empty_value']; ?></option>
+                    <?php foreach($options['values'] as $ident => $name): ?>
+                        <?php if(isset($this->options['params'][$options['name']]) && $this->options['params'][$options['name']] == $ident): ?>
+                            <option value="<?php echo $this->escape($ident); ?>" selected="selected"><?php echo $this->escape($name); ?></option>
+                        <?php else: ?>                
+                            <option value="<?php echo $this->escape($ident); ?>"><?php echo $this->escape($name); ?></option>
+                        <?php endif; ?>
+                    <?php endforeach;?>
+                </select>
+            <?php elseif($options['type'] == 'hidden'): ?>
+                <input type="hidden" name="<?php echo $options['name']; ?>" id="<?php echo $options['id']; ?>" value="<?php echo $options['value']; ?>" />
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endforeach; ?>        
+    
+    <input type="submit" value="<?php echo $this->trans('OK'); ?> &#187;"  class="input-submit-03"/>
+</form>
+</div> <!-- /box-02 -->

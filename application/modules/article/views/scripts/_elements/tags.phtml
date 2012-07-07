@@ -1,0 +1,15 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 18, 2010
+**/
+
+if(is_array($this->options['tags']) && count($this->options['tags']) > 0): ?>
+<p class="filed categories alt-font tight"><?php echo $this->trans('Tags'); ?>: 
+    <?php foreach($this->options['tags'] as $row): ?>
+        <a href="<?php echo $this->baseUrl().$this->url(array('url'=>$row['url']),'article-tag',true); ?>"
+            title="<?php echo $this->escape($row['name']); ?>"><?php echo $this->escape($row['name']); ?></a>, 
+    <?php endforeach;?>
+</p>
+<?php endif; ?>
+<div class="clear"></div>

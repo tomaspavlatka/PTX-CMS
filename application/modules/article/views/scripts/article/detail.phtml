@@ -1,0 +1,100 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 23.8.2010
+**/
+$articleUrl = 'http://'.$_SERVER['HTTP_HOST'].$this->baseUrl().$this->ptxUrl(array('id'=>$this->articleData['id'],'url'=>$this->articleData['url_'.$this->locale],'caturl'=>$this->catData['url_'.$this->locale]),'article',true);
+
+$this->jQuery()->enable()
+    ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js')
+    ->addStylesheet($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.css')
+    ->addJavascriptFile('/js/comment-form.js');
+
+if(is_array($this->msgs) && count($this->msgs) > 0) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Featured image.
+$content = $this->highlighter($this->articleData['content_'.$this->locale]);
+$breakPoint = strpos($content,'</p>');
+$part_before_image = substr($content,0,($breakPoint+4));
+$part_after_image = substr($content,($breakPoint+4));
+?>
+
+<script type="text/javascript">
+$(function(){
+    $("a.lightbox").fancybox();
+});
+</script>
+
+<div class="post">
+    
+    <h1><?php echo $this->escape($this->articleData['name_'.$this->locale]); ?></h1>
+    
+    <div class="post-date">
+        <abbr class="published" title="<?php echo $this->viewDate($this->articleData['published'],Zend_Date::ISO_8601); ?>"><?php echo $this->transParam('Posted on ~0~',array('~0~'=>$this->viewDate($this->articleData['published'],Zend_Date::DATE_FULL)),false,false); ?></abbr></span>
+    </div>
+    
+    
+    <div class="post-body">
+        <!-- google_ad_section_start -->
+        <?php echo $part_before_image; ?>
+        <?php if(!empty($this->articleData['image_file']) && file_exists('.'.$this->articleData['image_file'])): ?>
+           <div class="t-center margin10">
+                <a href="<?php echo $this->articleData['image_file']; ?>" title="<?php echo $this->escape($this->articleData['name_'.$this->locale]); ?>" class="lightbox"/>
+                    <img src="<?php echo $this->articleData['image_file']; ?>" alt="<?php echo $this->escape($this->articleData['name_'.$this->locale]); ?>" width="<?php echo (int)$this->articleData['image_width']; ?>" height="<?php echo (int)$this->articleData['image_height']; ?>"/>
+                </a>
+            </div>
+        <?php endif; ?>
+        
+        <?php echo $part_after_image; ?>
+        <!-- google_ad_section_end -->
+    </div>
+    <div class="clearer">&nbsp;</div>
+    
+    <div class="post-meta">
+        <?php echo $this->trans('Categories:'); ?> 
+        <?php foreach($this->categories as $categoryKey => $categoryValues): ?>
+            <a href="<?php echo $this->baseUrl().$this->ptxUrl(array('url'=>$categoryValues['url']),'article-category',true); ?>"
+                title="<?php echo $this->escape($categoryValues['name']); ?>"><?php echo $this->escape($categoryValues['name']); ?></a>, 
+        <?php endforeach; ?>
+        <?php echo $this->trans('Tagged:'); ?> 
+        <?php foreach($this->tags as $tagKey => $tagValues): ?>
+            <a href="<?php echo $this->baseUrl().$this->ptxUrl(array('url'=>$tagValues['url']),'article-tag',true); ?>"
+                title="<?php echo $this->escape($tagValues['name']); ?>"><?php echo $this->escape($tagValues['name']); ?></a>, 
+        <?php endforeach; ?>
+    </div>
+</div>
+
+<h3 class="left"><?php echo $this->trans('Comments'); ?></h3>
+<p class="right"><a href="#replyform" class="comment-form-move" id="comment-reply"><?php echo $this->trans('Leave a reply &#187;',false)?></a></p>
+
+<div class="clearer">&nbsp;</div>
+
+<div class="comment-list">
+    <?php foreach($this->comments as $key => $values): ?>
+    <div class="comment alt comment-level-<?php echo $values['level']; ?>">
+        <div class="comment-gravatar left"><img alt="" src="/userfiles/images/sample-gravatar.jpg" height="32" width="32" /></div>
+        <div class="comment-author left">
+            <?php 
+            if(preg_match('/^https{0,1}:\/\//',$values['website'])) {
+                echo '<a href="'.$values['website'].'" title="'.$this->escape($values['name']).'">'.$this->escape($values['name']).'</a>';                
+            } else {
+                echo $this->escape($values['name']);
+            } ?>
+            <div><abbr class="comment-date" title="<?php echo $this->viewDate($values['created'],Zend_Date::ISO_8601); ?>"><?php echo $this->transParam('Posted on ~0~',array('~0~'=>$this->viewDate($values['created'],Zend_Date::DATE_FULL))); ?></abbr></div>
+        </div>
+        <div class="clearer">&nbsp;</div>
+        <div class="comment-body">                                  
+            <?php echo $this->escape(nl2br($values['message'])); ?>
+        </div>
+        <div class="t-right comment-reply"><a href="#" class="comment-form-move" id="comment-reply-<?php echo $values['id']; ?>"><?php echo $this->trans('Reply &#187;',false); ?></a></div>
+        <div class="comment-container" id="comment-container-<?php echo $values['id']; ?>">&nbsp;</div>
+    </div>
+    <?php endforeach; ?>
+</div>  
+
+<a name="replyform"></a>
+<div id="comment-container" class="comment-container"> 
+    <div id="replyform"><?php echo $this->form; ?></div>
+</div>

@@ -1,0 +1,16 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 17, 2010
+**/
+
+
+if(is_array($this->options['relatives']) && count($this->options['relatives']) > 0): ?>
+<p class="filed categories alt-font tight"><?php echo $this->trans('Relative articles'); ?>: 
+    <?php foreach($this->options['relatives'] as $row): ?>
+        <a href="<?php echo $this->baseUrl().$this->url(array('caturl'=>$row['category-url'],'id'=>$row['id'],'url'=>$row['url']),'article-input',true); ?>"
+            title="<?php echo $this->escape($row['name']); ?>"><?php echo $this->escape($row['name']); ?></a>, 
+    <?php endforeach;?>
+</p>
+<?php endif; ?>
+<div class="rule-major">&nbsp;</div>

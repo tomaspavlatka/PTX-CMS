@@ -1,0 +1,31 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+ * Created: Sep 21, 2011
+ */
+
+// Categories.
+$select = Admin_Model_DbSelect_Banners::pureSelect();
+$select->columns(array('name','title','link','image_file','target'))->where('status = ?',1)->where('parent_type = ?','sections')->where('parent_id = ?',3)->order('position asc');
+$stmt = $select->query();
+$data = $stmt->fetchAll();
+?>
+
+<script type="text/javascript">
+$(function() {
+    $('#header-gallery').jshowoff({ speed:3000, links: false, controls: false}); 
+});
+</script>
+<div id="header-gallery">
+    <?php foreach($data as $key => $values): ?>
+        <?php if(!empty($values['image_file'])): ?>
+            <?php if(!empty($values['link'])): ?>
+                <a href="<?php echo $values['link']; ?>" title="<?php echo $this->escape($values['title']); ?>">
+            <?php endif; ?>
+            <img src="/project/<?php echo PROJECT_FOLDER; ?>/images/banner/<?php echo $values['image_file']; ?>" alt="<?php echo $this->escape($values['title']); ?>" width="300" height="150" />
+            <?php if(!empty($values['link'])): ?>   
+                </a>
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endforeach; ?>
+</div>

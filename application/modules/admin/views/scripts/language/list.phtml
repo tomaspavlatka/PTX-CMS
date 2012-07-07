@@ -1,0 +1,36 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('New Language'),'link'=>"/admin/language/add",'class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+
+// Messages.
+if(isset($this->msgs)) {
+	echo $this->viewMsgs($this->msgs);
+} 
+
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => '&nbsp;','width'=>'50','column'=>'arrows'),
+        array('name' => $this->trans('code'),'column'=>'code','width'=>50,'class'=>'t-center'),
+        array('name' => $this->trans('locale'),'column'=>'locale','width'=>50,'class'=>'t-center'),
+        array('name' => $this->trans('name'),'column'=>'name')),
+    
+    'actions' => array('status','edit','delete'),
+    'controller' => 'language',
+    'db_table' => 'languages',  
+    'status_action' => 'language-status',              
+    'records' => $this->treeData,
+);
+echo $this->partial('_elements/table-tree.phtml',array('options'=>$tableOptions));
+
+
+
+

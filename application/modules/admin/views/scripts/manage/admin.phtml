@@ -1,0 +1,16 @@
+<?php 
+$session = new Zend_Session_Namespace('admindata');
+$navigation = $session->navigation;
+
+$front = Zend_Controller_Front::getInstance()->getRequest();
+$resource = $front->getModuleName().':'.$front->getControllerName().':'.$front->getActionName();
+?>
+<h1><?php echo $this->h1 . ' &#187; ' .$this->h2; ?></h1>
+<?php 
+// Quick buttons.
+$options = array(
+    'header' => $this->trans('Quick links'),
+    'navigation' => $session->navigation,
+    'resource' => $resource 
+);
+echo $this->partial('_elements/quick-buttons.phtml',array('options'=>$options));

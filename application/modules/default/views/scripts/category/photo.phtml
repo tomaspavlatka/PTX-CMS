@@ -1,0 +1,29 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 24, 2010
+**/
+
+$this->jQuery()->enable()
+    ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js')
+    ->addStylesheet($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.css');
+?>
+<script type="text/javascript">
+$(function(){
+    $("a.lightbox").fancybox();
+});
+</script>
+
+<div class="post">
+    <h1><a href="<?php echo $this->baseUrl().$this->ptxUrl(array(),'photogallery',true); ?>" title="<?php echo $this->trans('Photogallery');?>" class="underline"><?php echo $this->trans('Photogallery'); ?></a> &gt; <?php echo $this->escape($this->categoryData['name_'.$this->locale]); ?></h1>
+		
+    <?php 
+	// Articles.
+	$params = array(
+	    'photos' => $this->photos,
+	    'category_data' => $this->categoryData,
+	);   
+	echo $this->partial('_elements/photos.phtml',array('options'=>$params));
+	?>
+</div>
+

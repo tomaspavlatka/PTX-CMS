@@ -1,0 +1,40 @@
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('Inbox'),'link'=>PTX_Anchor::get('message','list','admin'),'class'=>'btn'),
+    ),
+);
+
+if(isset($this->previousMessage->id)) {
+    $buttons['links'][] = array('text'=>$this->trans('Previous'),'link'=>'/admin/message/detail/id/'.(int)$this->previousMessage->id,'class'=>'btn');
+}
+
+if(isset($this->nextMessage->id)) {
+    $buttons['links'][] = array('text'=>$this->trans('Next'),'link'=>'/admin/message/detail/id/'.(int)$this->nextMessage->id,'class'=>'btn');
+}
+
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+?>
+<h2><?php echo $this->escape($this->data->subject); ?></h2>
+<?php 
+// Message.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Message - body.
+echo strip_tags($this->data->message,'<br>');
+
+// Table detail.
+$tableOptions = array(
+    'header' => $this->trans('Basic data'),
+    'rows' => array(
+        array('ident' => $this->trans('Sent'),'value'=>$this->escape($this->data->created),'helper'=>'viewDate'),
+        array('ident' => $this->trans('Read'),'value'=>$this->escape($this->data->read),'helper'=>'viewDate'),
+        array('ident' => $this->trans('Author'),'value'=>$this->escape($this->author->name))
+    ),
+);
+echo $this->partial('_elements/table-detail.phtml',array('options'=>$tableOptions));

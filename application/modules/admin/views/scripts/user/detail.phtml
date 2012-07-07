@@ -1,0 +1,42 @@
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php  
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('Edit'),'link'=>"/admin/user/edit/id/".$this->data->id,'class'=>'btn'),
+        array('text'=>$this->trans('Password'),'link'=>"/admin/user/password/id/".$this->data->id,'class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+?>
+
+<h2><?php echo $this->escape($this->data->name); ?></h2>
+
+<?php 
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Table detail.
+$tableOptions = array(
+    'header' => $this->trans('Basic data'),
+    'rows' => array(
+        array('ident' => $this->trans('Role'),'value'=>$this->escape($this->data->role),'helper'=>'roleName'),
+        array('ident' => $this->trans('Person name'),'value'=>$this->escape($this->data->name)),
+        array('ident' => $this->trans('Username'),'value'=>$this->escape($this->data->email)),
+        array('ident' => $this->trans('Status'),'value'=>$this->escape($this->data->status),'helper'=>'statusIcon')
+    ),
+);
+echo $this->partial('_elements/table-detail.phtml',array('options'=>$tableOptions));
+
+// Table detail.
+$tableOptions = array(
+    'header' => $this->trans('Time data'),
+    'rows' => array(
+        array('ident' => $this->trans('Created'),'value'=>$this->escape($this->data->created),'helper'=>'viewDate'),
+        array('ident' => $this->trans('Last updated'),'value'=>$this->escape($this->data->updated),'helper'=>'viewDate'),
+    ),
+);
+echo $this->partial('_elements/table-detail.phtml',array('options'=>$tableOptions));

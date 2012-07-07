@@ -1,0 +1,46 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('New Banner'),'link'=>"/admin/banner/add/type/".$this->params['type'],'class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+	echo $this->viewMsgs($this->msgs);
+} 
+
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/banner/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'place' => array('name' => 'type', 'id' => 'type', 'class'=>'input-text', 'values' => $this->bannerTypes,'type' => 'select','empty_value' => $this->trans('- banner section -')),
+    ),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => '&nbsp;','width'=>'50','column'=>'arrows'),
+        array('name' => '&nbsp;','width'=>'70','column'=>'thumbnail','escape'=>false,'class'=>'t-center'),
+        array('name' => $this->trans('name'),'column'=>'name'),
+    ),    
+    'actions' => array('status','logo','edit','delete'),
+    'controller' => 'banner',
+    'db_table' => 'categories',  
+    'status_action' => 'banner-status',              
+    'records' => $this->data4View,
+);
+echo $this->partial('_elements/table-tree.phtml',array('options'=>$tableOptions));
+
+
+
+

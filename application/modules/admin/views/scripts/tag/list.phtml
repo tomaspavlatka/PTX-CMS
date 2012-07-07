@@ -1,0 +1,33 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('New Tag'),'link'=>"/admin/tag/add",'class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml');
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => $this->trans('name'),'column'=>'name'),
+        ),
+    
+    'actions' => array('status','edit','delete'),
+    'controller' => 'tag',
+    'status_action' => 'tag-status',              
+    'records' => $this->paginator->getCurrentItems(),
+);
+echo $this->partial('_elements/table.phtml',array('options'=>$tableOptions));
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml');

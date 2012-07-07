@@ -1,0 +1,53 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('New Replacer'),'link'=>"/admin/replacer/add",'class'=>'btn')
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+
+// Messages.
+if(isset($this->msgs)) {
+	echo $this->viewMsgs($this->msgs);
+} 
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml');
+
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/replacer/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'sort' => array('name' => 'sort', 'id' => 'sort', 'class'=>'input-text', 'values' => $this->sortPossibilities,'type' => 'select','empty_value' => $this->trans('- sort by -')),
+        'input' => array(),
+        'search' => array(),
+    ),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => $this->trans('code'),'column'=>'code')),
+    
+    'actions' => array('status','edit','delete'),
+    'controller' => 'replacer',
+    'db_table' => 'replacers',  
+    'status_action' => 'replacer-status',              
+    'records' => $this->paginator->getCurrentItems(),
+);
+echo $this->partial('_elements/table.phtml',array('options'=>$tableOptions));
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml');
+
+
+
+

@@ -1,0 +1,55 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 12, 2010
+**/
+
+$this->jQuery()->enable()
+    ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js')
+    ->addStylesheet($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.css');
+
+foreach($this->options['articles'] as $key => $values): ?>   
+
+<script type="text/javascript">
+$(function(){
+    $("a.lightbox").fancybox();
+});
+</script>
+
+<div class="post">
+    <div class="post-title">
+        <h2><a href="<?php echo $this->baseUrl().$this->ptxUrl(array('url'=>$values['url']),'article',true); ?>" 
+        title="<?php echo $this->escape(PTX_String::wrapWord(strip_tags($values['perex']),30)); ?>"><?php echo $this->escape($values['name']); ?></a></h2>
+    </div>
+    
+
+    <div class="post-date">
+        <abbr class="published" title="<?php echo $this->viewDate($values['published'],Zend_Date::ISO_8601); ?>"><?php echo $this->transParam('Posted on ~0~',array('~0~'=>$this->viewDate($values['published'],Zend_Date::DATE_FULL))); ?></abbr></span>
+    </div>
+    
+    <!-- google_ad_section_start -->
+    <div class="post-body">
+        <?php if(!empty($values['image_file']) && file_exists('.'.$values['image_file'])): ?>
+            <a href="<?php echo $values['image_file']; ?>" title="<?php echo $this->escape($values['name']); ?>" class="lightbox"/>
+                <img src="<?php echo $values['image_file']; ?>" alt="<?php echo $this->escape($values['name']); ?>" class="featured-picture" width="200" />
+            </a>
+        <?php endif; ?>                
+        <?php echo $values['perex']; ?>
+    </div>
+    <!-- google_ad_section_end -->
+    <div class="clearer">&nbsp;</div>
+    
+    <div class="post-meta">
+        <?php echo $this->trans('Categories:'); ?> 
+        <?php foreach($values['categories'] as $categoryKey => $categoryValues): ?>
+            <a href="<?php echo $this->baseUrl().$this->ptxUrl(array('url'=>$categoryValues['url']),'article-category',true); ?>"
+                title="<?php echo $this->escape($categoryValues['name']); ?>"><?php echo $this->escape($categoryValues['name']); ?></a>, 
+        <?php endforeach; ?>
+        <?php echo $this->trans('Tagged:'); ?> 
+        <?php foreach($values['tags'] as $tagKey => $tagValues): ?>
+            <a href="<?php echo $this->baseUrl().$this->ptxUrl(array('url'=>$tagValues['url']),'article-tag',true); ?>"
+                title="<?php echo $this->escape($tagValues['name']); ?>"><?php echo $this->escape($tagValues['name']); ?></a>, 
+        <?php endforeach; ?>
+    </div>
+</div><!-- .post -->
+<?php endforeach; ?>   

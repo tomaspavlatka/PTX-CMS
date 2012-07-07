@@ -1,0 +1,20 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 27.11.2010
+**/
+
+?>
+
+<div class="grid_12">
+    <div class="box content">
+       <div class="revision"><?php echo $this->trans('Actual content'); ?></div>
+       <div class="aic"><?php echo $this->pageData->content; ?></div>
+       <div class="clear"></div>
+       <hr />
+
+       <div class="revision"><?php echo $this->transParam('Revision: <b>~0~</b> [~1~]',array('~0~'=>$this->revisionData->id,'~1~'=>$this->viewDate($this->revisionData->created)),false); ?></div>
+       <?php echo $this->data->content; ?>
+       <div class="clear"></div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas@pavlatka.cz]
+ * Created: Oct 15, 2011
+ */
+
+$this->jQuery()->enable()
+    ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js')
+    ->addStylesheet($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.css');
+?>
+<script type="text/javascript">
+$(function(){
+    $("a.lightbox").fancybox();
+});
+</script>
+
+<?php foreach($this->options['records'] as $key => $values) :?>
+<div class="gallery">
+    <p>
+        <span class="smaller">Size: <strong><?php echo $values['image_width']; ?>&times;<?php echo $values['image_height']; ?></strong>, <?php echo $this->trans('Date'); ?>: <strong><?php echo date('d/m/Y',$values['created']); ?></strong></span><br />
+        <?php echo $values['thumbnail']; ?>
+        <a href="/admin/photo/delete/id/<?php echo (int)$values['id']?>" class="ico-delete" onclick="if(!confirm('<?php echo $this->trans('WARNING: Are you sure?'); ?>')) { return false; }"><?php echo $this->trans('Delete'); ?></a> &nbsp; 
+        <a href="/admin/photo/edit/id/<?php echo (int)$values['id']?>" class="ico-edit"><?php echo $this->trans('Edit')?></a> &nbsp; 
+    </p>
+</div> <!-- /gallery -->
+<?php endforeach; ?>

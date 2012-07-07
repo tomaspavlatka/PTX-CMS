@@ -1,0 +1,90 @@
+<?php 
+$projectConfig = PTX_Session::getSessionValue('settings', 'project');
+$locale = Zend_Registry::get('PTX_Locale');
+
+$projectName = (isset($projectConfig['name'.$locale])) ? $this->escape($projectConfig['name'.$locale]) : null;
+$projectSlogan = (isset($projectConfig['slogan'.$locale])) ? $this->escape($projectConfig['slogan'.$locale]) : null;
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <?php 
+    echo $this->headMeta();
+    echo $this->headTitle();
+    
+    $this->headLink()
+            ->appendStylesheet($this->baseUrl().'/project/'.PROJECT_FOLDER.'/templates/stylehouse/css/grid_960.css','all')
+            ->appendStylesheet($this->baseUrl().'/project/'.PROJECT_FOLDER.'/templates/stylehouse/css/ptx.css','all');
+  
+    echo $this->headLink();
+    echo $this->headScript();
+
+    if($this->jQuery()->isEnabled()){
+        //$this->jQuery()->setLocalPath('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+//            ->setUiLocalPath('https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js')
+        $this->jQuery()->setLocalPath($this->baseUrl().'/js/jquery/js/jquery-1.6.2.min.js')
+                       ->setUiLocalPath($this->baseUrl().'/js/jquery/js/jquery-ui-1.8.16.custom.min.js')
+            ->addStylesheet($this->baseUrl().'/js/jquery/css/cupertino/jquery-ui-1.8.16.custom.css');
+        echo $this->jQuery();
+    } ?>
+    <link rel="shortcut icon" href="http://<?php echo $_SERVER['HTTP_HOST']?>/project/<?php echo PROJECT_FOLDER; ?>/images/favicon.ico" />
+</head>
+<body>
+<div class="container_24">
+    <div class="grid_5" id="logo">
+        <div class="box">
+            <a href="/" title="<?php echo $projectName .' - '.$this->trans('Back to Homepage'); ?>"><img src="/project/stylehouse/templates/stylehouse/img/logo_150x70.png" alt="<?php echo $this->escape($projectName); ?>" width="150" height="70" /></a>
+        </div>
+    </div>
+    <div class="grid_19" id="header_menu">
+        <div class="box">
+            <?php echo $this->layout()->incLang; ?>
+            <?php echo $this->layout()->menuTop; ?>
+        </div>
+    </div>
+    <div class="grid_24" id="top_boxes"> 
+        <?php echo $this->layout()->menuHeader; ?>       
+    </div>
+    <div class="grid_24" id="image_news">
+        <div class="news_image">
+            <?php echo $this->layout()->widgetSlider; ?> 
+            
+            <ul class="news_links">
+                <li class="new_link_left"><a href="<?php echo $this->baseUrl().$this->ptxUrl(array(),'articles',true); ?>" class="tb ts tshadow icon_file" title="<?php echo $this->trans('All Articles'); ?>"><?php echo $this->trans('All Articles'); ?></a></li>
+                <li class="new_link_right t-right"><a href="" class="tb ts tshadow icon_arrow_left"><?php echo $this->trans('Previous') ;?></a></li>
+                <li><a href="" class="tb ts tshadow icon_arrow_right"><?php echo $this->trans('Next') ;?></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="news_text">
+            <?php echo $this->layout()->widgetTopNews; ?>
+            
+        </div>
+    </div>
+    <div class="grid_24" id="content">
+        <div id="content_left">
+            <div id="left_sidebar">    
+                <?php echo $this->layout()->widgetHomeLeft; ?>                    
+            </div>
+            <div id="content_text">
+                <?php echo $this->layout()->content; ?>
+            </div>
+            <div class="clear"></div>
+            <ul class="news_links">
+                <li class="new_link_left"><a href="<?php echo $this->baseUrl().$this->ptxUrl(array(),'articles',true); ?>" class="tb ts tshadow icon_file" title="<?php echo $this->trans('All Articles'); ?>"><?php echo $this->trans('All Articles'); ?></a></li>
+                <li class="new_link_right t-right"><a href="" class="tb ts tshadow icon_arrow_left"><?php echo $this->trans('Previous') ;?></a></li>
+                <li><a href="" class="tb ts tshadow icon_arrow_right"><?php echo $this->trans('Next') ;?></a></li>
+            </ul>
+        </div>
+        <div id="content_right">
+            <?php echo $this->layout()->widgetRight; ?> 
+        </div>
+    </div>
+    <div class="grid_24" id="footer">
+        <div class="box">             
+            <?php echo $this->layout()->widgetFooterBanners; ?>
+        </div>
+    </div>
+</div>
+</body>
+</html>

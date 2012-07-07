@@ -1,0 +1,55 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 22.8.2010
+**/
+
+$link = $this->url(array());
+$explodeArray = explode('&',$_SERVER['QUERY_STRING']);
+foreach($explodeArray as $row) {
+    if(!empty($row) && !preg_match('/^p=.+$/',$row)) {
+        if(preg_match('/^.+\?.+$/',$link)) {
+            $link .= '&'.$row;
+        } else {
+            $link .= '?'.$row;
+        }
+    }
+}
+
+if(preg_match('/^.+\?.+$/',$link)) {
+    $link .= '&p=';
+} else {
+    $link .= '?p=';
+}
+
+if($this->pageCount): ?>
+    <div class="paginator box">
+       <div class="pagiright">
+          <!-- Previous page link -->
+            <?php if (isset($this->previous)): ?>
+                <a href="<?php echo $link.$this->first; ?>"><?php echo $this->trans('First'); ?></a>
+                <a href="<?php echo $link.$this->previous; ?>"><?php echo $this->trans('Previous'); ?></a>
+            <?php endif; ?>
+            
+            <!-- Numbered page links -->
+            <?php foreach ($this->pagesInRange as $page): ?>
+                <?php if ($page != $this->current): ?>
+                    <a href="<?php echo $link.$page?>"><?php echo $page; ?></a>
+                <?php else: ?>
+                    <a href="#" class="pageactive"><?php echo $page; ?></a>
+                <?php endif; ?>
+            <?php endforeach; ?>
+            
+            <!-- Next page link -->
+            <?php if (isset($this->next)): ?>
+                <a href="<?php echo $link.$this->next;?>"><?php echo $this->trans('Next'); ?></a>
+                <a href="<?php echo $link.$this->last;?>"><?php echo $this->trans('Last'); ?></a>
+            <?php endif; ?>
+        </div>
+        <div class="pagileft">
+            <?php echo $this->transParam('Showing <b>~0~ - ~1~</b> from <b>~2~</b>',array('~0~'=>$this->firstItemNumber,'~1~'=>$this->lastItemNumber,'~2~'=>$this->totalItemCount),false); ?>
+        </div>
+        <div class="fix"></div>
+    </div>
+    <div class="fix"></div>
+<?php endif; ?>

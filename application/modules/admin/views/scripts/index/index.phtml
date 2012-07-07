@@ -1,0 +1,62 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 24.7.2010
+**/ 
+$user = Zend_Auth::getInstance()->getStorage()->read();
+?>
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+
+<div class="buttons">
+    <a href="/admin/setting/clear-cache" class="btn"><span><?php echo $this->trans('Clear cache'); ?></span></a>
+    <a href="/admin/user/detail/id/<?php echo $user->id; ?>" class="btn"><span><?php echo $this->trans('My profile'); ?></span></a>
+    <a href="/admin/message/list" class="btn"><span><?php echo $this->trans('Messages'); ?></span></a>
+</div>
+<div class="cleaner"></div>
+<?php 
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} ?>
+
+<h2><?php echo $this->trans('Messages'); ?></h2>
+<table class="detail" width="100%">
+    <thead>
+        <tr>
+            <th width="150"><?php echo $this->trans('author'); ?></th>
+            <th><?php echo $this->trans('subject'); ?></th>
+            <th width="100" class="t-center"><?php echo $this->trans('date'); ?></th>
+            <th class="icon t-center"><?php echo $this->trans('reply'); ?></th>
+            <th class="icon t-center"><?php echo $this->trans('forward'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach($this->messages as $row): ?>
+        <tr class="<?php echo $this->cycle(array("even","odd"))->next();?>">
+            <td><?php echo $this->escape($row['author']->name); ?></td>
+            
+            <?php if(!empty($row['read'])): ?>
+                <td><a href="/admin/message/detail/id/<?php echo $this->escape($row['id']); ?>"><?php echo $this->escape($row['subject']); ?></a></td>
+            <?php else: ?>
+                <td><a href="/admin/message/detail/id/<?php echo $this->escape($row['id']); ?>"><strong><?php echo $this->escape($row['subject']); ?></strong></a></td>
+            <?php endif; ?>
+            
+            <td class="t-center"><?php echo $this->viewDate($row['created']); ?></td>
+            
+            <td class="t-center">
+                <a href="/admin/message/add/id/<?php echo $this->escape($row['id']); ?>/user/<?php echo $this->escape($row['user_id_from']); ?>/type/reply">
+                    <img src="<?php echo $this->baseUrl(); ?>/images/icons/blue/18/object_03.png" alt="reply" width="18" height="18" />
+                </a>
+            </td>
+            
+            <td class="t-center">
+                <a href="/admin/message/add/id/<?php echo $this->escape($row['id']); ?>/type/forward">
+                    <img src="<?php echo $this->baseUrl(); ?>/images/icons/blue/18/object_04.png" alt="forward" width="18" height="18" />
+                </a>
+            </td>
+        </tr>
+    <?php endforeach;?>
+    <?php if(count($this->messages) == 0): ?>
+        <tr><td colspan="7"><?php echo $this->viewMsg($this->trans('No records'),'info');?></td></tr>
+    <?php endif;?>
+    </tbody>
+</table>

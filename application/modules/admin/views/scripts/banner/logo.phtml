@@ -1,0 +1,48 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 19.8.2010
+**/
+
+// Fast Jump form.
+$formOptions = array('action'=>'logo', 'controller'=>'banner', 'select_options'=>$this->banners);
+echo $this->partial('_elements/fastjump-form.phtml',$formOptions);
+?>
+
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php  
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('banner','list','admin'),'class'=>'btn'),
+        array('text'=>$this->trans('Edit'),'link'=>"/admin/banner/edit/id/".(int)$this->data['id'],'class'=>'btn'),
+        array('text'=>$this->trans('Reset form'),'link'=>"/admin/banner/logo/id/".(int)$this->data['id'],'class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+?>
+
+<h2><?php echo $this->escape($this->data['name_'.$this->locale]); ?></h2>
+
+<?php 
+// Logo.
+$params = array(
+    'image_folder' => './userfiles/images/banner/',
+    'image_width'  => $this->data['image_width'],
+    'image_height' => $this->data['image_height'],
+       
+    'image_ne' => 'text', // possible text / image
+    'image_ne_text' => $this->trans('There is no picture yet.'),
+    'image_ne_text_class' => 'msg info');
+echo $this->picture($this->data['image_file'],$params);
+?>
+
+<br /><br />
+<hr />
+<?php  
+// How to delete picture.
+echo $this->viewMsg($this->trans('Hint: If you want to delete banner logo - submit empty form below.'),'info');
+
+// Form.
+echo $this->form;

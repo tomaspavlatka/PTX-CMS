@@ -1,0 +1,15 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 12, 2010
+**/
+
+?>
+<div class="photos">
+    <?php foreach($this->options['photos'] as $row): ?>   
+    <div class="photo"> 
+        <div class="image"><?php echo $row['thumbnail']; ?></div>
+    </div>
+    <?php endforeach; ?> 
+    <div class="clearer">&nbsp;</div>  
+</div>

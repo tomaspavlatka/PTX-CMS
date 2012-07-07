@@ -1,0 +1,31 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: Dec 24, 2010
+**/
+
+$this->jQuery()->enable()
+    ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js')
+    ->addStylesheet($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.css');
+?>
+<script type="text/javascript">
+$(function(){
+    $("a.lightbox").fancybox();
+})
+</script>
+
+<h1><?php echo $this->h1; ?></h1>
+<div class="rule"><hr /></div>
+
+<?php 
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/photos.phtml'); 
+ 
+// Articles.
+$params = array(
+    'photos' => $this->data4View,
+);   
+echo $this->partial('_elements/photos.phtml',array('options'=>$params));
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/photos.phtml');

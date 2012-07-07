@@ -1,0 +1,40 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 22.8.2010
+**/
+
+$this->jQuery()->enable()
+    ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js')
+    ->addStylesheet($this->baseUrl().'/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.css');
+?>
+<script type="text/javascript">
+$(function(){
+    $("a.lightbox").fancybox();
+});
+</script>
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('photo','list','admin'),'class'=>'btn'),
+        array('text'=>$this->trans('Reset form'),'link'=>'/admin/photo/edit/id/'.(int)$this->data['id'],'class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons)); 
+?>
+
+<h2><?php echo $this->escape($this->data['name_'.$this->locale]); ?></h2>
+
+<?php echo $this->thumbnail; ?>
+
+<?php 
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+// Form.
+echo $this->form;

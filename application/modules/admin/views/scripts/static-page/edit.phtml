@@ -1,0 +1,94 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 22.8.2010
+**/
+
+$this->jQuery()->enable();
+?>
+<script type="text/javascript">
+$(function() {
+    $(".kcfinder").click(function() {
+        var ident = $(this).attr('id');
+        window.KCFinder = {
+            callBack: function(url) {
+                window.KCFinder = null;
+                $("#"+ident).val(url);
+
+                $.ajax({
+                    type: "POST",
+                    url: "/admin/ajax/static-page-picture/id/<?php echo $this->data['id']; ?>",
+                    data: "path="+url,
+                }).done(function( msg ) {
+                    var code = '<img src="'+url+'" alt="" height="75" />'; 
+                    $("#featured_picture_thumb").html(code); 
+                });
+            }
+        };
+            
+        window.open('/js/fckeditor/editor/filemanager/kcfinder/browse.php?type=images', 'kcfinder_textbox',
+            'status=0, toolbar=0, location=0, menubar=0, directories=0, resizable=1, scrollbars=0, width=800, height=600'
+        );
+    });
+});
+</script>
+
+<?php 
+// Fast Jump form.
+$formOptions = array('action'=>'edit','controller'=>'static-page','select_options'=>$this->fastJump);
+echo $this->partial('_elements/fastjump-form.phtml',$formOptions);
+?>
+
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('static-page','list','admin'),'class'=>'btn'),
+        array('text'=>$this->trans('New Static page'),'link'=>'/admin/static-page/add','class'=>'btn'),
+        array('text'=>$this->trans('Reset form'),'link'=>'/admin/static-page/edit/id/'.(int)$this->data->id,'class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons)); 
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+$languages = Admin_Model_DbSelect_Languages::getActive();
+// Load WYSIWYG editors.
+$options = array(
+    'ids' => array(),
+);
+foreach($languages as $langKey => $langValues) {
+    $options['ids'][] = 'pcontent'.$langValues['code'];
+}
+echo $this->partial('_elements/wysiwyg-setting.phtml',array('options'=>$options));
+
+// Form.
+echo $this->form; ?>
+
+<h3><?php echo $this->trans('Additional data'); ?></h3>
+
+<form action="" method="post" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+    <div class="zendform">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="form_label"><label><?php echo $this->trans('Featured Picture'); ?></label></td>
+                    <td class="forminput">                        
+                        <input type="text" name="image" id="featured_picture" value="<?php echo $this->escape($this->data['image_file']); ?>" class="long kcfinder" /><br /><br />
+                        <div id="featured_picture_thumb">
+                        <?php if(!empty($this->data['image_file'])): ?>
+                            <img src="<?php echo $this->data['image_file']; ?>" alt="" height="75" />
+                        <?php endif; ?>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+    </fieldset>
+</form>

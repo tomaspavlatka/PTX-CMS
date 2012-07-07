@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+/*** LOGIN FORM ***/ 
+#loginform {}
+#dt_email-label,#dt_password-label,#number-label {width: 110px; float: left; font-weight: bold; margin: 5px;padding: 5px 0px 5px 0px; clear: left;}
+#loginform .forminput {width: 275px; float: left; margin: 5px;}
+#loginform .forminput input {padding: 5px; width: 280px;}
+#dt_login-label {display: none;}
+input#login{width: 100px !important; margin-left: 190px;}
+
+ul{list-style-type: none;}

@@ -1,0 +1,40 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 28.10.2010
+**/
+
+$params = array(
+    'block_before'  => '',
+    'block_after'   => '',
+    'item_before'   => '<div class="top_box">',
+    'item_after'    => '</div>',
+    'item_selected_before'   => '<div class="top_box active">',
+    'item_selected_after'    => '</div>',
+    'link_extra' => 'class="tb black"',
+    'parent_id'     => 0);
+$menu = $this->getMenu4Print(1,$params);
+// Small updates.
+$parseArray = explode('</div>',$menu);
+$cParseArray = count($parseArray)-1;
+$newMenu = null;
+$icons = array('icon_stairs','icon_house','icon_house_key','icon_sun','icon_reconstruction');
+for($i = 0; $i < $cParseArray; $i++) {
+    if($i == 0) {
+        $text = str_replace('class="top_box','class="top_box top_box_no_left',$parseArray[$i]);
+    } else if ($i+1 == $cParseArray) {
+        $text = str_replace('class="top_box','class="top_box top_box_no_right',$parseArray[$i]);
+    } else {
+        $text = $parseArray[$i];
+    }
+    
+    $text = str_replace('class="tb black"','class="tb black '.$icons[$i].'"',$text);
+     
+    if(!strstr($text,'</div>')) {
+        $text .= '</div>';
+    }
+    $newMenu .= $text."\r\n";
+}
+
+// Print it.
+echo $newMenu;

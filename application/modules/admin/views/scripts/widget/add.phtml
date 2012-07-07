@@ -1,0 +1,45 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 10.8.2010
+**/
+
+// Fast Jump form.
+$formOptions = array('action'=>'add','controller'=>'widget','select_options'=>$this->fastJump);
+echo $this->partial('_elements/fastjump-form.phtml',$formOptions);
+?>
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('widget','list','admin'),'class'=>'btn'),
+        array('text'=>$this->trans('Change Type'),'link'=>'/admin/widget/add-select/place/'.(int)$this->place,'class'=>'btn'),
+        array('text'=>$this->trans('Reset form'),'link'=>'/admin/widget/add/type/'.$this->type.'/place/'.(int)$this->place,'class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+?>
+
+<h2><?php echo $this->widgetTypeName($this->type); ?></h2>
+
+<?php
+// Text widget - load WYSIWYG editors.
+if($this->type == 'text') {
+    $languages = Admin_Model_DbSelect_Languages::getActive();
+    $options = array('ids' => array());
+    foreach($languages as $key => $values) {
+        $options['ids'][] = 'wcontent'.$values['code'];
+    }
+    echo $this->partial('_elements/wysiwyg-setting.phtml',array('options'=>$options));
+}
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+// Form.
+echo $this->form;

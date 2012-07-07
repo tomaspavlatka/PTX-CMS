@@ -1,0 +1,62 @@
+
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('Inbox'),'link'=>"/admin/message/list",'class'=>'btn'),
+        array('text'=>$this->trans('New Message'),'link'=>"/admin/message/add",'class'=>'btn')
+    ),
+);
+
+// Special button for admin.
+if($this->user->role == 'admins') {
+    $buttons['links'][] = array('text'=>$this->trans('Control panel'),'link'=>"/admin/message/control",'class'=>'btn');
+}
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons)); 
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+} 
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml'); 
+
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/message/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'sort' => array('name' => 'sort', 'id' => 'sort', 'class'=>'input-text', 'values' => $this->sortPossibilities,'type' => 'select','empty_value' => $this->trans('- sort by -')),
+        'user' => array('name' => 'user', 'id' => 'user', 'class'=>'input-text', 'values' => $this->users,'type' => 'select','empty_value' => $this->trans('- all users -')),
+        'action' => array('name' => 'action', 'id' => 'formaction', 'value' => 'sent','type' => 'hidden'),
+        'input' => array(),
+        'search' => array()),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => $this->trans('sent to'),'column'=>'author', 'width'=>200),
+        array('name' => $this->trans('subject'),'column'=>'name'),
+        array('name' => $this->trans('created'),'column'=>'created','width'=>"100",'class'=>'t-center','helper'=>'viewDate'),
+        array('name' => $this->trans('read'),'column'=>'read','width'=>"100",'class'=>'t-center','helper'=>'viewDate'),
+        ),
+    
+    'actions' => array('detail','reply','forward'),
+    'controller' => 'message',
+    'records' => $this->paginator->getCurrentItems(),
+);
+echo $this->partial('_elements/table.phtml',array('options'=>$tableOptions));
+
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml');
+
+
+

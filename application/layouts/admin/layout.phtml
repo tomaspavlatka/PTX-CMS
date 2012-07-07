@@ -1,0 +1,61 @@
+<?php echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headLink()->appendStylesheet($this->baseUrl().'/project/admin/css/reset.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/main.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/style.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/2col.css')
+                        ->appendStylesheet($this->baseUrl().'/project/admin/css/mystyle.css'); ?>
+
+    <?php echo $this->headScript() ?>
+    <?php if($this->jQuery()->isEnabled()){
+        $this->jQuery()
+            ->setLocalPath($this->baseUrl().'/js/jquery/js/jquery-1.6.2.min.js')
+            ->setUiLocalPath($this->baseUrl().'/js/jquery/js/jquery-ui-1.8.16.custom.min.js')
+            ->addStylesheet($this->baseUrl().'/js/jquery/css/cupertino/jquery-ui-1.8.16.custom.css')
+            ->addJavascriptFile($this->baseUrl().'/js/jquery/plugins/thickbox/thickbox.js')
+            ->addStylesheet($this->baseUrl().'/js/jquery/plugins/thickbox/thickbox.css');
+        echo $this->jQuery();
+    } ?>
+</head>
+<body>
+<div id="main">
+    <!-- Tray -->
+    <?php echo $this->layout()->incTop; ?>
+    <hr class="noscreen" />
+
+    <!-- Menu -->
+    <div id="menu" class="box">
+        <ul class="box f-right">
+            <li><a href="/authentication/logout" title="<?php $this->trans('Logout'); ?>"> <span><strong><?php echo $this->trans('Logout'); ?> &raquo;</strong></span></a></li>
+        </ul>
+        <?php echo $this->layout()->menuTop; ?>
+    </div> <!-- /header -->
+
+    <hr class="noscreen" />
+
+    <!-- Columns -->
+    <div id="cols" class="box">
+        <!-- Aside (Left Column) -->
+        <div id="aside" class="box">
+            <?php echo $this->layout()->incLeft; ?>
+        </div> <!-- /aside -->
+        <hr class="noscreen" />
+        <!-- Content (Right Column) -->
+        <div id="content" class="box">
+            <div style="clear:both"></div>
+            <?php echo $this->layout()->content; ?>    
+            
+        </div> <!-- /content -->
+    </div> <!-- /cols -->
+    <hr class="noscreen" />
+    <!-- Footer -->
+    <div id="footer" class="box">
+        
+        <p class="f-right">Programuje <a href="http://pavlatka.cz/" title="Tvorba www stránek Ostrava - Tomáš Pavlátka - www stránky Ostrava">Tomáš Pavlátka</a> - Zend <?php echo Zend_Version::VERSION; ?> </p>
+    </div> <!-- /footer -->
+</div> <!-- /main -->
+</body>
+</html>

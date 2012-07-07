@@ -1,0 +1,32 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 6.11.2010
+**/
+
+$select = Article_Model_DbSelect_Articles::pureSelect();
+$select->columns(array('COUNT(id) as count'))
+    ->where('status = 1');
+$stmt = $select->query();
+$data = $stmt->fetchAll();
+$count = (isset($data[0]['count'])) ? (int)$data[0]['count'] : 0;
+
+?>
+<div class="widget">
+    <div class="widget-title tb"><?php echo $this->trans('Statistics'); ?></div>
+    
+    <table class="smalldetailtbl">
+        <tbody>
+            <tr>
+                <td class="ident"><?php echo $this->trans('Number of articles'); ?></td>
+                <td><?php echo $this->escape($count); ?></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="widget">
+<a href="http://www.toplist.cz/" target="_top"><img src="http://toplist.cz/count.asp?id=1111193&amp;logo=mc" border="0" alt="TOPlist" width="88" height="60"/></a>
+<br /><br />
+<script src="http://c1.navrcholu.cz/code?site=131309;t=lb80" type="text/javascript"></script><noscript><div><a href="http://navrcholu.cz/"><img src="http://c1.navrcholu.cz/hit?site=131309;t=lb80;ref=;jss=0" width="80" height="15" alt="NAVRCHOLU.cz" style="border:none" /></a></div></noscript> 
+</div>

@@ -1,0 +1,189 @@
+<?php
+/**
+* Author: Tomas Pavlatka [tomas.pavlatka@gmail.com]
+* Date: 22.8.2010
+**/
+
+$this->jQuery()->enable();
+?>
+
+<script type="text/javascript">
+$(function() {
+	$(".kcfinder").click(function() {
+		var ident = $(this).attr('id');
+	    window.KCFinder = {
+	        callBack: function(url) {
+		        window.KCFinder = null;
+		        $("#"+ident).val(url);
+
+		        $.ajax({
+			        type: "POST",
+			        url: "/admin/ajax/article-picture/id/<?php echo $this->data['id']; ?>",
+		            data: "path="+url,
+		        }).done(function( msg ) {
+		        	var code = '<img src="'+url+'" alt="" height="75" />'; 
+	                $("#featured_picture_thumb").html(code); 
+		        });
+	        }
+		};
+		    
+	    window.open('/js/fckeditor/editor/filemanager/kcfinder/browse.php?type=images', 'kcfinder_textbox',
+	        'status=0, toolbar=0, location=0, menubar=0, directories=0, resizable=1, scrollbars=0, width=800, height=600'
+		);
+	});
+	
+    $("#cat_categories").change(function() {
+        var value = $(this).val();
+        if(value != '') {
+            $.getJSON("/admin/ajax/add-to-category/type/articles/input/<?php echo $this->data['id']; ?>/category/"+value,
+                function(data){
+                    if(data != '' && data != null && data != undefined) {
+                        var html = $("#category_list").html();
+                        html = html + '<span id="input_'+data.id+'" class="hand category_remove" title="<?php echo $this->trans('Remove from category'); ?>">[x] '+data.category+'</span>';
+                        $("#category_list").html(html)
+                    }    
+                }
+            );
+        }
+    });
+
+    $(".category_remove").live('click',function() {
+        var ident = $(this).attr('id');
+
+        $.getJSON("/admin/ajax/remove-from-category/ident/"+ident,
+            function(data){
+                if(data != '' && data != null && data != undefined) {
+                    if(data.result == 1) {
+                        $("#"+ident).hide('slow');
+                    }
+                }    
+            }
+        );
+    });
+    
+    $("#cat_tags").change(function() {
+        var value = $(this).val();
+        if(value != '') {
+            $.getJSON("/admin/ajax/tag-relation-add/type/articles/input/<?php echo $this->data['id']; ?>/tag/"+value,
+                function(data){
+                    if(data != '' && data != null && data != undefined) {
+                        var html = $("#tags_list").html();
+                        html = html + '<span id="input_'+data.id+'" class="hand tag_remove" title="<?php echo $this->trans('Remove from tag'); ?>">[x] '+data.tag+'</span>';
+                        $("#tags_list").html(html);
+                    }    
+                }
+            );
+        }
+    });
+
+    $(".tag_remove").live('click',function() {
+        var ident = $(this).attr('id');
+
+        $.getJSON("/admin/ajax/tag-relation-delete/ident/"+ident,
+            function(data){
+                if(data != '' && data != null && data != undefined) {
+                    if(data.result == 1) {
+                        $("#"+ident).hide('slow');
+                    }
+                }    
+            }
+        );
+    });
+});
+</script>
+
+<?php 
+// Fast Jump form.
+$formOptions = array('action'=>'edit','controller'=>'article','select_options'=>$this->fastJump);
+echo $this->partial('_elements/fastjump-form.phtml',$formOptions);
+?>
+<h1><?php echo $this->h1. ' &#187; ' .$this->h2; ?></h1>
+
+<?php
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('List'),'link'=>PTX_Anchor::get('article','list','admin'),'class'=>'btn'),
+        array('text'=>$this->trans('New Article'),'link'=>'/admin/article/add','class'=>'btn'),
+        array('text'=>$this->trans('Reset form'),'link'=>'/admin/article/edit/id/'.(int)$this->data['id'],'class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons)); 
+
+$languages = Admin_Model_DbSelect_Languages::getActive();
+// Load WYSIWYG editors.
+$options = array(
+    'ids' => array(),
+);
+foreach($languages as $langKey => $langValues) {
+    $options['ids'][] = 'pcontent'.$langValues['code'];
+    $options['ids'][] = 'perex'.$langValues['code'];
+}
+echo $this->partial('_elements/wysiwyg-setting.phtml',array('options'=>$options));
+
+// Messages.
+if(isset($this->msgs)) {
+    echo $this->viewMsgs($this->msgs);
+}
+
+// Form.
+echo $this->form;
+?>
+
+<h3><?php echo $this->trans('Additional data'); ?></h3>
+
+<form action="" method="post" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+    <div class="zendform">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="form_label"><label><?php echo $this->trans('Categories'); ?></label></td>
+                    <td class="forminput">
+                        <select name="category" id="cat_categories">
+                            <option value=""><?php echo $this->trans('- select category -'); ?></option>
+                            <?php foreach($this->params['categories'] as $id => $name): ?>
+                                <option value="<?php echo $this->escape($id); ?>"><?php echo $this->escape($name); ?></option>
+                            <?php endforeach; ?>            
+                        </select>
+                        
+                        <div class="category_list" id="category_list">
+                            <?php foreach($this->categories as $key => $values): ?>
+                                <span id="input_<?php echo $this->escape($values['id']); ?>" title="<?php echo $this->trans('Remove from category'); ?>" class="hand category_remove">[x] <?php echo $this->escape($values['category_name']); ?></span>
+                            <?php endforeach; ?>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form_label"><label><?php echo $this->trans('Tags'); ?></label></td>
+                    <td class="forminput">
+                        <select name="tag" id="cat_tags">
+                            <option value=""><?php echo $this->trans('- select tag -'); ?></option>
+                            <?php foreach($this->tags4Select as $id => $name): ?>
+                                <option value="<?php echo $this->escape($id); ?>"><?php echo $this->escape($name); ?></option>
+                            <?php endforeach; ?>            
+                        </select>
+                        
+                        <div class="category_list" id="tags_list">
+                            <?php foreach($this->tags as $key => $values): ?>
+                                <span id="input_<?php echo $this->escape($values['id']); ?>" title="<?php echo $this->trans('Remove from tag'); ?>" class="hand tag_remove">[x] <?php echo $this->escape($values['tag_name']); ?></span>
+                            <?php endforeach; ?>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form_label"><label><?php echo $this->trans('Featured Picture'); ?></label></td>
+                    <td class="forminput">                        
+                        <input type="text" name="image" id="featured_picture" value="<?php echo $this->escape($this->data['image_file']); ?>" class="long kcfinder" /><br /><br />
+                        <div id="featured_picture_thumb">
+                        <?php if(!empty($this->data['image_file'])): ?>
+                            <img src="<?php echo $this->data['image_file']; ?>" alt="" height="75" />
+                        <?php endif; ?>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+    </fieldset>
+</form>

@@ -1,0 +1,116 @@
+<?php
+/**
+ * Author: Tomas Pavlatka [tomas@pavlatka.cz]
+ * Created: Nov 9, 2011
+ */
+ 
+$languages = Admin_Model_DbSelect_Languages::getActive();
+$elements = $this->form->getElements();
+
+$this->jQuery()->enable()->uiEnable();
+
+$validation = array();
+foreach($elements as $key => $values) {
+    $validation[$key] = array();
+    if($values->isRequired()) {
+        $validation[$key]['NotEmpty'] = array(
+            'settings' => array(),
+            'messages' => array('isEmpty' => $this->trans('Value is required and can\'t be empty')),
+        );
+        
+        $validators = $values->getValidators();
+        if(!empty($validators)) {
+            foreach($validators as $inKey => $inValues) {
+                $ident = str_replace('Zend_Validate_','',$inKey);
+                $validation[$key][$ident] = array(
+                    'messages' => $inValues->getMessageTemplates()
+                );
+                
+                if(strstr($inKey,'StringLength')) {
+                    $validation[$key][$ident]['settings'] = array('min'=>$inValues->getMin(),'max'=>$inValues->getMax());
+                } else if(strstr($inKey,'Regex')) {
+                    $validation[$key][$ident]['settings'] = array('pattern'=>$inValues->getPattern());
+                }
+            }
+        }
+    }
+}
+?>
+ 
+<script type="text/javascript">
+$(function() {
+
+    $("#ad_form").submit(function() {
+        var result = true;
+        $(".js-errors").hide();
+        
+        <?php foreach($validation as $key => $values): ?>
+            <?php if(!empty($values)): ?>
+            var value = $("#<?php echo $key; ?>").val();
+            var valueResult = true;
+            var errorMsg = null;
+                <?php foreach($values as $inKey => $inValues): ?>
+                    <?php if($inKey == 'NotEmpty'): ?>
+                        if(valueResult && value == '') {
+                            errorMsg = "<?php echo $inValues['messages']['isEmpty']; ?>";
+                            valueResult = false;
+                        }
+                    <?php elseif($inKey == 'StringLength'): ?>
+                        if(valueResult && value.length < <?php echo $inValues['settings']['min']; ?>) {
+                            errorMsg = '<?php echo $this->transParam($inValues['messages']['stringLengthTooShort'],array("'%value%'"=>$this->trans('Value'),'%min%'=>$inValues['settings']['min'])); ?>';
+                            valueResult = false;
+                        } else if(valueResult && value.length > <?php echo $inValues['settings']['max']; ?>) {
+                            errorMsg = '<?php echo $this->transParam($inValues['messages']['stringLengthTooShort'],array("'%value%'"=>$this->trans('Value'),'%min%'=>$inValues['settings']['min'])); ?>';
+                            valueResult = false;
+                        }
+                    <?php elseif($inKey == 'Regex'): ?>
+                        if(valueResult) {
+                            var pattern = <?php echo $inValues['settings']['pattern']; ?>;
+                            if(pattern.test(value) == false) {
+                                errorMsg = '<?php echo $this->transParam($inValues['messages']['regexNotMatch'],array("'%value%'"=>$this->trans('Value'),"'%pattern%'"=>$inValues['settings']['pattern'])); ?>';
+                                valueResult = false;
+                            } 
+                        }
+                    <?php endif; ?>
+                <?php endforeach; ?>
+                
+                if(valueResult == false) {
+                    $("#<?php echo $key; ?>").css({'background': '#fcc','border':'1px solid #f00'}); 
+                    $("#<?php echo $key; ?>").after('<br /><span class="js-errors" style="color: #f00; font-size: 0.9em;">'+errorMsg+'</span>'); 
+                    result = valueResult;
+                }
+            <?php endif; ?>
+        <?php endforeach; ?>
+
+        return result;
+    });
+});
+</script>
+    
+<div id="translate">
+    
+    <fieldset id="ad_form">    
+        <form action="<?php $this->escape($this->form->getAction()); ?>" method="post" id="ad_form" enctype="<?php echo $this->form->getEnctype(); ?>">
+            
+            <div class="ad_full">
+                <?php echo $this->form->adtype; ?>
+                <?php echo $this->form->name; ?>
+                <?php echo $this->form->content; ?>
+            </div>
+            <div class="ad_half"><?php echo $this->form->category; ?></div>
+            <div class="ad_half"><?php echo $this->form->location; ?></div>
+            
+            <div class="ad_half"><?php echo $this->form->price; ?></div>
+            <div class="ad_half"><?php echo $this->form->pricetext; ?></div>
+            
+            <div class="ad_half"><?php echo $this->form->phone; ?></div>
+            <div class="ad_half"><?php echo $this->form->email; ?></div>
+
+            <div class="ad_half"><?php echo $this->form->password; ?></div>
+            
+            <div class="clear">&nbsp;</div>
+            <div class="ad_submit"><?php echo $this->form->submit; ?></div>
+            
+        </form>
+    </fieldset>
+</div>

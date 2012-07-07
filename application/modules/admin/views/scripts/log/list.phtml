@@ -1,0 +1,55 @@
+<h1><?php echo $this->h1. ' &#187; '.$this->h2; ?></h1>
+<?php 
+// Buttons.
+$buttons = array(
+    'links' => array(
+        array('text'=>$this->trans('Archive'),'link'=>'/admin/log/archive','class'=>'btn'),
+    ),
+);
+echo $this->partial('_elements/buttons.phtml',array('options'=>$buttons));
+
+// Messages.
+if(isset($this->msgs)) {
+	echo $this->viewMsgs($this->msgs);
+} 
+    
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml'); 
+
+// Restrict form.
+$formOptions = array(
+    'action' => '/admin/log/transform',
+    'method' => 'post',
+    'class' => 'ptxinrowform',
+
+    'fields' => array(
+        'sort' => array('name' => 'sort', 'id' => 'sort', 'class'=>'input-text', 'values' => $this->sortPossibilities,'type' => 'select','empty_value' => $this->trans('- sort by -')),
+        'table' => array('name' => 'table', 'id' => 'table', 'class'=>'input-text', 'values' => $this->tables,'type' => 'select','empty_value' => $this->trans('- all tables -')),
+        'user' => array('name' => 'user', 'id' => 'user', 'class'=>'input-text', 'values' => $this->users,'type' => 'select','empty_value' => $this->trans('- all users -')),
+        'input' => array(),
+        'search' => array()),
+    'params' => $this->params,
+); 
+echo $this->partial('_elements/restrict-form.phtml',array('options'=>$formOptions));
+
+// Table.
+$tableOptions = array(
+    'columns' => array(
+        array('name' => $this->trans('date'),'column'=>'created','class'=>'t-center','helper'=>'viewDate','width'=>"120"),
+        array('name' => $this->trans('user'),'column'=>'user','width'=>"120"),
+        array('name' => $this->trans('table'),'column'=>'log_table','class'=>'t-center','width'=>"120"),
+        array('name' => $this->trans('where'),'column'=>'log_where','width'=>"120",'class'=>'t-center'),
+        array('name' => $this->trans('content'),'column'=>'log_content'),
+        ),
+    
+    'actions' => array('detail'),
+    'controller' => 'log',
+    'records' => $this->paginator->getCurrentItems(),
+);
+echo $this->partial('_elements/table.phtml',array('options'=>$tableOptions));
+ 
+// Paginator.
+echo $this->paginationControl($this->paginator,'Sliding','_paginator/default.phtml');
+
+
+
